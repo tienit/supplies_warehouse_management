@@ -195,3 +195,5 @@ D:\WORK-HOME\ITFA\PROJECT\BQP_DUY\SWM\Projects\SWM2\SWM2\bin\Debug\de\DevExpress
 D:\WORK-HOME\ITFA\PROJECT\BQP_DUY\SWM\Projects\SWM2\SWM2\bin\Debug\es\DevExpress.Diagram.v16.2.Core.resources.dll
 D:\WORK-HOME\ITFA\PROJECT\BQP_DUY\SWM\Projects\SWM2\SWM2\bin\Debug\ja\DevExpress.Diagram.v16.2.Core.resources.dll
 D:\WORK-HOME\ITFA\PROJECT\BQP_DUY\SWM\Projects\SWM2\SWM2\bin\Debug\ru\DevExpress.Diagram.v16.2.Core.resources.dll
+D:\QUAN LY KHO\supplies_warehouse_management\Projects\SWM2\SWM2\obj\Debug\SWM2.exe
+D:\QUAN LY KHO\supplies_warehouse_management\Projects\SWM2\SWM2\obj\Debug\SWM2.pdb
