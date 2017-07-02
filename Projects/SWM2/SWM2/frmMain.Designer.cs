@@ -1,4 +1,4 @@
-﻿namespace SWM2
+﻿namespace VKTIM
 {
     partial class frmMain
     {

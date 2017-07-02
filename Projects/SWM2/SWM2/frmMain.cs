@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SWM2
+namespace VKTIM
 {
     public partial class frmMain : Form
     {

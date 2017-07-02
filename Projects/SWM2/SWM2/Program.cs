@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace SWM2
+namespace VKTIM
 {
     static class Program
     {
