@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VKTIM.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="COLOR_APP_BACK" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="CURRENT_CULTURE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vi</Value>
+    </Setting>
+    <Setting Name="CS_ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\SQLEXPRESS</Value>
+    </Setting>
+    <Setting Name="CS_DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IMS</Value>
+    </Setting>
+    <Setting Name="CS_UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="CS_PassWord" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1234567</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
