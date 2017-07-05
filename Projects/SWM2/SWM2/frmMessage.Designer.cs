@@ -60,7 +60,7 @@
             // 
             // pic_Header
             // 
-            this.pic_Header.Image = global::eSWS.Properties.Resources.e_msg_logo;
+            this.pic_Header.Image = global::VKTIM.Properties.Resources.e_msg_logo;
             this.pic_Header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mainTip.SetToolTip(this.pic_Header, "CommonForm");
             // 

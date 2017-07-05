@@ -56,9 +56,9 @@ namespace VKTIM.Common
                     m_Frm.lblType.Text = "OK";
                 }
                 m_Frm.lblType.ForeColor = Color.Green;
-                if (GBTSCConstants.CURRENT_USER != null && GBTSCConstants.CURRENT_FACTORY != null)
+                if (GBTSCConstants.CURRENT_USER != null)
                 {
-                    TMLOGEVENTController.Instance().Insert(new TMLOGEVENTInfo(0, msgText, "COMMON_OK", GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.CHR_USERNAME, GBTSCConstants.CURRENT_USER.INT_USERGROUP, GBTSCConstants.CURRENT_FACTORY.ID, GBTSCConstants.CURRENT_FACTORY.CHR_NAME, ""));
+                    DTLOGEVENTController.Instance().Insert(new DTLOGEVENTInfo(0, msgText, "COMMON_OK", GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.CHR_USERNAME, GBTSCConstants.CURRENT_USER.INT_USERGROUP, 0, "", ""));
                 }
             }
             else if (msgType == MessageType.Message_NG)
@@ -72,9 +72,9 @@ namespace VKTIM.Common
                     m_Frm.lblType.Text = "NG";
                 }
                 m_Frm.lblType.ForeColor = Color.Red;
-                if (GBTSCConstants.CURRENT_USER != null && GBTSCConstants.CURRENT_FACTORY != null)
+                if (GBTSCConstants.CURRENT_USER != null)
                 {
-                    TMLOGEVENTController.Instance().Insert(new TMLOGEVENTInfo(0, msgText, "COMMON_NG", GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.CHR_USERNAME, GBTSCConstants.CURRENT_USER.INT_USERGROUP, GBTSCConstants.CURRENT_FACTORY.ID, GBTSCConstants.CURRENT_FACTORY.CHR_NAME, ""));
+                    DTLOGEVENTController.Instance().Insert(new DTLOGEVENTInfo(0, msgText, "COMMON_NG", GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.CHR_USERNAME, GBTSCConstants.CURRENT_USER.INT_USERGROUP, 0, "", ""));
                 }
             }
             m_Frm.ShowDialog();
@@ -217,7 +217,7 @@ namespace VKTIM.Common
 
         public static DateTime SERVER_NOW()
         {
-            return TMUSERSController.Instance().SERVER_NOW();
+            return HTUSERController.Instance().SERVER_NOW();
         }
 
         public static string DateTimeToString(DateTime dt)
@@ -266,7 +266,7 @@ namespace VKTIM.Common
         private static void Init_Resources()
         {
             GBTSCConstants.CURRENT_CULTURE = CultureInfo.CreateSpecificCulture(Properties.Settings.Default.CURRENT_CULTURE);
-            GBTSCConstants.CURRENT_RESOURCES = new ResourceManager("eSWS.Lang.MyResources", typeof(frmMain).Assembly);
+            GBTSCConstants.CURRENT_RESOURCES = new ResourceManager("VKTIM.Lang.MyResources", typeof(frmMain).Assembly);
         }
 
         public static void SetFormLanguageIncludeGrid(Form frm)
@@ -395,7 +395,7 @@ namespace VKTIM.Common
             bool bCheck = true;
 
             //Check PC valid
-            TMDEVICESInfo myPC = TMDEVICESController.Instance().GetByName(Environment.MachineName);
+            DTDEVICESInfo myPC = DTDEVICESController.Instance().GetByName(Environment.MachineName);
             if (myPC == null)
             {
                 GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
@@ -404,22 +404,22 @@ namespace VKTIM.Common
             }
             else
             {
-                if (!myPC.BIT_ALLOW)
+                if (myPC.LOCKED)
                 {
-                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
+                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE LOCKED", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
                 }
             }
 
             //Check Version
-            TMSETTINGInfo tempInfo = TMSETTINGController.Instance().GetByCode("UPDATE_NOTIFY");
+            HTCONFIGInfo tempInfo = HTCONFIGController.Instance().GetByCode("UPDATE_NOTIFY");
             if (tempInfo != null)
             {
                 string app_revision = Application.ProductVersion.Substring(Application.ProductVersion.LastIndexOf(".") + 1);
-                if (!tempInfo.CHR_VALUE.Equals(app_revision))
+                if (!tempInfo.CONFIG_VALUE.Equals(app_revision))
                 {
-                    string msg_notify = string.Format(GBTSCConstants.BUHINSOKO_MSG_UPDATE_NOTIFY, app_revision, tempInfo.CHR_VALUE);
+                    string msg_notify = string.Format(GBTSCConstants.BUHINSOKO_MSG_UPDATE_NOTIFY, app_revision, tempInfo.CONFIG_VALUE);
                     GBTSCCommon.Message_Info(msg_notify, "UPDATE", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                 }
@@ -434,7 +434,7 @@ namespace VKTIM.Common
             bool bCheck = true;
 
             //Check PC valid
-            TMDEVICESInfo myPC = TMDEVICESController.Instance().GetByName(Environment.MachineName);
+            DTDEVICESInfo myPC = DTDEVICESController.Instance().GetByName(Environment.MachineName);
             if (myPC == null)
             {
                 GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
@@ -443,22 +443,22 @@ namespace VKTIM.Common
             }
             else
             {
-                if (!myPC.BIT_ALLOW)
+                if (myPC.LOCKED)
                 {
-                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
+                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE LOCKED", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
                 }
             }
 
             //Check Version
-            TMSETTINGInfo tempInfo = TMSETTINGController.Instance().GetByCode("UPDATE_NOTIFY");
+            HTCONFIGInfo tempInfo = HTCONFIGController.Instance().GetByCode("UPDATE_NOTIFY");
             if (tempInfo != null)
             {
                 string app_revision = Application.ProductVersion.Substring(Application.ProductVersion.LastIndexOf(".") + 1);
-                if (!tempInfo.CHR_VALUE.Equals(app_revision))
+                if (!tempInfo.CONFIG_VALUE.Equals(app_revision))
                 {
-                    string msg_notify = string.Format(GBTSCConstants.BUHINSOKO_MSG_UPDATE_NOTIFY, app_revision, tempInfo.CHR_VALUE);
+                    string msg_notify = string.Format(GBTSCConstants.BUHINSOKO_MSG_UPDATE_NOTIFY, app_revision, tempInfo.CONFIG_VALUE);
                     GBTSCCommon.Message_Info(msg_notify, "UPDATE", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
@@ -466,7 +466,7 @@ namespace VKTIM.Common
             }
 
             //Check User Locked
-            TMUSERSInfo userInfo = TMUSERSController.Instance().GetById(GBTSCConstants.CURRENT_USER.ID);
+            HTUSERnfo userInfo = HTUSERController.Instance().GetById(GBTSCConstants.CURRENT_USER.ID);
             if (userInfo != null)
             {
                 if (userInfo.BIT_LOCKED == true)
@@ -478,12 +478,12 @@ namespace VKTIM.Common
             }
 
             //Check All Factory is in Maintenance status?
-            if (GBTSCConstants.CURRENT_FACTORY.BIT_IS_LOCKED)
-            {
-                GBTSCCommon.Message_Info(GBTSCConstants.CURRENT_FACTORY.CHR_CODE + " is being maintained. Please check back later.", GBTSCConstants.CURRENT_FACTORY.CHR_CODE, GBTSCCommon.MessageType.Message_NG);
-                bCheck = false;
-                goto unornally_break;
-            }
+            //if (GBTSCConstants.CURRENT_FACTORY.BIT_IS_LOCKED)
+            //{
+            //    GBTSCCommon.Message_Info(GBTSCConstants.CURRENT_FACTORY.CHR_CODE + " is being maintained. Please check back later.", GBTSCConstants.CURRENT_FACTORY.CHR_CODE, GBTSCCommon.MessageType.Message_NG);
+            //    bCheck = false;
+            //    goto unornally_break;
+            //}
 
         unornally_break: //Label
             return bCheck;

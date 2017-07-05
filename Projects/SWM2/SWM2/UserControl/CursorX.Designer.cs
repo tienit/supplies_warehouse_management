@@ -1,4 +1,4 @@
-﻿namespace eSWS
+﻿namespace VKTIM
 {
     partial class CursorX
     {

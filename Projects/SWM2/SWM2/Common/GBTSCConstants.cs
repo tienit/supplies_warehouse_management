@@ -1,4 +1,4 @@
-﻿using eSWS.Component;
+﻿using VKTIM.Component;
 using System.Resources;
 using System.Globalization;
 
@@ -21,14 +21,14 @@ namespace VKTIM.Common
 
 
         //Current User
-        public static TMUSERSInfo CURRENT_USER;
-        public static TMFACTORYInfo CURRENT_FACTORY;
+        public static HTUSERnfo CURRENT_USER;
+        //public static TMFACTORYInfo CURRENT_FACTORY;
 
 
 
         //System Name
-        public static string ESWS_SYS_NAME = "eSWS";
-        public static string ESWS_SYS_TITLE = "eSMART WAREHOUSE SYSTEM";
+        public static string ESWS_SYS_NAME = "VKTIM";
+        public static string ESWS_SYS_TITLE = "VKT INVENTORY MANAGEMENT";
 
 
         //STRING RESOURCES

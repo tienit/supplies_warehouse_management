@@ -14,12 +14,12 @@ using System;
 namespace VKTIM.Component
 {
 
-    public partial class TMUSERSInfo
+    public partial class HTUSERnfo
     {
 	    // Add custom code here
     }
 
-    public partial class TMUSERSController
+    public partial class HTUSERController
     {
         public object DB_GetNull(object val)
         {
@@ -31,14 +31,14 @@ namespace VKTIM.Component
             return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "TM_USERS_SelectByGroup", groupID).Tables[0];
         }
 
-        public TMUSERSInfo GetByUserPass(string userName, string passWord)
+        public HTUSERnfo GetByUserPass(string userName, string passWord)
         {
-            return (TMUSERSInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_USERS_SelectByUsernamePass", userName, passWord), typeof(TMUSERSInfo));
+            return (HTUSERnfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_USERS_SelectByUsernamePass", userName, passWord), typeof(HTUSERnfo));
         }
 
-        public TMUSERSInfo GetByOption(string userName, string passWord, int factoryID)
+        public HTUSERnfo GetByOption(string userName, string passWord, int factoryID)
         {
-            return (TMUSERSInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_USERS_SelectByOption", userName, passWord, factoryID), typeof(TMUSERSInfo));
+            return (HTUSERnfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_USERS_SelectByOption", userName, passWord, factoryID), typeof(HTUSERnfo));
         }
 
         public void LockUser(int userID, bool bLocked)

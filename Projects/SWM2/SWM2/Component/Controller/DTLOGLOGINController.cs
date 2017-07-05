@@ -14,13 +14,13 @@ using System.Collections.Generic;
 namespace VKTIM.Component
 {
 
-public partial class TMLOGLOGINController
-{
+public partial class DTLOGLOGINController
+    {
 
 #region "Instances"
-private static TMLOGLOGINController _instance;
+private static DTLOGLOGINController _instance;
 
-protected TMLOGLOGINController()
+protected DTLOGLOGINController()
 {
 }
 
@@ -31,12 +31,12 @@ protected void Dispose()
 
 private static object _syncLock = new object();
 
-public static TMLOGLOGINController Instance()
+public static DTLOGLOGINController Instance()
 {
 	if (_instance == null) {
 		lock (_syncLock) {
 			if (_instance == null) {
-				_instance = new TMLOGLOGINController();
+				_instance = new DTLOGLOGINController();
 			}
 		}
 	}
@@ -47,13 +47,13 @@ public static TMLOGLOGINController Instance()
 
 #region "Public Methods"
 
-public TMLOGLOGINInfo Insert(TMLOGLOGINInfo objInfo)
+public DTLOGLOGINInfo Insert(DTLOGLOGINInfo objInfo)
 {
 	objInfo.ID = Convert.ToInt32(DataProvider.Instance().TM_LOG_LOGIN_Insert(objInfo));
 	return objInfo;
 }
 
-public int Update(TMLOGLOGINInfo objInfo)
+public int Update(DTLOGLOGINInfo objInfo)
 {
 	return DataProvider.Instance().TM_LOG_LOGIN_Update(objInfo);
 }
@@ -63,18 +63,18 @@ public int Delete(int ID)
 	return DataProvider.Instance().TM_LOG_LOGIN_Delete(ID);
 }
 
-public TMLOGLOGINInfo GetById(int ID)
+public DTLOGLOGINInfo GetById(int ID)
 {
-	return (TMLOGLOGINInfo)CBO.FillObject(DataProvider.Instance().TM_LOG_LOGIN_GetById(ID), typeof(TMLOGLOGINInfo));
+	return (DTLOGLOGINInfo)CBO.FillObject(DataProvider.Instance().TM_LOG_LOGIN_GetById(ID), typeof(DTLOGLOGINInfo));
 }
 
-public List<TMLOGLOGINInfo> GetAll()
+public List<DTLOGLOGINInfo> GetAll()
 {
-	List<TMLOGLOGINInfo> list = new List<TMLOGLOGINInfo>();
-	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_LOG_LOGIN_GetAll(), typeof(TMLOGLOGINInfo));
+	List<DTLOGLOGINInfo> list = new List<DTLOGLOGINInfo>();
+	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_LOG_LOGIN_GetAll(), typeof(DTLOGLOGINInfo));
 	foreach (object objItem in arr)
 	{
-		list.Add((TMLOGLOGINInfo)objItem);
+		list.Add((DTLOGLOGINInfo)objItem);
 	}
 	return list;
 }

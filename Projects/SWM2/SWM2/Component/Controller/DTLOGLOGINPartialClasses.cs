@@ -14,12 +14,12 @@ using System.Collections.Generic;
 namespace VKTIM.Component
 {
 
-    public partial class TMLOGLOGINInfo
+    public partial class DTLOGLOGINInfo
     {
 	    // Add custom code here
     }
 
-    public partial class TMLOGLOGINController
+    public partial class DTLOGLOGINController
     {
         public object DB_GetNull(object Field)
         {

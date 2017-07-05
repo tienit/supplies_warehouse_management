@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -97,20 +97,28 @@
     <Compile Include="Common\GBTSCCommon.cs" />
     <Compile Include="Common\GBTSCConstants.cs" />
     <Compile Include="Common\Util.cs" />
-    <Compile Include="Component\Controller\TMLOGEVENTController.cs" />
-    <Compile Include="Component\Controller\TMLOGEVENTPartialClasses.cs" />
-    <Compile Include="Component\Controller\TMLOGLOGINController.cs" />
-    <Compile Include="Component\Controller\TMLOGLOGINPartialClasses.cs" />
-    <Compile Include="Component\Controller\TMUSERSController.cs" />
-    <Compile Include="Component\Controller\TMUSERSPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTCONFIGPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTCONFIGController.cs" />
+    <Compile Include="Component\Controller\DTDEVICESController.cs" />
+    <Compile Include="Component\Controller\DTLOGEVENTController.cs" />
+    <Compile Include="Component\Controller\DTDEVICESPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTLOGEVENTPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTLOGLOGINController.cs" />
+    <Compile Include="Component\Controller\DTLOGLOGINPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTUSERController.cs" />
+    <Compile Include="Component\Controller\HTUSERPartialClasses.cs" />
     <Compile Include="Component\DataProvider\CommonDataProvider.cs" />
-    <Compile Include="Component\DataProvider\DataProviderForTMLOGEVENT.cs" />
-    <Compile Include="Component\DataProvider\DataProviderForTMLOGLOGIN.cs" />
-    <Compile Include="Component\DataProvider\DataProviderForTMUSERS.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTCONFIG.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTDEVICES.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTLOGEVENT.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTLOGLOGIN.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTUSER.cs" />
     <Compile Include="Component\DataProvider\SqlConnect.cs" />
-    <Compile Include="Component\Infos\TMLOGEVENTInfo.cs" />
-    <Compile Include="Component\Infos\TMLOGLOGINInfo.cs" />
-    <Compile Include="Component\Infos\TMUSERSInfo.cs" />
+    <Compile Include="Component\Infos\HTCONFIGInfo.cs" />
+    <Compile Include="Component\Infos\DTDEVICESInfo.cs" />
+    <Compile Include="Component\Infos\DTLOGEVENTInfo.cs" />
+    <Compile Include="Component\Infos\DTLOGLOGINInfo.cs" />
+    <Compile Include="Component\Infos\HTUSERnfo.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,12 +159,6 @@
     <Compile Include="UserControl\MarqueeLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserControl\MyPC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\MyPC.Designer.cs">
-      <DependentUpon>MyPC.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\MyTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -193,9 +195,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl\MyPC.resx">
-      <DependentUpon>MyPC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\OrientedTextLabel.resx">
       <DependentUpon>OrientedTextLabel.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +215,17 @@
   <ItemGroup>
     <Content Include="Images\Barcode.jpg" />
     <None Include="Resources\eAppLogo.ico" />
+    <None Include="Resources\e_provider_ng_32.ico" />
+    <None Include="Resources\e_provider_ok_32.ico" />
+    <None Include="Resources\e_provider_ng_16.ico" />
+    <None Include="Resources\e_provider_ok_16.ico" />
+    <None Include="Resources\e_close_32.png" />
+    <None Include="Resources\e_help_32.png" />
+    <None Include="Resources\e_maximized_32.png" />
+    <None Include="Resources\e_minimized_32.png" />
+    <None Include="Resources\e_msg_logo.png" />
+    <None Include="Resources\e_titlebar_back.png" />
+    <None Include="Resources\e_about.png" />
     <Content Include="Updater\DoUpdate.exe" />
   </ItemGroup>
   <ItemGroup>

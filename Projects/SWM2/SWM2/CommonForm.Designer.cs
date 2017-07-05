@@ -53,7 +53,7 @@
             // pn_TOP
             // 
             this.pn_TOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.pn_TOP.BackgroundImage = global::eSWS.Properties.Resources.e_titlebar_back;
+            this.pn_TOP.BackgroundImage = global::VKTIM.Properties.Resources.e_titlebar_back;
             this.pn_TOP.Controls.Add(this.btn_Maximized);
             this.pn_TOP.Controls.Add(this.btn_Minimized);
             this.pn_TOP.Controls.Add(this.btn_Help);
@@ -71,7 +71,7 @@
             // 
             this.btn_Maximized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Maximized.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Maximized.BackgroundImage = global::eSWS.Properties.Resources.e_maximized_32;
+            this.btn_Maximized.BackgroundImage = global::VKTIM.Properties.Resources.e_maximized_32;
             this.btn_Maximized.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Maximized.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_Maximized.FlatAppearance.BorderSize = 0;
@@ -92,7 +92,7 @@
             // 
             this.btn_Minimized.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Minimized.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Minimized.BackgroundImage = global::eSWS.Properties.Resources.e_minimized_32;
+            this.btn_Minimized.BackgroundImage = global::VKTIM.Properties.Resources.e_minimized_32;
             this.btn_Minimized.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Minimized.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_Minimized.FlatAppearance.BorderSize = 0;
@@ -113,7 +113,7 @@
             // 
             this.btn_Help.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Help.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Help.BackgroundImage = global::eSWS.Properties.Resources.e_help_32;
+            this.btn_Help.BackgroundImage = global::VKTIM.Properties.Resources.e_help_32;
             this.btn_Help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Help.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_Help.FlatAppearance.BorderSize = 0;
@@ -134,7 +134,7 @@
             // 
             this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Close.BackgroundImage = global::eSWS.Properties.Resources.e_close_32;
+            this.btn_Close.BackgroundImage = global::VKTIM.Properties.Resources.e_close_32;
             this.btn_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Close.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_Close.FlatAppearance.BorderSize = 0;
@@ -154,7 +154,7 @@
             // pic_Header
             // 
             this.pic_Header.BackColor = System.Drawing.Color.Transparent;
-            this.pic_Header.Image = global::eSWS.Properties.Resources.e_about;
+            this.pic_Header.Image = global::VKTIM.Properties.Resources.e_about;
             this.pic_Header.Location = new System.Drawing.Point(3, 7);
             this.pic_Header.Name = "pic_Header";
             this.pic_Header.Size = new System.Drawing.Size(32, 32);

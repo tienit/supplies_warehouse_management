@@ -14,13 +14,13 @@ using System.Collections.Generic;
 namespace VKTIM.Component
 {
 
-public partial class TMUSERSController
-{
+public partial class HTUSERController
+    {
 
 #region "Instances"
-private static TMUSERSController _instance;
+private static HTUSERController _instance;
 
-protected TMUSERSController()
+protected HTUSERController()
 {
 }
 
@@ -31,12 +31,12 @@ protected void Dispose()
 
 private static object _syncLock = new object();
 
-public static TMUSERSController Instance()
+public static HTUSERController Instance()
 {
 	if (_instance == null) {
 		lock (_syncLock) {
 			if (_instance == null) {
-				_instance = new TMUSERSController();
+				_instance = new HTUSERController();
 			}
 		}
 	}
@@ -47,13 +47,13 @@ public static TMUSERSController Instance()
 
 #region "Public Methods"
 
-public TMUSERSInfo Insert(TMUSERSInfo objInfo)
+public HTUSERnfo Insert(HTUSERnfo objInfo)
 {
 	objInfo.ID = Convert.ToInt32(DataProvider.Instance().TM_USERS_Insert(objInfo));
 	return objInfo;
 }
 
-public int Update(TMUSERSInfo objInfo)
+public int Update(HTUSERnfo objInfo)
 {
 	return DataProvider.Instance().TM_USERS_Update(objInfo);
 }
@@ -63,18 +63,18 @@ public int Delete(int ID)
 	return DataProvider.Instance().TM_USERS_Delete(ID);
 }
 
-public TMUSERSInfo GetById(int ID)
+public HTUSERnfo GetById(int ID)
 {
-	return (TMUSERSInfo)CBO.FillObject(DataProvider.Instance().TM_USERS_GetById(ID), typeof(TMUSERSInfo));
+	return (HTUSERnfo)CBO.FillObject(DataProvider.Instance().TM_USERS_GetById(ID), typeof(HTUSERnfo));
 }
 
-public List<TMUSERSInfo> GetAll()
+public List<HTUSERnfo> GetAll()
 {
-	List<TMUSERSInfo> list = new List<TMUSERSInfo>();
-	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_USERS_GetAll(), typeof(TMUSERSInfo));
+	List<HTUSERnfo> list = new List<HTUSERnfo>();
+	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_USERS_GetAll(), typeof(HTUSERnfo));
 	foreach (object objItem in arr)
 	{
-		list.Add((TMUSERSInfo)objItem);
+		list.Add((HTUSERnfo)objItem);
 	}
 	return list;
 }

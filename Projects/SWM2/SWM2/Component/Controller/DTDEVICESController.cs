@@ -14,13 +14,13 @@ using System.Collections.Generic;
 namespace VKTIM.Component
 {
 
-public partial class TMLOGEVENTController
-{
+public partial class DTDEVICESController
+    {
 
 #region "Instances"
-private static TMLOGEVENTController _instance;
+private static DTDEVICESController _instance;
 
-protected TMLOGEVENTController()
+protected DTDEVICESController()
 {
 }
 
@@ -31,12 +31,12 @@ protected void Dispose()
 
 private static object _syncLock = new object();
 
-public static TMLOGEVENTController Instance()
+public static DTDEVICESController Instance()
 {
 	if (_instance == null) {
 		lock (_syncLock) {
 			if (_instance == null) {
-				_instance = new TMLOGEVENTController();
+				_instance = new DTDEVICESController();
 			}
 		}
 	}
@@ -47,15 +47,15 @@ public static TMLOGEVENTController Instance()
 
 #region "Public Methods"
 
-public TMLOGEVENTInfo Insert(TMLOGEVENTInfo objInfo)
+public DTDEVICESInfo Insert(DTDEVICESInfo objInfo)
 {
-	objInfo.ID = Convert.ToInt32(DataProvider.Instance().TM_LOG_EVENT_Insert(objInfo));
+	objInfo.ID = Convert.ToInt32(DataProvider.Instance().DT_DEVICES_Insert(objInfo));
 	return objInfo;
 }
 
-public void Update(TMLOGEVENTInfo objInfo)
+public void Update(DTDEVICESInfo objInfo)
 {
-	DataProvider.Instance().TM_LOG_EVENT_Update(objInfo);
+	DataProvider.Instance().DT_DEVICES_Update(objInfo);
 }
 
 public void Delete(int ID)
@@ -63,18 +63,18 @@ public void Delete(int ID)
 	DataProvider.Instance().TM_LOG_EVENT_Delete(ID);
 }
 
-public TMLOGEVENTInfo GetById(int ID)
+public DTDEVICESInfo GetById(int ID)
 {
-	return (TMLOGEVENTInfo)CBO.FillObject(DataProvider.Instance().TM_LOG_EVENT_GetById(ID), typeof(TMLOGEVENTInfo));
+	return (DTDEVICESInfo)CBO.FillObject(DataProvider.Instance().DT_DEVICES_GetById(ID), typeof(DTDEVICESInfo));
 }
 
-public List<TMLOGEVENTInfo> GetAll()
+public List<DTDEVICESInfo> GetAll()
 {
-	List<TMLOGEVENTInfo> list = new List<TMLOGEVENTInfo>();
-	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_LOG_EVENT_GetAll(), typeof(TMLOGEVENTInfo));
+	List<DTDEVICESInfo> list = new List<DTDEVICESInfo>();
+	ArrayList arr = CBO.FillCollection(DataProvider.Instance().DT_DEVICES_GetAll(), typeof(DTDEVICESInfo));
 foreach (object objItem in arr)
 {
-	list.Add((TMLOGEVENTInfo)objItem);
+	list.Add((DTDEVICESInfo)objItem);
 }	return list;
 }
 

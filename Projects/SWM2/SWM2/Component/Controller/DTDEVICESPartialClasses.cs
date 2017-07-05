@@ -14,21 +14,21 @@ using System.Collections.Generic;
 namespace VKTIM.Component
 {
 
-    public partial class TMLOGEVENTInfo
+    public partial class DTDEVICESInfo
     {
 	    // Add custom code here
     }
 
-    public partial class TMLOGEVENTController
+    public partial class DTDEVICESController
     {
         public object DB_GetNull(object Field)
         {
             return tienit.core.Null.GetNull(Field, DBNull.Value);
         }
 	    // Add custom code here
-        public DataSet Search_DS(int type, int facID, DateTime dtFrom, DateTime dtTo)
+        public DTDEVICESInfo GetByName(string name)
         {
-            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "TM_LOG_EVENT_Search", type, facID, DB_GetNull(dtFrom), DB_GetNull(dtTo));
+            return (DTDEVICESInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_LOG_EVENT_Search", name), typeof(DTDEVICESInfo));
         }
 
         public DataSet SearchAll_DS(int type, DateTime dtFrom, DateTime dtTo)
