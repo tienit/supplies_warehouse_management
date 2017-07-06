@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 3/7/2014
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -23,22 +23,12 @@ namespace VKTIM.Component
     {
         public object DB_GetNull(object Field)
         {
-            return tienit.core.Null.GetNull(Field, DBNull.Value);
+        return tienit.core.Null.GetNull(Field, DBNull.Value);
         }
-	    // Add custom code here
+        // Add custom code here
         public HTCONFIGInfo GetByCode(string code)
         {
-            return (HTCONFIGInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_LOG_EVENT_Search", code), typeof(HTCONFIGInfo));
-        }
-
-        public DataSet SearchAll_DS(int type, DateTime dtFrom, DateTime dtTo)
-        {
-            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "TM_LOG_EVENT_SearchAll", type, DB_GetNull(dtFrom), DB_GetNull(dtTo));
-        }
-
-        public DataTable SearchOption_DS(int type, int facID, string goodsCode, string goodsName, string lotNo, DateTime dtFrom, DateTime dtTo)
-        {
-            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "TM_LOG_VIEWER", type, DB_GetNull(facID), DB_GetNull(goodsCode), DB_GetNull(goodsName), DB_GetNull(lotNo), DB_GetNull(dtFrom), DB_GetNull(dtTo)).Tables[0];
+            return (HTCONFIGInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "HT_CONFIG_SelectByCode", code), typeof(HTCONFIGInfo));
         }
     }
 

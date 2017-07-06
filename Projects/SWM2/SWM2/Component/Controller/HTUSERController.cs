@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 9/10/2016
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -15,7 +15,7 @@ namespace VKTIM.Component
 {
 
 public partial class HTUSERController
-    {
+{
 
 #region "Instances"
 private static HTUSERController _instance;
@@ -47,41 +47,41 @@ public static HTUSERController Instance()
 
 #region "Public Methods"
 
-public HTUSERnfo Insert(HTUSERnfo objInfo)
+public HTUSERInfo Insert(HTUSERInfo objInfo)
 {
-	objInfo.ID = Convert.ToInt32(DataProvider.Instance().TM_USERS_Insert(objInfo));
+	objInfo.ID = Convert.ToInt32(DataProvider.Instance().HT_USER_Insert(objInfo));
 	return objInfo;
 }
 
-public int Update(HTUSERnfo objInfo)
+public int Update(HTUSERInfo objInfo)
 {
-	return DataProvider.Instance().TM_USERS_Update(objInfo);
+	return DataProvider.Instance().HT_USER_Update(objInfo);
 }
 
 public int Delete(int ID)
 {
-	return DataProvider.Instance().TM_USERS_Delete(ID);
+	return DataProvider.Instance().HT_USER_Delete(ID);
 }
 
-public HTUSERnfo GetById(int ID)
+public HTUSERInfo GetById(int ID)
 {
-	return (HTUSERnfo)CBO.FillObject(DataProvider.Instance().TM_USERS_GetById(ID), typeof(HTUSERnfo));
+	return (HTUSERInfo)CBO.FillObject(DataProvider.Instance().HT_USER_GetById(ID), typeof(HTUSERInfo));
 }
 
-public List<HTUSERnfo> GetAll()
+public List<HTUSERInfo> GetAll()
 {
-	List<HTUSERnfo> list = new List<HTUSERnfo>();
-	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_USERS_GetAll(), typeof(HTUSERnfo));
+	List<HTUSERInfo> list = new List<HTUSERInfo>();
+	ArrayList arr = CBO.FillCollection(DataProvider.Instance().HT_USER_GetAll(), typeof(HTUSERInfo));
 	foreach (object objItem in arr)
 	{
-		list.Add((HTUSERnfo)objItem);
+		list.Add((HTUSERInfo)objItem);
 	}
 	return list;
 }
 
 public DataSet GetAll_DS()
 {
-	return DataProvider.Instance().TM_USERS_GetAll_DS();
+	return DataProvider.Instance().HT_USER_GetAll_DS();
 }
 
 #endregion

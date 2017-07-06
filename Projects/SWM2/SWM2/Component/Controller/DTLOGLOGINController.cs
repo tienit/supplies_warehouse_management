@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 9/6/2016
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -15,7 +15,7 @@ namespace VKTIM.Component
 {
 
 public partial class DTLOGLOGINController
-    {
+{
 
 #region "Instances"
 private static DTLOGLOGINController _instance;
@@ -49,29 +49,29 @@ public static DTLOGLOGINController Instance()
 
 public DTLOGLOGINInfo Insert(DTLOGLOGINInfo objInfo)
 {
-	objInfo.ID = Convert.ToInt32(DataProvider.Instance().TM_LOG_LOGIN_Insert(objInfo));
+	objInfo.ID = Convert.ToInt32(DataProvider.Instance().DT_LOG_LOGIN_Insert(objInfo));
 	return objInfo;
 }
 
 public int Update(DTLOGLOGINInfo objInfo)
 {
-	return DataProvider.Instance().TM_LOG_LOGIN_Update(objInfo);
+	return DataProvider.Instance().DT_LOG_LOGIN_Update(objInfo);
 }
 
 public int Delete(int ID)
 {
-	return DataProvider.Instance().TM_LOG_LOGIN_Delete(ID);
+	return DataProvider.Instance().DT_LOG_LOGIN_Delete(ID);
 }
 
 public DTLOGLOGINInfo GetById(int ID)
 {
-	return (DTLOGLOGINInfo)CBO.FillObject(DataProvider.Instance().TM_LOG_LOGIN_GetById(ID), typeof(DTLOGLOGINInfo));
+	return (DTLOGLOGINInfo)CBO.FillObject(DataProvider.Instance().DT_LOG_LOGIN_GetById(ID), typeof(DTLOGLOGINInfo));
 }
 
 public List<DTLOGLOGINInfo> GetAll()
 {
 	List<DTLOGLOGINInfo> list = new List<DTLOGLOGINInfo>();
-	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_LOG_LOGIN_GetAll(), typeof(DTLOGLOGINInfo));
+	ArrayList arr = CBO.FillCollection(DataProvider.Instance().DT_LOG_LOGIN_GetAll(), typeof(DTLOGLOGINInfo));
 	foreach (object objItem in arr)
 	{
 		list.Add((DTLOGLOGINInfo)objItem);
@@ -81,7 +81,7 @@ public List<DTLOGLOGINInfo> GetAll()
 
 public DataSet GetAll_DS()
 {
-	return DataProvider.Instance().TM_LOG_LOGIN_GetAll_DS();
+	return DataProvider.Instance().DT_LOG_LOGIN_GetAll_DS();
 }
 
 #endregion

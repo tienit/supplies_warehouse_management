@@ -58,7 +58,7 @@ namespace VKTIM.Common
                 m_Frm.lblType.ForeColor = Color.Green;
                 if (GBTSCConstants.CURRENT_USER != null)
                 {
-                    DTLOGEVENTController.Instance().Insert(new DTLOGEVENTInfo(0, msgText, "COMMON_OK", GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.CHR_USERNAME, GBTSCConstants.CURRENT_USER.INT_USERGROUP, 0, "", ""));
+                    DTLOGEVENTController.Instance().Insert(new DTLOGEVENTInfo(0, "COMMON", "OK", msgText, GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.USER_NAME, Environment.UserName, Environment.MachineName, Environment.UserDomainName, Environment.CurrentDirectory, ""));
                 }
             }
             else if (msgType == MessageType.Message_NG)
@@ -74,7 +74,7 @@ namespace VKTIM.Common
                 m_Frm.lblType.ForeColor = Color.Red;
                 if (GBTSCConstants.CURRENT_USER != null)
                 {
-                    DTLOGEVENTController.Instance().Insert(new DTLOGEVENTInfo(0, msgText, "COMMON_NG", GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.CHR_USERNAME, GBTSCConstants.CURRENT_USER.INT_USERGROUP, 0, "", ""));
+                    DTLOGEVENTController.Instance().Insert(new DTLOGEVENTInfo(0, "COMMON", "NG", msgText, GBTSCCommon.SERVER_NOW(), GBTSCConstants.CURRENT_USER.ID, GBTSCConstants.CURRENT_USER.USER_NAME, Environment.UserName, Environment.MachineName, Environment.UserDomainName, Environment.CurrentDirectory, ""));
                 }
             }
             m_Frm.ShowDialog();
@@ -466,10 +466,10 @@ namespace VKTIM.Common
             }
 
             //Check User Locked
-            HTUSERnfo userInfo = HTUSERController.Instance().GetById(GBTSCConstants.CURRENT_USER.ID);
+            HTUSERInfo userInfo = HTUSERController.Instance().GetById(GBTSCConstants.CURRENT_USER.ID);
             if (userInfo != null)
             {
-                if (userInfo.BIT_LOCKED == true)
+                if (userInfo.IS_BLOCKED == true)
                 {
                     GBTSCCommon.Message_Info(GBTSCConstants.BUHINSOKO_MSG_LOGIN_ACCOUNT_LOCKED, "ACCOUNT LOCKED", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;

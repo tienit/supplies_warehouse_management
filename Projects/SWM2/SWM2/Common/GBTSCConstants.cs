@@ -21,7 +21,7 @@ namespace VKTIM.Common
 
 
         //Current User
-        public static HTUSERnfo CURRENT_USER;
+        public static HTUSERInfo CURRENT_USER;
         //public static TMFACTORYInfo CURRENT_FACTORY;
 
 

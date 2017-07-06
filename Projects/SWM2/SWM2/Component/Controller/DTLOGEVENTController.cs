@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 20/03/2014
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -15,7 +15,7 @@ namespace VKTIM.Component
 {
 
 public partial class DTLOGEVENTController
-    {
+{
 
 #region "Instances"
 private static DTLOGEVENTController _instance;
@@ -49,38 +49,39 @@ public static DTLOGEVENTController Instance()
 
 public DTLOGEVENTInfo Insert(DTLOGEVENTInfo objInfo)
 {
-	objInfo.ID = Convert.ToInt32(DataProvider.Instance().TM_LOG_EVENT_Insert(objInfo));
+	objInfo.ID = Convert.ToInt32(DataProvider.Instance().DT_LOG_EVENT_Insert(objInfo));
 	return objInfo;
 }
 
-public void Update(DTLOGEVENTInfo objInfo)
+public int Update(DTLOGEVENTInfo objInfo)
 {
-	DataProvider.Instance().TM_LOG_EVENT_Update(objInfo);
+	return DataProvider.Instance().DT_LOG_EVENT_Update(objInfo);
 }
 
-public void Delete(int ID)
+public int Delete(int ID)
 {
-	DataProvider.Instance().TM_LOG_EVENT_Delete(ID);
+	return DataProvider.Instance().DT_LOG_EVENT_Delete(ID);
 }
 
 public DTLOGEVENTInfo GetById(int ID)
 {
-	return (DTLOGEVENTInfo)CBO.FillObject(DataProvider.Instance().TM_LOG_EVENT_GetById(ID), typeof(DTLOGEVENTInfo));
+	return (DTLOGEVENTInfo)CBO.FillObject(DataProvider.Instance().DT_LOG_EVENT_GetById(ID), typeof(DTLOGEVENTInfo));
 }
 
 public List<DTLOGEVENTInfo> GetAll()
 {
 	List<DTLOGEVENTInfo> list = new List<DTLOGEVENTInfo>();
-	ArrayList arr = CBO.FillCollection(DataProvider.Instance().TM_LOG_EVENT_GetAll(), typeof(DTLOGEVENTInfo));
-foreach (object objItem in arr)
-{
-	list.Add((DTLOGEVENTInfo)objItem);
-}	return list;
+	ArrayList arr = CBO.FillCollection(DataProvider.Instance().DT_LOG_EVENT_GetAll(), typeof(DTLOGEVENTInfo));
+	foreach (object objItem in arr)
+	{
+		list.Add((DTLOGEVENTInfo)objItem);
+	}
+	return list;
 }
 
 public DataSet GetAll_DS()
 {
-	return DataProvider.Instance().TM_LOG_EVENT_GetAll_DS();
+	return DataProvider.Instance().DT_LOG_EVENT_GetAll_DS();
 }
 
 #endregion

@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 9/10/2016
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -16,42 +16,42 @@ public partial class DataProvider : CommonDataProvider
 {
 
 #region "Stored Procedure Name"
-private string ESWS_COMPONENT_TM_USERS_GETALL = "TM_USERS_SelectAll";
-private string ESWS_COMPONENT_TM_USERS_GETBYID = "TM_USERS_SelectById";
-private string ESWS_COMPONENT_TM_USERS_INSERT = "TM_USERS_Insert";
-private string ESWS_COMPONENT_TM_USERS_UPDATE = "TM_USERS_Update";
-private string ESWS_COMPONENT_TM_USERS_DELETE = "TM_USERS_Delete";
+private string VKTIM_COMPONENT_HT_USER_GETALL = "HT_USER_SelectAll";
+private string VKTIM_COMPONENT_HT_USER_GETBYID = "HT_USER_SelectById";
+private string VKTIM_COMPONENT_HT_USER_INSERT = "HT_USER_Insert";
+private string VKTIM_COMPONENT_HT_USER_UPDATE = "HT_USER_Update";
+private string VKTIM_COMPONENT_HT_USER_DELETE = "HT_USER_Delete";
 #endregion
 
 #region "Public Methods"
-public virtual IDataReader TM_USERS_GetById(int ID)
+public virtual IDataReader HT_USER_GetById(int ID)
 {
-	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_USERS_GETBYID, ID);
+	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_GETBYID, ID);
 }
 
-public virtual IDataReader TM_USERS_GetAll()
+public virtual IDataReader HT_USER_GetAll()
 {
-	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_USERS_GETALL);
+	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_GETALL);
 }
 
-public virtual DataSet TM_USERS_GetAll_DS()
+public virtual DataSet HT_USER_GetAll_DS()
 {
-	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_USERS_GETALL);
+	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_GETALL);
 }
 
-public virtual object TM_USERS_Insert(HTUSERnfo objInfo)
+public virtual object HT_USER_Insert(HTUSERInfo objInfo)
 {
-	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_USERS_INSERT, DB_GetNull(objInfo.CHR_USERNAME), DB_GetNull(objInfo.CHR_PASSWORD), DB_GetNull(objInfo.INT_USERGROUP), DB_GetNull(objInfo.INT_FACTORY_ID), objInfo.BIT_LOCKED, DB_GetNull(objInfo.CHR_OPERATOR_CODE), DB_GetNull(objInfo.CHR_POSITION), DB_GetNull(objInfo.DAT_DOB), DB_GetNull(objInfo.CHR_ADDRESS), DB_GetNull(objInfo.CHR_MOBILE), DB_GetNull(objInfo.CHR_EMAIL), DB_GetNull(objInfo.CHR_REMARK));
+	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_INSERT, DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.PASSWORD), DB_GetNull(objInfo.LAST_LOGIN), DB_GetNull(objInfo.IP_LOGIN), DB_GetNull(objInfo.NUMBER_LOGIN), DB_GetNull(objInfo.IS_BLOCKED), DB_GetNull(objInfo.ROLE_USER_ID), DB_GetNull(objInfo.REMARKS));
 }
 
-public virtual int TM_USERS_Update(HTUSERnfo objInfo)
+public virtual int HT_USER_Update(HTUSERInfo objInfo)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_USERS_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CHR_USERNAME), DB_GetNull(objInfo.CHR_PASSWORD), DB_GetNull(objInfo.INT_USERGROUP), DB_GetNull(objInfo.INT_FACTORY_ID), objInfo.BIT_LOCKED, DB_GetNull(objInfo.CHR_OPERATOR_CODE), DB_GetNull(objInfo.CHR_POSITION), DB_GetNull(objInfo.DAT_DOB), DB_GetNull(objInfo.CHR_ADDRESS), DB_GetNull(objInfo.CHR_MOBILE), DB_GetNull(objInfo.CHR_EMAIL), DB_GetNull(objInfo.CHR_REMARK));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.PASSWORD), DB_GetNull(objInfo.LAST_LOGIN), DB_GetNull(objInfo.IP_LOGIN), DB_GetNull(objInfo.NUMBER_LOGIN), DB_GetNull(objInfo.IS_BLOCKED), DB_GetNull(objInfo.ROLE_USER_ID), DB_GetNull(objInfo.REMARKS));
 }
 
-public virtual int TM_USERS_Delete(int ID)
+public virtual int HT_USER_Delete(int ID)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_USERS_DELETE, ID);
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_DELETE, ID);
 }
 #endregion
 

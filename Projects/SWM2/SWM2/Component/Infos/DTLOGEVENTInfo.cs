@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 20/03/2014
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -12,19 +12,21 @@ namespace VKTIM.Component
 {
 
 public partial class DTLOGEVENTInfo
-    {
+{
 
 #region "Private Members"
 private int _ID;
-private string _CHR_CONTENT;
-private string _CHR_TYPE;
-private DateTime _DAT_CREATED;
-private int _INT_USER_ID;
-private string _CHR_USERNAME;
-private int _INT_USERGROUP_ID;
-private int _INT_FACTORY_ID;
-private string _CHR_FACTORY_NAME;
-private string _CHR_REMARK;
+private string _EVENT_CODE;
+private string _TYPE;
+private string _EVENT_CONTENT;
+private DateTime _CREATED_DATE;
+private int _USER_ID;
+private string _USER_NAME;
+private string _COM_USER;
+private string _COM_MACHINE;
+private string _COM_DOMAIN;
+private string _COM_DIR;
+private string _REMARK;
 #endregion
 
 #region "Public Properties"
@@ -33,49 +35,59 @@ private string _CHR_REMARK;
 			set { _ID = value; }
 		}
 
-		public string CHR_CONTENT {
-			get { return _CHR_CONTENT; }
-			set { _CHR_CONTENT = value; }
+		public string EVENT_CODE {
+			get { return _EVENT_CODE; }
+			set { _EVENT_CODE = value; }
 		}
 
-		public string CHR_TYPE {
-			get { return _CHR_TYPE; }
-			set { _CHR_TYPE = value; }
+		public string TYPE {
+			get { return _TYPE; }
+			set { _TYPE = value; }
 		}
 
-		public DateTime DAT_CREATED {
-			get { return _DAT_CREATED; }
-			set { _DAT_CREATED = value; }
+		public string EVENT_CONTENT {
+			get { return _EVENT_CONTENT; }
+			set { _EVENT_CONTENT = value; }
 		}
 
-		public int INT_USER_ID {
-			get { return _INT_USER_ID; }
-			set { _INT_USER_ID = value; }
+		public DateTime CREATED_DATE {
+			get { return _CREATED_DATE; }
+			set { _CREATED_DATE = value; }
 		}
 
-		public string CHR_USERNAME {
-			get { return _CHR_USERNAME; }
-			set { _CHR_USERNAME = value; }
+		public int USER_ID {
+			get { return _USER_ID; }
+			set { _USER_ID = value; }
 		}
 
-		public int INT_USERGROUP_ID {
-			get { return _INT_USERGROUP_ID; }
-			set { _INT_USERGROUP_ID = value; }
+		public string USER_NAME {
+			get { return _USER_NAME; }
+			set { _USER_NAME = value; }
 		}
 
-		public int INT_FACTORY_ID {
-			get { return _INT_FACTORY_ID; }
-			set { _INT_FACTORY_ID = value; }
+		public string COM_USER {
+			get { return _COM_USER; }
+			set { _COM_USER = value; }
 		}
 
-		public string CHR_FACTORY_NAME {
-			get { return _CHR_FACTORY_NAME; }
-			set { _CHR_FACTORY_NAME = value; }
+		public string COM_MACHINE {
+			get { return _COM_MACHINE; }
+			set { _COM_MACHINE = value; }
 		}
 
-		public string CHR_REMARK {
-			get { return _CHR_REMARK; }
-			set { _CHR_REMARK = value; }
+		public string COM_DOMAIN {
+			get { return _COM_DOMAIN; }
+			set { _COM_DOMAIN = value; }
+		}
+
+		public string COM_DIR {
+			get { return _COM_DIR; }
+			set { _COM_DIR = value; }
+		}
+
+		public string REMARK {
+			get { return _REMARK; }
+			set { _REMARK = value; }
 		}
 #endregion
 
@@ -84,18 +96,20 @@ public DTLOGEVENTInfo()
 {
 }
 
-public DTLOGEVENTInfo(int ID, string CHR_CONTENT, string CHR_TYPE, DateTime DAT_CREATED, int INT_USER_ID, string CHR_USERNAME, int INT_USERGROUP_ID, int INT_FACTORY_ID, string CHR_FACTORY_NAME, string CHR_REMARK)
+public DTLOGEVENTInfo(int ID, string EVENT_CODE, string TYPE, string EVENT_CONTENT, DateTime CREATED_DATE, int USER_ID, string USER_NAME, string COM_USER, string COM_MACHINE, string COM_DOMAIN, string COM_DIR, string REMARK)
 {
 	this.ID = ID;
-	this.CHR_CONTENT = CHR_CONTENT;
-	this.CHR_TYPE = CHR_TYPE;
-	this.DAT_CREATED = DAT_CREATED;
-	this.INT_USER_ID = INT_USER_ID;
-	this.CHR_USERNAME = CHR_USERNAME;
-	this.INT_USERGROUP_ID = INT_USERGROUP_ID;
-	this.INT_FACTORY_ID = INT_FACTORY_ID;
-	this.CHR_FACTORY_NAME = CHR_FACTORY_NAME;
-	this.CHR_REMARK = CHR_REMARK;
+	this.EVENT_CODE = EVENT_CODE;
+	this.TYPE = TYPE;
+	this.EVENT_CONTENT = EVENT_CONTENT;
+	this.CREATED_DATE = CREATED_DATE;
+	this.USER_ID = USER_ID;
+	this.USER_NAME = USER_NAME;
+	this.COM_USER = COM_USER;
+	this.COM_MACHINE = COM_MACHINE;
+	this.COM_DOMAIN = COM_DOMAIN;
+	this.COM_DIR = COM_DIR;
+	this.REMARK = REMARK;
 }
 #endregion
 

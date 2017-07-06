@@ -31,40 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Images.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v16.2.Extensions, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v16.2.Wizard, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGauges.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGauges.v16.2.Win, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraReports.v16.2.Extensions, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -97,6 +63,52 @@
     <Compile Include="Common\GBTSCCommon.cs" />
     <Compile Include="Common\GBTSCConstants.cs" />
     <Compile Include="Common\Util.cs" />
+    <Compile Include="Component\Controller\DMEMPLOYERController.cs" />
+    <Compile Include="Component\Controller\DMEMPLOYERPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMLOCATIONController.cs" />
+    <Compile Include="Component\Controller\DMLOCATIONPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMORGANIZATIONController.cs" />
+    <Compile Include="Component\Controller\DMORGANIZATIONPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMORIGINController.cs" />
+    <Compile Include="Component\Controller\DMORIGINPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMOUTPUTTYPEController.cs" />
+    <Compile Include="Component\Controller\DMOUTPUTTYPEPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMPARAMETERController.cs" />
+    <Compile Include="Component\Controller\DMPARAMETERPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMPRICEController.cs" />
+    <Compile Include="Component\Controller\DMPRICEPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMPRODUCTCATEGORYController.cs" />
+    <Compile Include="Component\Controller\DMPRODUCTCATEGORYPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMPRODUCTSController.cs" />
+    <Compile Include="Component\Controller\DMPRODUCTSPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMRANKController.cs" />
+    <Compile Include="Component\Controller\DMRANKPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMSPECIALController.cs" />
+    <Compile Include="Component\Controller\DMSPECIALPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMSUPPLIERController.cs" />
+    <Compile Include="Component\Controller\DMSUPPLIERPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMTITLEController.cs" />
+    <Compile Include="Component\Controller\DMTITLEPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMUNITController.cs" />
+    <Compile Include="Component\Controller\DMUNITPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMWAREHOUSEController.cs" />
+    <Compile Include="Component\Controller\DMWAREHOUSEPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTFUNDSController.cs" />
+    <Compile Include="Component\Controller\DTFUNDSPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTINPUTController.cs" />
+    <Compile Include="Component\Controller\DTINPUTDETAILController.cs" />
+    <Compile Include="Component\Controller\DTINPUTDETAILPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTINPUTPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTOUTPUTController.cs" />
+    <Compile Include="Component\Controller\DTOUTPUTDETAILController.cs" />
+    <Compile Include="Component\Controller\DTOUTPUTDETAILPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTOUTPUTPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTPRICEHISTORYController.cs" />
+    <Compile Include="Component\Controller\DTPRICEHISTORYPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTPRODUCTPARAMETERController.cs" />
+    <Compile Include="Component\Controller\DTPRODUCTPARAMETERPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTUSERCONFIGController.cs" />
+    <Compile Include="Component\Controller\DTUSERCONFIGPartialClasses.cs" />
     <Compile Include="Component\Controller\HTCONFIGPartialClasses.cs" />
     <Compile Include="Component\Controller\HTCONFIGController.cs" />
     <Compile Include="Component\Controller\DTDEVICESController.cs" />
@@ -105,20 +117,98 @@
     <Compile Include="Component\Controller\DTLOGEVENTPartialClasses.cs" />
     <Compile Include="Component\Controller\DTLOGLOGINController.cs" />
     <Compile Include="Component\Controller\DTLOGLOGINPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTFORMController.cs" />
+    <Compile Include="Component\Controller\HTFORMPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTMASTERORGANIZATIONController.cs" />
+    <Compile Include="Component\Controller\HTMASTERORGANIZATIONPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTROLEController.cs" />
+    <Compile Include="Component\Controller\HTROLEFORMController.cs" />
+    <Compile Include="Component\Controller\HTROLEFORMPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTROLEPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTROLEUSERController.cs" />
+    <Compile Include="Component\Controller\HTROLEUSERPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTSYSTEMLOGController.cs" />
+    <Compile Include="Component\Controller\HTSYSTEMLOGPartialClasses.cs" />
+    <Compile Include="Component\Controller\HTTITLEEMPLOYERController.cs" />
+    <Compile Include="Component\Controller\HTTITLEEMPLOYERPartialClasses.cs" />
     <Compile Include="Component\Controller\HTUSERController.cs" />
+    <Compile Include="Component\Controller\HTUSEREMPLOYERController.cs" />
+    <Compile Include="Component\Controller\HTUSEREMPLOYERPartialClasses.cs" />
     <Compile Include="Component\Controller\HTUSERPartialClasses.cs" />
     <Compile Include="Component\DataProvider\CommonDataProvider.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMEMPLOYER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMLOCATION.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMORGANIZATION.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMORIGIN.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMOUTPUTTYPE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMPARAMETER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMPRICE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMPRODUCTCATEGORY.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMPRODUCTS.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMRANK.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMSPECIAL.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMSUPPLIER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMTITLE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMUNIT.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMWAREHOUSE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTFUNDS.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTINPUT.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTINPUTDETAIL.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTOUTPUT.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTOUTPUTDETAIL.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTPRICEHISTORY.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTPRODUCTPARAMETER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTUSERCONFIG.cs" />
     <Compile Include="Component\DataProvider\DataProviderForHTCONFIG.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTDEVICES.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTLOGEVENT.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTLOGLOGIN.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTFORM.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTMASTERORGANIZATION.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTROLE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTROLEFORM.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTROLEUSER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTSYSTEMLOG.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTTITLEEMPLOYER.cs" />
     <Compile Include="Component\DataProvider\DataProviderForHTUSER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForHTUSEREMPLOYER.cs" />
     <Compile Include="Component\DataProvider\SqlConnect.cs" />
+    <Compile Include="Component\Infos\DMEMPLOYERInfo.cs" />
+    <Compile Include="Component\Infos\DMLOCATIONInfo.cs" />
+    <Compile Include="Component\Infos\DMORGANIZATIONInfo.cs" />
+    <Compile Include="Component\Infos\DMORIGINInfo.cs" />
+    <Compile Include="Component\Infos\DMOUTPUTTYPEInfo.cs" />
+    <Compile Include="Component\Infos\DMPARAMETERInfo.cs" />
+    <Compile Include="Component\Infos\DMPRICEInfo.cs" />
+    <Compile Include="Component\Infos\DMPRODUCTCATEGORYInfo.cs" />
+    <Compile Include="Component\Infos\DMPRODUCTSInfo.cs" />
+    <Compile Include="Component\Infos\DMRANKInfo.cs" />
+    <Compile Include="Component\Infos\DMSPECIALInfo.cs" />
+    <Compile Include="Component\Infos\DMSUPPLIERInfo.cs" />
+    <Compile Include="Component\Infos\DMTITLEInfo.cs" />
+    <Compile Include="Component\Infos\DMUNITInfo.cs" />
+    <Compile Include="Component\Infos\DMWAREHOUSEInfo.cs" />
+    <Compile Include="Component\Infos\DTFUNDSInfo.cs" />
+    <Compile Include="Component\Infos\DTINPUTDETAILInfo.cs" />
+    <Compile Include="Component\Infos\DTINPUTInfo.cs" />
+    <Compile Include="Component\Infos\DTOUTPUTDETAILInfo.cs" />
+    <Compile Include="Component\Infos\DTOUTPUTInfo.cs" />
+    <Compile Include="Component\Infos\DTPRICEHISTORYInfo.cs" />
+    <Compile Include="Component\Infos\DTPRODUCTPARAMETERInfo.cs" />
+    <Compile Include="Component\Infos\DTUSERCONFIGInfo.cs" />
     <Compile Include="Component\Infos\HTCONFIGInfo.cs" />
     <Compile Include="Component\Infos\DTDEVICESInfo.cs" />
     <Compile Include="Component\Infos\DTLOGEVENTInfo.cs" />
     <Compile Include="Component\Infos\DTLOGLOGINInfo.cs" />
-    <Compile Include="Component\Infos\HTUSERnfo.cs" />
+    <Compile Include="Component\Infos\HTFORMInfo.cs" />
+    <Compile Include="Component\Infos\HTMASTERORGANIZATIONInfo.cs" />
+    <Compile Include="Component\Infos\HTROLEFORMInfo.cs" />
+    <Compile Include="Component\Infos\HTROLEInfo.cs" />
+    <Compile Include="Component\Infos\HTROLEUSERInfo.cs" />
+    <Compile Include="Component\Infos\HTSYSTEMLOGInfo.cs" />
+    <Compile Include="Component\Infos\HTTITLEEMPLOYERInfo.cs" />
+    <Compile Include="Component\Infos\HTUSEREMPLOYERInfo.cs" />
+    <Compile Include="Component\Infos\HTUSERInfo.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,12 +224,6 @@
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MasterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterForm.Designer.cs">
-      <DependentUpon>MasterForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\ColorSelector.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -181,9 +265,6 @@
     <EmbeddedResource Include="Lang\MyResources.ja.resx" />
     <EmbeddedResource Include="Lang\MyResources.resx" />
     <EmbeddedResource Include="Lang\MyResources.vi.resx" />
-    <EmbeddedResource Include="MasterForm.resx">
-      <DependentUpon>MasterForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

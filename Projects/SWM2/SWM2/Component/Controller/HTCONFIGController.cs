@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 20/03/2014
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -15,7 +15,7 @@ namespace VKTIM.Component
 {
 
 public partial class HTCONFIGController
-    {
+{
 
 #region "Instances"
 private static HTCONFIGController _instance;
@@ -53,14 +53,14 @@ public HTCONFIGInfo Insert(HTCONFIGInfo objInfo)
 	return objInfo;
 }
 
-public void Update(HTCONFIGInfo objInfo)
+public int Update(HTCONFIGInfo objInfo)
 {
-	DataProvider.Instance().HT_CONFIG_Update(objInfo);
+	return DataProvider.Instance().HT_CONFIG_Update(objInfo);
 }
 
-public void Delete(int ID)
+public int Delete(int ID)
 {
-	DataProvider.Instance().HT_CONFIG_Delete(ID);
+	return DataProvider.Instance().HT_CONFIG_Delete(ID);
 }
 
 public HTCONFIGInfo GetById(int ID)
@@ -72,10 +72,11 @@ public List<HTCONFIGInfo> GetAll()
 {
 	List<HTCONFIGInfo> list = new List<HTCONFIGInfo>();
 	ArrayList arr = CBO.FillCollection(DataProvider.Instance().HT_CONFIG_GetAll(), typeof(HTCONFIGInfo));
-foreach (object objItem in arr)
-{
-	list.Add((HTCONFIGInfo)objItem);
-}	return list;
+	foreach (object objItem in arr)
+	{
+		list.Add((HTCONFIGInfo)objItem);
+	}
+	return list;
 }
 
 public DataSet GetAll_DS()

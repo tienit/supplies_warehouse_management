@@ -1,64 +1,35 @@
 //*************************************************************
-//Author           : Tien, Nguyen Quyet
-//Created Date     : 2/6/2014
+//Author           : Tien NQ
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
 
 using tienit.core;
-using System.Collections.Generic;
-using System.Collections;
-using System.Data;
 using System;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace VKTIM.Component
 {
 
-    public partial class HTUSERnfo
+    public partial class HTUSERInfo
     {
 	    // Add custom code here
     }
 
     public partial class HTUSERController
     {
-        public object DB_GetNull(object val)
+    public object DB_GetNull(object Field)
         {
-            return tienit.core.Null.GetNull(val, DBNull.Value);
+            return tienit.core.Null.GetNull(Field, DBNull.Value);
         }
-	    // Add custom code here
-        public DataTable GetByGroup(int groupID)
-        {
-            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "TM_USERS_SelectByGroup", groupID).Tables[0];
-        }
-
-        public HTUSERnfo GetByUserPass(string userName, string passWord)
-        {
-            return (HTUSERnfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_USERS_SelectByUsernamePass", userName, passWord), typeof(HTUSERnfo));
-        }
-
-        public HTUSERnfo GetByOption(string userName, string passWord, int factoryID)
-        {
-            return (HTUSERnfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TM_USERS_SelectByOption", userName, passWord, factoryID), typeof(HTUSERnfo));
-        }
-
-        public void LockUser(int userID, bool bLocked)
-        {
-            SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, "TM_USERS_Lock", userID, bLocked);
-        }
-
-        public void ChangePassword(string userName, string passWord)
-        {
-            SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, "TM_USERS_ChangePassword", userName, passWord);
-        }
-
-        public void ChangePass(int userID, string passWord)
-        {
-            SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, "TM_USERS_ChangePassByUserID", userID, passWord);
-        }
+        // Add custom code here
 
         public DateTime SERVER_NOW()
         {
-            return (DateTime)SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, "SERVER_NOW");
+            return Convert.ToDateTime(SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, "SERVER_NOW"));
         }
     }
 

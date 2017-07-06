@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace VKTIM
 {
-    public partial class frmMain : Form
+    public partial class frmMain : CommonForm
     {
         public frmMain()
         {

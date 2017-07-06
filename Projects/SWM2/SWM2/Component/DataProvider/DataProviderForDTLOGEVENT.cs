@@ -1,11 +1,12 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 20/03/2014
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
 
 using tienit.core;
+using System;
 using System.Data;
 
 namespace VKTIM.Component
@@ -15,42 +16,42 @@ public partial class DataProvider : CommonDataProvider
 {
 
 #region "Stored Procedure Name"
-private string BUHINSOKO_COMPONENT_TM_LOG_EVENT_GETALL = "TM_LOG_EVENT_SelectAll";
-private string BUHINSOKO_COMPONENT_TM_LOG_EVENT_GETBYID = "TM_LOG_EVENT_SelectById";
-private string BUHINSOKO_COMPONENT_TM_LOG_EVENT_INSERT = "TM_LOG_EVENT_Insert";
-private string BUHINSOKO_COMPONENT_TM_LOG_EVENT_UPDATE = "TM_LOG_EVENT_Update";
-private string BUHINSOKO_COMPONENT_TM_LOG_EVENT_DELETE = "TM_LOG_EVENT_Delete";
+private string VKTIM_COMPONENT_DT_LOG_EVENT_GETALL = "DT_LOG_EVENT_SelectAll";
+private string VKTIM_COMPONENT_DT_LOG_EVENT_GETBYID = "DT_LOG_EVENT_SelectById";
+private string VKTIM_COMPONENT_DT_LOG_EVENT_INSERT = "DT_LOG_EVENT_Insert";
+private string VKTIM_COMPONENT_DT_LOG_EVENT_UPDATE = "DT_LOG_EVENT_Update";
+private string VKTIM_COMPONENT_DT_LOG_EVENT_DELETE = "DT_LOG_EVENT_Delete";
 #endregion
 
 #region "Public Methods"
-public virtual IDataReader TM_LOG_EVENT_GetById(int ID)
+public virtual IDataReader DT_LOG_EVENT_GetById(int ID)
 {
-	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, BUHINSOKO_COMPONENT_TM_LOG_EVENT_GETBYID, ID);
+	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_EVENT_GETBYID, ID);
 }
 
-public virtual IDataReader TM_LOG_EVENT_GetAll()
+public virtual IDataReader DT_LOG_EVENT_GetAll()
 {
-	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, BUHINSOKO_COMPONENT_TM_LOG_EVENT_GETALL);
+	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_EVENT_GETALL);
 }
 
-public virtual DataSet TM_LOG_EVENT_GetAll_DS()
+public virtual DataSet DT_LOG_EVENT_GetAll_DS()
 {
-	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, BUHINSOKO_COMPONENT_TM_LOG_EVENT_GETALL);
+	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_EVENT_GETALL);
 }
 
-public virtual object TM_LOG_EVENT_Insert(DTLOGEVENTInfo objInfo)
+public virtual object DT_LOG_EVENT_Insert(DTLOGEVENTInfo objInfo)
 {
-	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, BUHINSOKO_COMPONENT_TM_LOG_EVENT_INSERT, DB_GetNull(objInfo.CHR_CONTENT), DB_GetNull(objInfo.CHR_TYPE), DB_GetNull(objInfo.DAT_CREATED), DB_GetNull(objInfo.INT_USER_ID), DB_GetNull(objInfo.CHR_USERNAME), DB_GetNull(objInfo.INT_USERGROUP_ID), DB_GetNull(objInfo.INT_FACTORY_ID), DB_GetNull(objInfo.CHR_FACTORY_NAME), DB_GetNull(objInfo.CHR_REMARK));
+	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_EVENT_INSERT, DB_GetNull(objInfo.EVENT_CODE), DB_GetNull(objInfo.TYPE), DB_GetNull(objInfo.EVENT_CONTENT), DB_GetNull(objInfo.CREATED_DATE), DB_GetNull(objInfo.USER_ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.COM_USER), DB_GetNull(objInfo.COM_MACHINE), DB_GetNull(objInfo.COM_DOMAIN), DB_GetNull(objInfo.COM_DIR), DB_GetNull(objInfo.REMARK));
 }
 
-public virtual void TM_LOG_EVENT_Update(DTLOGEVENTInfo objInfo)
+public virtual int DT_LOG_EVENT_Update(DTLOGEVENTInfo objInfo)
 {
-	SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, BUHINSOKO_COMPONENT_TM_LOG_EVENT_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CHR_CONTENT), DB_GetNull(objInfo.CHR_TYPE), DB_GetNull(objInfo.DAT_CREATED), DB_GetNull(objInfo.INT_USER_ID), DB_GetNull(objInfo.CHR_USERNAME), DB_GetNull(objInfo.INT_USERGROUP_ID), DB_GetNull(objInfo.INT_FACTORY_ID), DB_GetNull(objInfo.CHR_FACTORY_NAME), DB_GetNull(objInfo.CHR_REMARK));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_EVENT_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.EVENT_CODE), DB_GetNull(objInfo.TYPE), DB_GetNull(objInfo.EVENT_CONTENT), DB_GetNull(objInfo.CREATED_DATE), DB_GetNull(objInfo.USER_ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.COM_USER), DB_GetNull(objInfo.COM_MACHINE), DB_GetNull(objInfo.COM_DOMAIN), DB_GetNull(objInfo.COM_DIR), DB_GetNull(objInfo.REMARK));
 }
 
-public virtual void TM_LOG_EVENT_Delete(int ID)
+public virtual int DT_LOG_EVENT_Delete(int ID)
 {
-	SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, BUHINSOKO_COMPONENT_TM_LOG_EVENT_DELETE, ID);
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_EVENT_DELETE, ID);
 }
 #endregion
 

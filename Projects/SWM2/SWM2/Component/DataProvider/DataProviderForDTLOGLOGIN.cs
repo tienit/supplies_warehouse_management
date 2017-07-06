@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 9/6/2016
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -16,42 +16,42 @@ public partial class DataProvider : CommonDataProvider
 {
 
 #region "Stored Procedure Name"
-private string ESWS_COMPONENT_TM_LOG_LOGIN_GETALL = "TM_LOG_LOGIN_SelectAll";
-private string ESWS_COMPONENT_TM_LOG_LOGIN_GETBYID = "TM_LOG_LOGIN_SelectById";
-private string ESWS_COMPONENT_TM_LOG_LOGIN_INSERT = "TM_LOG_LOGIN_Insert";
-private string ESWS_COMPONENT_TM_LOG_LOGIN_UPDATE = "TM_LOG_LOGIN_Update";
-private string ESWS_COMPONENT_TM_LOG_LOGIN_DELETE = "TM_LOG_LOGIN_Delete";
+private string VKTIM_COMPONENT_DT_LOG_LOGIN_GETALL = "DT_LOG_LOGIN_SelectAll";
+private string VKTIM_COMPONENT_DT_LOG_LOGIN_GETBYID = "DT_LOG_LOGIN_SelectById";
+private string VKTIM_COMPONENT_DT_LOG_LOGIN_INSERT = "DT_LOG_LOGIN_Insert";
+private string VKTIM_COMPONENT_DT_LOG_LOGIN_UPDATE = "DT_LOG_LOGIN_Update";
+private string VKTIM_COMPONENT_DT_LOG_LOGIN_DELETE = "DT_LOG_LOGIN_Delete";
 #endregion
 
 #region "Public Methods"
-public virtual IDataReader TM_LOG_LOGIN_GetById(int ID)
+public virtual IDataReader DT_LOG_LOGIN_GetById(int ID)
 {
-	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_LOG_LOGIN_GETBYID, ID);
+	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_LOGIN_GETBYID, ID);
 }
 
-public virtual IDataReader TM_LOG_LOGIN_GetAll()
+public virtual IDataReader DT_LOG_LOGIN_GetAll()
 {
-	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_LOG_LOGIN_GETALL);
+	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_LOGIN_GETALL);
 }
 
-public virtual DataSet TM_LOG_LOGIN_GetAll_DS()
+public virtual DataSet DT_LOG_LOGIN_GetAll_DS()
 {
-	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_LOG_LOGIN_GETALL);
+	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_LOGIN_GETALL);
 }
 
-public virtual object TM_LOG_LOGIN_Insert(DTLOGLOGINInfo objInfo)
+public virtual object DT_LOG_LOGIN_Insert(DTLOGLOGINInfo objInfo)
 {
-	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_LOG_LOGIN_INSERT, DB_GetNull(objInfo.INT_USER_ID), DB_GetNull(objInfo.CHR_USERNAME), DB_GetNull(objInfo.INT_USERGROUP), DB_GetNull(objInfo.DAT_CREATED), DB_GetNull(objInfo.CHR_CONTENT), DB_GetNull(objInfo.CHR_DOMAIN), DB_GetNull(objInfo.CHR_MACHINE), DB_GetNull(objInfo.CHR_COM_USER), DB_GetNull(objInfo.CHR_DIRECTORY), DB_GetNull(objInfo.INT_FACTORY_ID), DB_GetNull(objInfo.CHR_FACTORY_NAME), DB_GetNull(objInfo.CHR_REMARK), DB_GetNull(objInfo.CHR_NOTE1), DB_GetNull(objInfo.CHR_NOTE2), DB_GetNull(objInfo.CHR_NOTE3));
+	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_LOGIN_INSERT, DB_GetNull(objInfo.CODE), DB_GetNull(objInfo.ACTION), DB_GetNull(objInfo.TYPE), DB_GetNull(objInfo.CONTENTS), DB_GetNull(objInfo.CREATED_DATE), DB_GetNull(objInfo.USER_ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.COM_USER), DB_GetNull(objInfo.COM_MACHINE), DB_GetNull(objInfo.COM_DOMAIN), DB_GetNull(objInfo.COM_DIR), DB_GetNull(objInfo.REMARK));
 }
 
-public virtual int TM_LOG_LOGIN_Update(DTLOGLOGINInfo objInfo)
+public virtual int DT_LOG_LOGIN_Update(DTLOGLOGINInfo objInfo)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_LOG_LOGIN_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.INT_USER_ID), DB_GetNull(objInfo.CHR_USERNAME), DB_GetNull(objInfo.INT_USERGROUP), DB_GetNull(objInfo.DAT_CREATED), DB_GetNull(objInfo.CHR_CONTENT), DB_GetNull(objInfo.CHR_DOMAIN), DB_GetNull(objInfo.CHR_MACHINE), DB_GetNull(objInfo.CHR_COM_USER), DB_GetNull(objInfo.CHR_DIRECTORY), DB_GetNull(objInfo.INT_FACTORY_ID), DB_GetNull(objInfo.CHR_FACTORY_NAME), DB_GetNull(objInfo.CHR_REMARK), DB_GetNull(objInfo.CHR_NOTE1), DB_GetNull(objInfo.CHR_NOTE2), DB_GetNull(objInfo.CHR_NOTE3));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_LOGIN_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CODE), DB_GetNull(objInfo.ACTION), DB_GetNull(objInfo.TYPE), DB_GetNull(objInfo.CONTENTS), DB_GetNull(objInfo.CREATED_DATE), DB_GetNull(objInfo.USER_ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.COM_USER), DB_GetNull(objInfo.COM_MACHINE), DB_GetNull(objInfo.COM_DOMAIN), DB_GetNull(objInfo.COM_DIR), DB_GetNull(objInfo.REMARK));
 }
 
-public virtual int TM_LOG_LOGIN_Delete(int ID)
+public virtual int DT_LOG_LOGIN_Delete(int ID)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, ESWS_COMPONENT_TM_LOG_LOGIN_DELETE, ID);
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_DT_LOG_LOGIN_DELETE, ID);
 }
 #endregion
 

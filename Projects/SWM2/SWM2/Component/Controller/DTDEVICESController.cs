@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 20/03/2014
+//Created Date     : 7/7/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -15,7 +15,7 @@ namespace VKTIM.Component
 {
 
 public partial class DTDEVICESController
-    {
+{
 
 #region "Instances"
 private static DTDEVICESController _instance;
@@ -53,14 +53,14 @@ public DTDEVICESInfo Insert(DTDEVICESInfo objInfo)
 	return objInfo;
 }
 
-public void Update(DTDEVICESInfo objInfo)
+public int Update(DTDEVICESInfo objInfo)
 {
-	DataProvider.Instance().DT_DEVICES_Update(objInfo);
+	return DataProvider.Instance().DT_DEVICES_Update(objInfo);
 }
 
-public void Delete(int ID)
+public int Delete(int ID)
 {
-	DataProvider.Instance().TM_LOG_EVENT_Delete(ID);
+	return DataProvider.Instance().DT_DEVICES_Delete(ID);
 }
 
 public DTDEVICESInfo GetById(int ID)
@@ -72,15 +72,16 @@ public List<DTDEVICESInfo> GetAll()
 {
 	List<DTDEVICESInfo> list = new List<DTDEVICESInfo>();
 	ArrayList arr = CBO.FillCollection(DataProvider.Instance().DT_DEVICES_GetAll(), typeof(DTDEVICESInfo));
-foreach (object objItem in arr)
-{
-	list.Add((DTDEVICESInfo)objItem);
-}	return list;
+	foreach (object objItem in arr)
+	{
+		list.Add((DTDEVICESInfo)objItem);
+	}
+	return list;
 }
 
 public DataSet GetAll_DS()
 {
-	return DataProvider.Instance().TM_LOG_EVENT_GetAll_DS();
+	return DataProvider.Instance().DT_DEVICES_GetAll_DS();
 }
 
 #endregion
