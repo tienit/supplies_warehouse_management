@@ -29,18 +29,44 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.lbl_Demo = new System.Windows.Forms.Label();
+            this.btnUnit = new System.Windows.Forms.Button();
+            this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_Form
             // 
+            this.pn_Form.Controls.Add(this.btnUnit);
+            this.pn_Form.Controls.Add(this.lbl_Demo);
             this.pn_Form.Size = new System.Drawing.Size(1098, 700);
+            this.pn_Form.Controls.SetChildIndex(this.lbl_Demo, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnUnit, 0);
             // 
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(911, 37);
             this.lbl_FormTitle.Text = "";
+            // 
+            // lbl_Demo
+            // 
+            this.lbl_Demo.AutoSize = true;
+            this.lbl_Demo.Location = new System.Drawing.Point(42, 100);
+            this.lbl_Demo.Name = "lbl_Demo";
+            this.lbl_Demo.Size = new System.Drawing.Size(35, 13);
+            this.lbl_Demo.TabIndex = 52;
+            this.lbl_Demo.Text = "label1";
+            // 
+            // btnUnit
+            // 
+            this.btnUnit.Location = new System.Drawing.Point(45, 142);
+            this.btnUnit.Name = "btnUnit";
+            this.btnUnit.Size = new System.Drawing.Size(75, 23);
+            this.btnUnit.TabIndex = 53;
+            this.btnUnit.Text = "Unit";
+            this.btnUnit.UseVisualStyleBackColor = true;
+            this.btnUnit.Click += new System.EventHandler(this.btnUnit_Click);
             // 
             // frmMain
             // 
@@ -54,6 +80,8 @@
             this.MaximumSize = new System.Drawing.Size(1920, 1050);
             this.Name = "frmMain";
             this.Text = "Supplies Warehouse Management";
+            this.pn_Form.ResumeLayout(false);
+            this.pn_Form.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).EndInit();
             this.ResumeLayout(false);
@@ -61,6 +89,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbl_Demo;
+        private System.Windows.Forms.Button btnUnit;
     }
 }
 

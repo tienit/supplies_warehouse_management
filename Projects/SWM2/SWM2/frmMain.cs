@@ -15,5 +15,11 @@ namespace VKTIM
         {
             InitializeComponent();
         }
+
+        private void btnUnit_Click(object sender, EventArgs e)
+        {
+            frmDmUnit m_Frm = new frmDmUnit();
+            m_Frm.ShowDialog();
+        }
     }
 }

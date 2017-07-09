@@ -320,7 +320,7 @@ namespace VKTIM.Common
                         dgv.EnableHeadersVisualStyles = false;
                         dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
                         dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-                        dgv.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
+                        dgv.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 10, FontStyle.Regular);
                         dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
                         dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(222, 222, 222);

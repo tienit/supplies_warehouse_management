@@ -93,6 +93,36 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_logo_128 {
+            get {
+                object obj = ResourceManager.GetObject("e_logo_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_logo_32 {
+            get {
+                object obj = ResourceManager.GetObject("e_logo_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_logo_64 {
+            get {
+                object obj = ResourceManager.GetObject("e_logo_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_maximized_32 {
             get {
                 object obj = ResourceManager.GetObject("e_maximized_32", resourceCulture);
@@ -166,6 +196,26 @@ namespace VKTIM.Properties {
         internal static System.Drawing.Bitmap e_titlebar_back {
             get {
                 object obj = ResourceManager.GetObject("e_titlebar_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_titlebar_blue {
+            get {
+                object obj = ResourceManager.GetObject("e_titlebar_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_titlebar_grey {
+            get {
+                object obj = ResourceManager.GetObject("e_titlebar_grey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

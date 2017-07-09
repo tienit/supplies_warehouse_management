@@ -53,7 +53,7 @@
             // pn_TOP
             // 
             this.pn_TOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.pn_TOP.BackgroundImage = global::VKTIM.Properties.Resources.e_titlebar_back;
+            this.pn_TOP.BackgroundImage = global::VKTIM.Properties.Resources.e_titlebar_blue;
             this.pn_TOP.Controls.Add(this.btn_Maximized);
             this.pn_TOP.Controls.Add(this.btn_Minimized);
             this.pn_TOP.Controls.Add(this.btn_Help);
@@ -154,13 +154,14 @@
             // pic_Header
             // 
             this.pic_Header.BackColor = System.Drawing.Color.Transparent;
-            this.pic_Header.Image = global::VKTIM.Properties.Resources.e_about;
+            this.pic_Header.Image = global::VKTIM.Properties.Resources.e_logo_64;
             this.pic_Header.Location = new System.Drawing.Point(3, 7);
             this.pic_Header.Name = "pic_Header";
             this.pic_Header.Size = new System.Drawing.Size(32, 32);
             this.pic_Header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Header.TabIndex = 25;
             this.pic_Header.TabStop = false;
+            this.mainTip.SetToolTip(this.pic_Header, "VKT Inventory Management System");
             this.pic_Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pic_Header_MouseDown);
             // 
             // lbl_FormTitle
@@ -168,7 +169,7 @@
             this.lbl_FormTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_FormTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_FormTitle.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.lbl_FormTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_FormTitle.ForeColor = System.Drawing.Color.White;
             this.lbl_FormTitle.Location = new System.Drawing.Point(40, 4);
             this.lbl_FormTitle.Name = "lbl_FormTitle";
@@ -219,6 +220,7 @@
             this.pn_Form.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_Form.BackColor = System.Drawing.Color.Transparent;
             this.pn_Form.Controls.Add(this.pn_TOP);
             this.pn_Form.Location = new System.Drawing.Point(1, 1);
             this.pn_Form.Name = "pn_Form";
