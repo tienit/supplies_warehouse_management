@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lbl_Demo = new System.Windows.Forms.Label();
             this.btnUnit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -38,11 +39,13 @@
             // 
             // pn_Form
             // 
+            this.pn_Form.Controls.Add(this.textBox1);
             this.pn_Form.Controls.Add(this.btnUnit);
             this.pn_Form.Controls.Add(this.lbl_Demo);
             this.pn_Form.Size = new System.Drawing.Size(1098, 700);
             this.pn_Form.Controls.SetChildIndex(this.lbl_Demo, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnUnit, 0);
+            this.pn_Form.Controls.SetChildIndex(this.textBox1, 0);
             // 
             // lbl_FormTitle
             // 
@@ -68,6 +71,13 @@
             this.btnUnit.UseVisualStyleBackColor = true;
             this.btnUnit.Click += new System.EventHandler(this.btnUnit_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(45, 216);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(217, 20);
+            this.textBox1.TabIndex = 54;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -80,6 +90,7 @@
             this.MaximumSize = new System.Drawing.Size(1920, 1050);
             this.Name = "frmMain";
             this.Text = "Supplies Warehouse Management";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pn_Form.ResumeLayout(false);
             this.pn_Form.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
@@ -92,6 +103,7 @@
 
         private System.Windows.Forms.Label lbl_Demo;
         private System.Windows.Forms.Button btnUnit;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

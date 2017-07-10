@@ -117,511 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ESWS_MSG_ADD_FAILED" xml:space="preserve">
-    <value>Add failed.</value>
+  <data name="frmDmUnit.btn_Add" xml:space="preserve">
+    <value>Add new</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_CHG_STATUS" xml:space="preserve">
-    <value>CHANGE STATUS</value>
+  <data name="frmDmUnit.btn_Delete" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_DELETE" xml:space="preserve">
-    <value>DELETE</value>
+  <data name="frmDmUnit.btn_Search" xml:space="preserve">
+    <value>Search</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_ERROR" xml:space="preserve">
-    <value>ERROR</value>
+  <data name="frmDmUnit.btn_Update" xml:space="preserve">
+    <value>Update</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_MOVING" xml:space="preserve">
-    <value>MOVING</value>
+  <data name="frmDmUnit.colDescription" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="ESWS_MSG_CHG_STATUS_AT_LEAST_ONE_PALLET_CHECKED" xml:space="preserve">
-    <value>At least one pallet must be checked to change.</value>
+  <data name="frmDmUnit.colID" xml:space="preserve">
+    <value>ID</value>
   </data>
-  <data name="ESWS_MSG_CHG_STATUS_LOT_CHANGE_CONFIRM" xml:space="preserve">
-    <value>Are you sure to change status for this goods lot?</value>
+  <data name="frmDmUnit.colName" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="ESWS_MSG_CHG_STATUS_LOT_FINISHED" xml:space="preserve">
-    <value>Lot {0} has completed checking.</value>
+  <data name="frmDmUnit.colShortName" xml:space="preserve">
+    <value>Short Name</value>
   </data>
-  <data name="ESWS_MSG_CHG_STATUS_LOT_NO_PALLET_FOR_CHANGE" xml:space="preserve">
-    <value>Lot {0} has no pallet for changing. Check again.</value>
+  <data name="frmDmUnit.lbl_dis_count" xml:space="preserve">
+    <value>Quantity:</value>
   </data>
-  <data name="ESWS_MSG_CHG_STATUS_NO_PALLET_SELECTED" xml:space="preserve">
-    <value>No pallet is selected for changing.</value>
+  <data name="frmDmUnit.lbl_dis_keyword" xml:space="preserve">
+    <value>Keyword</value>
   </data>
-  <data name="ESWS_MSG_CHG_STATUS_SUCCESS" xml:space="preserve">
-    <value>Change successful.</value>
+  <data name="frmDmUnitPopup.btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="ESWS_MSG_CMB_INDEX_ZERO" xml:space="preserve">
-    <value>--- Select ---</value>
+  <data name="frmDmUnitPopup.btn_Submit" xml:space="preserve">
+    <value>Submit</value>
   </data>
-  <data name="ESWS_MSG_CONTEXT_MENU_UNDO" xml:space="preserve">
-    <value>Undo</value>
+  <data name="frmDmUnitPopup.lbl_dis_description" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="ESWS_MSG_DELETE_CONFIRM" xml:space="preserve">
-    <value>Are you sure to delete this object?</value>
+  <data name="frmDmUnitPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
   </data>
-  <data name="ESWS_MSG_DELETE_SUCCESS" xml:space="preserve">
-    <value>Delete successful.</value>
+  <data name="frmDmUnitPopup.lbl_dis_name" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="ESWS_MSG_LOT_STATUS_DELETE_RELATIONSHIP" xml:space="preserve">
-    <value>This status is related to {0} goods lot.</value>
+  <data name="frmDmUnitPopup.lbl_dis_shortname" xml:space="preserve">
+    <value>Short Name</value>
   </data>
-  <data name="ESWS_MSG_PALLET_STATUS_DELETE_RELATIONSHIP" xml:space="preserve">
-    <value>This status is related to {0} pallets.</value>
+  <data name="frmMessage" xml:space="preserve">
+    <value>Message</value>
   </data>
-  <data name="ESWS_MSG_UPDATE_FAILED" xml:space="preserve">
-    <value>Update failed.</value>
+  <data name="frmMessage.btnCancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="ESWS_MSG_VERSION" xml:space="preserve">
-    <value>Version:</value>
+  <data name="frmMessage.btnConfirm" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="ESWS_MSG_WH_IMPORT_REPRINT_PALLET_CODE_NOT_EXISTED" xml:space="preserve">
-    <value>Pallet does not exist. Check again.</value>
+  <data name="frmMessage.btnOK" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="ESWS_MSG_WH_INVENTORY_MOVING_INFOR" xml:space="preserve">
-    <value>Pallet has been moved from {0} to {1} at {2}.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_GOODS_USING" xml:space="preserve">
-    <value>This goods is being used. Check again.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SENT" xml:space="preserve">
-    <value>Request is sent. Waiting for confirmation.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_ACCEPTED" xml:space="preserve">
-    <value>Accepted</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_CANCELED" xml:space="preserve">
-    <value>Canceled</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_USING" xml:space="preserve">
-    <value>This supplier is being used. Check again.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_WAITING" xml:space="preserve">
-    <value>Waiting for confirmation</value>
-  </data>
-  <data name="ESWS_MSG_ADD_SUCCESS" xml:space="preserve">
-    <value>Added successful.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CHG_PASS" xml:space="preserve">
-    <value>CHANGE PASSWORD</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CONNECTION" xml:space="preserve">
-    <value>CONNECTION SETTING</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_DELETION_REQUEST" xml:space="preserve">
-    <value>DELETION REQUEST</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXPORT_REPRINT" xml:space="preserve">
-    <value>EXPORT RE-PRINT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_FEEDBACK" xml:space="preserve">
-    <value>FEEDBACK</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_INSERT" xml:space="preserve">
-    <value>ADD NEW</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_PERMISSION" xml:space="preserve">
-    <value>PERMISSION</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_UPDATE" xml:space="preserve">
-    <value>UPDATE</value>
-  </data>
-  <data name="ESWS_MSG_CHG_PASS_FAILED" xml:space="preserve">
-    <value>Change password failed.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_PASS_SUCCESS" xml:space="preserve">
-    <value>Change password successful.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_PASS_SUCCESS_AND_RESTART" xml:space="preserve">
-    <value>Change password successful. System will auto restart.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_FROM_TO_INFOR" xml:space="preserve">
-    <value>Change status of pallet {0} from {1} to {2}.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_GROUP_CONFIRM" xml:space="preserve">
-    <value>Are you sure to change status for selected pallets?</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_GROUP_X_SUCCESS" xml:space="preserve">
-    <value>{0} pallets have been changed status successful.</value>
-  </data>
-  <data name="ESWS_MSG_COMPANY_UPDATE_RELATIONSHIP" xml:space="preserve">
-    <value>Cannot update. This data is related to {0} warehouses.</value>
-  </data>
-  <data name="ESWS_MSG_FEEDBACK_FUNCTION_NOT_SELECTED" xml:space="preserve">
-    <value>Not select fucntion.</value>
-  </data>
-  <data name="ESWS_MSG_FEEDBACK_SEND_FAILED" xml:space="preserve">
-    <value>An error occurred while feedback was sent. Please try again.</value>
-  </data>
-  <data name="ESWS_MSG_FEEDBACK_SEND_OK" xml:space="preserve">
-    <value>Feedback is sent successful. Thank you.</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_CONFIRM" xml:space="preserve">
-    <value>Are you sure to agree with this request?</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_CONFIRMED" xml:space="preserve">
-    <value>The request was accepted.</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_RESTORE" xml:space="preserve">
-    <value>Are you sure to restore this goods master?</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_RESTORED" xml:space="preserve">
-    <value>The goods master was restored successful.</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_EXISTED" xml:space="preserve">
-    <value>This goods master data was existed. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_NOT_LOGGED" xml:space="preserve">
-    <value>Not logged in.</value>
-  </data>
-  <data name="ESWS_MSG_NOT_USED" xml:space="preserve">
-    <value>Not use</value>
-  </data>
-  <data name="ESWS_MSG_PERMISSION_WAREHOUSE_SUCCESS" xml:space="preserve">
-    <value>Permission for warehouse successful.</value>
-  </data>
-  <data name="ESWS_MSG_SERVER_CONNECT_FAILED_AND_CHECK" xml:space="preserve">
-    <value>Server connection failed. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_SERVER_CONNECT_SUCCESS" xml:space="preserve">
-    <value>Server connection OK.</value>
-  </data>
-  <data name="ESWS_MSG_THIS_FUCNTION_BLOCKED_BY_ADMIN" xml:space="preserve">
-    <value>The function is blocked. Contact to administrators.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_DELETE_NOT_SELECTED" xml:space="preserve">
-    <value>Must select at least one object before performing this action.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_SUCCESS" xml:space="preserve">
-    <value>Updated successful.</value>
-  </data>
-  <data name="ESWS_MSG_USED" xml:space="preserve">
-    <value>Use</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_CODE_NOT_EXISTED" xml:space="preserve">
-    <value>Export code {0} does not existed.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_DELETE_PALLET_SUCCESS" xml:space="preserve">
-    <value>Pallet was deleted successful.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_PALLET_NOT_EXISTED" xml:space="preserve">
-    <value>Pallet does not existed. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CONFIRM" xml:space="preserve">
-    <value>CONFIRM</value>
-  </data>
-  <data name="ESWS_MSG_NEED_TO_CHECK" xml:space="preserve">
-    <value>Need to check</value>
-  </data>
-  <data name="ESWS_MSG_NO_NEED_TO_CHECK" xml:space="preserve">
-    <value>No need to check</value>
-  </data>
-  <data name="ESWS_MSG_PAGE" xml:space="preserve">
-    <value>Page</value>
-  </data>
-  <data name="ESWS_MSG_PALLET_DELETED" xml:space="preserve">
-    <value>Pallet {0} was deleted.</value>
-  </data>
-  <data name="ESWS_MSG_PALLET_EXPORTED" xml:space="preserve">
-    <value>Pallet {0} was exported.</value>
-  </data>
-  <data name="ESWS_MSG_SURE" xml:space="preserve">
-    <value>Are you sure?</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_NOT_EXISTED" xml:space="preserve">
-    <value>Lot {0} does not existed.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_BLOCKED" xml:space="preserve">
-    <value>FUNCTION BLOCKED</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXIT" xml:space="preserve">
-    <value>EXIT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXPORT_EXCEL" xml:space="preserve">
-    <value>EXPORT EXCEL</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_LAYOUT" xml:space="preserve">
-    <value>LAYOUT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_LOGOUT" xml:space="preserve">
-    <value>LOGOUT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_REINPUT" xml:space="preserve">
-    <value>RE-INPUT PALLET</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_VERSION" xml:space="preserve">
-    <value>VERSION</value>
-  </data>
-  <data name="ESWS_MSG_CHANGE_CONNECTION_SUCCESS_AND_RESTART" xml:space="preserve">
-    <value>Server connection OK. The system will be restarted.</value>
-  </data>
-  <data name="ESWS_MSG_DELETE_EMPTY" xml:space="preserve">
-    <value>Must to select one object before deleting.</value>
-  </data>
-  <data name="ESWS_MSG_DELETE_FAILED" xml:space="preserve">
-    <value>Delete failed.</value>
-  </data>
-  <data name="ESWS_MSG_EXIT_CONFIRM" xml:space="preserve">
-    <value>Do you want to exit the system?</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_ADD_CELL" xml:space="preserve">
-    <value>Add location</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_ALL_CELLS_DELETED" xml:space="preserve">
-    <value>All locations were deleted.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_AREA" xml:space="preserve">
-    <value>Area</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_AREA_EXISTED" xml:space="preserve">
-    <value>This area already exists on the system.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_AUTO_CREATED_X_CELLS" xml:space="preserve">
-    <value>Created {0} cells for:</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_CELL" xml:space="preserve">
-    <value>Cell</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_CELL_HAS_PALLET" xml:space="preserve">
-    <value>This location having goods.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_EXCEEDS_MAX_CELLS" xml:space="preserve">
-    <value>This floor has max number of cells is {0}.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_EXCEEDS_MAX_FLOORS" xml:space="preserve">
-    <value>This line has max number of floors is {0}.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_EXCEEDS_MAX_LINES" xml:space="preserve">
-    <value>This area has max number of lines is {0}.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FLOOR" xml:space="preserve">
-    <value>Floor</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FLOOR_HAS_PALLETS_DELETE" xml:space="preserve">
-    <value>Cannot delete this floor because it has pallets.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FLOOR_HAS_PALLETS_UPDATE" xml:space="preserve">
-    <value>Cannot update this floor because it has pallets.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_LINE" xml:space="preserve">
-    <value>Line</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_LINE_NAME_EXISTED" xml:space="preserve">
-    <value>This line already exists on the system.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_LINE_WORKING" xml:space="preserve">
-    <value>This line is working.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_NUMBER_OF_CELLS" xml:space="preserve">
-    <value>Number of cells ({0})</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_NUMBER_OF_FLOORS" xml:space="preserve">
-    <value>Number of floors ({0})</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_SELECT_WAREHOUSE_FIRST" xml:space="preserve">
-    <value>Must to select warehouse first.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_CELL" xml:space="preserve">
-    <value>Update location</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_DELETE_FLOOR_NOT_SELECTED" xml:space="preserve">
-    <value>No floor selection.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WANT_AUTO_CREATE_CELL" xml:space="preserve">
-    <value>Are you want to auto create cells for:</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE" xml:space="preserve">
-    <value>Warehouse</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_AREA_DEL" xml:space="preserve">
-    <value>Cannot delete. This warehouse is related to {0} areas.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_AREA_UPDATE" xml:space="preserve">
-    <value>Cannot update. This warehouse is related to {0} areas.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_USERGROUP_DEL" xml:space="preserve">
-    <value>Cannot delete. This warehouse is related to {0} user groups.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_USERGROUP_UPDATE" xml:space="preserve">
-    <value>Cannot update. This warehouse is related to {0} user groups.</value>
-  </data>
-  <data name="ESWS_MSG_LOGIN_ACCOUNT_LOCKED" xml:space="preserve">
-    <value>Account is locked. Contact to administrators.</value>
-  </data>
-  <data name="ESWS_MSG_LOGIN_ACCOUNT_NOT_VALID" xml:space="preserve">
-    <value>Login information is invalid.</value>
-  </data>
-  <data name="ESWS_MSG_LOGOUT_CONFIRM" xml:space="preserve">
-    <value>Do you want to log out of the system?</value>
-  </data>
-  <data name="ESWS_MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL" xml:space="preserve">
-    <value>No data to export excel.</value>
-  </data>
-  <data name="ESWS_MSG_REPORT_TO_EXCEL_SUCCESS" xml:space="preserve">
-    <value>Data has been saved into excel file.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_LATEST_VERSION" xml:space="preserve">
-    <value>The current version is the latest version.</value>
-  </data>
-  <data name="ESWS_MSG_WAREHOUSE_MAINTENENCE" xml:space="preserve">
-    <value>Warehouse {0} is being maintained. Contact to administrators.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_NOT_FOUND_LOCATION" xml:space="preserve">
-    <value>Not found any location to import.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_PALLET_NOT_IN_WAREHOUSE" xml:space="preserve">
-    <value>Pallet {0} does not belong warehouse {1}.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_PALLET_USING_OR_DELTED" xml:space="preserve">
-    <value>This pallet is in inventory or deleted.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_REINPUT_SUCCESS" xml:space="preserve">
-    <value>Re-input successful.</value>
-  </data>
-  <data name="ESWS_MSG_WH_MAP_FOUND_X_PALLETS" xml:space="preserve">
-    <value>Found {0} pallets.</value>
-  </data>
-  <data name="ESWS_MSG_WH_PALLET_WAIT_EXPORT" xml:space="preserve">
-    <value>This pallet is waiting for exporting.</value>
-  </data>
-  <data name="ESWS_MSG_WH_LINE_NOT_CONFIG" xml:space="preserve">
-    <value>Line {0} has not been configured. Contact to administrators.</value>
-  </data>
-  <data name="ESWS_MSG_WH_NO_CONFIG_FOR_LINE" xml:space="preserve">
-    <value>The line has not been configured. Contact to administrators.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_SETTING" xml:space="preserve">
-    <value>SETTING</value>
-  </data>
-  <data name="ESWS_MSG_SETTNG_CONFIRM" xml:space="preserve">
-    <value>Are you sure to save setting?</value>
-  </data>
-  <data name="ESWS_MSG_SETTNG__SAVED" xml:space="preserve">
-    <value>Save settings successful.</value>
-  </data>
-  <data name="ESWS_MSG_SMART_AT_LEAST_ONE_WAREHOUSE_SELECTED" xml:space="preserve">
-    <value>Must to select one warehouse first.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXPORT" xml:space="preserve">
-    <value>WAREHOUSING EXPORT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_IMPORT" xml:space="preserve">
-    <value>WAREHOUSING IMPORT</value>
-  </data>
-  <data name="ESWS_MSG_DOUBLE_CLICK_TO_CLOSE" xml:space="preserve">
-    <value>Double click on screen to close this dialog.</value>
-  </data>
-  <data name="ESWS_MSG_NO" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="ESWS_MSG_PERMISSION_USERGROUP_SUCCESS" xml:space="preserve">
-    <value>Permission for usergroup successful.</value>
-  </data>
-  <data name="ESWS_MSG_SMART_WORKING" xml:space="preserve">
-    <value>This device is working. Unable to delete at this time.</value>
-  </data>
-  <data name="ESWS_MSG_USERGROUP_NAME_EXISTED" xml:space="preserve">
-    <value>Group name already exists. Choose another name.</value>
-  </data>
-  <data name="ESWS_MSG_USERGROUP_NOT_SELECTED" xml:space="preserve">
-    <value>No group selected.</value>
-  </data>
-  <data name="ESWS_MSG_USERS_LOCK" xml:space="preserve">
-    <value>Lock</value>
-  </data>
-  <data name="ESWS_MSG_USERS_UNLOCK" xml:space="preserve">
-    <value>Unlock</value>
-  </data>
-  <data name="ESWS_MSG_WAREHOUSE_GOODS_CODE_NOT_EXISTED" xml:space="preserve">
-    <value>Goods code does not exist. Check again. ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_PALLET_ISNOT_BELONGS_SCANED" xml:space="preserve">
-    <value>This pallet is not belongs to scanned list.</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_PALLET_SCANED" xml:space="preserve">
-    <value>This pallet is already scanned.</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_SUCCESS" xml:space="preserve">
-    <value>Warehousing export successful.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_ADD_X_PALLET_SUCCESS" xml:space="preserve">
-    <value>Added {0} pallets into warehouse successful.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_BARCODE_EMPTY" xml:space="preserve">
-    <value>Input string is empty.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_BARCODE_INVALID" xml:space="preserve">
-    <value>Input string format is not valid. Check again. ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_DATE_FORMAT_INVALID" xml:space="preserve">
-    <value>Date format is not valid. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_INVOICE_CANCELED" xml:space="preserve">
-    <value>Lot {0} has been canceled.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOCATION_NOT_AVAILABLE" xml:space="preserve">
-    <value>Currently, selected location is not available ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOCATION_NOT_IN_LIST" xml:space="preserve">
-    <value>Selected location does not exist in suggestion list. {0}</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOCATION_USING" xml:space="preserve">
-    <value>Location {0} is being used. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_CHANGED_WHILE_OPEN_THIS" xml:space="preserve">
-    <value>This lot has been changed while this window is opened. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_HAS_LOCATION_USED" xml:space="preserve">
-    <value>This lot has location {0} being used by other pallet. Cancel and re-input.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_NOT_ENOUGH_LOCATIONS" xml:space="preserve">
-    <value>Not enough available locations for warehousing import. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_USED" xml:space="preserve">
-    <value>Lot {0} already used. Check again.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_NO_AVAILABLE_LOCATION" xml:space="preserve">
-    <value>No available locations for warehousing import. ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_NUMBER_LOCATION_NOT_ENOUGH" xml:space="preserve">
-    <value>Number of pallets that need to receive is {0}. Number of locations that available to receive is {1}, so not enough location for warehouse receiving. Contact to warehouse manager. ({2})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_RECEIVED_AND_SELECT_LOCATION" xml:space="preserve">
-    <value>Goods {0} has been received and location {1} was selected.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_RECEIVED_ERROR" xml:space="preserve">
-    <value>An error occurred while receiving {0} into location {1}.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_SUCCESS" xml:space="preserve">
-    <value>Pallet {0} has been imported successful.</value>
-  </data>
-  <data name="ESWS_MSG_YES" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_WH_SETTING" xml:space="preserve">
-    <value>WAREHOUSE SETTING</value>
-  </data>
-  <data name="ESWS_MSG_WH_SETTING_CREATED" xml:space="preserve">
-    <value>The setting of warehouse {0} has been created successful.</value>
-  </data>
-  <data name="ESWS_MSG_WH_SETTING_NOT_YET" xml:space="preserve">
-    <value>The setting of warehouse {0} has not been created yet.</value>
-  </data>
-  <data name="ESWS_MSG_WH_SETTING_SAVED" xml:space="preserve">
-    <value>The setting of warehouse {0} has been updated.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_DELETE_BATCH_CELLS_SUCCESS" xml:space="preserve">
-    <value>BATCH DELETE CELLS SUCCESSFUL.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FROM_MUST_LESS_THAN_TO" xml:space="preserve">
-    <value>Started value must be less or equal Ended value.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_BATCH_CELLS_SUCCESS" xml:space="preserve">
-    <value>BATCH UPDATE CELLS SUCCESSFUL.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_BATCH_CELL_HEIGHT_SUCCESS" xml:space="preserve">
-    <value>BATCH UPDATE CELLS HEIGHT SUCCESSFUL.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CANCEL_EXPORT" xml:space="preserve">
-    <value>CANCEL EXPORT</value>
+  <data name="frmMessage.lblType" xml:space="preserve">
+    <value>NG</value>
   </data>
 </root>

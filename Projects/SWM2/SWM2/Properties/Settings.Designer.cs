@@ -49,7 +49,7 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".\\SQLEXPRESS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("TIENIT-PC\\SQL2014")]
         public string CS_ServerName {
             get {
                 return ((string)(this["CS_ServerName"]));

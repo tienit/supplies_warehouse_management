@@ -4,6 +4,14 @@ using System.Globalization;
 
 namespace VKTIM.Common
 {
+    public enum ACTION_TYPE
+    {
+        AddNew = 1,
+        Update = 2,
+        Delete = 3,
+        OnlyView = 4
+    }
+
     public class GBTSCConstants
     {
         //MessageBox Caption
@@ -42,8 +50,9 @@ namespace VKTIM.Common
         public static string ESWS_MSG_CONTEXT_MENU_UNDO
         { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_CONTEXT_MENU_UNDO", GBTSCConstants.CURRENT_CULTURE); } }
 
-        public static string ESWS_MSG_ADD_FAILED
-        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_ADD_FAILED", GBTSCConstants.CURRENT_CULTURE); } }
+        //ok
+        public static string MSG_ADD_FAILED
+        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("MSG_ADD_FAILED", GBTSCConstants.CURRENT_CULTURE); } }
 
         public static string ESWS_MSG_ADD_SUCCESS
         { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_ADD_SUCCESS", GBTSCConstants.CURRENT_CULTURE); } }
@@ -155,15 +164,19 @@ namespace VKTIM.Common
 
 
 
+
+
         //CAPTION OF MESSAGE BOX
-        public static string ESWS_MSG_CAPTION_ERROR
-        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_CAPTION_ERROR", GBTSCConstants.CURRENT_CULTURE); } }
+        //OK
+        public static string MSG_CAPTION_ERROR
+        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("MSG_CAPTION_ERROR", GBTSCConstants.CURRENT_CULTURE); } }
 
-        public static string ESWS_MSG_CAPTION_CHG_STATUS
-        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_CAPTION_CHG_STATUS", GBTSCConstants.CURRENT_CULTURE); } }
 
-        public static string ESWS_MSG_CAPTION_DELETE
-        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_CAPTION_DELETE", GBTSCConstants.CURRENT_CULTURE); } }
+        //OK
+        public static string MSG_CAPTION_DELETE
+        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("MSG_CAPTION_DELETE", GBTSCConstants.CURRENT_CULTURE); } }
+
+
 
         public static string ESWS_MSG_CAPTION_UPDATE
         { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("ESWS_MSG_CAPTION_UPDATE", GBTSCConstants.CURRENT_CULTURE); } }
@@ -669,8 +682,12 @@ namespace VKTIM.Common
         { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("BUHINSOKO_MSG_DELETE_SUCCESS", GBTSCConstants.CURRENT_CULTURE); } }
         public static string BUHINSOKO_MSG_DELETE_FAILED
         { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("BUHINSOKO_MSG_DELETE_FAILED", GBTSCConstants.CURRENT_CULTURE); } }
-        public static string BUHINSOKO_MSG_DELETE_CONFIRM
-        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("BUHINSOKO_MSG_DELETE_CONFIRM", GBTSCConstants.CURRENT_CULTURE); } }
+
+        //ok
+        public static string MSG_DELETE_CONFIRM
+        { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("MSG_DELETE_CONFIRM", GBTSCConstants.CURRENT_CULTURE); } }
+
+
         public static string BUHINSOKO_MSG_DELETE_EMPTY
         { get { return GBTSCConstants.CURRENT_RESOURCES.GetString("BUHINSOKO_MSG_DELETE_EMPTY", GBTSCConstants.CURRENT_CULTURE); } }
         public static string BUHINSOKO_MSG_UPDATE_DELETE_NOT_SELECTED

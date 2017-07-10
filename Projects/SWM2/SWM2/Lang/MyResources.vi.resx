@@ -120,16 +120,13 @@
   <data name="frmMain" xml:space="preserve">
     <value>Hệ thống quản lý kho Viện kỹ thuật - BQP</value>
   </data>
-  <data name="ESWS_MSG_ADD_FAILED" xml:space="preserve">
+  <data name="MSG_ADD_FAILED" xml:space="preserve">
     <value>Thêm không thành công.</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_CHG_STATUS" xml:space="preserve">
-    <value>THAY ĐỔI TRẠNG THÁI</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_DELETE" xml:space="preserve">
+  <data name="MSG_CAPTION_DELETE" xml:space="preserve">
     <value>XÓA</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_ERROR" xml:space="preserve">
+  <data name="MSG_CAPTION_ERROR" xml:space="preserve">
     <value>LỖI</value>
   </data>
   <data name="ESWS_MSG_CAPTION_MOVING" xml:space="preserve">
@@ -159,7 +156,7 @@
   <data name="ESWS_MSG_CONTEXT_MENU_UNDO" xml:space="preserve">
     <value>Hủy bỏ</value>
   </data>
-  <data name="ESWS_MSG_DELETE_CONFIRM" xml:space="preserve">
+  <data name="MSG_DELETE_CONFIRM" xml:space="preserve">
     <value>Bạn chắc chắn muốn xóa đối tượng này khỏi hệ thống?</value>
   </data>
   <data name="ESWS_MSG_DELETE_SUCCESS" xml:space="preserve">
@@ -634,6 +631,72 @@
     <value>HỦY XUẤT KHO</value>
   </data>
   <data name="frmMain.lbl_Demo" xml:space="preserve">
-    <value>Chán VL</value>
+    <value>Dòng chữ demo</value>
+  </data>
+  <data name="frmDmUnitPopup" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="frmDmUnit.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmDmUnit.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmUnit.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmUnit.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmUnit.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmUnit.colDescription" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmUnit.colID" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmDmUnit.colName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmDmUnit.colShortName" xml:space="preserve">
+    <value>Tên thu gọn</value>
+  </data>
+  <data name="frmDmUnit.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmUnitPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmUnitPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmUnitPopup.lbl_dis_description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmUnitPopup.lbl_dis_id" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmDmUnitPopup.lbl_dis_name" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmDmUnitPopup.lbl_dis_shortname" xml:space="preserve">
+    <value>Tên thu gọn</value>
+  </data>
+  <data name="frmMessage" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="frmMessage.btnCancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmMessage.btnConfirm" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="frmMessage.btnOK" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmMessage.lblType" xml:space="preserve">
+    <value>NG</value>
   </data>
 </root>

@@ -49,11 +49,13 @@ namespace VKTIM.Common
             {
                 if (GBTSCConstants.BUHINSOKO_MSG_BOX_CAPTION_DEFAULT == 0)
                 {
-                    m_Frm.lblType.Text = caption.ToUpper();
+                    m_Frm.lblType.AccessibleDescription = caption.ToUpper();
+                    //m_Frm.lblType.Text = caption.ToUpper();
                 }
                 else
                 {
-                    m_Frm.lblType.Text = "OK";
+                    //m_Frm.lblType.Text = "OK";
+                    m_Frm.lblType.AccessibleDescription = "OK";
                 }
                 m_Frm.lblType.ForeColor = Color.Green;
                 if (GBTSCConstants.CURRENT_USER != null)
@@ -65,11 +67,13 @@ namespace VKTIM.Common
             {
                 if (GBTSCConstants.BUHINSOKO_MSG_BOX_CAPTION_DEFAULT == 0)
                 {
-                    m_Frm.lblType.Text = caption.ToUpper();
+                    //m_Frm.lblType.Text = caption.ToUpper();
+                    m_Frm.lblType.AccessibleDescription = caption.ToUpper();
                 }
                 else
                 {
-                    m_Frm.lblType.Text = "NG";
+                    //m_Frm.lblType.Text = "NG";
+                    m_Frm.lblType.AccessibleDescription = "NG";
                 }
                 m_Frm.lblType.ForeColor = Color.Red;
                 if (GBTSCConstants.CURRENT_USER != null)
@@ -85,11 +89,13 @@ namespace VKTIM.Common
             frmMessage m_Frm = new frmMessage();
             if (GBTSCConstants.BUHINSOKO_MSG_BOX_CAPTION_DEFAULT == 0)
             {
-                m_Frm.lblType.Text = caption.ToUpper();
+                //m_Frm.lblType.Text = caption.ToUpper();
+                m_Frm.lblType.AccessibleDescription = caption.ToUpper();
             }
             else
             {
-                m_Frm.lblType.Text = "OK";
+                //m_Frm.lblType.Text = "OK";
+                m_Frm.lblType.AccessibleDescription = "CONFIRM";
             }
             m_Frm.lblType.ForeColor = Color.Blue;
             m_Frm.txtMsg.Text = msgText;

@@ -13,7 +13,8 @@ namespace VKTIM
 
         private void frmMessage_Load(object sender, EventArgs e)
         {
-            GBTSCCommon.SetCommon(this);
+            //GBTSCCommon.SetCommon(this);
+            lblType.Text = lblType.AccessibleDescription;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

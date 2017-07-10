@@ -9,7 +9,7 @@
       <Value Profile="(Default)">vi</Value>
     </Setting>
     <Setting Name="CS_ServerName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">.\SQLEXPRESS</Value>
+      <Value Profile="(Default)">TIENIT-PC\SQL2014</Value>
     </Setting>
     <Setting Name="CS_DatabaseName" Type="System.String" Scope="User">
       <Value Profile="(Default)">IMS</Value>
