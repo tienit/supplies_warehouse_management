@@ -26,7 +26,7 @@ namespace VKTIM
             }
             catch (Exception ex)
             {
-                GBTSCCommon.Message_Info("Lỗi: " + ex.Message, "ERROR", GBTSCCommon.MessageType.Message_NG);
+                GBTSCCommon.Message_Info(ex.Message, GBTSCConstants.MSG_CAPTION_ERROR, GBTSCCommon.MessageType.Message_NG);
             }
         }
 

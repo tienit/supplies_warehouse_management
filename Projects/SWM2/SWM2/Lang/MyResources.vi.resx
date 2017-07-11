@@ -699,4 +699,37 @@
   <data name="frmMessage.lblType" xml:space="preserve">
     <value>NG</value>
   </data>
+  <data name="frmDmTitle" xml:space="preserve">
+    <value>Quản lý danh mục chức vụ</value>
+  </data>
+  <data name="frmDmTitle.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmTitle.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmTitle.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmTitle.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmTitle.colDescription" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmTitle.colID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmTitle.colName" xml:space="preserve">
+    <value>Chức danh</value>
+  </data>
+  <data name="frmDmTitle.colShortName" xml:space="preserve">
+    <value>Viết tắt</value>
+  </data>
+  <data name="frmDmTitle.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="frmDmTitle.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
 </root>

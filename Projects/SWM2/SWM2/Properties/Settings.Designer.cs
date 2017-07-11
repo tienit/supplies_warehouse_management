@@ -49,7 +49,7 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("TIENIT-PC\\SQL2014")]
+        [global::System.Configuration.DefaultSettingValueAttribute("193.1.1.9")]
         public string CS_ServerName {
             get {
                 return ((string)(this["CS_ServerName"]));
@@ -61,7 +61,7 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("IMS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("IMS_BACKUP_29062017_1025")]
         public string CS_DatabaseName {
             get {
                 return ((string)(this["CS_DatabaseName"]));
@@ -73,7 +73,7 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("sa")]
+        [global::System.Configuration.DefaultSettingValueAttribute("vktinventory")]
         public string CS_UserName {
             get {
                 return ((string)(this["CS_UserName"]));
@@ -85,7 +85,7 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1234567")]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456a@")]
         public string CS_PassWord {
             get {
                 return ((string)(this["CS_PassWord"]));

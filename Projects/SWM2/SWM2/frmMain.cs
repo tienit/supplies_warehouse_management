@@ -30,6 +30,10 @@ namespace VKTIM
             m_Frm.ShowDialog();
         }
 
-        
+        private void btn_Title_Click(object sender, EventArgs e)
+        {
+            frmDmTitle m_Frm = new frmDmTitle();
+            m_Frm.ShowDialog();
+        }
     }
 }
