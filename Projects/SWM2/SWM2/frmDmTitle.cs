@@ -36,5 +36,10 @@ namespace VKTIM
             dgv_Data.DataSource = dtSrc;
             lbl_data_count.Text = dtSrc.Rows.Count.ToString();
         }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
