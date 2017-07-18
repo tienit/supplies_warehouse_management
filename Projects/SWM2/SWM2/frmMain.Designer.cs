@@ -32,7 +32,7 @@
             this.lbl_Demo = new System.Windows.Forms.Label();
             this.btnUnit = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btn_Title = new System.Windows.Forms.Button();
+            this.btnTitle = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -40,7 +40,7 @@
             // 
             // pn_Form
             // 
-            this.pn_Form.Controls.Add(this.btn_Title);
+            this.pn_Form.Controls.Add(this.btnTitle);
             this.pn_Form.Controls.Add(this.textBox1);
             this.pn_Form.Controls.Add(this.btnUnit);
             this.pn_Form.Controls.Add(this.lbl_Demo);
@@ -48,7 +48,7 @@
             this.pn_Form.Controls.SetChildIndex(this.lbl_Demo, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnUnit, 0);
             this.pn_Form.Controls.SetChildIndex(this.textBox1, 0);
-            this.pn_Form.Controls.SetChildIndex(this.btn_Title, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnTitle, 0);
             // 
             // lbl_FormTitle
             // 
@@ -66,9 +66,9 @@
             // 
             // btnUnit
             // 
-            this.btnUnit.Location = new System.Drawing.Point(45, 142);
+            this.btnUnit.Location = new System.Drawing.Point(83, 95);
             this.btnUnit.Name = "btnUnit";
-            this.btnUnit.Size = new System.Drawing.Size(75, 23);
+            this.btnUnit.Size = new System.Drawing.Size(148, 23);
             this.btnUnit.TabIndex = 53;
             this.btnUnit.Text = "Unit";
             this.btnUnit.UseVisualStyleBackColor = true;
@@ -76,20 +76,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 216);
+            this.textBox1.Location = new System.Drawing.Point(45, 427);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(217, 20);
             this.textBox1.TabIndex = 54;
             // 
-            // btn_Title
+            // btnTitle
             // 
-            this.btn_Title.Location = new System.Drawing.Point(166, 142);
-            this.btn_Title.Name = "btn_Title";
-            this.btn_Title.Size = new System.Drawing.Size(75, 23);
-            this.btn_Title.TabIndex = 55;
-            this.btn_Title.Text = "Title";
-            this.btn_Title.UseVisualStyleBackColor = true;
-            this.btn_Title.Click += new System.EventHandler(this.btn_Title_Click);
+            this.btnTitle.Location = new System.Drawing.Point(83, 124);
+            this.btnTitle.Name = "btnTitle";
+            this.btnTitle.Size = new System.Drawing.Size(148, 23);
+            this.btnTitle.TabIndex = 55;
+            this.btnTitle.Text = "Title";
+            this.btnTitle.UseVisualStyleBackColor = true;
+            this.btnTitle.Click += new System.EventHandler(this.btn_Title_Click);
             // 
             // frmMain
             // 
@@ -117,7 +117,7 @@
         private System.Windows.Forms.Label lbl_Demo;
         private System.Windows.Forms.Button btnUnit;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btn_Title;
+        private System.Windows.Forms.Button btnTitle;
     }
 }
 

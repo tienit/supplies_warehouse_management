@@ -15,7 +15,7 @@ namespace VKTIM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDmTitle());
+            Application.Run(new frmMain());
         }
     }
 }
