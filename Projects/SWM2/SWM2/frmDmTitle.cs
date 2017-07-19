@@ -41,5 +41,35 @@ namespace VKTIM
         {
 
         }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            SearchData();
+        }
+
+        /// <summary>
+        /// Tìm kiếm sản phẩm
+        /// </summary>
+        private void SearchData()
+        {
+            try
+            {
+                DataTable dt = DMTITLEController.Instance().Search_DS(txt_data_keyword.Text);
+                dgv_Data.DataSource = dt;
+                lbl_data_count.Text = dt.Rows.Count.ToString();
+            }
+            catch (Exception ex)
+            {
+                GBTSCCommon.Message_Info(ex.Message, GBTSCConstants.MSG_CAPTION_ERROR, GBTSCCommon.MessageType.Message_NG);
+            }
+        }
+
+        private void txt_data_keyword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SearchData();
+            }
+        }
     }
 }
