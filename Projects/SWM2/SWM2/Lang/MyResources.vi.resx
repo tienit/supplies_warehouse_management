@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="frmMain" xml:space="preserve">
-    <value>Hệ thống quản lý kho Viện kỹ thuật - BQP</value>
+    <value>HỆ THỐNG QUẢN LÝ KHO/VẬT TƯ VIỆN KỸ THUẬT PK-KQ</value>
   </data>
   <data name="MSG_ADD_FAILED" xml:space="preserve">
     <value>Thêm không thành công.</value>
