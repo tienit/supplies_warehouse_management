@@ -324,12 +324,14 @@ namespace VKTIM.Common
                         c.Cursor = Cursors.Hand;
                         DataGridView dgv = (DataGridView)c;
                         dgv.EnableHeadersVisualStyles = false;
-                        dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+                        dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240);
                         dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
                         dgv.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 10, FontStyle.Regular);
                         dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
                         dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(222, 222, 222);
+                        dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                        dgv.AlternatingRowsDefaultCellStyle.WrapMode = DataGridViewTriState.True;
                         dgv.ColumnHeadersHeight = 26;
                         dgv.BackgroundColor = Color.White;
                         dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 128, 0); //255, 255, 225
