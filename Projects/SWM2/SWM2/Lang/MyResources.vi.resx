@@ -651,16 +651,16 @@
   <data name="frmDmUnit.btn_Update" xml:space="preserve">
     <value>Cập nhật</value>
   </data>
-  <data name="frmDmUnit.colDescription" xml:space="preserve">
+  <data name="frmDmUnit.col_UNIT_DESCRIPTION" xml:space="preserve">
     <value>Mô tả</value>
   </data>
-  <data name="frmDmUnit.colID" xml:space="preserve">
+  <data name="frmDmUnit.col_ID" xml:space="preserve">
     <value>Mã</value>
   </data>
-  <data name="frmDmUnit.colName" xml:space="preserve">
+  <data name="frmDmUnit.col_UNIT_NAME" xml:space="preserve">
     <value>Tên</value>
   </data>
-  <data name="frmDmUnit.colShortName" xml:space="preserve">
+  <data name="frmDmUnit.col_UNIT_SHORT_NAME" xml:space="preserve">
     <value>Tên thu gọn</value>
   </data>
   <data name="frmDmUnit.lbl_dis_count" xml:space="preserve">
@@ -737,5 +737,11 @@
   </data>
   <data name="frmMain.btnUnit" xml:space="preserve">
     <value>Danh mục đơn vị tính</value>
+  </data>
+  <data name="frmDmUnit.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmUnit.btn_Print" xml:space="preserve">
+    <value>In</value>
   </data>
 </root>

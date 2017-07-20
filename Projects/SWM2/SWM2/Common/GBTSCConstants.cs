@@ -12,6 +12,16 @@ namespace VKTIM.Common
         OnlyView = 4
     }
 
+    public enum GIRD_COLUMN_TYPE
+    {
+        TextBox = 1,
+        ComboBox = 2,
+        Image = 3,
+        Link = 4,
+        CheckBox = 5,
+        Button = 6
+    }
+
     public class GBTSCConstants
     {
         //MessageBox Caption

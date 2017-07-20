@@ -49,30 +49,6 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("193.1.1.9")]
-        public string CS_ServerName {
-            get {
-                return ((string)(this["CS_ServerName"]));
-            }
-            set {
-                this["CS_ServerName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("IMS_BACKUP_29062017_1025")]
-        public string CS_DatabaseName {
-            get {
-                return ((string)(this["CS_DatabaseName"]));
-            }
-            set {
-                this["CS_DatabaseName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("vktinventory")]
         public string CS_UserName {
             get {
@@ -92,6 +68,30 @@ namespace VKTIM.Properties {
             }
             set {
                 this["CS_PassWord"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("117.4.241.246")]
+        public string CS_ServerName {
+            get {
+                return ((string)(this["CS_ServerName"]));
+            }
+            set {
+                this["CS_ServerName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("IMS1")]
+        public string CS_DatabaseName {
+            get {
+                return ((string)(this["CS_DatabaseName"]));
+            }
+            set {
+                this["CS_DatabaseName"] = value;
             }
         }
     }

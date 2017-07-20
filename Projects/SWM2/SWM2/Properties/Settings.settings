@@ -8,17 +8,17 @@
     <Setting Name="CURRENT_CULTURE" Type="System.String" Scope="User">
       <Value Profile="(Default)">vi</Value>
     </Setting>
-    <Setting Name="CS_ServerName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">193.1.1.9</Value>
-    </Setting>
-    <Setting Name="CS_DatabaseName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">IMS_BACKUP_29062017_1025</Value>
-    </Setting>
     <Setting Name="CS_UserName" Type="System.String" Scope="User">
       <Value Profile="(Default)">vktinventory</Value>
     </Setting>
     <Setting Name="CS_PassWord" Type="System.String" Scope="User">
       <Value Profile="(Default)">123456a@</Value>
+    </Setting>
+    <Setting Name="CS_ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">117.4.241.246</Value>
+    </Setting>
+    <Setting Name="CS_DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IMS1</Value>
     </Setting>
   </Settings>
 </SettingsFile>
