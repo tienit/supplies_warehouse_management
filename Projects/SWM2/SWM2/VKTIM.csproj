@@ -34,6 +34,11 @@
     <ApplicationIcon>Resources\eAppLogo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Libs\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -62,10 +67,17 @@
     <Compile Include="CommonForm.Designer.cs">
       <DependentUpon>CommonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommonFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonFormAdmin.Designer.cs">
+      <DependentUpon>CommonFormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\Crytopo.cs" />
     <Compile Include="Common\GBTSCCommon.cs" />
     <Compile Include="Common\GBTSCConstants.cs" />
     <Compile Include="Common\Util.cs" />
+    <Compile Include="Component\Controller\COMMONController.cs" />
     <Compile Include="Component\Controller\DMEMPLOYERController.cs" />
     <Compile Include="Component\Controller\DMEMPLOYERPartialClasses.cs" />
     <Compile Include="Component\Controller\DMLOCATIONController.cs" />
@@ -199,6 +211,7 @@
     <Compile Include="Component\Infos\DTPRICEHISTORYInfo.cs" />
     <Compile Include="Component\Infos\DTPRODUCTPARAMETERInfo.cs" />
     <Compile Include="Component\Infos\DTUSERCONFIGInfo.cs" />
+    <Compile Include="Component\Infos\GridLayoutInfo.cs" />
     <Compile Include="Component\Infos\HTCONFIGInfo.cs" />
     <Compile Include="Component\Infos\DTDEVICESInfo.cs" />
     <Compile Include="Component\Infos\DTLOGEVENTInfo.cs" />
@@ -223,6 +236,12 @@
     </Compile>
     <Compile Include="frmDmUnit.Designer.cs">
       <DependentUpon>frmDmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmUnitBK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmUnitBK.Designer.cs">
+      <DependentUpon>frmDmUnitBK.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDmUnitPopup.cs">
       <SubType>Form</SubType>
@@ -276,11 +295,17 @@
     <EmbeddedResource Include="CommonForm.resx">
       <DependentUpon>CommonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CommonFormAdmin.resx">
+      <DependentUpon>CommonFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDmTitle.resx">
       <DependentUpon>frmDmTitle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmUnit.resx">
       <DependentUpon>frmDmUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmUnitBK.resx">
+      <DependentUpon>frmDmUnitBK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmUnitPopup.resx">
       <DependentUpon>frmDmUnitPopup.cs</DependentUpon>
