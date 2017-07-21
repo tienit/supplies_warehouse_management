@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -32,6 +32,24 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\eAppLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -231,6 +249,12 @@
     <Compile Include="frmDmTitle.Designer.cs">
       <DependentUpon>frmDmTitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDmTitlePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmTitlePopup.Designer.cs">
+      <DependentUpon>frmDmTitlePopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,6 +325,9 @@
     <EmbeddedResource Include="frmDmTitle.resx">
       <DependentUpon>frmDmTitle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDmTitlePopup.resx">
+      <DependentUpon>frmDmTitlePopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDmUnit.resx">
       <DependentUpon>frmDmUnit.cs</DependentUpon>
     </EmbeddedResource>
@@ -344,8 +371,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Template\EXPORT.xlsx" />
-    <None Include="Template\IMPORT.xlsx" />
+    <None Include="Template\EXPORT.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Template\IMPORT.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Barcode.jpg" />

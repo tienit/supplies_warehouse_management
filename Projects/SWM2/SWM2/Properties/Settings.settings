@@ -14,11 +14,11 @@
     <Setting Name="CS_PassWord" Type="System.String" Scope="User">
       <Value Profile="(Default)">123456a@</Value>
     </Setting>
-    <Setting Name="CS_ServerName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">117.4.241.246</Value>
-    </Setting>
     <Setting Name="CS_DatabaseName" Type="System.String" Scope="User">
       <Value Profile="(Default)">IMS1</Value>
+    </Setting>
+    <Setting Name="CS_ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">117.4.241.246</Value>
     </Setting>
   </Settings>
 </SettingsFile>

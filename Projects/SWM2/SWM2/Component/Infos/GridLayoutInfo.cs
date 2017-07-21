@@ -8,8 +8,8 @@ namespace VKTIM.Component.Infos
 {
     public class GridLayoutInfo
     {
-        private string _FILE_NAME;
-        private GIRD_COLUMN_TYPE _TYPE;
+        private string _FILE_NAME;  //UNIT_NAME
+        private GIRD_COLUMN_TYPE _TYPE; //Grid column type (CheckBox, TextBox, v.v...)
 
         public GridLayoutInfo()
         {

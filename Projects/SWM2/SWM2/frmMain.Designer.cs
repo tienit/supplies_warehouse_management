@@ -33,6 +33,7 @@
             this.btnUnit = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnTitle = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -40,6 +41,7 @@
             // 
             // pn_Form
             // 
+            this.pn_Form.Controls.Add(this.button1);
             this.pn_Form.Controls.Add(this.btnTitle);
             this.pn_Form.Controls.Add(this.textBox1);
             this.pn_Form.Controls.Add(this.btnUnit);
@@ -49,6 +51,7 @@
             this.pn_Form.Controls.SetChildIndex(this.btnUnit, 0);
             this.pn_Form.Controls.SetChildIndex(this.textBox1, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnTitle, 0);
+            this.pn_Form.Controls.SetChildIndex(this.button1, 0);
             // 
             // lbl_FormTitle
             // 
@@ -91,6 +94,15 @@
             this.btnTitle.UseVisualStyleBackColor = true;
             this.btnTitle.Click += new System.EventHandler(this.btn_Title_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(83, 166);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 23);
+            this.button1.TabIndex = 56;
+            this.button1.Text = "Title";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +130,7 @@
         private System.Windows.Forms.Button btnUnit;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnTitle;
+        private System.Windows.Forms.Button button1;
     }
 }
 

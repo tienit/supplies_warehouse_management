@@ -310,6 +310,7 @@
             // 
             this.pn_Control.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_Control.BackColor = System.Drawing.Color.Transparent;
             this.pn_Control.Controls.Add(this.btn_Update);
             this.pn_Control.Controls.Add(this.btn_Delete);
             this.pn_Control.Controls.Add(this.btn_Add);

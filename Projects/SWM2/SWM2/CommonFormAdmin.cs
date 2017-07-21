@@ -207,14 +207,14 @@ namespace VKTIM
                 mainTip.SetToolTip(pic_Header, lbl_FormTitle.Text);
 
                 Show_Button(); // Show/hide control buttons
-                
+
                 Load_Data(); // Bind data to grid
                 Add_Events(); // Add events for buttons
             }
             catch (Exception ex)
             {
                 GBTSCCommon.Message_Info(ex.Message, GBTSCConstants.MSG_CAPTION_ERROR, GBTSCCommon.MessageType.Message_NG);
-            } 
+            }
         }
         
         //Form key down
@@ -301,7 +301,9 @@ namespace VKTIM
 
         protected virtual void Init_Components()
         {
-
+            // Chỗ này để cho các form kế thừa thực thi
+            // Do vậy các biến bên trên đều là NULL
+            // Dẫn đến các function bên dưới (có sử dụng các biến này) bị error
         }
 
         private void Add_Events()
@@ -401,6 +403,10 @@ namespace VKTIM
 
         private void Grid_Layout()
         {
+            if (_ARR_FILE_NAME == null || _ARR_FILE_NAME.Count == 0)
+            {
+                return;
+            }
             DataGridViewColumn col = null;
             foreach (GridLayoutInfo gInfo in _ARR_FILE_NAME)
             {
@@ -430,16 +436,20 @@ namespace VKTIM
                 }
                 col.Name = "col_" + gInfo.FILE_NAME;
                 col.DataPropertyName = gInfo.FILE_NAME;
-                if (gInfo.FILE_NAME.Equals("ID"))
-                {
-                    col.Visible = false;
-                }
+                //if (gInfo.FILE_NAME.Equals("ID"))
+                //{
+                //    col.Visible = false;
+                //}
                 dgv_Data.Columns.Add(col);
             }
         }
 
         protected void Load_Data()
         {
+            if (_TABLE_NAME == null || _TABLE_NAME.Equals(""))
+            {
+                return;
+            }
             _DT_SRC = COMMONController.Instance().GetDataByTableName(_TABLE_NAME);
             dgv_Data.DataSource = _DT_SRC;
             lbl_data_count.Text = _DT_SRC.Rows.Count.ToString();

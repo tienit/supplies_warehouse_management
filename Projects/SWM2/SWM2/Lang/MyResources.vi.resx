@@ -661,7 +661,7 @@
     <value>Tên</value>
   </data>
   <data name="frmDmUnit.col_UNIT_SHORT_NAME" xml:space="preserve">
-    <value>Tên thu gọn</value>
+    <value>Viết tắt</value>
   </data>
   <data name="frmDmUnit.lbl_dis_count" xml:space="preserve">
     <value>Số lượng:</value>
@@ -714,20 +714,20 @@
   <data name="frmDmTitle.btn_Update" xml:space="preserve">
     <value>Cập nhật</value>
   </data>
-  <data name="frmDmTitle.colDescription" xml:space="preserve">
+  <data name="frmDmTitle.col_TITLE_DESCRIPTION" xml:space="preserve">
     <value>Mô tả</value>
   </data>
-  <data name="frmDmTitle.colID" xml:space="preserve">
+  <data name="frmDmTitle.col_ID" xml:space="preserve">
     <value>ID</value>
   </data>
-  <data name="frmDmTitle.colName" xml:space="preserve">
+  <data name="frmDmTitle.col_TITLE_NAME" xml:space="preserve">
     <value>Chức danh</value>
   </data>
-  <data name="frmDmTitle.colShortName" xml:space="preserve">
+  <data name="frmDmTitle.col_TITLE_SHORT_NAME" xml:space="preserve">
     <value>Viết tắt</value>
   </data>
   <data name="frmDmTitle.lbl_dis_count" xml:space="preserve">
-    <value>Số lượng</value>
+    <value>Số lượng:</value>
   </data>
   <data name="frmDmTitle.lbl_dis_keyword" xml:space="preserve">
     <value>Từ khóa</value>
@@ -742,6 +742,12 @@
     <value>Xuất excel</value>
   </data>
   <data name="frmDmUnit.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmTitle.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmTitle.btn_Print" xml:space="preserve">
     <value>In</value>
   </data>
 </root>

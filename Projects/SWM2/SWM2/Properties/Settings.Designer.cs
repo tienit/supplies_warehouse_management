@@ -73,18 +73,6 @@ namespace VKTIM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("117.4.241.246")]
-        public string CS_ServerName {
-            get {
-                return ((string)(this["CS_ServerName"]));
-            }
-            set {
-                this["CS_ServerName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("IMS1")]
         public string CS_DatabaseName {
             get {
@@ -92,6 +80,18 @@ namespace VKTIM.Properties {
             }
             set {
                 this["CS_DatabaseName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("117.4.241.246")]
+        public string CS_ServerName {
+            get {
+                return ((string)(this["CS_ServerName"]));
+            }
+            set {
+                this["CS_ServerName"] = value;
             }
         }
     }

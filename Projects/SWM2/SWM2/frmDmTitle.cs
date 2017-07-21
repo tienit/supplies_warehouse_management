@@ -8,68 +8,90 @@ using System.Text;
 using System.Windows.Forms;
 using VKTIM.Common;
 using VKTIM.Component;
+using VKTIM.Component.Infos;
 
 namespace VKTIM
 {
-    public partial class frmDmTitle : CommonForm
+    public partial class frmDmTitle : CommonFormAdmin
     {
         public frmDmTitle()
         {
             InitializeComponent();
         }
 
-        private void frmDmTitle_Load(object sender, EventArgs e)
+        protected override void Init_Components()
         {
-            try
+            _TABLE_NAME = "DM_TITLE";
+            _ARR_FILE_NAME = new List<GridLayoutInfo>();
+            _ARR_FILE_NAME.Add(new GridLayoutInfo("ID", GIRD_COLUMN_TYPE.TextBox));
+            _ARR_FILE_NAME.Add(new GridLayoutInfo("TITLE_NAME", GIRD_COLUMN_TYPE.TextBox));
+            _ARR_FILE_NAME.Add(new GridLayoutInfo("TITLE_SHORT_NAME", GIRD_COLUMN_TYPE.TextBox));
+            _ARR_FILE_NAME.Add(new GridLayoutInfo("TITLE_DESCRIPTION", GIRD_COLUMN_TYPE.TextBox));
+        }
+
+        protected override void Do_Add()
+        {
+            frmDmTitlePopup m_Popup = new frmDmTitlePopup();
+            m_Popup.Text = "Thêm chức vụ";
+            m_Popup.ACTION_TYPE = ACTION_TYPE.AddNew;
+            if (m_Popup.ShowDialog() == DialogResult.OK)
             {
                 Load_Data();
             }
-            catch (Exception ex)
+        }
+
+        protected override void Do_Update()
+        {
+            if (GRID_DATA.SelectedRows.Count > 0)
             {
-                GBTSCCommon.Message_Info(ex.Message, GBTSCConstants.MSG_CAPTION_ERROR, GBTSCCommon.MessageType.Message_NG);
+                DataGridViewRow dr = GRID_DATA.SelectedRows[0];
+                frmDmTitlePopup m_Popup = new frmDmTitlePopup();
+                m_Popup.Text = "Cập nhật chức vụ";
+                m_Popup.ACTION_TYPE = ACTION_TYPE.Update;
+                m_Popup.txt_data_id.Text = dr.Cells["col_ID"].Value.ToString();
+                m_Popup.txt_data_name.Text = (string)dr.Cells["col_TITLE_NAME"].Value;
+                m_Popup.txt_data_shortname.Text = (string)dr.Cells["col_TITLE_SHORT_NAME"].Value;
+                m_Popup.txt_data_description.Text = (dr.Cells["col_TITLE_DESCRIPTION"].Value != null) ? dr.Cells["col_TITLE_DESCRIPTION"].Value.ToString() : "";
+                if (m_Popup.ShowDialog() == DialogResult.OK)
+                {
+                    Load_Data();
+                }
             }
         }
 
-        private void Load_Data()
+        protected override void Do_Delete()
         {
-            DataTable dtSrc = DMTITLEController.Instance().GetAll_DS().Tables[0];
-            dgv_Data.DataSource = dtSrc;
-            lbl_data_count.Text = dtSrc.Rows.Count.ToString();
-        }
-
-        private void btn_Add_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Search_Click(object sender, EventArgs e)
-        {
-            SearchData();
-        }
-
-        /// <summary>
-        /// Tìm kiếm sản phẩm
-        /// </summary>
-        private void SearchData()
-        {
-            try
+            if (GRID_DATA.SelectedRows.Count > 0)
             {
-                DataTable dt = DMTITLEController.Instance().Search_DS(txt_data_keyword.Text);
-                dgv_Data.DataSource = dt;
-                lbl_data_count.Text = dt.Rows.Count.ToString();
-            }
-            catch (Exception ex)
-            {
-                GBTSCCommon.Message_Info(ex.Message, GBTSCConstants.MSG_CAPTION_ERROR, GBTSCCommon.MessageType.Message_NG);
+                if (GBTSCCommon.Message_Confirm(GBTSCConstants.MSG_DELETE_CONFIRM, GBTSCConstants.MSG_CAPTION_DELETE) == DialogResult.Yes)
+                {
+                    int objID = Convert.ToInt32(GRID_DATA.SelectedRows[0].Cells["col_ID"].Value);
+
+                    // Check the conditions before deleting
+
+                    //Delete
+                    DMTITLEController.Instance().Delete(objID);
+                }
             }
         }
 
-        private void txt_data_keyword_KeyDown(object sender, KeyEventArgs e)
+        protected override void Do_Search()
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                SearchData();
-            }
+            DataTable dt = DMTITLEController.Instance().Search_DS(KEY_WORD);
+            GRID_DATA.DataSource = dt;
+            DATA_COUNT = dt.Rows.Count.ToString();
+        }
+
+        // Override if need
+        protected override void Do_Export_Excel()
+        {
+            base.Do_Export_Excel();
+        }
+
+        // Override if need
+        protected override void Do_Print()
+        {
+            base.Do_Print();
         }
     }
 }
