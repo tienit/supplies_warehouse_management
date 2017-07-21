@@ -613,7 +613,7 @@
     <value>Cấu hình cho nhà kho {0} đã được cập nhật.</value>
   </data>
   <data name="frmDmUnit" xml:space="preserve">
-    <value>Quản lý danh mục đơn vị</value>
+    <value>Quản lý danh mục đơn vị tính</value>
   </data>
   <data name="ESWS_MSG_LAYOUT_DELETE_BATCH_CELLS_SUCCESS" xml:space="preserve">
     <value>XÓA DANH SÁCH VỊ TRÍ THÀNH CÔNG.</value>
@@ -749,5 +749,263 @@
   </data>
   <data name="frmDmTitle.btn_Print" xml:space="preserve">
     <value>In</value>
+  </data>
+  <data name="frmDmEmployer" xml:space="preserve">
+    <value>Quản lý danh mục cán bộ</value>
+  </data>
+  <data name="frmDmEmployer.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmEmployer.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmEmployer.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmEmployer.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmEmployer.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmEmployer.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmEmployer.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmEmployer.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmMain.btnEmployer" xml:space="preserve">
+    <value>Danh mục cán bộ</value>
+  </data>
+  <data name="frmDmEmployer.col_ADDRESS" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="frmDmEmployer.col_AVATAR" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="frmDmEmployer.col_BIRTHDAY" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="frmDmEmployer.col_CODE" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmDmEmployer.col_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="frmDmEmployer.col_EMPLOYER_NAME" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmDmEmployer.col_EMPLOYER_SEX" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="frmDmEmployer.col_HUYEN_LOCATION_ID" xml:space="preserve">
+    <value>Mã huyện</value>
+  </data>
+  <data name="frmDmEmployer.col_HUYEN_LOCATION_NAME" xml:space="preserve">
+    <value>Huyện</value>
+  </data>
+  <data name="frmDmEmployer.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmEmployer.col_ORGANIZATION" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="frmDmEmployer.col_PHONE1" xml:space="preserve">
+    <value>Di động</value>
+  </data>
+  <data name="frmDmEmployer.col_PHONE2" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="frmDmEmployer.col_RANK_ID" xml:space="preserve">
+    <value>Mã cấp bậc</value>
+  </data>
+  <data name="frmDmEmployer.col_RETRIED" xml:space="preserve">
+    <value>Nghỉ hưu</value>
+  </data>
+  <data name="frmDmEmployer.col_TINH_LOCATION_ID" xml:space="preserve">
+    <value>Mã tỉnh</value>
+  </data>
+  <data name="frmDmEmployer.col_TINH_LOCATION_NAME" xml:space="preserve">
+    <value>Tỉnh</value>
+  </data>
+  <data name="frmDmEmployer.col_TITLE_ID" xml:space="preserve">
+    <value>Mã chức vụ</value>
+  </data>
+  <data name="frmDmEmployer.col_XA_LOCATION_ID" xml:space="preserve">
+    <value>Mã xã</value>
+  </data>
+  <data name="frmDmEmployer.col_XA_LOCATION_NAME" xml:space="preserve">
+    <value>Xã</value>
+  </data>
+  <data name="frmDmEmployerPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmEmployerPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_address" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_avatar" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_birthday" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_code" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_employersex" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_huyen" xml:space="preserve">
+    <value>Huyện</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_name" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_organization" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_phone1" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_phone2" xml:space="preserve">
+    <value>Di động</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_rank" xml:space="preserve">
+    <value>Cấp bậc</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_retried" xml:space="preserve">
+    <value>Nghỉ hưu</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_tinh" xml:space="preserve">
+    <value>Tỉnh</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_title" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="frmDmEmployerPopup.lbl_dis_xa" xml:space="preserve">
+    <value>Xã</value>
+  </data>
+  <data name="frmDmLocation" xml:space="preserve">
+    <value>Quản lý danh mục địa điểm</value>
+  </data>
+  <data name="frmDmLocation.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmLocation.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmLocation.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmLocation.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmLocation.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmLocation.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmLocation.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmLocation.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmDmLocation.lbl_FormTitle" xml:space="preserve">
+    <value>Form Quản lý danh mục địa điểm</value>
+  </data>
+  <data name="frmDmLocationPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmLocationPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmLocationPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmLocationPopup.lbl_dis_LocationLevel" xml:space="preserve">
+    <value>Cấp bậc</value>
+  </data>
+  <data name="frmDmLocationPopup.lbl_dis_locationname" xml:space="preserve">
+    <value>Tên địa điểm</value>
+  </data>
+  <data name="frmDmLocationPopup.lbl_dis_LocationParrentID" xml:space="preserve">
+    <value>Trực thuộc</value>
+  </data>
+  <data name="frmDmLocationPopup.lbl_dis_order" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="frmDmOrganization" xml:space="preserve">
+    <value>Quản lý danh mục đơn vị</value>
+  </data>
+  <data name="frmDmOrganization.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmOrganization.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmOrganization.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmOrganization.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmOrganization.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmOrganization.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmOrganization.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmOrganization.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmDmOrganizationPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmOrganizationPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_OrganizationDescription" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_OrganizationLevel" xml:space="preserve">
+    <value>Cấp bậc</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_OrganizationName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_OrganizationTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="frmDmOrganizationPopup.lbl_dis_SpecialID" xml:space="preserve">
+    <value>Chuyên ngành</value>
+  </data>
+  <data name="frmMain.btnLocation" xml:space="preserve">
+    <value>Danh mục địa điểm</value>
+  </data>
+  <data name="frmMain.btnOrganization" xml:space="preserve">
+    <value>Danh mục đơn vị</value>
   </data>
 </root>

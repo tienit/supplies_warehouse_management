@@ -243,6 +243,42 @@
     <Compile Include="Component\Infos\HTTITLEEMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\HTUSEREMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\HTUSERInfo.cs" />
+    <Compile Include="frmDmEmployer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmEmployer.Designer.cs">
+      <DependentUpon>frmDmEmployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmEmployerPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmEmployerPopup.Designer.cs">
+      <DependentUpon>frmDmEmployerPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmLocation.Designer.cs">
+      <DependentUpon>frmDmLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmLocationPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmLocationPopup.Designer.cs">
+      <DependentUpon>frmDmLocationPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmOrganization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmOrganization.Designer.cs">
+      <DependentUpon>frmDmOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmOrganizationPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmOrganizationPopup.Designer.cs">
+      <DependentUpon>frmDmOrganizationPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmTitle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +357,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CommonFormAdmin.resx">
       <DependentUpon>CommonFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmEmployer.resx">
+      <DependentUpon>frmDmEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmEmployerPopup.resx">
+      <DependentUpon>frmDmEmployerPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmLocation.resx">
+      <DependentUpon>frmDmLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmLocationPopup.resx">
+      <DependentUpon>frmDmLocationPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmOrganization.resx">
+      <DependentUpon>frmDmOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmOrganizationPopup.resx">
+      <DependentUpon>frmDmOrganizationPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmTitle.resx">
       <DependentUpon>frmDmTitle.cs</DependentUpon>

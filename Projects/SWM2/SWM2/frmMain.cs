@@ -35,5 +35,24 @@ namespace VKTIM
             frmDmTitle m_Frm = new frmDmTitle();
             m_Frm.ShowDialog();
         }
+
+        private void btnEmployer_Click(object sender, EventArgs e)
+        {
+            frmDmEmployer m_Frm = new frmDmEmployer();
+            m_Frm.ShowDialog();
+              
+        }
+
+        private void btnLocation_Click(object sender, EventArgs e)
+        {
+            frmDmLocation m_Frm = new frmDmLocation();
+            m_Frm.ShowDialog();
+        }
+
+        private void btnOrganization_Click(object sender, EventArgs e)
+        {
+            frmDmOrganization m_Frm = new frmDmOrganization();
+            m_Frm.ShowDialog();
+        }
     }
 }

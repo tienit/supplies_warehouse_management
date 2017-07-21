@@ -33,7 +33,10 @@
             this.btnUnit = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnTitle = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEmployer = new System.Windows.Forms.Button();
+            this.btnLocation = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnOrganization = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -41,7 +44,10 @@
             // 
             // pn_Form
             // 
-            this.pn_Form.Controls.Add(this.button1);
+            this.pn_Form.Controls.Add(this.richTextBox1);
+            this.pn_Form.Controls.Add(this.btnOrganization);
+            this.pn_Form.Controls.Add(this.btnLocation);
+            this.pn_Form.Controls.Add(this.btnEmployer);
             this.pn_Form.Controls.Add(this.btnTitle);
             this.pn_Form.Controls.Add(this.textBox1);
             this.pn_Form.Controls.Add(this.btnUnit);
@@ -51,7 +57,10 @@
             this.pn_Form.Controls.SetChildIndex(this.btnUnit, 0);
             this.pn_Form.Controls.SetChildIndex(this.textBox1, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnTitle, 0);
-            this.pn_Form.Controls.SetChildIndex(this.button1, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnEmployer, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnLocation, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnOrganization, 0);
+            this.pn_Form.Controls.SetChildIndex(this.richTextBox1, 0);
             // 
             // lbl_FormTitle
             // 
@@ -94,14 +103,43 @@
             this.btnTitle.UseVisualStyleBackColor = true;
             this.btnTitle.Click += new System.EventHandler(this.btn_Title_Click);
             // 
-            // button1
+            // btnEmployer
             // 
-            this.button1.Location = new System.Drawing.Point(83, 166);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 23);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "Title";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEmployer.Location = new System.Drawing.Point(83, 153);
+            this.btnEmployer.Name = "btnEmployer";
+            this.btnEmployer.Size = new System.Drawing.Size(148, 23);
+            this.btnEmployer.TabIndex = 56;
+            this.btnEmployer.Text = "Employer";
+            this.btnEmployer.UseVisualStyleBackColor = true;
+            this.btnEmployer.Click += new System.EventHandler(this.btnEmployer_Click);
+            // 
+            // btnLocation
+            // 
+            this.btnLocation.Location = new System.Drawing.Point(83, 182);
+            this.btnLocation.Name = "btnLocation";
+            this.btnLocation.Size = new System.Drawing.Size(148, 23);
+            this.btnLocation.TabIndex = 56;
+            this.btnLocation.Text = "Location";
+            this.btnLocation.UseVisualStyleBackColor = true;
+            this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(625, 64);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(451, 415);
+            this.richTextBox1.TabIndex = 57;
+            this.richTextBox1.Text = "- Danh mục đang để select tối đa select 100 bản ghi\n";
+            // 
+            // btnOrganization
+            // 
+            this.btnOrganization.Location = new System.Drawing.Point(83, 211);
+            this.btnOrganization.Name = "btnOrganization";
+            this.btnOrganization.Size = new System.Drawing.Size(148, 23);
+            this.btnOrganization.TabIndex = 56;
+            this.btnOrganization.Text = "Đơn vị";
+            this.btnOrganization.UseVisualStyleBackColor = true;
+            this.btnOrganization.Click += new System.EventHandler(this.btnOrganization_Click);
             // 
             // frmMain
             // 
@@ -130,7 +168,10 @@
         private System.Windows.Forms.Button btnUnit;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnTitle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEmployer;
+        private System.Windows.Forms.Button btnLocation;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnOrganization;
     }
 }
 
