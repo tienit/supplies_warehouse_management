@@ -77,6 +77,7 @@ namespace VKTIM
 
         protected override void Do_Search()
         {
+            // Replace DMUNITController by corresponding Controller
             DataTable dt = DMUNITController.Instance().Search_DS(KEY_WORD);
             GRID_DATA.DataSource = dt;
             DATA_COUNT = dt.Rows.Count.ToString();

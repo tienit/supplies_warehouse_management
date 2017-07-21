@@ -6,6 +6,13 @@ namespace VKTIM
 {
     public partial class frmMessage : CommonForm
     {
+        private string _CAPTION;
+        private string _MSG;
+
+        public string CAPTION { get => _CAPTION; set => _CAPTION = value; }
+        public string MSG { get => _MSG; set => _MSG = value; }
+
+
         public frmMessage()
         {
             InitializeComponent();
@@ -14,7 +21,9 @@ namespace VKTIM
         private void frmMessage_Load(object sender, EventArgs e)
         {
             //GBTSCCommon.SetCommon(this);
-            lblType.Text = lblType.AccessibleDescription;
+            lblType.Text = _CAPTION;
+            txtMsg.Text = _MSG;
+            //lblType.Text = lblType.AccessibleDescription;
         }
 
         private void btnOK_Click(object sender, EventArgs e)
