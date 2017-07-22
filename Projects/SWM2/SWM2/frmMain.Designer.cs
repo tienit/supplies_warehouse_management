@@ -38,6 +38,8 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnOrganization = new System.Windows.Forms.Button();
             this.btnOrigin = new System.Windows.Forms.Button();
+            this.btnOuputType = new System.Windows.Forms.Button();
+            this.btnParameter = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -46,6 +48,8 @@
             // pn_Form
             // 
             this.pn_Form.Controls.Add(this.richTextBox1);
+            this.pn_Form.Controls.Add(this.btnParameter);
+            this.pn_Form.Controls.Add(this.btnOuputType);
             this.pn_Form.Controls.Add(this.btnOrigin);
             this.pn_Form.Controls.Add(this.btnOrganization);
             this.pn_Form.Controls.Add(this.btnLocation);
@@ -63,6 +67,8 @@
             this.pn_Form.Controls.SetChildIndex(this.btnLocation, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnOrganization, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnOrigin, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnOuputType, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnParameter, 0);
             this.pn_Form.Controls.SetChildIndex(this.richTextBox1, 0);
             // 
             // lbl_FormTitle
@@ -152,7 +158,27 @@
             this.btnOrigin.TabIndex = 56;
             this.btnOrigin.Text = "Xuất xứ";
             this.btnOrigin.UseVisualStyleBackColor = true;
-            this.btnOrigin.Click += new System.EventHandler(this.btnOrganization_Click);
+            this.btnOrigin.Click += new System.EventHandler(this.btnOrigin_Click);
+            // 
+            // btnOuputType
+            // 
+            this.btnOuputType.Location = new System.Drawing.Point(83, 269);
+            this.btnOuputType.Name = "btnOuputType";
+            this.btnOuputType.Size = new System.Drawing.Size(148, 23);
+            this.btnOuputType.TabIndex = 56;
+            this.btnOuputType.Text = "Kiểu xuất";
+            this.btnOuputType.UseVisualStyleBackColor = true;
+            this.btnOuputType.Click += new System.EventHandler(this.btnOuputType_Click);
+            // 
+            // btnParameter
+            // 
+            this.btnParameter.Location = new System.Drawing.Point(83, 298);
+            this.btnParameter.Name = "btnParameter";
+            this.btnParameter.Size = new System.Drawing.Size(148, 23);
+            this.btnParameter.TabIndex = 56;
+            this.btnParameter.Text = "Tham số";
+            this.btnParameter.UseVisualStyleBackColor = true;
+            this.btnParameter.Click += new System.EventHandler(this.btnParameter_Click);
             // 
             // frmMain
             // 
@@ -186,6 +212,8 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnOrganization;
         private System.Windows.Forms.Button btnOrigin;
+        private System.Windows.Forms.Button btnOuputType;
+        private System.Windows.Forms.Button btnParameter;
     }
 }
 

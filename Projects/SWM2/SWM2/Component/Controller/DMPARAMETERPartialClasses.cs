@@ -25,8 +25,23 @@ public object DB_GetNull(object Field)
 {
 return tienit.core.Null.GetNull(Field, DBNull.Value);
 }
-	// Add custom code here
-}
+        // Add custom code here
+        public List<DMPARAMETERInfo> Search(string keyword)
+        {
+            List<DMPARAMETERInfo> list = new List<DMPARAMETERInfo>();
+            ArrayList arr = CBO.FillCollection(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "DM_PARAMETER_Search", DB_GetNull(keyword)), typeof(DMPARAMETERInfo));
+            foreach (object objItem in arr)
+            {
+                list.Add((DMPARAMETERInfo)objItem);
+            }
+            return list;
+        }
+
+        public DataTable Search_DS(string keyword)
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_PARAMETER_Search", DB_GetNull(keyword)).Tables[0];
+        }
+    }
 
 public partial class DataProvider
 {

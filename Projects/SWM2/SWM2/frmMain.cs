@@ -51,7 +51,25 @@ namespace VKTIM
 
         private void btnOrganization_Click(object sender, EventArgs e)
         {
+            frmDmOrganization m_Frm = new frmDmOrganization();
+            m_Frm.ShowDialog();
+        }
+
+        private void btnOuputType_Click(object sender, EventArgs e)
+        {
+            frmDmOutputType m_Frm = new frmDmOutputType();
+            m_Frm.ShowDialog();
+        }
+
+        private void btnOrigin_Click(object sender, EventArgs e)
+        {
             frmDmOrigin m_Frm = new frmDmOrigin();
+            m_Frm.ShowDialog();
+        }
+
+        private void btnParameter_Click(object sender, EventArgs e)
+        {
+            frmDmParameter m_Frm = new frmDmParameter();
             m_Frm.ShowDialog();
         }
     }
