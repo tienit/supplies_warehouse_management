@@ -279,6 +279,18 @@
     <Compile Include="frmDmOrganizationPopup.Designer.cs">
       <DependentUpon>frmDmOrganizationPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDmOrigin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmOrigin.Designer.cs">
+      <DependentUpon>frmDmOrigin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmOriginPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmOriginPopup.Designer.cs">
+      <DependentUpon>frmDmOriginPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmTitle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -375,6 +387,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmOrganizationPopup.resx">
       <DependentUpon>frmDmOrganizationPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmOrigin.resx">
+      <DependentUpon>frmDmOrigin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmOriginPopup.resx">
+      <DependentUpon>frmDmOriginPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmTitle.resx">
       <DependentUpon>frmDmTitle.cs</DependentUpon>

@@ -37,6 +37,7 @@
             this.btnLocation = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnOrganization = new System.Windows.Forms.Button();
+            this.btnOrigin = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -45,6 +46,7 @@
             // pn_Form
             // 
             this.pn_Form.Controls.Add(this.richTextBox1);
+            this.pn_Form.Controls.Add(this.btnOrigin);
             this.pn_Form.Controls.Add(this.btnOrganization);
             this.pn_Form.Controls.Add(this.btnLocation);
             this.pn_Form.Controls.Add(this.btnEmployer);
@@ -60,6 +62,7 @@
             this.pn_Form.Controls.SetChildIndex(this.btnEmployer, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnLocation, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnOrganization, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnOrigin, 0);
             this.pn_Form.Controls.SetChildIndex(this.richTextBox1, 0);
             // 
             // lbl_FormTitle
@@ -141,6 +144,16 @@
             this.btnOrganization.UseVisualStyleBackColor = true;
             this.btnOrganization.Click += new System.EventHandler(this.btnOrganization_Click);
             // 
+            // btnOrigin
+            // 
+            this.btnOrigin.Location = new System.Drawing.Point(83, 240);
+            this.btnOrigin.Name = "btnOrigin";
+            this.btnOrigin.Size = new System.Drawing.Size(148, 23);
+            this.btnOrigin.TabIndex = 56;
+            this.btnOrigin.Text = "Xuất xứ";
+            this.btnOrigin.UseVisualStyleBackColor = true;
+            this.btnOrigin.Click += new System.EventHandler(this.btnOrganization_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +185,7 @@
         private System.Windows.Forms.Button btnLocation;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnOrganization;
+        private System.Windows.Forms.Button btnOrigin;
     }
 }
 
