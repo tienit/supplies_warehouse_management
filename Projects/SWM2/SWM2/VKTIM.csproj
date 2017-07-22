@@ -315,6 +315,30 @@
     <Compile Include="frmDmParameterPopup.Designer.cs">
       <DependentUpon>frmDmParameterPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDmPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmPrice.Designer.cs">
+      <DependentUpon>frmDmPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmPricePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmPricePopup.Designer.cs">
+      <DependentUpon>frmDmPricePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmProductCategory.Designer.cs">
+      <DependentUpon>frmDmProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmProductCategoryPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmProductCategoryPopup.Designer.cs">
+      <DependentUpon>frmDmProductCategoryPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmTitle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,6 +453,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmParameterPopup.resx">
       <DependentUpon>frmDmParameterPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmPrice.resx">
+      <DependentUpon>frmDmPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmPricePopup.resx">
+      <DependentUpon>frmDmPricePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmProductCategory.resx">
+      <DependentUpon>frmDmProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmProductCategoryPopup.resx">
+      <DependentUpon>frmDmProductCategoryPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmTitle.resx">
       <DependentUpon>frmDmTitle.cs</DependentUpon>

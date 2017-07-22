@@ -72,5 +72,17 @@ namespace VKTIM
             frmDmParameter m_Frm = new frmDmParameter();
             m_Frm.ShowDialog();
         }
+
+        private void btnPrice_Click(object sender, EventArgs e)
+        {
+            frmDmPrice m_Frm = new frmDmPrice();
+            m_Frm.ShowDialog();
+        }
+
+        private void btnProductCategory_Click(object sender, EventArgs e)
+        {
+            frmDmProductCategory m_Frm = new frmDmProductCategory();
+            m_Frm.ShowDialog();
+        }
     }
 }
