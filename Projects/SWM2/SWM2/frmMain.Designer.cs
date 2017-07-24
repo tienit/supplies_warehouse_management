@@ -42,6 +42,7 @@
             this.btnParameter = new System.Windows.Forms.Button();
             this.btnPrice = new System.Windows.Forms.Button();
             this.btnProductCategory = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -50,6 +51,7 @@
             // pn_Form
             // 
             this.pn_Form.Controls.Add(this.richTextBox1);
+            this.pn_Form.Controls.Add(this.btnProducts);
             this.pn_Form.Controls.Add(this.btnProductCategory);
             this.pn_Form.Controls.Add(this.btnPrice);
             this.pn_Form.Controls.Add(this.btnParameter);
@@ -75,6 +77,7 @@
             this.pn_Form.Controls.SetChildIndex(this.btnParameter, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnPrice, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnProductCategory, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnProducts, 0);
             this.pn_Form.Controls.SetChildIndex(this.richTextBox1, 0);
             // 
             // lbl_FormTitle
@@ -206,6 +209,16 @@
             this.btnProductCategory.UseVisualStyleBackColor = true;
             this.btnProductCategory.Click += new System.EventHandler(this.btnProductCategory_Click);
             // 
+            // btnProducts
+            // 
+            this.btnProducts.Location = new System.Drawing.Point(83, 385);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(148, 23);
+            this.btnProducts.TabIndex = 56;
+            this.btnProducts.Text = "Sản phẩm";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +255,7 @@
         private System.Windows.Forms.Button btnParameter;
         private System.Windows.Forms.Button btnPrice;
         private System.Windows.Forms.Button btnProductCategory;
+        private System.Windows.Forms.Button btnProducts;
     }
 }
 

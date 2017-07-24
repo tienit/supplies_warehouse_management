@@ -1359,4 +1359,139 @@
   <data name="frmMain.btnProductCategory" xml:space="preserve">
     <value>Danh mục nhóm sản phẩm</value>
   </data>
+  <data name="frmDmProducts" xml:space="preserve">
+    <value>Quản lý danh nhóm sản phẩm</value>
+  </data>
+  <data name="frmDmProducts.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmProducts.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmProducts.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmProducts.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmProducts.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmProducts.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmProducts.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmProducts.col_ORIGIN_ID" xml:space="preserve">
+    <value>ID xuất xứ</value>
+  </data>
+  <data name="frmDmProducts.col_ORIGIN_NAME" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="frmDmProducts.col_PRICE_DEFAULT" xml:space="preserve">
+    <value>Giá mặc định</value>
+  </data>
+  <data name="frmDmProducts.col_PRICE_ID" xml:space="preserve">
+    <value>ID giá</value>
+  </data>
+  <data name="frmDmProducts.col_PRICE_NAME" xml:space="preserve">
+    <value>Giá sản phẩm</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTCATEGORY_ID" xml:space="preserve">
+    <value>ID nhóm</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTCATEGORY_NAME" xml:space="preserve">
+    <value>Phân loại</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTS_CODE" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTS_NAME" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTS_NAME_OTHER" xml:space="preserve">
+    <value>Tên khác</value>
+  </data>
+  <data name="frmDmProducts.col_PRODUCTS_SHORT_DESCRIPTION" xml:space="preserve">
+    <value>Trích dẫn</value>
+  </data>
+  <data name="frmDmProducts.col_SUPPLIER_ID" xml:space="preserve">
+    <value>ID nhà cung cấp</value>
+  </data>
+  <data name="frmDmProducts.col_SUPPLIER_NAME" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="frmDmProducts.col_UNIT_ID" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="frmDmProducts.col_UNIT_NAME" xml:space="preserve">
+    <value>Đơn vị tính</value>
+  </data>
+  <data name="frmDmProducts.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmProducts.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmDmProductsPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmProductsPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_categoryid" xml:space="preserve">
+    <value>ID loại</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_categoryname" xml:space="preserve">
+    <value>Tên loại</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_name" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_orginid" xml:space="preserve">
+    <value>ID xuất xứ</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_orginname" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_othername" xml:space="preserve">
+    <value>Tên khác</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_pricedefault" xml:space="preserve">
+    <value>Giá mặc định</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_priceid" xml:space="preserve">
+    <value>ID giá</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_pricename" xml:space="preserve">
+    <value>Tên giá</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_shortdescription" xml:space="preserve">
+    <value>Mô tả ngắn</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_supplierid" xml:space="preserve">
+    <value>ID nhà cung cấp</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_suppliername" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_unitid" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="frmDmProductsPopup.lbl_dis_unitname" xml:space="preserve">
+    <value>Đơn vị tính</value>
+  </data>
+  <data name="frmMain.btnProducts" xml:space="preserve">
+    <value>Danh mục sản phẩm</value>
+  </data>
 </root>
