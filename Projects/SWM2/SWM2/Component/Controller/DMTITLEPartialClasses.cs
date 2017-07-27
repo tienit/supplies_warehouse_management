@@ -21,11 +21,21 @@ public partial class DMTITLEInfo
 
 public partial class DMTITLEController
 {
-public object DB_GetNull(object Field)
-{
-return tienit.core.Null.GetNull(Field, DBNull.Value);
-}
+        public object DB_GetNull(object Field)
+        {
+            return tienit.core.Null.GetNull(Field, DBNull.Value);
+        }
         // Add custom code here
+        public List<DMTITLEInfo> Search(string keyword)
+        {
+            List<DMTITLEInfo> list = new List<DMTITLEInfo>();
+            ArrayList arr = CBO.FillCollection(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "DM_TITLE_Search", DB_GetNull(keyword)), typeof(DMTITLEInfo));
+            foreach (object objItem in arr)
+            {
+                list.Add((DMTITLEInfo)objItem);
+            }
+            return list;
+        }
 
         public DataTable Search_DS(string keyword)
         {

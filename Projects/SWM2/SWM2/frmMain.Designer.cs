@@ -45,6 +45,7 @@
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnRank = new System.Windows.Forms.Button();
             this.btnSpecial = new System.Windows.Forms.Button();
+            this.btnSupplier = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -53,6 +54,7 @@
             // pn_Form
             // 
             this.pn_Form.Controls.Add(this.richTextBox1);
+            this.pn_Form.Controls.Add(this.btnSupplier);
             this.pn_Form.Controls.Add(this.btnSpecial);
             this.pn_Form.Controls.Add(this.btnRank);
             this.pn_Form.Controls.Add(this.btnProducts);
@@ -84,6 +86,7 @@
             this.pn_Form.Controls.SetChildIndex(this.btnProducts, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnRank, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnSpecial, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnSupplier, 0);
             this.pn_Form.Controls.SetChildIndex(this.richTextBox1, 0);
             // 
             // lbl_FormTitle
@@ -245,6 +248,16 @@
             this.btnSpecial.UseVisualStyleBackColor = true;
             this.btnSpecial.Click += new System.EventHandler(this.btnSpecial_Click);
             // 
+            // btnSupplier
+            // 
+            this.btnSupplier.Location = new System.Drawing.Point(276, 153);
+            this.btnSupplier.Name = "btnSupplier";
+            this.btnSupplier.Size = new System.Drawing.Size(148, 23);
+            this.btnSupplier.TabIndex = 56;
+            this.btnSupplier.Text = "Đối tác";
+            this.btnSupplier.UseVisualStyleBackColor = true;
+            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +297,7 @@
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnRank;
         private System.Windows.Forms.Button btnSpecial;
+        private System.Windows.Forms.Button btnSupplier;
     }
 }
 

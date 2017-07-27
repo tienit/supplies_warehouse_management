@@ -102,5 +102,11 @@ namespace VKTIM
             frmDmSpecial m_Frm = new frmDmSpecial();
             m_Frm.ShowDialog();
         }
+
+        private void btnSupplier_Click(object sender, EventArgs e)
+        {
+            frmDmSupplier m_Frm = new frmDmSupplier();
+            m_Frm.ShowDialog();
+        }
     }
 }
