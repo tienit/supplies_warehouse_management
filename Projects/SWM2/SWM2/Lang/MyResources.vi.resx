@@ -1494,4 +1494,112 @@
   <data name="frmMain.btnProducts" xml:space="preserve">
     <value>Danh mục sản phẩm</value>
   </data>
+  <data name="frmDmRank" xml:space="preserve">
+    <value>Quản lý danh mục cấp bậc</value>
+  </data>
+  <data name="frmDmRank.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmRank.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmRank.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmRank.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmRank.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmRank.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmRank.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmRank.col_RANK_DESCRIPTION" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmRank.col_RANK_NAME" xml:space="preserve">
+    <value>Tên cấp bậc</value>
+  </data>
+  <data name="frmDmRank.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmRank.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmDmRankPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmRankPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmRankPopup.lbl_dis_description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmRankPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmRankPopup.lbl_dis_name" xml:space="preserve">
+    <value>Tên cấp</value>
+  </data>
+  <data name="frmMain.btnRank" xml:space="preserve">
+    <value>Danh mục cấp bậc</value>
+  </data>
+  <data name="frmDmSpecial" xml:space="preserve">
+    <value>Quản lý danh mục chuyên ngành</value>
+  </data>
+  <data name="frmDmSpecial.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmDmSpecial.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmDmSpecial.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmDmSpecial.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmDmSpecial.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmDmSpecial.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmDmSpecial.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmSpecial.col_SPECIAL_DESCRIPTION" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmSpecial.col_SPECIAL_NAME" xml:space="preserve">
+    <value>Chuyên ngành</value>
+  </data>
+  <data name="frmDmSpecial.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmDmSpecial.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmDmSpecialPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmDmSpecialPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmDmSpecialPopup.lbl_dis_description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmDmSpecialPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmDmSpecialPopup.lbl_dis_name" xml:space="preserve">
+    <value>Chuyên ngành</value>
+  </data>
+  <data name="frmMain.btnSpecial" xml:space="preserve">
+    <value>Danh mục chuyên ngành</value>
+  </data>
 </root>

@@ -351,6 +351,30 @@
     <Compile Include="frmDmProductsPopup.Designer.cs">
       <DependentUpon>frmDmProductsPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDmRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmRank.Designer.cs">
+      <DependentUpon>frmDmRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmRankPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmRankPopup.Designer.cs">
+      <DependentUpon>frmDmRankPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmSpecial.Designer.cs">
+      <DependentUpon>frmDmSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmSpecialPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmSpecialPopup.Designer.cs">
+      <DependentUpon>frmDmSpecialPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmTitle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -483,6 +507,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmProductsPopup.resx">
       <DependentUpon>frmDmProductsPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmRank.resx">
+      <DependentUpon>frmDmRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmRankPopup.resx">
+      <DependentUpon>frmDmRankPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmSpecial.resx">
+      <DependentUpon>frmDmSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmSpecialPopup.resx">
+      <DependentUpon>frmDmSpecialPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmTitle.resx">
       <DependentUpon>frmDmTitle.cs</DependentUpon>

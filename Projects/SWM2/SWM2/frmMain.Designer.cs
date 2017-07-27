@@ -43,6 +43,8 @@
             this.btnPrice = new System.Windows.Forms.Button();
             this.btnProductCategory = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
+            this.btnRank = new System.Windows.Forms.Button();
+            this.btnSpecial = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -51,6 +53,8 @@
             // pn_Form
             // 
             this.pn_Form.Controls.Add(this.richTextBox1);
+            this.pn_Form.Controls.Add(this.btnSpecial);
+            this.pn_Form.Controls.Add(this.btnRank);
             this.pn_Form.Controls.Add(this.btnProducts);
             this.pn_Form.Controls.Add(this.btnProductCategory);
             this.pn_Form.Controls.Add(this.btnPrice);
@@ -78,6 +82,8 @@
             this.pn_Form.Controls.SetChildIndex(this.btnPrice, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnProductCategory, 0);
             this.pn_Form.Controls.SetChildIndex(this.btnProducts, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnRank, 0);
+            this.pn_Form.Controls.SetChildIndex(this.btnSpecial, 0);
             this.pn_Form.Controls.SetChildIndex(this.richTextBox1, 0);
             // 
             // lbl_FormTitle
@@ -219,6 +225,26 @@
             this.btnProducts.UseVisualStyleBackColor = true;
             this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
+            // btnRank
+            // 
+            this.btnRank.Location = new System.Drawing.Point(276, 95);
+            this.btnRank.Name = "btnRank";
+            this.btnRank.Size = new System.Drawing.Size(148, 23);
+            this.btnRank.TabIndex = 56;
+            this.btnRank.Text = "Cấp bậc";
+            this.btnRank.UseVisualStyleBackColor = true;
+            this.btnRank.Click += new System.EventHandler(this.btnRank_Click);
+            // 
+            // btnSpecial
+            // 
+            this.btnSpecial.Location = new System.Drawing.Point(276, 124);
+            this.btnSpecial.Name = "btnSpecial";
+            this.btnSpecial.Size = new System.Drawing.Size(148, 23);
+            this.btnSpecial.TabIndex = 56;
+            this.btnSpecial.Text = "Chuyên ngành";
+            this.btnSpecial.UseVisualStyleBackColor = true;
+            this.btnSpecial.Click += new System.EventHandler(this.btnSpecial_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,6 +282,8 @@
         private System.Windows.Forms.Button btnPrice;
         private System.Windows.Forms.Button btnProductCategory;
         private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Button btnRank;
+        private System.Windows.Forms.Button btnSpecial;
     }
 }
 

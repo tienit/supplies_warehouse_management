@@ -90,5 +90,17 @@ namespace VKTIM
             frmDmProducts m_Frm = new frmDmProducts();
             m_Frm.ShowDialog();
         }
+
+        private void btnRank_Click(object sender, EventArgs e)
+        {
+            frmDmRank m_Frm = new frmDmRank();
+            m_Frm.ShowDialog();
+        }
+
+        private void btnSpecial_Click(object sender, EventArgs e)
+        {
+            frmDmSpecial m_Frm = new frmDmSpecial();
+            m_Frm.ShowDialog();
+        }
     }
 }
