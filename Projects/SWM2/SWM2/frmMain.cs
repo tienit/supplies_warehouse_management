@@ -382,5 +382,91 @@ namespace VKTIM
         {
             Do_Exit();
         }
+
+
+
+        private void mnuFile_DropDownOpened(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuFileGreen32;
+            item.ForeColor = Color.FromArgb(57, 115, 13);
+        }
+
+        private void mnuFile_DropDownClosed(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuFileWhite32;
+            item.ForeColor = Color.White;
+        }
+
+        private void mnuWarehouse_DropDownOpened(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuWarehouseGreen32;
+            item.ForeColor = Color.FromArgb(57, 115, 13);
+        }
+
+        private void mnuWarehouse_DropDownClosed(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuWarehouseWhite32;
+            item.ForeColor = Color.White;
+        }
+
+        private void mnuSystem_DropDownOpened(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuSystemGreen32;
+            item.ForeColor = Color.FromArgb(57, 115, 13);
+        }
+
+        private void mnuSystem_DropDownClosed(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuSystemWhite32;
+            item.ForeColor = Color.White;
+        }
+
+        private void mnuReport_DropDownOpened(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuReportGreen32;
+            item.ForeColor = Color.FromArgb(57, 115, 13);
+        }
+
+        private void mnuReport_DropDownClosed(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuReportWhite32;
+            item.ForeColor = Color.White;
+        }
+
+        private void mnuManagement_DropDownOpened(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuManagementGreen32;
+            item.ForeColor = Color.FromArgb(57, 115, 13);
+        }
+
+        private void mnuManagement_DropDownClosed(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuManagementWhite32;
+            item.ForeColor = Color.White;
+        }
+
+        private void mnuHelp_DropDownOpened(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuHelpGreen32;
+            item.ForeColor = Color.FromArgb(57, 115, 13);
+        }
+
+        private void mnuHelp_DropDownClosed(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = (ToolStripMenuItem)sender;
+            item.Image = Properties.Resources.mnuHelpWhite32;
+            item.ForeColor = Color.White;
+        }
     }
 }

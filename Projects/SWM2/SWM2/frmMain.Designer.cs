@@ -116,6 +116,8 @@
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Size = new System.Drawing.Size(78, 36);
             this.mnuFile.Text = "&File";
+            this.mnuFile.DropDownClosed += new System.EventHandler(this.mnuFile_DropDownClosed);
+            this.mnuFile.DropDownOpened += new System.EventHandler(this.mnuFile_DropDownOpened);
             // 
             // mnuFile_Login
             // 
@@ -185,6 +187,8 @@
             this.mnuWarehouse.Name = "mnuWarehouse";
             this.mnuWarehouse.Size = new System.Drawing.Size(132, 36);
             this.mnuWarehouse.Text = "&Warehouse";
+            this.mnuWarehouse.DropDownClosed += new System.EventHandler(this.mnuWarehouse_DropDownClosed);
+            this.mnuWarehouse.DropDownOpened += new System.EventHandler(this.mnuWarehouse_DropDownOpened);
             // 
             // mnuSystem
             // 
@@ -194,6 +198,8 @@
             this.mnuSystem.Name = "mnuSystem";
             this.mnuSystem.Size = new System.Drawing.Size(105, 36);
             this.mnuSystem.Text = "&System";
+            this.mnuSystem.DropDownClosed += new System.EventHandler(this.mnuSystem_DropDownClosed);
+            this.mnuSystem.DropDownOpened += new System.EventHandler(this.mnuSystem_DropDownOpened);
             // 
             // mnuReport
             // 
@@ -203,6 +209,8 @@
             this.mnuReport.Name = "mnuReport";
             this.mnuReport.Size = new System.Drawing.Size(101, 36);
             this.mnuReport.Text = "Report";
+            this.mnuReport.DropDownClosed += new System.EventHandler(this.mnuReport_DropDownClosed);
+            this.mnuReport.DropDownOpened += new System.EventHandler(this.mnuReport_DropDownOpened);
             // 
             // mnuManagement
             // 
@@ -212,6 +220,8 @@
             this.mnuManagement.Name = "mnuManagement";
             this.mnuManagement.Size = new System.Drawing.Size(146, 36);
             this.mnuManagement.Text = "&Management";
+            this.mnuManagement.DropDownClosed += new System.EventHandler(this.mnuManagement_DropDownClosed);
+            this.mnuManagement.DropDownOpened += new System.EventHandler(this.mnuManagement_DropDownOpened);
             // 
             // mnuHelp
             // 
@@ -225,6 +235,8 @@
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Size = new System.Drawing.Size(86, 36);
             this.mnuHelp.Text = "&Help";
+            this.mnuHelp.DropDownClosed += new System.EventHandler(this.mnuHelp_DropDownClosed);
+            this.mnuHelp.DropDownOpened += new System.EventHandler(this.mnuHelp_DropDownOpened);
             // 
             // mnuHelp_UserGuide
             // 

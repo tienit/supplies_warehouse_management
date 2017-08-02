@@ -759,6 +759,12 @@
     <None Include="Resources\e_icon_userguide_24.png" />
     <None Include="Resources\e_icon_about_24.png" />
     <None Include="Resources\e_icon_update_24.png" />
+    <None Include="Resources\mnuFileGreen32.png" />
+    <None Include="Resources\mnuHelpGreen32.png" />
+    <None Include="Resources\mnuManagementGreen32.png" />
+    <None Include="Resources\mnuReportGreen32.png" />
+    <None Include="Resources\mnuSystemGreen32.png" />
+    <None Include="Resources\mnuWarehouseGreen32.png" />
     <Content Include="Updater\DoUpdate.exe" />
   </ItemGroup>
   <ItemGroup />

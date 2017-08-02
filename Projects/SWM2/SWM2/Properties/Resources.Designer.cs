@@ -713,9 +713,29 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mnuFileGreen32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuFileGreen32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mnuFileWhite32 {
             get {
                 object obj = ResourceManager.GetObject("mnuFileWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuHelpGreen32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuHelpGreen32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -733,9 +753,29 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mnuManagementGreen32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuManagementGreen32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mnuManagementWhite32 {
             get {
                 object obj = ResourceManager.GetObject("mnuManagementWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuReportGreen32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuReportGreen32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -753,9 +793,29 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mnuSystemGreen32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuSystemGreen32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mnuSystemWhite32 {
             get {
                 object obj = ResourceManager.GetObject("mnuSystemWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuWarehouseGreen32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuWarehouseGreen32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
