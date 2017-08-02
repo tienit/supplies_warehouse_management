@@ -94,5 +94,17 @@ namespace VKTIM.Properties {
                 this["CS_ServerName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("18")]
+        public string APP_REVISION {
+            get {
+                return ((string)(this["APP_REVISION"]));
+            }
+            set {
+                this["APP_REVISION"] = value;
+            }
+        }
     }
 }

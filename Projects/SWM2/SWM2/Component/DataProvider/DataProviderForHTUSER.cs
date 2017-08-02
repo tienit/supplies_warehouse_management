@@ -41,12 +41,12 @@ public virtual DataSet HT_USER_GetAll_DS()
 
 public virtual object HT_USER_Insert(HTUSERInfo objInfo)
 {
-	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_INSERT, DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.PASSWORD), DB_GetNull(objInfo.LAST_LOGIN), DB_GetNull(objInfo.IP_LOGIN), DB_GetNull(objInfo.NUMBER_LOGIN), DB_GetNull(objInfo.IS_BLOCKED), DB_GetNull(objInfo.ROLE_USER_ID), DB_GetNull(objInfo.REMARKS));
+	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_INSERT, DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.PASSWORD), DB_GetNull(objInfo.LAST_LOGIN), DB_GetNull(objInfo.IP_LOGIN), DB_GetNull(objInfo.NUMBER_LOGIN), objInfo.IS_BLOCKED, DB_GetNull(objInfo.REMARKS));
 }
 
 public virtual int HT_USER_Update(HTUSERInfo objInfo)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.PASSWORD), DB_GetNull(objInfo.LAST_LOGIN), DB_GetNull(objInfo.IP_LOGIN), DB_GetNull(objInfo.NUMBER_LOGIN), DB_GetNull(objInfo.IS_BLOCKED), DB_GetNull(objInfo.ROLE_USER_ID), DB_GetNull(objInfo.REMARKS));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_USER_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.USER_NAME), DB_GetNull(objInfo.PASSWORD), DB_GetNull(objInfo.LAST_LOGIN), DB_GetNull(objInfo.IP_LOGIN), DB_GetNull(objInfo.NUMBER_LOGIN), objInfo.IS_BLOCKED, DB_GetNull(objInfo.REMARKS));
 }
 
 public virtual int HT_USER_Delete(int ID)

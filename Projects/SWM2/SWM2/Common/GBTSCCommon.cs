@@ -42,20 +42,18 @@ namespace VKTIM.Common
             frmMessage m_Frm = new frmMessage();
             //System.Globalization.CultureInfo oldCulture = System.Threading.Thread.CurrentThread.CurrentCulture;
             //System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-            m_Frm.txtMsg.Text = msgText;
+            m_Frm.MSG = msgText;
             //m_Frm.txtMsg.Text = System.Web.HttpUtility.HtmlEncode(msgText);
             //System.Threading.Thread.CurrentThread.CurrentCulture = oldCulture;
             if (msgType == MessageType.Message_OK)
             {
                 if (GBTSCConstants.BUHINSOKO_MSG_BOX_CAPTION_DEFAULT == 0)
                 {
-                    m_Frm.lblType.AccessibleDescription = caption.ToUpper();
-                    //m_Frm.lblType.Text = caption.ToUpper();
+                    m_Frm.CAPTION = caption.ToUpper();
                 }
                 else
                 {
-                    //m_Frm.lblType.Text = "OK";
-                    m_Frm.lblType.AccessibleDescription = "OK";
+                    m_Frm.CAPTION = "OK";
                 }
                 m_Frm.lblType.ForeColor = Color.Green;
                 if (GBTSCConstants.CURRENT_USER != null)
@@ -67,13 +65,11 @@ namespace VKTIM.Common
             {
                 if (GBTSCConstants.BUHINSOKO_MSG_BOX_CAPTION_DEFAULT == 0)
                 {
-                    //m_Frm.lblType.Text = caption.ToUpper();
-                    m_Frm.lblType.AccessibleDescription = caption.ToUpper();
+                    m_Frm.CAPTION = caption.ToUpper();
                 }
                 else
                 {
-                    //m_Frm.lblType.Text = "NG";
-                    m_Frm.lblType.AccessibleDescription = "NG";
+                    m_Frm.CAPTION = "NG";
                 }
                 m_Frm.lblType.ForeColor = Color.Red;
                 if (GBTSCConstants.CURRENT_USER != null)
@@ -89,16 +85,14 @@ namespace VKTIM.Common
             frmMessage m_Frm = new frmMessage();
             if (GBTSCConstants.BUHINSOKO_MSG_BOX_CAPTION_DEFAULT == 0)
             {
-                //m_Frm.lblType.Text = caption.ToUpper();
-                m_Frm.lblType.AccessibleDescription = caption.ToUpper();
+                m_Frm.CAPTION = caption.ToUpper();
             }
             else
             {
-                //m_Frm.lblType.Text = "OK";
-                m_Frm.lblType.AccessibleDescription = "CONFIRM";
+                m_Frm.CAPTION = "CONFIRM";
             }
+            m_Frm.MSG = msgText;
             m_Frm.lblType.ForeColor = Color.Blue;
-            m_Frm.txtMsg.Text = msgText;
             m_Frm.btnConfirm.Visible = false;
             m_Frm.btnOK.Visible = true;
             m_Frm.btnCancel.Visible = true;
@@ -388,15 +382,32 @@ namespace VKTIM.Common
             }
         }
 
-        //private static void SetCurrentCulture()
-        //{
-        //    GBTSCConstants.CURRENT_CULTURE = CultureInfo.CreateSpecificCulture(Properties.Settings.Default.CURRENT_CULTURE);
-        //}
+        public static void SetMenuText(MenuStrip mnuMain, string formName)
+        {
+            foreach (ToolStripMenuItem level1 in mnuMain.Items)
+            {
+                SetItemMenuText(level1, formName);
+            }
+        }
 
-        //private static void SetCurrentResources()
-        //{
-        //    GBTSCConstants.CURRENT_RESOURCES = new ResourceManager("eSWS.Lang.MyResources", typeof(frmMain).Assembly);
-        //}
+        private static void SetItemMenuText(object item, string formName)
+        {
+            ToolStripMenuItem itemConverted = null;
+            if (item.GetType() == typeof(ToolStripMenuItem))
+            {
+                itemConverted = (ToolStripMenuItem)item;
+                itemConverted.Text = GBTSCConstants.CURRENT_RESOURCES.GetString(formName + "." + itemConverted.Name, GBTSCConstants.CURRENT_CULTURE);
+            }
+
+            for (int i = 0; i < itemConverted.DropDownItems.Count; i++)
+            {
+                if (itemConverted.DropDownItems[i].GetType() == typeof(ToolStripMenuItem))
+                {
+                    itemConverted.DropDownItems[i].Text = GBTSCConstants.CURRENT_RESOURCES.GetString(formName + "." + itemConverted.DropDownItems[i].Name, GBTSCConstants.CURRENT_CULTURE);
+                    SetItemMenuText(itemConverted.DropDownItems[i], formName);
+                }
+            }
+        }
 
         public static bool CheckBeforeLogin()
         {
@@ -421,13 +432,13 @@ namespace VKTIM.Common
             }
 
             //Check Version
-            HTCONFIGInfo tempInfo = HTCONFIGController.Instance().GetByCode("UPDATE_NOTIFY");
+            HTCONFIGInfo tempInfo = HTCONFIGController.Instance().GetByCode("CURRENT_VERSION");
             if (tempInfo != null)
             {
                 string app_revision = Application.ProductVersion.Substring(Application.ProductVersion.LastIndexOf(".") + 1);
                 if (!tempInfo.CONFIG_VALUE.Equals(app_revision))
                 {
-                    string msg_notify = string.Format(GBTSCConstants.BUHINSOKO_MSG_UPDATE_NOTIFY, app_revision, tempInfo.CONFIG_VALUE);
+                    string msg_notify = string.Format(GBTSCConstants.MSG_UPDATE_NOTIFY, app_revision, tempInfo.CONFIG_VALUE);
                     GBTSCCommon.Message_Info(msg_notify, "UPDATE", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                 }
@@ -460,13 +471,13 @@ namespace VKTIM.Common
             }
 
             //Check Version
-            HTCONFIGInfo tempInfo = HTCONFIGController.Instance().GetByCode("UPDATE_NOTIFY");
+            HTCONFIGInfo tempInfo = HTCONFIGController.Instance().GetByCode("CURRENT_VERSION");
             if (tempInfo != null)
             {
                 string app_revision = Application.ProductVersion.Substring(Application.ProductVersion.LastIndexOf(".") + 1);
                 if (!tempInfo.CONFIG_VALUE.Equals(app_revision))
                 {
-                    string msg_notify = string.Format(GBTSCConstants.BUHINSOKO_MSG_UPDATE_NOTIFY, app_revision, tempInfo.CONFIG_VALUE);
+                    string msg_notify = string.Format(GBTSCConstants.MSG_UPDATE_NOTIFY, app_revision, tempInfo.CONFIG_VALUE);
                     GBTSCCommon.Message_Info(msg_notify, "UPDATE", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
@@ -479,19 +490,11 @@ namespace VKTIM.Common
             {
                 if (userInfo.IS_BLOCKED == true)
                 {
-                    GBTSCCommon.Message_Info(GBTSCConstants.BUHINSOKO_MSG_LOGIN_ACCOUNT_LOCKED, "ACCOUNT LOCKED", GBTSCCommon.MessageType.Message_NG);
+                    GBTSCCommon.Message_Info(GBTSCConstants.MSG_LOGIN_ACCOUNT_LOCKED, "ACCOUNT LOCKED", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
                 }
             }
-
-            //Check All Factory is in Maintenance status?
-            //if (GBTSCConstants.CURRENT_FACTORY.BIT_IS_LOCKED)
-            //{
-            //    GBTSCCommon.Message_Info(GBTSCConstants.CURRENT_FACTORY.CHR_CODE + " is being maintained. Please check back later.", GBTSCConstants.CURRENT_FACTORY.CHR_CODE, GBTSCCommon.MessageType.Message_NG);
-            //    bCheck = false;
-            //    goto unornally_break;
-            //}
 
         unornally_break: //Label
             return bCheck;

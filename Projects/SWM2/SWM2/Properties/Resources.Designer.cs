@@ -83,9 +83,29 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_corner_resize {
+            get {
+                object obj = ResourceManager.GetObject("e_corner_resize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_help_32 {
             get {
                 object obj = ResourceManager.GetObject("e_help_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_about_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_about_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +123,39 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_icon_block_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_block_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_changepass_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_changepass_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_icon_check_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_check_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_connection_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_connection_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +233,16 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_icon_exit_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_exit_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_icon_graphics_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_graphics_24", resourceCulture);
@@ -216,6 +276,56 @@ namespace VKTIM.Properties {
         internal static System.Drawing.Bitmap e_icon_list2_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_list2_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_loading {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_loading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_login_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_login_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_logout_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_logout_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_menu_item_16 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_menu_item_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_menu_item_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_menu_item_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +413,29 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_icon_save_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_save_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_icon_search_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_search_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_select_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_select_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,6 +483,26 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_icon_unselect_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_unselect_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_update_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_update_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_icon_user_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_user_24", resourceCulture);
@@ -366,6 +516,46 @@ namespace VKTIM.Properties {
         internal static System.Drawing.Bitmap e_icon_user2_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_user2_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_userguide_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_userguide_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_warehouse_128 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_warehouse_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_warehouse_256 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_warehouse_256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_warning_24 {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_warning_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,6 +683,16 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_titlebar_blue2 {
+            get {
+                object obj = ResourceManager.GetObject("e_titlebar_blue2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_titlebar_grey {
             get {
                 object obj = ResourceManager.GetObject("e_titlebar_grey", resourceCulture);
@@ -507,6 +707,66 @@ namespace VKTIM.Properties {
             get {
                 object obj = ResourceManager.GetObject("eAppLogo", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuFileWhite32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuFileWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuHelpWhite32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuHelpWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuManagementWhite32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuManagementWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuReportWhite32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuReportWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuSystemWhite32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuSystemWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mnuWarehouseWhite32 {
+            get {
+                object obj = ResourceManager.GetObject("mnuWarehouseWhite32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

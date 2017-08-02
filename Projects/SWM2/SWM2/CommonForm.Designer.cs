@@ -53,7 +53,7 @@
             // pn_TOP
             // 
             this.pn_TOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.pn_TOP.BackgroundImage = global::VKTIM.Properties.Resources.e_titlebar_blue;
+            this.pn_TOP.BackgroundImage = global::VKTIM.Properties.Resources.e_titlebar_blue2;
             this.pn_TOP.Controls.Add(this.btn_Maximized);
             this.pn_TOP.Controls.Add(this.btn_Minimized);
             this.pn_TOP.Controls.Add(this.btn_Help);
@@ -230,7 +230,7 @@
             // 
             // mainHelp
             // 
-            this.mainHelp.HelpNamespace = "Help\\mws.chm";
+            this.mainHelp.HelpNamespace = "Help\\vktim_help.chm";
             // 
             // mainError
             // 

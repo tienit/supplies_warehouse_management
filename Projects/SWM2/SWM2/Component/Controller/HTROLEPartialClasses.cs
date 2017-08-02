@@ -21,12 +21,30 @@ public partial class HTROLEInfo
 
 public partial class HTROLEController
 {
-public object DB_GetNull(object Field)
-{
-return tienit.core.Null.GetNull(Field, DBNull.Value);
-}
-	// Add custom code here
-}
+    public object DB_GetNull(object Field)
+    {
+        return tienit.core.Null.GetNull(Field, DBNull.Value);
+    }
+        // Add custom code here
+
+        public bool CheckExisted(string name)
+        {
+            HTROLEInfo objInfo = (HTROLEInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "HT_ROLE_SelectByName", name), typeof(HTROLEInfo));
+            if (objInfo != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public HTROLEInfo GetByUser(int userID)
+        {
+            return (HTROLEInfo)CBO.FillObject(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "HT_ROLE_SelectByUser", userID), typeof(HTROLEInfo));
+        }
+    }
 
 public partial class DataProvider
 {

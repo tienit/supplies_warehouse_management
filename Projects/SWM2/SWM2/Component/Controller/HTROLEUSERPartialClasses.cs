@@ -21,12 +21,17 @@ public partial class HTROLEUSERInfo
 
 public partial class HTROLEUSERController
 {
-public object DB_GetNull(object Field)
-{
-return tienit.core.Null.GetNull(Field, DBNull.Value);
-}
-	// Add custom code here
-}
+    public object DB_GetNull(object Field)
+    {
+        return tienit.core.Null.GetNull(Field, DBNull.Value);
+    }
+        // Add custom code here
+
+        public int DeleteByUser(int userID)
+        {
+            return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, "HT_ROLE_USER_DeleteByUser", userID);
+        }
+    }
 
 public partial class DataProvider
 {

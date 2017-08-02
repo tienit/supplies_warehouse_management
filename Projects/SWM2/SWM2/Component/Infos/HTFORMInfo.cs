@@ -18,7 +18,8 @@ public partial class HTFORMInfo
 private int _ID;
 private string _FORM_NAME;
 private string _FORM_TITLE;
-private string _MENU_NAME;
+        private string _FORM_TITLE_EN;
+        private string _MENU_NAME;
 private bool _IS_SHOW_DIALOG;
 private string _SHORTCUT_KEY;
 private bool _IS_USED;
@@ -41,7 +42,13 @@ private int _FORM_ORDER;
 			set { _FORM_TITLE = value; }
 		}
 
-		public string MENU_NAME {
+        public string FORM_TITLE_EN
+        {
+            get { return _FORM_TITLE_EN; }
+            set { _FORM_TITLE_EN = value; }
+        }
+
+        public string MENU_NAME {
 			get { return _MENU_NAME; }
 			set { _MENU_NAME = value; }
 		}
@@ -72,12 +79,13 @@ public HTFORMInfo()
 {
 }
 
-public HTFORMInfo(int ID, string FORM_NAME, string FORM_TITLE, string MENU_NAME, bool IS_SHOW_DIALOG, string SHORTCUT_KEY, bool IS_USED, int FORM_ORDER)
+public HTFORMInfo(int ID, string FORM_NAME, string FORM_TITLE, string FORM_TITLE_EN, string MENU_NAME, bool IS_SHOW_DIALOG, string SHORTCUT_KEY, bool IS_USED, int FORM_ORDER)
 {
 	this.ID = ID;
 	this.FORM_NAME = FORM_NAME;
 	this.FORM_TITLE = FORM_TITLE;
-	this.MENU_NAME = MENU_NAME;
+            this.FORM_TITLE_EN = FORM_TITLE_EN;
+            this.MENU_NAME = MENU_NAME;
 	this.IS_SHOW_DIALOG = IS_SHOW_DIALOG;
 	this.SHORTCUT_KEY = SHORTCUT_KEY;
 	this.IS_USED = IS_USED;

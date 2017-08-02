@@ -21,14 +21,20 @@ public partial class HTROLEFORMInfo
 
 public partial class HTROLEFORMController
 {
-public object DB_GetNull(object Field)
-{
-return tienit.core.Null.GetNull(Field, DBNull.Value);
-}
-	// Add custom code here
-}
+        public object DB_GetNull(object Field)
+        {
+            return tienit.core.Null.GetNull(Field, DBNull.Value);
+        }
+        // Add custom code here
 
-public partial class DataProvider
+        public int DeleteByRole(int roleID)
+        {
+            return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, "HT_ROLE_FORM_DeleteByRole", roleID);
+        }
+
+    }
+
+    public partial class DataProvider
 {
 	// Add custom code here
 }

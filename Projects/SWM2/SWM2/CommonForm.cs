@@ -189,7 +189,7 @@ namespace VKTIM
 
         private void btn_Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Coming soon ...");
+            Help.ShowHelp(this, mainHelp.HelpNamespace, HelpNavigator.TableOfContents);
         }
 
         private void btn_Close_Click(object sender, EventArgs e)

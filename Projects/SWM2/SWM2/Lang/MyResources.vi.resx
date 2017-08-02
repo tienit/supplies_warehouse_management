@@ -129,509 +129,11 @@
   <data name="MSG_CAPTION_ERROR" xml:space="preserve">
     <value>LỖI</value>
   </data>
-  <data name="ESWS_MSG_CAPTION_MOVING" xml:space="preserve">
-    <value>DI CHUYỂN VỊ TRÍ</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_AT_LEAST_ONE_PALLET_CHECKED" xml:space="preserve">
-    <value>Cần tích chọn ít nhất một pallet để thay đổi trạng thái.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_LOT_CHANGE_CONFIRM" xml:space="preserve">
-    <value>Bạn chắc chắn thay đổi trạng thái cho lô hàng hóa này?</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_LOT_FINISHED" xml:space="preserve">
-    <value>Lô {0} đã hoàn thành kiểm tra.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_LOT_NO_PALLET_FOR_CHANGE" xml:space="preserve">
-    <value>Lô {0} không có pallet nào cần thực hiện chuyển đổi. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_NO_PALLET_SELECTED" xml:space="preserve">
-    <value>Chưa chọn pallet để thay đổi trạng thái.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_SUCCESS" xml:space="preserve">
-    <value>Thay đổi thành công.</value>
-  </data>
-  <data name="ESWS_MSG_CMB_INDEX_ZERO" xml:space="preserve">
-    <value>--- Lựa chọn ---</value>
-  </data>
-  <data name="ESWS_MSG_CONTEXT_MENU_UNDO" xml:space="preserve">
-    <value>Hủy bỏ</value>
-  </data>
   <data name="MSG_DELETE_CONFIRM" xml:space="preserve">
     <value>Bạn chắc chắn muốn xóa đối tượng này khỏi hệ thống?</value>
   </data>
-  <data name="ESWS_MSG_DELETE_SUCCESS" xml:space="preserve">
-    <value>Xóa thành công.</value>
-  </data>
-  <data name="ESWS_MSG_LOT_STATUS_DELETE_RELATIONSHIP" xml:space="preserve">
-    <value>Trạng thái này có liên quan đến {0} lô hàng hóa.</value>
-  </data>
-  <data name="ESWS_MSG_PALLET_STATUS_DELETE_RELATIONSHIP" xml:space="preserve">
-    <value>Trạng thái này có liên quan đến {0} pallet.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_FAILED" xml:space="preserve">
-    <value>Cập nhật không thành công.</value>
-  </data>
-  <data name="ESWS_MSG_VERSION" xml:space="preserve">
-    <value>Phiên bản:</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_REPRINT_PALLET_CODE_NOT_EXISTED" xml:space="preserve">
-    <value>Mã Pallet không tồn tại. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_INVENTORY_MOVING_INFOR" xml:space="preserve">
-    <value>Pallet đã được di chuyển vị trí từ {0} đến {1} lúc {2}.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_GOODS_USING" xml:space="preserve">
-    <value>Hàng hóa này đang được sử dụng. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SENT" xml:space="preserve">
-    <value>Yêu cầu xóa đã được gửi đi. Đợi xác nhận từ quản trị.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_ACCEPTED" xml:space="preserve">
-    <value>Đã được chấp nhận</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_CANCELED" xml:space="preserve">
-    <value>Đã bị hủy bỏ</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_USING" xml:space="preserve">
-    <value>Nhà cung cấp này đang được sử dụng. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_DELETION_REQUEST_SUPPLIER_WAITING" xml:space="preserve">
-    <value>Đợi xác nhận</value>
-  </data>
-  <data name="ESWS_MSG_ADD_SUCCESS" xml:space="preserve">
-    <value>Thêm thành công.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CHG_PASS" xml:space="preserve">
-    <value>THAY ĐỔI MẬT KHẨU</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CONNECTION" xml:space="preserve">
-    <value>THIẾT LẬP KẾT NỐI</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_DELETION_REQUEST" xml:space="preserve">
-    <value>YÊU CẦU XÓA</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXPORT_REPRINT" xml:space="preserve">
-    <value>IN LẠI CHỈ THỊ XUẤT KHO</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_FEEDBACK" xml:space="preserve">
-    <value>GÓP Ý</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_INSERT" xml:space="preserve">
-    <value>THÊM MỚI</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_PERMISSION" xml:space="preserve">
-    <value>PHÂN QUYỀN</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_UPDATE" xml:space="preserve">
-    <value>CẬP NHẬT</value>
-  </data>
-  <data name="ESWS_MSG_CHG_PASS_FAILED" xml:space="preserve">
-    <value>Thay đổi mật khẩu thất bại.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_PASS_SUCCESS" xml:space="preserve">
-    <value>Thay đổi mật khẩu thành công.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_PASS_SUCCESS_AND_RESTART" xml:space="preserve">
-    <value>Thay đổi mật khẩu thành công. Hệ thống sẽ tự khởi động lại.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_FROM_TO_INFOR" xml:space="preserve">
-    <value>Thay đổi trạng thái pallet {0} từ {1} đến {2}.</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_GROUP_CONFIRM" xml:space="preserve">
-    <value>Bạn chắc chắn muốn thay đổi trạng thái cho những pallet đã lựa chọn?</value>
-  </data>
-  <data name="ESWS_MSG_CHG_STATUS_GROUP_X_SUCCESS" xml:space="preserve">
-    <value>{0} pallet đã được chuyển trạng thái thành công.</value>
-  </data>
-  <data name="ESWS_MSG_COMPANY_UPDATE_RELATIONSHIP" xml:space="preserve">
-    <value>Không thể cập nhật. Dữ liệu này đang có liên quan đến {0} nhà kho khác.</value>
-  </data>
-  <data name="ESWS_MSG_FEEDBACK_FUNCTION_NOT_SELECTED" xml:space="preserve">
-    <value>Chưa chọn chức năng.</value>
-  </data>
-  <data name="ESWS_MSG_FEEDBACK_SEND_FAILED" xml:space="preserve">
-    <value>Đã có lỗi trong quá trình gửi góp ý. Vui lòng thử lại.</value>
-  </data>
-  <data name="ESWS_MSG_FEEDBACK_SEND_OK" xml:space="preserve">
-    <value>Góp ý đã được gửi đi. Cảm ơn.</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_CONFIRM" xml:space="preserve">
-    <value>Bạn chắc chắn đồng ý với yêu cầu này?</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_CONFIRMED" xml:space="preserve">
-    <value>Yêu cầu đã được chấp nhận.</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_RESTORE" xml:space="preserve">
-    <value>Bạn chắc chắn phục hồi lại hàng hóa này?</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_DELETION_REQUEST_RESTORED" xml:space="preserve">
-    <value>Hàng hóa đã được phục hồi.</value>
-  </data>
-  <data name="ESWS_MSG_MASTER_EXISTED" xml:space="preserve">
-    <value>Hàng hóa đã tồn tại trong hệ thống. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_NOT_LOGGED" xml:space="preserve">
-    <value>Chưa đăng nhập.</value>
-  </data>
-  <data name="ESWS_MSG_NOT_USED" xml:space="preserve">
-    <value>Không sử dụng</value>
-  </data>
-  <data name="ESWS_MSG_PERMISSION_WAREHOUSE_SUCCESS" xml:space="preserve">
-    <value>Phân quyền cho nhà kho thành công.</value>
-  </data>
-  <data name="ESWS_MSG_SERVER_CONNECT_FAILED_AND_CHECK" xml:space="preserve">
-    <value>Kết nối đến máy chủ thất bại. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_SERVER_CONNECT_SUCCESS" xml:space="preserve">
-    <value>Kết nối đến máy chủ thành công.</value>
-  </data>
-  <data name="ESWS_MSG_THIS_FUCNTION_BLOCKED_BY_ADMIN" xml:space="preserve">
-    <value>Chức năng này đã bị khóa. Liên hệ quản trị hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_DELETE_NOT_SELECTED" xml:space="preserve">
-    <value>Phải chọn ít nhất một đối tượng trước khi thực hiện thao tác.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_SUCCESS" xml:space="preserve">
-    <value>Cập nhật thành công.</value>
-  </data>
-  <data name="ESWS_MSG_USED" xml:space="preserve">
-    <value>Sử dụng</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_CODE_NOT_EXISTED" xml:space="preserve">
-    <value>Mã xuất kho {0} không tồn tại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_DELETE_PALLET_SUCCESS" xml:space="preserve">
-    <value>Pallet đã được xóa thành công.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_PALLET_NOT_EXISTED" xml:space="preserve">
-    <value>Pallet không tồn tại. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CONFIRM" xml:space="preserve">
-    <value>XÁC NHẬN</value>
-  </data>
-  <data name="ESWS_MSG_NEED_TO_CHECK" xml:space="preserve">
-    <value>Cần kiểm tra</value>
-  </data>
-  <data name="ESWS_MSG_NO_NEED_TO_CHECK" xml:space="preserve">
-    <value>Không cần kiểm tra</value>
-  </data>
-  <data name="ESWS_MSG_PAGE" xml:space="preserve">
-    <value>Trang</value>
-  </data>
-  <data name="ESWS_MSG_PALLET_DELETED" xml:space="preserve">
-    <value>Pallet {0} đã bị xóa.</value>
-  </data>
-  <data name="ESWS_MSG_PALLET_EXPORTED" xml:space="preserve">
-    <value>Pallet {0} đã được xuất kho.</value>
-  </data>
-  <data name="ESWS_MSG_SURE" xml:space="preserve">
-    <value>Bạn chắc chắn?</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_NOT_EXISTED" xml:space="preserve">
-    <value>Số lô {0} không tồn tại.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_BLOCKED" xml:space="preserve">
-    <value>CHỨC NĂNG BỊ KHÓA</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXIT" xml:space="preserve">
-    <value>THOÁT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXPORT_EXCEL" xml:space="preserve">
-    <value>XUẤT EXCEL</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_LAYOUT" xml:space="preserve">
-    <value>SƠ ĐỒ</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_LOGOUT" xml:space="preserve">
-    <value>ĐĂNG XUẤT</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_REINPUT" xml:space="preserve">
-    <value>NHẬP LẠI PALLET</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_VERSION" xml:space="preserve">
-    <value>PHIÊN BẢN</value>
-  </data>
-  <data name="ESWS_MSG_CHANGE_CONNECTION_SUCCESS_AND_RESTART" xml:space="preserve">
-    <value>Kết nối đến chủ thành công. Hệ thống sẽ tự khởi động lại.</value>
-  </data>
-  <data name="ESWS_MSG_DELETE_EMPTY" xml:space="preserve">
-    <value>Phải lựa chọn một đối tượng trước khi xóa.</value>
-  </data>
-  <data name="ESWS_MSG_DELETE_FAILED" xml:space="preserve">
-    <value>Xóa thất bại.</value>
-  </data>
-  <data name="ESWS_MSG_EXIT_CONFIRM" xml:space="preserve">
-    <value>Bạn muốn thoát khỏi hệ thống?</value>
-  </data>
-  <data name="ESWS_MSG_FUNCTION_BLOCKED" xml:space="preserve">
-    <value>Chức năng này đã bị khóa. Liên lạc quản trị hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_ADD_CELL" xml:space="preserve">
-    <value>Thêm vị trí</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_ALL_CELLS_DELETED" xml:space="preserve">
-    <value>Tất cả các vị trí đã bị xóa.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_AREA" xml:space="preserve">
-    <value>Khu vực</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_AREA_EXISTED" xml:space="preserve">
-    <value>Khu vực này đã tồn tại trên hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_AUTO_CREATED_X_CELLS" xml:space="preserve">
-    <value>Đã tạo {0} vị trí để hàng cho:</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_CELL" xml:space="preserve">
-    <value>Vị trí để hàng</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_CELL_HAS_PALLET" xml:space="preserve">
-    <value>Vị trí này đang có hàng hóa.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_EXCEEDS_MAX_CELLS" xml:space="preserve">
-    <value>Tầng này tối đa chỉ có {0} vị trí để hàng.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_EXCEEDS_MAX_FLOORS" xml:space="preserve">
-    <value>Giá để hàng hóa này tối đa chỉ có {0} tầng.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_EXCEEDS_MAX_LINES" xml:space="preserve">
-    <value>Khu vực này tối đa chỉ có {0} giá để hàng hóa.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FLOOR" xml:space="preserve">
-    <value>Tầng</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FLOOR_HAS_PALLETS_DELETE" xml:space="preserve">
-    <value>Không thể xóa tầng này vì nó có {0} pallet.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FLOOR_HAS_PALLETS_UPDATE" xml:space="preserve">
-    <value>Không thể cập nhật tầng này vì nó có {0} pallet.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_LINE" xml:space="preserve">
-    <value>Giá để hàng hóa</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_LINE_NAME_EXISTED" xml:space="preserve">
-    <value>Giá để hàng hóa này đã tồn tại trên hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_LINE_WORKING" xml:space="preserve">
-    <value>Giá để hàng hóa đang hoạt động.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_NUMBER_OF_CELLS" xml:space="preserve">
-    <value>Số lượng vị trí ({0})</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_NUMBER_OF_FLOORS" xml:space="preserve">
-    <value>Số lượng tầng ({0})</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_SELECT_WAREHOUSE_FIRST" xml:space="preserve">
-    <value>Chưa chọn nhà kho.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_CELL" xml:space="preserve">
-    <value>Cập nhật vị trí</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_DELETE_FLOOR_NOT_SELECTED" xml:space="preserve">
-    <value>Chưa lựa chọn tầng nào để thao tác.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WANT_AUTO_CREATE_CELL" xml:space="preserve">
-    <value>Bạn muốn tạo ô tự động cho:</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE" xml:space="preserve">
-    <value>Nhà kho</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_AREA_DEL" xml:space="preserve">
-    <value>Không thể xóa. Nhà kho này có liên quan đến {0} khu vực.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_AREA_UPDATE" xml:space="preserve">
-    <value>Không thể cập nhật. Nhà kho này có liên quan đến {0} khu vực.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_USERGROUP_DEL" xml:space="preserve">
-    <value>Không thể xóa. Nhà kho này có liên quan đến {0} nhóm tài khoản.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_WAREHOUSE_RELATIONSHIP_USERGROUP_UPDATE" xml:space="preserve">
-    <value>Không thể cập nhật. Nhà kho này có liên quan đến {0} nhóm tài khoản.</value>
-  </data>
-  <data name="ESWS_MSG_LOGIN_ACCOUNT_LOCKED" xml:space="preserve">
-    <value>Tài khoản đã bị khóa. Liên hệ với quản trị hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_LOGIN_ACCOUNT_NOT_VALID" xml:space="preserve">
-    <value>Thông tin đăng nhập không chính xác.</value>
-  </data>
-  <data name="ESWS_MSG_LOGOUT_CONFIRM" xml:space="preserve">
-    <value>Bạn muốn đăng xuất khỏi hệ thống?</value>
-  </data>
-  <data name="ESWS_MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL" xml:space="preserve">
-    <value>Không có dữ liệu để xuất ra excel.</value>
-  </data>
-  <data name="ESWS_MSG_REPORT_TO_EXCEL_SUCCESS" xml:space="preserve">
-    <value>Dữ liệu đã được lưu ra excel.</value>
-  </data>
-  <data name="ESWS_MSG_UPDATE_LATEST_VERSION" xml:space="preserve">
-    <value>Phiên bản hiện tại là phiên bản mới nhất.</value>
-  </data>
-  <data name="ESWS_MSG_WAREHOUSE_MAINTENENCE" xml:space="preserve">
-    <value>Nhà kho {0} đang được bảo trì. Liên lạc quản trị hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_NOT_FOUND_LOCATION" xml:space="preserve">
-    <value>Không tìm được vị trí để nhập kho.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_PALLET_NOT_IN_WAREHOUSE" xml:space="preserve">
-    <value>Pallet {0} không thuộc nhà kho {1}.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_PALLET_USING_OR_DELTED" xml:space="preserve">
-    <value>Pallet này đang có trong tồn kho hoặc đã bị xóa.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_REINPUT_SUCCESS" xml:space="preserve">
-    <value>Nhập lại kho thành công.</value>
-  </data>
-  <data name="ESWS_MSG_WH_MAP_FOUND_X_PALLETS" xml:space="preserve">
-    <value>Tìm thấy {0} pallet.</value>
-  </data>
-  <data name="ESWS_MSG_WH_PALLET_WAIT_EXPORT" xml:space="preserve">
-    <value>Pallet này đang đợi để xuất kho.</value>
-  </data>
-  <data name="ESWS_MSG_WH_LINE_NOT_CONFIG" xml:space="preserve">
-    <value>Giá để hàng hóa {0} chưa được cấu hình để kiểm kê. Liên lạc quản trị hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_WH_NO_CONFIG_FOR_LINE" xml:space="preserve">
-    <value>Giá để hàng hóa chưa được cấu hình để kiểm kê. Liên lạc quản trị hệ thống.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_SETTING" xml:space="preserve">
-    <value>THIẾT LẬP</value>
-  </data>
-  <data name="ESWS_MSG_SETTNG_CONFIRM" xml:space="preserve">
-    <value>Bạn chắc chắn lưu thiết lập?</value>
-  </data>
-  <data name="ESWS_MSG_SETTNG__SAVED" xml:space="preserve">
-    <value>Lưu thiết lập thành công.</value>
-  </data>
-  <data name="ESWS_MSG_SMART_AT_LEAST_ONE_WAREHOUSE_SELECTED" xml:space="preserve">
-    <value>Cần chọn nhà kho trước.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_EXPORT" xml:space="preserve">
-    <value>XUẤT KHO</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_IMPORT" xml:space="preserve">
-    <value>NHẬP KHO</value>
-  </data>
-  <data name="ESWS_MSG_DOUBLE_CLICK_TO_CLOSE" xml:space="preserve">
-    <value>Nhấp đúp chuột để đóng cửa sổ này.</value>
-  </data>
-  <data name="ESWS_MSG_NO" xml:space="preserve">
-    <value>Không</value>
-  </data>
-  <data name="ESWS_MSG_PERMISSION_USERGROUP_SUCCESS" xml:space="preserve">
-    <value>Phân quyền cho nhóm tài khoản thành công.</value>
-  </data>
-  <data name="ESWS_MSG_SMART_WORKING" xml:space="preserve">
-    <value>Thiết bị đang hoạt động. Không thể xóa lúc này.</value>
-  </data>
-  <data name="ESWS_MSG_USERGROUP_NAME_EXISTED" xml:space="preserve">
-    <value>Tên nhóm đã tồn tại. Chọn tên khác.</value>
-  </data>
-  <data name="ESWS_MSG_USERGROUP_NOT_SELECTED" xml:space="preserve">
-    <value>Chưa chọn nhóm tài khoản.</value>
-  </data>
-  <data name="ESWS_MSG_USERS_LOCK" xml:space="preserve">
-    <value>Khóa</value>
-  </data>
-  <data name="ESWS_MSG_USERS_UNLOCK" xml:space="preserve">
-    <value>Mở khóa</value>
-  </data>
-  <data name="ESWS_MSG_WAREHOUSE_GOODS_CODE_NOT_EXISTED" xml:space="preserve">
-    <value>Mã linh kiện không tồn tại. Kiểm tra lại. ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_PALLET_ISNOT_BELONGS_SCANED" xml:space="preserve">
-    <value>Pallet này không nằm trong danh sách quét.</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_PALLET_SCANED" xml:space="preserve">
-    <value>Pallet này đã được quét.</value>
-  </data>
-  <data name="ESWS_MSG_WH_EXPORT_SUCCESS" xml:space="preserve">
-    <value>Xuất kho thành công.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_ADD_X_PALLET_SUCCESS" xml:space="preserve">
-    <value>Đã thêm {0} pallet vào kho thành công.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_BARCODE_EMPTY" xml:space="preserve">
-    <value>Thông tin đầu vào bị bỏ trống.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_BARCODE_INVALID" xml:space="preserve">
-    <value>Định dạng chuỗi đầu vào không hợp lệ. Kiểm tra lại. ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_DATE_FORMAT_INVALID" xml:space="preserve">
-    <value>Định dạng ngày tháng năm không hợp lệ. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_INVOICE_CANCELED" xml:space="preserve">
-    <value>Lô {0} đã bị hủy bỏ.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOCATION_NOT_AVAILABLE" xml:space="preserve">
-    <value>Vị trí được lựa chọn hiện tại không còn trống ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOCATION_NOT_IN_LIST" xml:space="preserve">
-    <value>Vị trí được lựa chọn không nằm trong danh sách gợi ý. {0}</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOCATION_USING" xml:space="preserve">
-    <value>Vị trí {0} đang được sử dụng. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_CHANGED_WHILE_OPEN_THIS" xml:space="preserve">
-    <value>Lô hàng đã bị thay đổi trạng thái bởi tài khoản khác trong khi bạn đang mở cửa sổ này. Kiểm tra lại</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_HAS_LOCATION_USED" xml:space="preserve">
-    <value>Lô hàng này có vị trí {0} đang được sử dụng bởi pallet khác. Hủy bỏ và nhập lại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_NOT_ENOUGH_LOCATIONS" xml:space="preserve">
-    <value>Không đủ vị trí để thực hiện nhập kho. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_LOT_USED" xml:space="preserve">
-    <value>Số lô {0} đã được sử dụng. Kiểm tra lại.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_NO_AVAILABLE_LOCATION" xml:space="preserve">
-    <value>Không còn vị trí trống để thực hiện nhập kho. ({0})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_NUMBER_LOCATION_NOT_ENOUGH" xml:space="preserve">
-    <value>Số lượng pallet cần nhập kho là {0}. Số lượng vị trí trống trong kho phù hợp với chiều cao của pallet là {1}, do vậy không còn đủ vị trí để thực hiện nhập kho. Xác nhận với quản lý kho. ({2})</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_RECEIVED_AND_SELECT_LOCATION" xml:space="preserve">
-    <value>Đã nhận hàng {0} và chọn vị trí {1}.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_RECEIVED_ERROR" xml:space="preserve">
-    <value>Đã có lỗi xảy ra trong quá trình nhận hàng {0} vào vị trí {1}.</value>
-  </data>
-  <data name="ESWS_MSG_WH_IMPORT_SUCCESS" xml:space="preserve">
-    <value>Pallet {0} đã được nhập kho thành công.</value>
-  </data>
-  <data name="ESWS_MSG_YES" xml:space="preserve">
-    <value>Có</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_WH_SETTING" xml:space="preserve">
-    <value>THIẾT LẬP NHÀ KHO</value>
-  </data>
-  <data name="ESWS_MSG_WH_SETTING_CREATED" xml:space="preserve">
-    <value>Cấu hình cho nhà kho {0} đã được khởi tạo thành công.</value>
-  </data>
-  <data name="ESWS_MSG_WH_SETTING_NOT_YET" xml:space="preserve">
-    <value>Nhà kho {0} vẫn chưa được tạo thiết lập.</value>
-  </data>
-  <data name="ESWS_MSG_WH_SETTING_SAVED" xml:space="preserve">
-    <value>Cấu hình cho nhà kho {0} đã được cập nhật.</value>
-  </data>
   <data name="frmDmUnit" xml:space="preserve">
     <value>Quản lý danh mục đơn vị tính</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_DELETE_BATCH_CELLS_SUCCESS" xml:space="preserve">
-    <value>XÓA DANH SÁCH VỊ TRÍ THÀNH CÔNG.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_FROM_MUST_LESS_THAN_TO" xml:space="preserve">
-    <value>Giá trị bắt đầu phải nhỏ hơn hoặc bằng giá trị kết thúc.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_BATCH_CELLS_SUCCESS" xml:space="preserve">
-    <value>CẬP NHẬT DANH SÁCH VỊ TRÍ THÀNH CÔNG.</value>
-  </data>
-  <data name="ESWS_MSG_LAYOUT_UPDATE_BATCH_CELL_HEIGHT_SUCCESS" xml:space="preserve">
-    <value>CẬP NHẬT CHIỀU CAO CHO CÁC VỊ TRÍ THÀNH CÔNG.</value>
-  </data>
-  <data name="ESWS_MSG_CAPTION_CANCEL_EXPORT" xml:space="preserve">
-    <value>HỦY XUẤT KHO</value>
-  </data>
-  <data name="frmMain.lbl_Demo" xml:space="preserve">
-    <value>Dòng chữ demo</value>
   </data>
   <data name="frmDmUnitPopup" xml:space="preserve">
     <value>Đơn vị</value>
@@ -732,12 +234,6 @@
   <data name="frmDmTitle.lbl_dis_keyword" xml:space="preserve">
     <value>Từ khóa</value>
   </data>
-  <data name="frmMain.btnTitle" xml:space="preserve">
-    <value>Danh mục chức vụ</value>
-  </data>
-  <data name="frmMain.btnUnit" xml:space="preserve">
-    <value>Danh mục đơn vị tính</value>
-  </data>
   <data name="frmDmUnit.btn_Export_Excel" xml:space="preserve">
     <value>Xuất excel</value>
   </data>
@@ -776,9 +272,6 @@
   </data>
   <data name="frmDmEmployer.lbl_dis_keyword" xml:space="preserve">
     <value>Từ khóa</value>
-  </data>
-  <data name="frmMain.btnEmployer" xml:space="preserve">
-    <value>Danh mục cán bộ</value>
   </data>
   <data name="frmDmEmployer.col_ADDRESS" xml:space="preserve">
     <value>Địa chỉ</value>
@@ -1002,12 +495,6 @@
   <data name="frmDmOrganizationPopup.lbl_dis_SpecialID" xml:space="preserve">
     <value>Chuyên ngành</value>
   </data>
-  <data name="frmMain.btnLocation" xml:space="preserve">
-    <value>Danh mục địa điểm</value>
-  </data>
-  <data name="frmMain.btnOrganization" xml:space="preserve">
-    <value>Danh mục đơn vị</value>
-  </data>
   <data name="frmDmOrigin" xml:space="preserve">
     <value>Quản lý danh mục xuất xứ</value>
   </data>
@@ -1052,12 +539,6 @@
   </data>
   <data name="frmDmOriginPopup.lbl_dis_name" xml:space="preserve">
     <value>Tên</value>
-  </data>
-  <data name="frmMain.btnOrigin" xml:space="preserve">
-    <value>Danh mục xuất xứ</value>
-  </data>
-  <data name="frmMain.btnOuputType" xml:space="preserve">
-    <value>Danh mục kiểu xuất</value>
   </data>
   <data name="frmDmLocation.col_ID" xml:space="preserve">
     <value>ID</value>
@@ -1230,9 +711,6 @@
   <data name="frmDmParameterPopup.lbl_dis_Value" xml:space="preserve">
     <value>Giá trị mặc định</value>
   </data>
-  <data name="frmMain.btnParameter" xml:space="preserve">
-    <value>Danh mục tham số</value>
-  </data>
   <data name="frmDmPrice" xml:space="preserve">
     <value>Quản lý danh mục giá</value>
   </data>
@@ -1352,12 +830,6 @@
   </data>
   <data name="frmDmProductCategoryPopup.lbl_dis_name" xml:space="preserve">
     <value>Tên nhóm</value>
-  </data>
-  <data name="frmMain.btnPrice" xml:space="preserve">
-    <value>Danh mục giá</value>
-  </data>
-  <data name="frmMain.btnProductCategory" xml:space="preserve">
-    <value>Danh mục nhóm sản phẩm</value>
   </data>
   <data name="frmDmProducts" xml:space="preserve">
     <value>Quản lý danh nhóm sản phẩm</value>
@@ -1491,9 +963,6 @@
   <data name="frmDmProductsPopup.lbl_dis_unitname" xml:space="preserve">
     <value>Đơn vị tính</value>
   </data>
-  <data name="frmMain.btnProducts" xml:space="preserve">
-    <value>Danh mục sản phẩm</value>
-  </data>
   <data name="frmDmRank" xml:space="preserve">
     <value>Quản lý danh mục cấp bậc</value>
   </data>
@@ -1544,9 +1013,6 @@
   </data>
   <data name="frmDmRankPopup.lbl_dis_name" xml:space="preserve">
     <value>Tên cấp</value>
-  </data>
-  <data name="frmMain.btnRank" xml:space="preserve">
-    <value>Danh mục cấp bậc</value>
   </data>
   <data name="frmDmSpecial" xml:space="preserve">
     <value>Quản lý danh mục chuyên ngành</value>
@@ -1698,10 +1164,376 @@
   <data name="frmDmTitlePopup.lbl_dis_shortname" xml:space="preserve">
     <value>Viết tắt</value>
   </data>
-  <data name="frmMain.btnSpecial" xml:space="preserve">
-    <value>Danh mục chuyên ngành</value>
+  <data name="frmHtForm" xml:space="preserve">
+    <value>Chức năng hệ thống</value>
   </data>
-  <data name="frmMain.btnSupplier" xml:space="preserve">
-    <value>Danh mục đối tác</value>
+  <data name="frmHtForm.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmHtForm.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmHtForm.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmHtForm.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmHtForm.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmHtForm.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmHtForm.col_FORM_NAME" xml:space="preserve">
+    <value>Tên chức năng</value>
+  </data>
+  <data name="frmHtForm.col_FORM_ORDER" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="frmHtForm.col_FORM_TITLE" xml:space="preserve">
+    <value>Tiêu đề chức năng</value>
+  </data>
+  <data name="frmHtForm.col_FORM_TITLE_EN" xml:space="preserve">
+    <value>Tiêu đề (Tiếng Anh)</value>
+  </data>
+  <data name="frmHtForm.col_ID" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmHtForm.col_IS_SHOW_DIALOG" xml:space="preserve">
+    <value>Show Dialog</value>
+  </data>
+  <data name="frmHtForm.col_IS_USED" xml:space="preserve">
+    <value>Sử dụng</value>
+  </data>
+  <data name="frmHtForm.col_MENU_NAME" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="frmHtForm.col_SHORTCUT_KEY" xml:space="preserve">
+    <value>Shortcut</value>
+  </data>
+  <data name="frmHtForm.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmHtForm.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmHtFormPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmHtFormPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmHtFormPopup.chk_data_alt" xml:space="preserve">
+    <value>Alt</value>
+  </data>
+  <data name="frmHtFormPopup.chk_data_ctrl" xml:space="preserve">
+    <value>Ctrl</value>
+  </data>
+  <data name="frmHtFormPopup.chk_data_shift" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="frmHtFormPopup.chk_data_show_dialog" xml:space="preserve">
+    <value>Show Dialog</value>
+  </data>
+  <data name="frmHtFormPopup.chk_data_used" xml:space="preserve">
+    <value>Sử dụng</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_menu_name" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_name" xml:space="preserve">
+    <value>Tên chức năng</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_order" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_shortcut_key" xml:space="preserve">
+    <value>Shortcut</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_title" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="frmHtFormPopup.lbl_dis_title_en" xml:space="preserve">
+    <value>Tiêu đề (Tiếng Anh)</value>
+  </data>
+  <data name="frmUsers" xml:space="preserve">
+    <value>Quản lý tài khoản</value>
+  </data>
+  <data name="frmUsers.btn_Add_Role" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmUsers.btn_Add_User" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmUsers.btn_Delete_User" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmUsers.btn_Update_Role" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmUsers.btn_Update_User" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmUsers.chk_data_role_is_default" xml:space="preserve">
+    <value>Là mặc định</value>
+  </data>
+  <data name="frmUsers.chk_data_user_is_blocked" xml:space="preserve">
+    <value>Bị khóa</value>
+  </data>
+  <data name="frmUsers.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmUsers.col_IP_LOGIN" xml:space="preserve">
+    <value>IP đăng nhập</value>
+  </data>
+  <data name="frmUsers.col_IS_BLOCKED" xml:space="preserve">
+    <value>Bị khóa</value>
+  </data>
+  <data name="frmUsers.col_LAST_LOGIN" xml:space="preserve">
+    <value>Lần đăng nhập cuối</value>
+  </data>
+  <data name="frmUsers.col_NUMBER_LOGIN" xml:space="preserve">
+    <value>Số lần đăng nhập</value>
+  </data>
+  <data name="frmUsers.col_PASSWORD" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="frmUsers.col_REMARKS" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="frmUsers.col_ROLE_ID" xml:space="preserve">
+    <value>Mã vai trò</value>
+  </data>
+  <data name="frmUsers.col_USER_NAME" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="frmUsers.gb_dis_role" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="frmUsers.gb_dis_users" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="frmUsers.lbl_dis_role_description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmUsers.lbl_dis_role_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmUsers.lbl_dis_role_name" xml:space="preserve">
+    <value>Tên vai trò</value>
+  </data>
+  <data name="frmUsers.lbl_dis_user_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmUsers.lbl_dis_user_name" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="frmUsers.lbl_dis_user_pass" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="frmUsers.lbl_dis_user_remark" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="frmUsers.lbl_dis_user_role" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="frmUserPermission" xml:space="preserve">
+    <value>Phân quyền sử dụng</value>
+  </data>
+  <data name="frmUserPermission.btn_Refresh" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="frmUserPermission.btn_Save" xml:space="preserve">
+    <value>Lưu thiết lập</value>
+  </data>
+  <data name="frmUserPermission.btn_SelectAll" xml:space="preserve">
+    <value>Chọn tất cả</value>
+  </data>
+  <data name="frmUserPermission.btn_UnSelectAll" xml:space="preserve">
+    <value>Bỏ chọn tất</value>
+  </data>
+  <data name="frmUserPermission.col_FORM_NAME" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmUserPermission.col_FORM_ORDER" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="frmUserPermission.col_FORM_TITLE" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="frmUserPermission.col_FORM_TITLE_EN" xml:space="preserve">
+    <value>Tiêu đề (Tiếng Anh)</value>
+  </data>
+  <data name="frmUserPermission.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmUserPermission.col_IS_SHOW_DIALOG" xml:space="preserve">
+    <value>Show Dialog</value>
+  </data>
+  <data name="frmUserPermission.col_IS_USED" xml:space="preserve">
+    <value>Sử dụng</value>
+  </data>
+  <data name="frmUserPermission.col_MENU_NAME" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="frmUserPermission.col_SHORTCUT_KEY" xml:space="preserve">
+    <value>Shortcut</value>
+  </data>
+  <data name="frmUserPermission.gb_dis_forms" xml:space="preserve">
+    <value>Danh sách chức năng</value>
+  </data>
+  <data name="frmUserPermission.gb_dis_role" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="frmUserPermission.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmMain.mnuFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="frmMain.mnuFile_ChangePass" xml:space="preserve">
+    <value>Thay đổi mật khẩu</value>
+  </data>
+  <data name="frmMain.mnuFile_Connection" xml:space="preserve">
+    <value>Thiết lập kết nối</value>
+  </data>
+  <data name="frmMain.mnuFile_Exit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="frmMain.mnuFile_Login" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="frmMain.mnuFile_Logout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="frmMain.mnuHelp" xml:space="preserve">
+    <value>Trợ giúp</value>
+  </data>
+  <data name="frmMain.mnuHelp_About" xml:space="preserve">
+    <value>Thông tin phần mềm</value>
+  </data>
+  <data name="frmMain.mnuHelp_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmMain.mnuHelp_UserGuide" xml:space="preserve">
+    <value>Hướng dẫn sử dụng</value>
+  </data>
+  <data name="frmMain.mnuManagement" xml:space="preserve">
+    <value>Quản lý</value>
+  </data>
+  <data name="frmMain.mnuReport" xml:space="preserve">
+    <value>Báo cáo</value>
+  </data>
+  <data name="frmMain.mnuSystem" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="frmMain.mnuWarehouse" xml:space="preserve">
+    <value>Nhà kho</value>
+  </data>
+  <data name="MSG_UPDATE_NOTIFY" xml:space="preserve">
+    <value>Phiên bản hiện tại là {0}. Phiên bản mới nhất là {1}. Vui lòng cập nhật để tiếp tục sử dụng.</value>
+  </data>
+  <data name="MSG_LOGIN_ACCOUNT_LOCKED" xml:space="preserve">
+    <value>Tài khoản đã bị khóa. Vui lòng liên hệ với người quản lý.</value>
+  </data>
+  <data name="MSG_SERVER_CONNECT_FAILED_AND_CHECK" xml:space="preserve">
+    <value>Kết nối đến máy chủ thất bại. Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="MSG_LOGIN_ACCOUNT_NOT_VALID" xml:space="preserve">
+    <value>Tài khoản hoặc mật khẩu hoặc nhà máy không chính xác.</value>
+  </data>
+  <data name="frmLogin" xml:space="preserve">
+    <value>Đăng nhập hệ thống</value>
+  </data>
+  <data name="frmLogin.btn_Cancel" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="frmLogin.btn_Submit" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="frmLogin.lbl_dis_password" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="frmLogin.lbl_dis_username" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="MSG_CHANGE_CONNECTION_SUCCESS_AND_RESTART" xml:space="preserve">
+    <value>Thay đổi thiết lập kết nối đến máy chủ thành công. Hệ thống sẽ tự khởi động lại.</value>
+  </data>
+  <data name="MSG_EXIT_CONFIRM" xml:space="preserve">
+    <value>Bạn muốn thoát khỏi hệ thống?</value>
+  </data>
+  <data name="MSG_LOGOUT_CONFIRM" xml:space="preserve">
+    <value>Bạn muốn đăng xuất khỏi hệ thống?</value>
+  </data>
+  <data name="MSG_UPDATE_LATEST_VERSION" xml:space="preserve">
+    <value>Hiện tại, đây là phiên bản mới nhất.</value>
+  </data>
+  <data name="frmAbout.lbl_dis_copy_right" xml:space="preserve">
+    <value>© 2017 Viện kỹ thuật PK-KQ. All rights reserved.</value>
+  </data>
+  <data name="frmAbout.lbl_dis_name" xml:space="preserve">
+    <value>HỆ THỐNG QUẢN LÝ KHO/VẬT TƯ VIỆN KỸ THUẬTPK-KQ</value>
+  </data>
+  <data name="frmAbout.lbl_dis_version" xml:space="preserve">
+    <value>Phiên bản:</value>
+  </data>
+  <data name="frmAbout" xml:space="preserve">
+    <value>Thông tin phần mềm</value>
+  </data>
+  <data name="frmConnectionSetting" xml:space="preserve">
+    <value>Thiết lập máy chủ</value>
+  </data>
+  <data name="frmConnectionSetting.btn_Save" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="frmConnectionSetting.btn_Test" xml:space="preserve">
+    <value>Kiểm tra</value>
+  </data>
+  <data name="frmConnectionSetting.lbl_dis_database" xml:space="preserve">
+    <value>Cơ sở dữ liệu</value>
+  </data>
+  <data name="frmConnectionSetting.lbl_dis_password" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="frmConnectionSetting.lbl_dis_server" xml:space="preserve">
+    <value>Máy chủ</value>
+  </data>
+  <data name="frmConnectionSetting.lbl_dis_username" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="MSG_SERVER_CONNECT_SUCCESS" xml:space="preserve">
+    <value>Kết nối đến máy chủ thành công.</value>
+  </data>
+  <data name="frmChangePass" xml:space="preserve">
+    <value>Thay đổi mật khẩu</value>
+  </data>
+  <data name="frmChangePass.btn_Cancel" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="frmChangePass.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmChangePass.lbl_dis_password_current" xml:space="preserve">
+    <value>Mật khẩu hiện tại</value>
+  </data>
+  <data name="frmChangePass.lbl_dis_password_new" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+  <data name="frmChangePass.lbl_dis_username" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="MSG_CHANGE_PASS_CURRENT_INVALID" xml:space="preserve">
+    <value>Mật khẩu hiện tại không chính xác.</value>
+  </data>
+  <data name="MSG_CHANGE_PASS_NEW_EQUAL_CURRENT" xml:space="preserve">
+    <value>Mật khẩu mới phải khác mật khẩu hiện tại.</value>
+  </data>
+  <data name="MSG_CHANGE_PASS_SUCCESS_AND_RESTART" xml:space="preserve">
+    <value>Thay đổi mật khẩu thành công. Hệ thống sẽ tự khởi động lại.</value>
   </data>
 </root>

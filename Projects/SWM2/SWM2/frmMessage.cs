@@ -20,10 +20,8 @@ namespace VKTIM
 
         private void frmMessage_Load(object sender, EventArgs e)
         {
-            //GBTSCCommon.SetCommon(this);
             lblType.Text = _CAPTION;
             txtMsg.Text = _MSG;
-            //lblType.Text = lblType.AccessibleDescription;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

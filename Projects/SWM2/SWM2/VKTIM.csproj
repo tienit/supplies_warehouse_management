@@ -243,6 +243,24 @@
     <Compile Include="Component\Infos\HTTITLEEMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\HTUSEREMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\HTUSERInfo.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePass.Designer.cs">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectionSetting.Designer.cs">
+      <DependentUpon>frmConnectionSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmEmployer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -417,6 +435,24 @@
     <Compile Include="frmDmUnitPopup.Designer.cs">
       <DependentUpon>frmDmUnitPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHtForm.Designer.cs">
+      <DependentUpon>frmHtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHtFormPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHtFormPopup.Designer.cs">
+      <DependentUpon>frmHtFormPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -428,6 +464,24 @@
     </Compile>
     <Compile Include="frmMessage.Designer.cs">
       <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserGuide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserGuide.Designer.cs">
+      <DependentUpon>frmUserGuide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPermission.Designer.cs">
+      <DependentUpon>frmUserPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
@@ -465,6 +519,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CommonFormAdmin.resx">
       <DependentUpon>CommonFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePass.resx">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectionSetting.resx">
+      <DependentUpon>frmConnectionSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmEmployer.resx">
       <DependentUpon>frmDmEmployer.cs</DependentUpon>
@@ -553,11 +616,29 @@
     <EmbeddedResource Include="frmDmUnitPopup.resx">
       <DependentUpon>frmDmUnitPopup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHtForm.resx">
+      <DependentUpon>frmHtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHtFormPopup.resx">
+      <DependentUpon>frmHtFormPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMessage.resx">
       <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserGuide.resx">
+      <DependentUpon>frmUserGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPermission.resx">
+      <DependentUpon>frmUserPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lang\MyResources.en.resx" />
     <EmbeddedResource Include="Lang\MyResources.ja.resx" />
@@ -578,6 +659,9 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Fonts\CODE39.ttf" />
+    <None Include="Help\vktim_help.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -613,11 +697,34 @@
     <None Include="Resources\e_logo_32.png" />
     <None Include="Resources\e_logo_128.png" />
     <None Include="Resources\e_logo_64.png" />
-    <None Include="Resources\bg1.png" />
+    <None Include="Resources\mnuFileWhite32.png" />
+    <None Include="Resources\mnuHelpWhite32.png" />
+    <None Include="Resources\mnuManagementWhite32.png" />
+    <None Include="Resources\mnuReportWhite32.png" />
+    <None Include="Resources\mnuSystemWhite32.png" />
+    <None Include="Resources\mnuWarehouseWhite32.png" />
+    <None Include="Resources\e_titlebar_blue2.png" />
+    <None Include="Resources\e_corner_resize.png" />
+    <None Include="Resources\e_icon_block_24.png" />
+    <None Include="Resources\e_icon_select_24.png" />
+    <None Include="Resources\e_icon_unselect_24.png" />
+    <None Include="Resources\e_icon_save_24.png" />
+    <None Include="Resources\e_icon_warning_24.png" />
+    <None Include="Resources\e_icon_loading.gif" />
+    <None Include="Resources\e_icon_menu_item_16.png" />
+    <None Include="Resources\e_icon_menu_item_24.png" />
+    <None Include="Resources\e_icon_warehouse_128.png" />
+    <None Include="Resources\e_icon_warehouse_256.png" />
+    <None Include="Resources\e_icon_login_24.png" />
+    <None Include="Resources\e_icon_changepass_24.png" />
+    <None Include="Resources\e_icon_logout_24.png" />
+    <None Include="Resources\e_icon_connection_24.png" />
+    <None Include="Resources\e_icon_exit_24.png" />
+    <None Include="Resources\e_icon_userguide_24.png" />
+    <None Include="Resources\e_icon_about_24.png" />
+    <None Include="Resources\e_icon_update_24.png" />
     <Content Include="Updater\DoUpdate.exe" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Help\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

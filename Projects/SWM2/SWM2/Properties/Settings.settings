@@ -20,5 +20,8 @@
     <Setting Name="CS_ServerName" Type="System.String" Scope="User">
       <Value Profile="(Default)">117.4.241.246</Value>
     </Setting>
+    <Setting Name="APP_REVISION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

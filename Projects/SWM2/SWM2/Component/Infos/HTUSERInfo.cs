@@ -22,7 +22,6 @@ private DateTime _LAST_LOGIN;
 private string _IP_LOGIN;
 private int _NUMBER_LOGIN;
 private bool _IS_BLOCKED;
-private int _ROLE_USER_ID;
 private string _REMARKS;
 #endregion
 
@@ -62,11 +61,6 @@ private string _REMARKS;
 			set { _IS_BLOCKED = value; }
 		}
 
-		public int ROLE_USER_ID {
-			get { return _ROLE_USER_ID; }
-			set { _ROLE_USER_ID = value; }
-		}
-
 		public string REMARKS {
 			get { return _REMARKS; }
 			set { _REMARKS = value; }
@@ -78,7 +72,7 @@ public HTUSERInfo()
 {
 }
 
-public HTUSERInfo(int ID, string USER_NAME, string PASSWORD, DateTime LAST_LOGIN, string IP_LOGIN, int NUMBER_LOGIN, bool IS_BLOCKED, int ROLE_USER_ID, string REMARKS)
+public HTUSERInfo(int ID, string USER_NAME, string PASSWORD, DateTime LAST_LOGIN, string IP_LOGIN, int NUMBER_LOGIN, bool IS_BLOCKED, string REMARKS)
 {
 	this.ID = ID;
 	this.USER_NAME = USER_NAME;
@@ -87,7 +81,6 @@ public HTUSERInfo(int ID, string USER_NAME, string PASSWORD, DateTime LAST_LOGIN
 	this.IP_LOGIN = IP_LOGIN;
 	this.NUMBER_LOGIN = NUMBER_LOGIN;
 	this.IS_BLOCKED = IS_BLOCKED;
-	this.ROLE_USER_ID = ROLE_USER_ID;
 	this.REMARKS = REMARKS;
 }
 #endregion
