@@ -303,12 +303,14 @@
             this.ddb_user_change_pass.Name = "ddb_user_change_pass";
             this.ddb_user_change_pass.Size = new System.Drawing.Size(168, 22);
             this.ddb_user_change_pass.Text = "Change Password";
+            this.ddb_user_change_pass.Click += new System.EventHandler(this.ddb_user_change_pass_Click);
             // 
             // ddb_user_logout
             // 
             this.ddb_user_logout.Name = "ddb_user_logout";
             this.ddb_user_logout.Size = new System.Drawing.Size(168, 22);
             this.ddb_user_logout.Text = "Log Out";
+            this.ddb_user_logout.Click += new System.EventHandler(this.ddb_user_logout_Click);
             // 
             // toolStripSeparator3
             // 
@@ -320,6 +322,7 @@
             this.ddb_user_exit.Name = "ddb_user_exit";
             this.ddb_user_exit.Size = new System.Drawing.Size(168, 22);
             this.ddb_user_exit.Text = "Exit";
+            this.ddb_user_exit.Click += new System.EventHandler(this.ddb_user_exit_Click);
             // 
             // ddb_icon_warning
             // 

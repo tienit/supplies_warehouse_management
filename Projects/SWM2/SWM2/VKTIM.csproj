@@ -465,6 +465,18 @@
     <Compile Include="frmMessage.Designer.cs">
       <DependentUpon>frmMessage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportImEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportImEx.Designer.cs">
+      <DependentUpon>frmReportImEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserGuide.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -482,6 +494,18 @@
     </Compile>
     <Compile Include="frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWarehouseExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWarehouseExport.Designer.cs">
+      <DependentUpon>frmWarehouseExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWarehouseImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWarehouseImport.Designer.cs">
+      <DependentUpon>frmWarehouseImport.cs</DependentUpon>
     </Compile>
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
@@ -631,6 +655,12 @@
     <EmbeddedResource Include="frmMessage.resx">
       <DependentUpon>frmMessage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReportImEx.resx">
+      <DependentUpon>frmReportImEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUserGuide.resx">
       <DependentUpon>frmUserGuide.cs</DependentUpon>
     </EmbeddedResource>
@@ -639,6 +669,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWarehouseExport.resx">
+      <DependentUpon>frmWarehouseExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWarehouseImport.resx">
+      <DependentUpon>frmWarehouseImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lang\MyResources.en.resx" />
     <EmbeddedResource Include="Lang\MyResources.ja.resx" />

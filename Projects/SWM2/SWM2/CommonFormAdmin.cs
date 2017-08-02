@@ -488,7 +488,7 @@ namespace VKTIM
         {
             if (dtSrc == null || dtSrc.Columns.Count == 0)
             {
-                GBTSCCommon.Message_Info(GBTSCConstants.ESWS_MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL, GBTSCConstants.ESWS_MSG_CAPTION_EXPORT_EXCEL, GBTSCCommon.MessageType.Message_NG);
+                GBTSCCommon.Message_Info(GBTSCConstants.MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL, "EXPORT EXCEL", GBTSCCommon.MessageType.Message_NG);
                 return;
             }
 
@@ -519,7 +519,7 @@ namespace VKTIM
                 {
                     workSheet.SaveAs(filePath);
                     excelApp.Quit();
-                    GBTSCCommon.Message_Info(GBTSCConstants.ESWS_MSG_REPORT_TO_EXCEL_SUCCESS, GBTSCConstants.ESWS_MSG_CAPTION_EXPORT_EXCEL, GBTSCCommon.MessageType.Message_OK);
+                    GBTSCCommon.Message_Info(GBTSCConstants.MSG_REPORT_TO_EXCEL_SUCCESS, "EXPORT EXCEL", GBTSCCommon.MessageType.Message_OK);
                 }
                 catch (Exception ex)
                 {
@@ -541,7 +541,7 @@ namespace VKTIM
         {
             if (dtSrc == null || dtSrc.Columns.Count == 0)
             {
-                GBTSCCommon.Message_Info(GBTSCConstants.ESWS_MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL, GBTSCConstants.ESWS_MSG_CAPTION_EXPORT_EXCEL, GBTSCCommon.MessageType.Message_NG);
+                GBTSCCommon.Message_Info(GBTSCConstants.MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL, "EXPORT EXCEL", GBTSCCommon.MessageType.Message_NG);
                 return;
             }
 

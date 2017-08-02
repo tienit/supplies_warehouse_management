@@ -132,9 +132,6 @@
   <data name="MSG_DELETE_CONFIRM" xml:space="preserve">
     <value>Bạn chắc chắn muốn xóa đối tượng này khỏi hệ thống?</value>
   </data>
-  <data name="frmDmUnit" xml:space="preserve">
-    <value>Quản lý danh mục đơn vị tính</value>
-  </data>
   <data name="frmDmUnitPopup" xml:space="preserve">
     <value>Đơn vị</value>
   </data>
@@ -201,9 +198,6 @@
   <data name="frmMessage.lblType" xml:space="preserve">
     <value>NG</value>
   </data>
-  <data name="frmDmTitle" xml:space="preserve">
-    <value>Quản lý danh mục chức vụ</value>
-  </data>
   <data name="frmDmTitle.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -245,9 +239,6 @@
   </data>
   <data name="frmDmTitle.btn_Print" xml:space="preserve">
     <value>In</value>
-  </data>
-  <data name="frmDmEmployer" xml:space="preserve">
-    <value>Quản lý danh mục cán bộ</value>
   </data>
   <data name="frmDmEmployer.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
@@ -390,9 +381,6 @@
   <data name="frmDmEmployerPopup.lbl_dis_xa" xml:space="preserve">
     <value>Xã</value>
   </data>
-  <data name="frmDmLocation" xml:space="preserve">
-    <value>Quản lý danh mục địa điểm</value>
-  </data>
   <data name="frmDmLocation.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -440,9 +428,6 @@
   </data>
   <data name="frmDmLocationPopup.lbl_dis_order" xml:space="preserve">
     <value>Thứ tự</value>
-  </data>
-  <data name="frmDmOrganization" xml:space="preserve">
-    <value>Quản lý danh mục đơn vị</value>
   </data>
   <data name="frmDmOrganization.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
@@ -494,9 +479,6 @@
   </data>
   <data name="frmDmOrganizationPopup.lbl_dis_SpecialID" xml:space="preserve">
     <value>Chuyên ngành</value>
-  </data>
-  <data name="frmDmOrigin" xml:space="preserve">
-    <value>Quản lý danh mục xuất xứ</value>
   </data>
   <data name="frmDmOrigin.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
@@ -585,9 +567,6 @@
   <data name="frmDmOrigin.col_ORIGIN_NAME" xml:space="preserve">
     <value>Xuất xứ</value>
   </data>
-  <data name="frmDmOutputType" xml:space="preserve">
-    <value>Quản lý danh mục kiểu xuất</value>
-  </data>
   <data name="frmDmOutputType.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -638,9 +617,6 @@
   </data>
   <data name="frmDmOutputTypePopup.lbl_dis_name" xml:space="preserve">
     <value>Tên</value>
-  </data>
-  <data name="frmDmParameter" xml:space="preserve">
-    <value>Quản lý danh mục tham số</value>
   </data>
   <data name="frmDmParameter.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
@@ -711,9 +687,6 @@
   <data name="frmDmParameterPopup.lbl_dis_Value" xml:space="preserve">
     <value>Giá trị mặc định</value>
   </data>
-  <data name="frmDmPrice" xml:space="preserve">
-    <value>Quản lý danh mục giá</value>
-  </data>
   <data name="frmDmPrice.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -780,9 +753,6 @@
   <data name="frmDmPricePopup.lbl_dis_symbol" xml:space="preserve">
     <value>Ký hiệu</value>
   </data>
-  <data name="frmDmProductCategory" xml:space="preserve">
-    <value>Quản lý danh nhóm sản phẩm</value>
-  </data>
   <data name="frmDmProductCategory.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -830,9 +800,6 @@
   </data>
   <data name="frmDmProductCategoryPopup.lbl_dis_name" xml:space="preserve">
     <value>Tên nhóm</value>
-  </data>
-  <data name="frmDmProducts" xml:space="preserve">
-    <value>Quản lý danh nhóm sản phẩm</value>
   </data>
   <data name="frmDmProducts.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
@@ -963,9 +930,6 @@
   <data name="frmDmProductsPopup.lbl_dis_unitname" xml:space="preserve">
     <value>Đơn vị tính</value>
   </data>
-  <data name="frmDmRank" xml:space="preserve">
-    <value>Quản lý danh mục cấp bậc</value>
-  </data>
   <data name="frmDmRank.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -1014,9 +978,6 @@
   <data name="frmDmRankPopup.lbl_dis_name" xml:space="preserve">
     <value>Tên cấp</value>
   </data>
-  <data name="frmDmSpecial" xml:space="preserve">
-    <value>Quản lý danh mục chuyên ngành</value>
-  </data>
   <data name="frmDmSpecial.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -1064,9 +1025,6 @@
   </data>
   <data name="frmDmSpecialPopup.lbl_dis_name" xml:space="preserve">
     <value>Chuyên ngành</value>
-  </data>
-  <data name="frmDmSupplier" xml:space="preserve">
-    <value>Quản lý danh mục đối tác</value>
   </data>
   <data name="frmDmSupplier.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
@@ -1164,9 +1122,6 @@
   <data name="frmDmTitlePopup.lbl_dis_shortname" xml:space="preserve">
     <value>Viết tắt</value>
   </data>
-  <data name="frmHtForm" xml:space="preserve">
-    <value>Chức năng hệ thống</value>
-  </data>
   <data name="frmHtForm.btn_Add" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -1260,9 +1215,6 @@
   <data name="frmHtFormPopup.lbl_dis_title_en" xml:space="preserve">
     <value>Tiêu đề (Tiếng Anh)</value>
   </data>
-  <data name="frmUsers" xml:space="preserve">
-    <value>Quản lý tài khoản</value>
-  </data>
   <data name="frmUsers.btn_Add_Role" xml:space="preserve">
     <value>Thêm mới</value>
   </data>
@@ -1340,9 +1292,6 @@
   </data>
   <data name="frmUsers.lbl_dis_user_role" xml:space="preserve">
     <value>Vai trò</value>
-  </data>
-  <data name="frmUserPermission" xml:space="preserve">
-    <value>Phân quyền sử dụng</value>
   </data>
   <data name="frmUserPermission.btn_Refresh" xml:space="preserve">
     <value>Làm mới</value>
@@ -1535,5 +1484,32 @@
   </data>
   <data name="MSG_CHANGE_PASS_SUCCESS_AND_RESTART" xml:space="preserve">
     <value>Thay đổi mật khẩu thành công. Hệ thống sẽ tự khởi động lại.</value>
+  </data>
+  <data name="TXT_REVISION" xml:space="preserve">
+    <value>Phiên bản: {0}</value>
+  </data>
+  <data name="TXT_SERVER" xml:space="preserve">
+    <value>Máy chủ: {0}</value>
+  </data>
+  <data name="MSG_PC_IS_BLOCKED" xml:space="preserve">
+    <value>Thiết bị {0} đang ở trong tình trạng bị khóa.</value>
+  </data>
+  <data name="MSG_PC_NOT_IN_USED" xml:space="preserve">
+    <value>Thiết bị {0} không nằm trong danh sách sử dụng.</value>
+  </data>
+  <data name="MSG_REPORT_NO_DATA_TO_EXPORT_EXCEL" xml:space="preserve">
+    <value>Không có dữ liệu để xuất excel.</value>
+  </data>
+  <data name="MSG_REPORT_TO_EXCEL_SUCCESS" xml:space="preserve">
+    <value>Xuất dữ liệu excel thành công.</value>
+  </data>
+  <data name="frmMain.ddb_user_change_pass" xml:space="preserve">
+    <value>Thay đổi mật khẩu</value>
+  </data>
+  <data name="frmMain.ddb_user_exit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="frmMain.ddb_user_logout" xml:space="preserve">
+    <value>Đăng xuất</value>
   </data>
 </root>

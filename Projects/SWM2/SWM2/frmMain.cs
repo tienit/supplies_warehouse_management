@@ -45,6 +45,7 @@ namespace VKTIM
 
             //Set text for menu item
             GBTSCCommon.SetMenuText(menuStripMain, this.Name);
+            GBTSCCommon.SetStatusStripText(ddb_user, this.Name);
 
             //Init menu item state
             mnuFile_Logout.Visible = false;
@@ -62,7 +63,7 @@ namespace VKTIM
 
             //Status bar
             string app_revision = Application.ProductVersion.Substring(Application.ProductVersion.LastIndexOf(".") + 1);
-            lbl_dis_version.Text = "Rev: " + app_revision;
+            lbl_dis_version.Text = String.Format(GBTSCConstants.TXT_REVISION, app_revision);
 
             //Check Update
             HTCONFIGInfo configInfo = HTCONFIGController.Instance().GetByCode("CURRENT_VERSION");
@@ -107,7 +108,7 @@ namespace VKTIM
                 ddb_user.Visible = true;
                 ddb_user.Text = m_Frm.CURRENT_USER.USER_NAME;
                 lbl_dis_server.Visible = true;
-                lbl_dis_server.Text = Properties.Settings.Default.CS_ServerName;
+                lbl_dis_server.Text = String.Format(GBTSCConstants.TXT_SERVER, Properties.Settings.Default.CS_ServerName);
                 PermissionAfterLogged();
             }
         }
@@ -231,11 +232,21 @@ namespace VKTIM
 
         private void mnuFile_ChangePass_Click(object sender, EventArgs e)
         {
+            Do_ChangePassword();
+        }
+
+        private void Do_ChangePassword()
+        {
             frmChangePass m_Frm = new frmChangePass();
             m_Frm.ShowDialog();
         }
 
         private void mnuFile_Logout_Click(object sender, EventArgs e)
+        {
+            Do_Logout();
+        }
+
+        private void Do_Logout()
         {
             if (GBTSCCommon.Message_Confirm(GBTSCConstants.MSG_LOGOUT_CONFIRM, "LOGOUT") == DialogResult.Yes)
             {
@@ -287,6 +298,11 @@ namespace VKTIM
         }
 
         private void mnuFile_Exit_Click(object sender, EventArgs e)
+        {
+            Do_Exit();
+        }
+
+        private void Do_Exit()
         {
             if (GBTSCCommon.Message_Confirm(GBTSCConstants.MSG_EXIT_CONFIRM, "EXIT SYSTEM") == DialogResult.Yes)
             {
@@ -349,6 +365,22 @@ namespace VKTIM
             catch
             {
             }
+        }
+
+
+        private void ddb_user_change_pass_Click(object sender, EventArgs e)
+        {
+            Do_ChangePassword();
+        }
+
+        private void ddb_user_logout_Click(object sender, EventArgs e)
+        {
+            Do_Logout();
+        }
+
+        private void ddb_user_exit_Click(object sender, EventArgs e)
+        {
+            Do_Exit();
         }
     }
 }

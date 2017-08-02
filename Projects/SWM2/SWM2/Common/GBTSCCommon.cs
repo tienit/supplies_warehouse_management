@@ -384,9 +384,17 @@ namespace VKTIM.Common
 
         public static void SetMenuText(MenuStrip mnuMain, string formName)
         {
-            foreach (ToolStripMenuItem level1 in mnuMain.Items)
+            foreach (var level1 in mnuMain.Items)
             {
                 SetItemMenuText(level1, formName);
+            }
+        }
+
+        public static void SetStatusStripText(ToolStripDropDownButton ddb, string formName)
+        {
+            foreach (var level1 in ddb.DropDownItems)
+            {
+                SetStatusText(level1, formName);
             }
         }
 
@@ -409,6 +417,16 @@ namespace VKTIM.Common
             }
         }
 
+        private static void SetStatusText(object item, string formName)
+        {
+            ToolStripMenuItem itemConverted = null;
+            if (item.GetType() == typeof(ToolStripMenuItem))
+            {
+                itemConverted = (ToolStripMenuItem)item;
+                itemConverted.Text = GBTSCConstants.CURRENT_RESOURCES.GetString(formName + "." + itemConverted.Name, GBTSCConstants.CURRENT_CULTURE);
+            }
+        }
+
         public static bool CheckBeforeLogin()
         {
             bool bCheck = true;
@@ -417,7 +435,7 @@ namespace VKTIM.Common
             DTDEVICESInfo myPC = DTDEVICESController.Instance().GetByName(Environment.MachineName);
             if (myPC == null)
             {
-                GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
+                GBTSCCommon.Message_Info(string.Format(GBTSCConstants.MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
                 bCheck = false;
                 goto unornally_break;
             }
@@ -425,7 +443,7 @@ namespace VKTIM.Common
             {
                 if (myPC.LOCKED)
                 {
-                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE LOCKED", GBTSCCommon.MessageType.Message_NG);
+                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.MSG_PC_IS_BLOCKED, Environment.MachineName), "DEVICE LOCKED", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
                 }
@@ -456,7 +474,7 @@ namespace VKTIM.Common
             DTDEVICESInfo myPC = DTDEVICESController.Instance().GetByName(Environment.MachineName);
             if (myPC == null)
             {
-                GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
+                GBTSCCommon.Message_Info(string.Format(GBTSCConstants.MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE NOT VALID", GBTSCCommon.MessageType.Message_NG);
                 bCheck = false;
                 goto unornally_break;
             }
@@ -464,7 +482,7 @@ namespace VKTIM.Common
             {
                 if (myPC.LOCKED)
                 {
-                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.BUHINSOKO_MSG_PC_NOT_IN_USED, Environment.MachineName), "DEVICE LOCKED", GBTSCCommon.MessageType.Message_NG);
+                    GBTSCCommon.Message_Info(string.Format(GBTSCConstants.MSG_PC_IS_BLOCKED, Environment.MachineName), "DEVICE LOCKED", GBTSCCommon.MessageType.Message_NG);
                     bCheck = false;
                     goto unornally_break;
                 }
