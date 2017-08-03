@@ -35,18 +35,18 @@
             // 
             // pn_Form
             // 
-            this.pn_Form.Size = new System.Drawing.Size(932, 520);
+            this.pn_Form.Size = new System.Drawing.Size(1000, 600);
             // 
             // lbl_FormTitle
             // 
-            this.lbl_FormTitle.Size = new System.Drawing.Size(745, 37);
+            this.lbl_FormTitle.Size = new System.Drawing.Size(867, 37);
             this.lbl_FormTitle.Text = "";
             // 
             // frmHtForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 536);
+            this.ClientSize = new System.Drawing.Size(1002, 616);
             this.DATA_COUNT = "";
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1050);

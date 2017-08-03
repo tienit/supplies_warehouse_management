@@ -91,6 +91,12 @@
     <Compile Include="CommonFormAdmin.Designer.cs">
       <DependentUpon>CommonFormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommonFormAdminOrigin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonFormAdminOrigin.Designer.cs">
+      <DependentUpon>CommonFormAdminOrigin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\Crytopo.cs" />
     <Compile Include="Common\GBTSCCommon.cs" />
     <Compile Include="Common\GBTSCConstants.cs" />
@@ -544,6 +550,9 @@
     <EmbeddedResource Include="CommonFormAdmin.resx">
       <DependentUpon>CommonFormAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CommonFormAdminOrigin.resx">
+      <DependentUpon>CommonFormAdminOrigin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -765,6 +774,9 @@
     <None Include="Resources\mnuReportGreen32.png" />
     <None Include="Resources\mnuSystemGreen32.png" />
     <None Include="Resources\mnuWarehouseGreen32.png" />
+    <None Include="Resources\e_icon_screen_back.png" />
+    <None Include="Resources\e_icon_screen_next.png" />
+    <None Include="Resources\e_icon_screen_close_24.png" />
     <Content Include="Updater\DoUpdate.exe" />
   </ItemGroup>
   <ItemGroup />

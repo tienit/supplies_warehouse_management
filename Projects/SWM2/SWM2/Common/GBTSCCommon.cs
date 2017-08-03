@@ -115,6 +115,21 @@ namespace VKTIM.Common
             }
         }
 
+        public static Form GetForm_From_ClassName(string className, string title)
+        {
+            try
+            {
+                string fullFormName = string.Format("{0}.{1}", GBTSCConstants.ESWS_SYS_NAME, className);
+                Form frm = (Form)Activator.CreateInstance(GBTSCConstants.ESWS_SYS_NAME, fullFormName).Unwrap();
+                frm.Text = title;
+                return frm;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public static void ShowForm_ClassName_2(string className, string title)
         {
             try
@@ -127,6 +142,21 @@ namespace VKTIM.Common
             catch (System.Exception ex)
             {
                 GBTSCCommon.Message_Info(ex.Message, "ERROR", MessageType.Message_NG);
+            }
+        }
+
+        public static Form GetForm_From_ClassName_2(string className, string title)
+        {
+            try
+            {
+                string fullFormName = string.Format("{0}.{1}", GBTSCConstants.ESWS_SYS_NAME, className);
+                Form frm = (Form)Activator.CreateInstance(GBTSCConstants.ESWS_SYS_NAME, fullFormName).Unwrap();
+                frm.Text = title;
+                return frm;
+            }
+            catch
+            {
+                return null;
             }
         }
 

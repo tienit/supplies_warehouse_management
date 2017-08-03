@@ -124,8 +124,11 @@
   <data name="e_maximized_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_maximized_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_corner_resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_corner_resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuFileGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuFileGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_send_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_send_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_titlebar_blue2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_titlebar_blue2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,11 +139,14 @@
   <data name="e_provider_ng_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_provider_ng_16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_del2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_del2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_icon_select_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_select_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mnuReportWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mnuReportWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuSystemGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuSystemGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_provider_ok_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_provider_ok_32.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +160,8 @@
   <data name="e_icon_star_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_star_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_menu_item_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_menu_item_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_corner_resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_corner_resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_user2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_user2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,9 +175,6 @@
   <data name="e_icon_check_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_check_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_edit_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_edit_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="e_icon_userguide_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_userguide_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +186,9 @@
   </data>
   <data name="e_icon_warehouse_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_warehouse_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuReportGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuReportGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_titlebar_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_titlebar_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +214,9 @@
   <data name="mnuManagementWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mnuManagementWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="e_icon_user_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_user_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="e_icon_block_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_block_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,11 +235,23 @@
   <data name="e_icon_changepass_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_changepass_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_warning_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_warning_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuWarehouseGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuWarehouseGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_update_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_update_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_edit_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_edit_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_screen_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_screen_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_provider_ok_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_provider_ok_16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mnuHelpGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuHelpGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_down_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_down_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,8 +265,8 @@
   <data name="mnuFileWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mnuFileWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_titlebar_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_titlebar_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_icon_menu_item_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_menu_item_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eAppLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eAppLogo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,11 +286,11 @@
   <data name="e_provider_ng_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_provider_ng_32.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="e_titlebar_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_titlebar_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="e_minimized_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_minimized_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="e_icon_send_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_send_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_refresh2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_refresh2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,20 +310,23 @@
   <data name="e_msg_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_msg_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuHelpWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuHelpWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_icon_warning_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_warning_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_about_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_about_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_user_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_user_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuHelpWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuHelpWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_del2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_del2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_setting_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_setting_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_select_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_select_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuManagementGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuManagementGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_login_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_login_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -312,6 +336,9 @@
   </data>
   <data name="e_icon_warehouse_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_warehouse_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_screen_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_screen_next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_list_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_list_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,25 +355,7 @@
   <data name="e_icon_menu_item_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_menu_item_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_update_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_update_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mnuFileGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuFileGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mnuHelpGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuHelpGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mnuManagementGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuManagementGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mnuReportGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuReportGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mnuSystemGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuSystemGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mnuWarehouseGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuWarehouseGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_icon_screen_close_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_screen_close_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

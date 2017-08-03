@@ -14,6 +14,9 @@ namespace VKTIM
 {
     public partial class frmMain : CommonForm
     {
+        private List<Form> _FORM_STACK;
+        private int _CURRENT_FORM_INDEX;
+
         public frmMain()
         {
             InitializeComponent();
@@ -40,6 +43,8 @@ namespace VKTIM
 
         private void InitControl()
         {
+            //Color
+            this.BackColor = Color.FromArgb(0, 0, 50);
             //Working size
             this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
 
@@ -58,8 +63,15 @@ namespace VKTIM
             mnuManagement.Visible = false;
             mnuReport.Visible = false;
 
+            //
+            _FORM_STACK = new List<Form>();
+            _FORM_STACK.Add(null);
+            _FORM_STACK.Add(null);
+            _FORM_STACK.Add(null);
+            _CURRENT_FORM_INDEX = 0;
+
             //Current User
-            GBTSCConstants.CURRENT_USER = HTUSERController.Instance().GetById(1);
+            //GBTSCConstants.CURRENT_USER = HTUSERController.Instance().GetById(1);
 
             //Status bar
             string app_revision = Application.ProductVersion.Substring(Application.ProductVersion.LastIndexOf(".") + 1);
@@ -184,14 +196,59 @@ namespace VKTIM
 
         private void mnu_Item_Click(object sender, EventArgs e)
         {
+            Form frm = null;
             ToolStripMenuItem itemSender = (ToolStripMenuItem)sender;
             if (itemSender.AccessibleDescription.Equals("1"))
             {
-                GBTSCCommon.ShowForm_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
+                //GBTSCCommon.ShowForm_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
+                frm = GBTSCCommon.GetForm_From_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
             }
             else
             {
-                GBTSCCommon.ShowForm_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
+                //GBTSCCommon.ShowForm_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
+                frm = GBTSCCommon.GetForm_From_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
+            }
+            if (frm != null)
+            {
+                frm.TopLevel = false;
+                frm.AutoScroll = true;
+                //Find controls and hide
+                Panel pn = null;
+                Control[] ctrls = frm.Controls.Find("pn_TOP", true);
+                if (ctrls.Length > 0)
+                {
+                    pn = ctrls[0] as Panel;
+                    pn.Visible = false;
+                }
+                ctrls = frm.Controls.Find("pn_Border_Bottom", true);
+                if (ctrls.Length > 0)
+                {
+                    pn = ctrls[0] as Panel;
+                    pn.Visible = false;
+                }
+                ctrls = frm.Controls.Find("pn_Border_Top", true);
+                if (ctrls.Length > 0)
+                {
+                    pn = ctrls[0] as Panel;
+                    pn.Visible = false;
+                }
+                ctrls = frm.Controls.Find("pn_Border_Left", true);
+                if (ctrls.Length > 0)
+                {
+                    pn = ctrls[0] as Panel;
+                    pn.Visible = false;
+                }
+                ctrls = frm.Controls.Find("pn_Border_Right", true);
+                if (ctrls.Length > 0)
+                {
+                    pn = ctrls[0] as Panel;
+                    pn.Visible = false;
+                }
+                this.lbl_dis_CURRENT_FORM_TITLE.Text = frm.Text;
+                this.pn_Main_Content.Controls.Clear();
+                this.pn_Main_Content.Controls.Add(frm);
+                frm.Dock = DockStyle.Fill;
+                frm.Show();
             }
         }
 
@@ -238,6 +295,11 @@ namespace VKTIM
         private void Do_ChangePassword()
         {
             frmChangePass m_Frm = new frmChangePass();
+            //m_Frm.TopLevel = false;
+            //m_Frm.AutoScroll = true;
+            //this.pn_Main_Content.Controls.Clear();
+            //this.pn_Main_Content.Controls.Add(m_Frm);
+            //m_Frm.Show();
             m_Frm.ShowDialog();
         }
 

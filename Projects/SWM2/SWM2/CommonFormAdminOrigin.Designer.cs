@@ -1,6 +1,6 @@
 ﻿namespace VKTIM
 {
-    partial class CommonFormAdmin
+    partial class CommonFormAdminOrigin
     {
         /// <summary>
         /// Required designer variable.
@@ -59,18 +59,12 @@
             this.mainHelp = new System.Windows.Forms.HelpProvider();
             this.mainError = new System.Windows.Forms.ErrorProvider(this.components);
             this.mainTip = new System.Windows.Forms.ToolTip(this.components);
-            this.pn_Qty = new System.Windows.Forms.Panel();
-            this.pn_Empty_Left = new System.Windows.Forms.Panel();
-            this.pn_Empty_Right = new System.Windows.Forms.Panel();
-            this.pn_Data = new System.Windows.Forms.Panel();
             this.pn_TOP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Data)).BeginInit();
             this.pn_Control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
-            this.pn_Qty.SuspendLayout();
-            this.pn_Data.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_TOP
@@ -244,15 +238,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_Form.BackColor = System.Drawing.Color.Transparent;
-            this.pn_Form.Controls.Add(this.pn_Data);
-            this.pn_Form.Controls.Add(this.pn_Empty_Right);
-            this.pn_Form.Controls.Add(this.pn_Empty_Left);
-            this.pn_Form.Controls.Add(this.pn_Qty);
+            this.pn_Form.Controls.Add(this.dgv_Data);
+            this.pn_Form.Controls.Add(this.lbl_dis_count);
+            this.pn_Form.Controls.Add(this.lbl_data_count);
             this.pn_Form.Controls.Add(this.pn_Control);
             this.pn_Form.Controls.Add(this.pn_TOP);
             this.pn_Form.Location = new System.Drawing.Point(1, 1);
             this.pn_Form.Name = "pn_Form";
-            this.pn_Form.Size = new System.Drawing.Size(878, 530);
+            this.pn_Form.Size = new System.Drawing.Size(878, 534);
             this.pn_Form.TabIndex = 56;
             this.pn_Form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_Form_MouseDown);
             // 
@@ -262,9 +255,12 @@
             this.dgv_Data.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dgv_Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Data.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_Data.BackgroundColor = System.Drawing.Color.Gray;
+            this.dgv_Data.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
@@ -275,9 +271,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Data.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Data.EnableHeadersVisualStyles = false;
-            this.dgv_Data.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Data.Location = new System.Drawing.Point(13, 166);
             this.dgv_Data.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgv_Data.MultiSelect = false;
             this.dgv_Data.Name = "dgv_Data";
@@ -288,13 +283,13 @@
             this.dgv_Data.RowTemplate.ReadOnly = true;
             this.dgv_Data.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Data.Size = new System.Drawing.Size(858, 384);
+            this.dgv_Data.Size = new System.Drawing.Size(855, 352);
             this.dgv_Data.TabIndex = 61;
             // 
             // lbl_dis_count
             // 
             this.lbl_dis_count.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lbl_dis_count.Location = new System.Drawing.Point(5, 5);
+            this.lbl_dis_count.Location = new System.Drawing.Point(24, 136);
             this.lbl_dis_count.Name = "lbl_dis_count";
             this.lbl_dis_count.Size = new System.Drawing.Size(123, 25);
             this.lbl_dis_count.TabIndex = 60;
@@ -305,7 +300,7 @@
             // 
             this.lbl_data_count.AutoSize = true;
             this.lbl_data_count.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lbl_data_count.Location = new System.Drawing.Point(134, 9);
+            this.lbl_data_count.Location = new System.Drawing.Point(153, 140);
             this.lbl_data_count.Name = "lbl_data_count";
             this.lbl_data_count.Size = new System.Drawing.Size(17, 19);
             this.lbl_data_count.TabIndex = 59;
@@ -313,6 +308,8 @@
             // 
             // pn_Control
             // 
+            this.pn_Control.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_Control.BackColor = System.Drawing.Color.White;
             this.pn_Control.Controls.Add(this.btn_Update);
             this.pn_Control.Controls.Add(this.btn_Delete);
@@ -322,10 +319,9 @@
             this.pn_Control.Controls.Add(this.btn_Search);
             this.pn_Control.Controls.Add(this.btn_Print);
             this.pn_Control.Controls.Add(this.lbl_dis_keyword);
-            this.pn_Control.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_Control.Location = new System.Drawing.Point(0, 45);
+            this.pn_Control.Location = new System.Drawing.Point(3, 49);
             this.pn_Control.Name = "pn_Control";
-            this.pn_Control.Size = new System.Drawing.Size(878, 66);
+            this.pn_Control.Size = new System.Drawing.Size(872, 75);
             this.pn_Control.TabIndex = 58;
             // 
             // btn_Update
@@ -338,7 +334,7 @@
             this.btn_Update.ForeColor = System.Drawing.Color.Black;
             this.btn_Update.Image = global::VKTIM.Properties.Resources.e_icon_edit_24;
             this.btn_Update.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Update.Location = new System.Drawing.Point(494, 6);
+            this.btn_Update.Location = new System.Drawing.Point(488, 11);
             this.btn_Update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(90, 52);
@@ -357,7 +353,7 @@
             this.btn_Delete.ForeColor = System.Drawing.Color.Black;
             this.btn_Delete.Image = global::VKTIM.Properties.Resources.e_icon_del2_24;
             this.btn_Delete.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Delete.Location = new System.Drawing.Point(589, 6);
+            this.btn_Delete.Location = new System.Drawing.Point(583, 11);
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(90, 52);
@@ -376,7 +372,7 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Black;
             this.btn_Add.Image = global::VKTIM.Properties.Resources.e_icon_add_24;
             this.btn_Add.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Add.Location = new System.Drawing.Point(399, 6);
+            this.btn_Add.Location = new System.Drawing.Point(393, 11);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(90, 52);
@@ -389,7 +385,7 @@
             // 
             this.txt_data_keyword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_data_keyword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_data_keyword.Location = new System.Drawing.Point(113, 13);
+            this.txt_data_keyword.Location = new System.Drawing.Point(113, 18);
             this.txt_data_keyword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_keyword.Name = "txt_data_keyword";
             this.txt_data_keyword.Size = new System.Drawing.Size(151, 35);
@@ -405,7 +401,7 @@
             this.btn_Export_Excel.ForeColor = System.Drawing.Color.Black;
             this.btn_Export_Excel.Image = global::VKTIM.Properties.Resources.e_icon_excel_24;
             this.btn_Export_Excel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Export_Excel.Location = new System.Drawing.Point(684, 6);
+            this.btn_Export_Excel.Location = new System.Drawing.Point(678, 11);
             this.btn_Export_Excel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Export_Excel.Name = "btn_Export_Excel";
             this.btn_Export_Excel.Size = new System.Drawing.Size(90, 52);
@@ -423,7 +419,7 @@
             this.btn_Search.ForeColor = System.Drawing.Color.Black;
             this.btn_Search.Image = global::VKTIM.Properties.Resources.e_icon_search_24;
             this.btn_Search.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Search.Location = new System.Drawing.Point(271, 6);
+            this.btn_Search.Location = new System.Drawing.Point(271, 11);
             this.btn_Search.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(90, 52);
@@ -442,7 +438,7 @@
             this.btn_Print.ForeColor = System.Drawing.Color.Black;
             this.btn_Print.Image = global::VKTIM.Properties.Resources.e_icon_printer_24;
             this.btn_Print.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Print.Location = new System.Drawing.Point(779, 6);
+            this.btn_Print.Location = new System.Drawing.Point(773, 11);
             this.btn_Print.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Print.Name = "btn_Print";
             this.btn_Print.Size = new System.Drawing.Size(90, 52);
@@ -454,7 +450,7 @@
             // lbl_dis_keyword
             // 
             this.lbl_dis_keyword.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lbl_dis_keyword.Location = new System.Drawing.Point(7, 14);
+            this.lbl_dis_keyword.Location = new System.Drawing.Point(7, 19);
             this.lbl_dis_keyword.Name = "lbl_dis_keyword";
             this.lbl_dis_keyword.Size = new System.Drawing.Size(100, 34);
             this.lbl_dis_keyword.TabIndex = 2;
@@ -468,41 +464,6 @@
             // mainError
             // 
             this.mainError.ContainerControl = this;
-            // 
-            // pn_Qty
-            // 
-            this.pn_Qty.Controls.Add(this.lbl_dis_count);
-            this.pn_Qty.Controls.Add(this.lbl_data_count);
-            this.pn_Qty.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_Qty.Location = new System.Drawing.Point(0, 111);
-            this.pn_Qty.Name = "pn_Qty";
-            this.pn_Qty.Size = new System.Drawing.Size(878, 35);
-            this.pn_Qty.TabIndex = 62;
-            // 
-            // pn_Empty_Left
-            // 
-            this.pn_Empty_Left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_Empty_Left.Location = new System.Drawing.Point(0, 146);
-            this.pn_Empty_Left.Name = "pn_Empty_Left";
-            this.pn_Empty_Left.Size = new System.Drawing.Size(10, 384);
-            this.pn_Empty_Left.TabIndex = 63;
-            // 
-            // pn_Empty_Right
-            // 
-            this.pn_Empty_Right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pn_Empty_Right.Location = new System.Drawing.Point(868, 146);
-            this.pn_Empty_Right.Name = "pn_Empty_Right";
-            this.pn_Empty_Right.Size = new System.Drawing.Size(10, 384);
-            this.pn_Empty_Right.TabIndex = 64;
-            // 
-            // pn_Data
-            // 
-            this.pn_Data.Controls.Add(this.dgv_Data);
-            this.pn_Data.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_Data.Location = new System.Drawing.Point(10, 146);
-            this.pn_Data.Name = "pn_Data";
-            this.pn_Data.Size = new System.Drawing.Size(858, 384);
-            this.pn_Data.TabIndex = 65;
             // 
             // CommonFormAdmin
             // 
@@ -518,22 +479,20 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(500, 250);
-            this.Name = "CommonFormAdmin";
+            this.Name = "CommonFormAdminOrigin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CommonFormAdminOrigin";
-            this.Load += new System.EventHandler(this.CommonFormAdmin_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CommonFormAdmin_KeyDown);
+            this.Load += new System.EventHandler(this.CommonFormAdminOrigin_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CommonFormAdminOrigin_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CommonForm_MouseDown);
             this.pn_TOP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
             this.pn_Form.ResumeLayout(false);
+            this.pn_Form.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Data)).EndInit();
             this.pn_Control.ResumeLayout(false);
             this.pn_Control.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).EndInit();
-            this.pn_Qty.ResumeLayout(false);
-            this.pn_Qty.PerformLayout();
-            this.pn_Data.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -567,9 +526,5 @@
         private System.Windows.Forms.Label lbl_dis_keyword;
         private System.Windows.Forms.DataGridView dgv_Data;
         private System.Windows.Forms.Label lbl_data_count;
-        private System.Windows.Forms.Panel pn_Qty;
-        private System.Windows.Forms.Panel pn_Empty_Right;
-        private System.Windows.Forms.Panel pn_Empty_Left;
-        private System.Windows.Forms.Panel pn_Data;
     }
 }

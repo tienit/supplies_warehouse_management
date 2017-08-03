@@ -14,7 +14,7 @@ using System.IO;
 
 namespace VKTIM
 {
-    public partial class CommonFormAdmin : Form
+    public partial class CommonFormAdminOrigin : Form
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -57,7 +57,7 @@ namespace VKTIM
             set { lbl_data_count.Text = value; }
         }
 
-        public CommonFormAdmin()
+        public CommonFormAdminOrigin()
         {
             InitializeComponent();
         }
@@ -194,7 +194,7 @@ namespace VKTIM
         }
 
         //Form load
-        private void CommonFormAdmin_Load(object sender, EventArgs e)
+        private void CommonFormAdminOrigin_Load(object sender, EventArgs e)
         {
             try
             {
@@ -218,7 +218,7 @@ namespace VKTIM
         }
         
         //Form key down
-        private void CommonFormAdmin_KeyDown(object sender, KeyEventArgs e)
+        private void CommonFormAdminOrigin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {

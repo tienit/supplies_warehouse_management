@@ -58,22 +58,30 @@
             this.lbl_dis_update_now = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbl_dis_notify = new VKTIM.UserControl.MarqueeLabel();
             this.hlp_ComOperation = new System.Windows.Forms.HelpProvider();
+            this.pn_Pinned_Title = new System.Windows.Forms.Panel();
+            this.btn_screen_close = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn_screen_back = new System.Windows.Forms.Button();
+            this.lbl_dis_CURRENT_FORM_TITLE = new System.Windows.Forms.Label();
+            this.pn_Main_Content = new System.Windows.Forms.Panel();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
+            this.pn_Pinned_Title.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_Form
             // 
-            this.pn_Form.Controls.Add(this.lbl_dis_notify);
-            this.pn_Form.Controls.Add(this.statusStripMain);
+            this.pn_Form.BackColor = System.Drawing.Color.White;
+            this.pn_Form.Controls.Add(this.pn_Main_Content);
+            this.pn_Form.Controls.Add(this.pn_Pinned_Title);
             this.pn_Form.Controls.Add(this.menuStripMain);
-            this.pn_Form.Size = new System.Drawing.Size(1098, 650);
+            this.pn_Form.Size = new System.Drawing.Size(1098, 640);
             this.pn_Form.Controls.SetChildIndex(this.menuStripMain, 0);
-            this.pn_Form.Controls.SetChildIndex(this.statusStripMain, 0);
-            this.pn_Form.Controls.SetChildIndex(this.lbl_dis_notify, 0);
+            this.pn_Form.Controls.SetChildIndex(this.pn_Pinned_Title, 0);
+            this.pn_Form.Controls.SetChildIndex(this.pn_Main_Content, 0);
             // 
             // lbl_FormTitle
             // 
@@ -83,6 +91,7 @@
             // menuStripMain
             // 
             this.menuStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.menuStripMain.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStripMain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
@@ -91,12 +100,11 @@
             this.mnuReport,
             this.mnuManagement,
             this.mnuHelp});
-            this.menuStripMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStripMain.Location = new System.Drawing.Point(0, 45);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStripMain.Size = new System.Drawing.Size(1098, 40);
-            this.menuStripMain.TabIndex = 58;
+            this.menuStripMain.Size = new System.Drawing.Size(123, 595);
+            this.menuStripMain.TabIndex = 63;
             // 
             // mnuFile
             // 
@@ -114,8 +122,10 @@
             this.mnuFile.Image = global::VKTIM.Properties.Resources.mnuFileWhite32;
             this.mnuFile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(78, 36);
+            this.mnuFile.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuFile.Size = new System.Drawing.Size(108, 67);
             this.mnuFile.Text = "&File";
+            this.mnuFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuFile.DropDownClosed += new System.EventHandler(this.mnuFile_DropDownClosed);
             this.mnuFile.DropDownOpened += new System.EventHandler(this.mnuFile_DropDownOpened);
             // 
@@ -185,8 +195,10 @@
             this.mnuWarehouse.Image = global::VKTIM.Properties.Resources.mnuWarehouseWhite32;
             this.mnuWarehouse.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuWarehouse.Name = "mnuWarehouse";
-            this.mnuWarehouse.Size = new System.Drawing.Size(132, 36);
+            this.mnuWarehouse.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuWarehouse.Size = new System.Drawing.Size(108, 67);
             this.mnuWarehouse.Text = "&Warehouse";
+            this.mnuWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuWarehouse.DropDownClosed += new System.EventHandler(this.mnuWarehouse_DropDownClosed);
             this.mnuWarehouse.DropDownOpened += new System.EventHandler(this.mnuWarehouse_DropDownOpened);
             // 
@@ -196,8 +208,10 @@
             this.mnuSystem.Image = global::VKTIM.Properties.Resources.mnuSystemWhite32;
             this.mnuSystem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuSystem.Name = "mnuSystem";
-            this.mnuSystem.Size = new System.Drawing.Size(105, 36);
+            this.mnuSystem.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuSystem.Size = new System.Drawing.Size(108, 67);
             this.mnuSystem.Text = "&System";
+            this.mnuSystem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuSystem.DropDownClosed += new System.EventHandler(this.mnuSystem_DropDownClosed);
             this.mnuSystem.DropDownOpened += new System.EventHandler(this.mnuSystem_DropDownOpened);
             // 
@@ -207,8 +221,10 @@
             this.mnuReport.Image = global::VKTIM.Properties.Resources.mnuReportWhite32;
             this.mnuReport.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuReport.Name = "mnuReport";
-            this.mnuReport.Size = new System.Drawing.Size(101, 36);
+            this.mnuReport.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuReport.Size = new System.Drawing.Size(108, 67);
             this.mnuReport.Text = "Report";
+            this.mnuReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuReport.DropDownClosed += new System.EventHandler(this.mnuReport_DropDownClosed);
             this.mnuReport.DropDownOpened += new System.EventHandler(this.mnuReport_DropDownOpened);
             // 
@@ -218,8 +234,10 @@
             this.mnuManagement.Image = global::VKTIM.Properties.Resources.mnuManagementWhite32;
             this.mnuManagement.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuManagement.Name = "mnuManagement";
-            this.mnuManagement.Size = new System.Drawing.Size(146, 36);
+            this.mnuManagement.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuManagement.Size = new System.Drawing.Size(108, 67);
             this.mnuManagement.Text = "&Management";
+            this.mnuManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuManagement.DropDownClosed += new System.EventHandler(this.mnuManagement_DropDownClosed);
             this.mnuManagement.DropDownOpened += new System.EventHandler(this.mnuManagement_DropDownOpened);
             // 
@@ -233,8 +251,10 @@
             this.mnuHelp.Image = global::VKTIM.Properties.Resources.mnuHelpWhite32;
             this.mnuHelp.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuHelp.Name = "mnuHelp";
-            this.mnuHelp.Size = new System.Drawing.Size(86, 36);
+            this.mnuHelp.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuHelp.Size = new System.Drawing.Size(108, 67);
             this.mnuHelp.Text = "&Help";
+            this.mnuHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.mnuHelp.DropDownClosed += new System.EventHandler(this.mnuHelp_DropDownClosed);
             this.mnuHelp.DropDownOpened += new System.EventHandler(this.mnuHelp_DropDownOpened);
             // 
@@ -270,28 +290,33 @@
             // 
             // statusStripMain
             // 
+            this.statusStripMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.statusStripMain.AutoSize = false;
+            this.statusStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
+            this.statusStripMain.Dock = System.Windows.Forms.DockStyle.None;
             this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lbl_dis_version,
             this.lbl_dis_server,
             this.ddb_user,
             this.ddb_icon_warning,
             this.lbl_dis_update_now});
-            this.statusStripMain.Location = new System.Drawing.Point(0, 628);
+            this.statusStripMain.Location = new System.Drawing.Point(0, 640);
             this.statusStripMain.Name = "statusStripMain";
-            this.statusStripMain.Size = new System.Drawing.Size(1098, 22);
+            this.statusStripMain.Size = new System.Drawing.Size(636, 26);
             this.statusStripMain.TabIndex = 62;
-            this.statusStripMain.Text = "statusStrip1";
             // 
             // lbl_dis_version
             // 
+            this.lbl_dis_version.ForeColor = System.Drawing.Color.White;
             this.lbl_dis_version.Name = "lbl_dis_version";
-            this.lbl_dis_version.Size = new System.Drawing.Size(45, 17);
+            this.lbl_dis_version.Size = new System.Drawing.Size(45, 21);
             this.lbl_dis_version.Text = "Version";
             // 
             // lbl_dis_server
             // 
+            this.lbl_dis_server.ForeColor = System.Drawing.Color.White;
             this.lbl_dis_server.Name = "lbl_dis_server";
-            this.lbl_dis_server.Size = new System.Drawing.Size(39, 17);
+            this.lbl_dis_server.Size = new System.Drawing.Size(39, 21);
             this.lbl_dis_server.Text = "Server";
             this.lbl_dis_server.Visible = false;
             // 
@@ -303,10 +328,11 @@
             this.ddb_user_logout,
             this.toolStripSeparator3,
             this.ddb_user_exit});
+            this.ddb_user.ForeColor = System.Drawing.Color.White;
             this.ddb_user.Image = global::VKTIM.Properties.Resources.e_icon_user2_24;
             this.ddb_user.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ddb_user.Name = "ddb_user";
-            this.ddb_user.Size = new System.Drawing.Size(29, 20);
+            this.ddb_user.Size = new System.Drawing.Size(29, 24);
             this.ddb_user.Text = "toolStripDropDownButton1";
             this.ddb_user.Visible = false;
             // 
@@ -339,10 +365,11 @@
             // ddb_icon_warning
             // 
             this.ddb_icon_warning.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ddb_icon_warning.ForeColor = System.Drawing.Color.White;
             this.ddb_icon_warning.Image = global::VKTIM.Properties.Resources.e_icon_warning_24;
             this.ddb_icon_warning.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ddb_icon_warning.Name = "ddb_icon_warning";
-            this.ddb_icon_warning.Size = new System.Drawing.Size(29, 20);
+            this.ddb_icon_warning.Size = new System.Drawing.Size(29, 24);
             this.ddb_icon_warning.Text = "toolStripDropDownButton1";
             this.ddb_icon_warning.Visible = false;
             // 
@@ -351,20 +378,22 @@
             this.lbl_dis_update_now.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dis_update_now.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(0)))));
             this.lbl_dis_update_now.Name = "lbl_dis_update_now";
-            this.lbl_dis_update_now.Size = new System.Drawing.Size(81, 17);
+            this.lbl_dis_update_now.Size = new System.Drawing.Size(81, 21);
             this.lbl_dis_update_now.Text = "Update Now!";
             this.lbl_dis_update_now.Visible = false;
             // 
             // lbl_dis_notify
             // 
-            this.lbl_dis_notify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_dis_notify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.lbl_dis_notify.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_dis_notify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
             this.lbl_dis_notify.Direction = "2";
             this.lbl_dis_notify.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lbl_dis_notify.Location = new System.Drawing.Point(629, 630);
+            this.lbl_dis_notify.ForeColor = System.Drawing.Color.White;
+            this.lbl_dis_notify.Location = new System.Drawing.Point(622, 641);
             this.lbl_dis_notify.Name = "lbl_dis_notify";
-            this.lbl_dis_notify.Size = new System.Drawing.Size(459, 18);
-            this.lbl_dis_notify.TabIndex = 63;
+            this.lbl_dis_notify.Size = new System.Drawing.Size(455, 24);
+            this.lbl_dis_notify.TabIndex = 61;
             this.lbl_dis_notify.Text = "Thông báo";
             this.lbl_dis_notify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbl_dis_notify.UseCompatibleTextRendering = true;
@@ -373,12 +402,96 @@
             // 
             this.hlp_ComOperation.HelpNamespace = "Help\\vktim_help.chm";
             // 
+            // pn_Pinned_Title
+            // 
+            this.pn_Pinned_Title.BackColor = System.Drawing.Color.LightGray;
+            this.pn_Pinned_Title.Controls.Add(this.btn_screen_close);
+            this.pn_Pinned_Title.Controls.Add(this.button2);
+            this.pn_Pinned_Title.Controls.Add(this.btn_screen_back);
+            this.pn_Pinned_Title.Controls.Add(this.lbl_dis_CURRENT_FORM_TITLE);
+            this.pn_Pinned_Title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_Pinned_Title.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.pn_Pinned_Title.Location = new System.Drawing.Point(123, 45);
+            this.pn_Pinned_Title.Name = "pn_Pinned_Title";
+            this.pn_Pinned_Title.Size = new System.Drawing.Size(975, 40);
+            this.pn_Pinned_Title.TabIndex = 64;
+            // 
+            // btn_screen_close
+            // 
+            this.btn_screen_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_screen_close.BackColor = System.Drawing.Color.Transparent;
+            this.btn_screen_close.Enabled = false;
+            this.btn_screen_close.FlatAppearance.BorderSize = 0;
+            this.btn_screen_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_screen_close.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_screen_close.ForeColor = System.Drawing.Color.White;
+            this.btn_screen_close.Image = global::VKTIM.Properties.Resources.e_icon_screen_close_24;
+            this.btn_screen_close.Location = new System.Drawing.Point(940, 10);
+            this.btn_screen_close.Name = "btn_screen_close";
+            this.btn_screen_close.Size = new System.Drawing.Size(24, 24);
+            this.btn_screen_close.TabIndex = 3;
+            this.btn_screen_close.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Enabled = false;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::VKTIM.Properties.Resources.e_icon_screen_next;
+            this.button2.Location = new System.Drawing.Point(41, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(25, 24);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btn_screen_back
+            // 
+            this.btn_screen_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_screen_back.Enabled = false;
+            this.btn_screen_back.FlatAppearance.BorderSize = 0;
+            this.btn_screen_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_screen_back.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_screen_back.ForeColor = System.Drawing.Color.White;
+            this.btn_screen_back.Image = global::VKTIM.Properties.Resources.e_icon_screen_back;
+            this.btn_screen_back.Location = new System.Drawing.Point(10, 8);
+            this.btn_screen_back.Name = "btn_screen_back";
+            this.btn_screen_back.Size = new System.Drawing.Size(25, 24);
+            this.btn_screen_back.TabIndex = 1;
+            this.btn_screen_back.UseVisualStyleBackColor = false;
+            // 
+            // lbl_dis_CURRENT_FORM_TITLE
+            // 
+            this.lbl_dis_CURRENT_FORM_TITLE.AutoSize = true;
+            this.lbl_dis_CURRENT_FORM_TITLE.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lbl_dis_CURRENT_FORM_TITLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lbl_dis_CURRENT_FORM_TITLE.Location = new System.Drawing.Point(86, 10);
+            this.lbl_dis_CURRENT_FORM_TITLE.Name = "lbl_dis_CURRENT_FORM_TITLE";
+            this.lbl_dis_CURRENT_FORM_TITLE.Size = new System.Drawing.Size(80, 21);
+            this.lbl_dis_CURRENT_FORM_TITLE.TabIndex = 0;
+            this.lbl_dis_CURRENT_FORM_TITLE.Text = "Form Title";
+            // 
+            // pn_Main_Content
+            // 
+            this.pn_Main_Content.AutoScroll = true;
+            this.pn_Main_Content.BackColor = System.Drawing.Color.Silver;
+            this.pn_Main_Content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_Main_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.pn_Main_Content.Location = new System.Drawing.Point(123, 85);
+            this.pn_Main_Content.Name = "pn_Main_Content";
+            this.pn_Main_Content.Size = new System.Drawing.Size(975, 555);
+            this.pn_Main_Content.TabIndex = 65;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(1100, 666);
+            this.Controls.Add(this.lbl_dis_notify);
+            this.Controls.Add(this.statusStripMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Is_Show_Help = true;
             this.Is_Show_Maximized = true;
@@ -388,6 +501,9 @@
             this.Name = "frmMain";
             this.Text = "Supplies Warehouse Management";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Controls.SetChildIndex(this.statusStripMain, 0);
+            this.Controls.SetChildIndex(this.pn_Form, 0);
+            this.Controls.SetChildIndex(this.lbl_dis_notify, 0);
             this.pn_Form.ResumeLayout(false);
             this.pn_Form.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
@@ -396,6 +512,8 @@
             this.menuStripMain.PerformLayout();
             this.statusStripMain.ResumeLayout(false);
             this.statusStripMain.PerformLayout();
+            this.pn_Pinned_Title.ResumeLayout(false);
+            this.pn_Pinned_Title.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -430,6 +548,12 @@
         private System.Windows.Forms.ToolStripStatusLabel lbl_dis_update_now;
         private UserControl.MarqueeLabel lbl_dis_notify;
         private System.Windows.Forms.HelpProvider hlp_ComOperation;
+        private System.Windows.Forms.Panel pn_Main_Content;
+        private System.Windows.Forms.Panel pn_Pinned_Title;
+        private System.Windows.Forms.Label lbl_dis_CURRENT_FORM_TITLE;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_screen_back;
+        private System.Windows.Forms.Button btn_screen_close;
     }
 }
 
