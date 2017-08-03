@@ -1512,4 +1512,64 @@
   <data name="frmMain.ddb_user_logout" xml:space="preserve">
     <value>Đăng xuất</value>
   </data>
+  <data name="frmDmEmployer" xml:space="preserve">
+    <value>Danh mục cán bộ</value>
+  </data>
+  <data name="frmDmLocation" xml:space="preserve">
+    <value>Danh mục địa điểm</value>
+  </data>
+  <data name="frmDmOrganization" xml:space="preserve">
+    <value>Danh mục đơn vị</value>
+  </data>
+  <data name="frmDmOrigin" xml:space="preserve">
+    <value>Danh mục xuất xứ</value>
+  </data>
+  <data name="frmDmOutputType" xml:space="preserve">
+    <value>Danh mục kiểu xuất</value>
+  </data>
+  <data name="frmDmParameter" xml:space="preserve">
+    <value>Danh mục tham số</value>
+  </data>
+  <data name="frmDmPrice" xml:space="preserve">
+    <value>Danh mục giá</value>
+  </data>
+  <data name="frmDmProductCategory" xml:space="preserve">
+    <value>Danh mục nhóm sản phẩm</value>
+  </data>
+  <data name="frmDmProducts" xml:space="preserve">
+    <value>Danh mục sản phẩm</value>
+  </data>
+  <data name="frmDmRank" xml:space="preserve">
+    <value>Danh mục cấp bậc</value>
+  </data>
+  <data name="frmDmSpecial" xml:space="preserve">
+    <value>Danh mục chuyên ngành</value>
+  </data>
+  <data name="frmDmSupplier" xml:space="preserve">
+    <value>Danh mục đối tác</value>
+  </data>
+  <data name="frmDmTitle" xml:space="preserve">
+    <value>Danh mục chức vụ</value>
+  </data>
+  <data name="frmDmUnit" xml:space="preserve">
+    <value>Danh mục đơn vị tính</value>
+  </data>
+  <data name="frmHtForm" xml:space="preserve">
+    <value>Chức năng hệ thống</value>
+  </data>
+  <data name="frmReportImEx" xml:space="preserve">
+    <value>Báo cáo nhập xuất kho</value>
+  </data>
+  <data name="frmUserPermission" xml:space="preserve">
+    <value>Phân quyền</value>
+  </data>
+  <data name="frmUsers" xml:space="preserve">
+    <value>Tài khoản người dùng</value>
+  </data>
+  <data name="frmWarehouseExport" xml:space="preserve">
+    <value>Xuất kho</value>
+  </data>
+  <data name="frmWarehouseImport" xml:space="preserve">
+    <value>Nhập kho</value>
+  </data>
 </root>
