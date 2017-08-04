@@ -69,6 +69,7 @@
             this.pn_Form.Controls.Add(this.lbl_dis_OrganizationTitle);
             this.pn_Form.Controls.Add(this.lbl_dis_OrganizationName);
             this.pn_Form.Size = new System.Drawing.Size(518, 460);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_OrganizationName, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_OrganizationTitle, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_SpecialID, 0);
@@ -89,6 +90,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(331, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // txt_data_Code
@@ -101,7 +103,7 @@
             this.txt_data_Code.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_Code.Name = "txt_data_Code";
             this.txt_data_Code.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_Code.TabIndex = 83;
+            this.txt_data_Code.TabIndex = 7;
             // 
             // lbl_dis_Code
             // 
@@ -109,7 +111,7 @@
             this.lbl_dis_Code.Location = new System.Drawing.Point(33, 200);
             this.lbl_dis_Code.Name = "lbl_dis_Code";
             this.lbl_dis_Code.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_Code.TabIndex = 82;
+            this.lbl_dis_Code.TabIndex = 6;
             this.lbl_dis_Code.Text = "Code";
             this.lbl_dis_Code.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -126,7 +128,7 @@
             this.txt_data_id.Name = "txt_data_id";
             this.txt_data_id.ReadOnly = true;
             this.txt_data_id.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_id.TabIndex = 81;
+            this.txt_data_id.TabIndex = 1;
             // 
             // lbl_dis_id
             // 
@@ -134,7 +136,7 @@
             this.lbl_dis_id.Location = new System.Drawing.Point(31, 65);
             this.lbl_dis_id.Name = "lbl_dis_id";
             this.lbl_dis_id.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_id.TabIndex = 80;
+            this.lbl_dis_id.TabIndex = 0;
             this.lbl_dis_id.Text = "ID";
             this.lbl_dis_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -149,7 +151,7 @@
             this.txt_data_OrganizationName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_OrganizationName.Name = "txt_data_OrganizationName";
             this.txt_data_OrganizationName.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_OrganizationName.TabIndex = 79;
+            this.txt_data_OrganizationName.TabIndex = 5;
             // 
             // txt_data_OrganizationTitle
             // 
@@ -162,7 +164,7 @@
             this.txt_data_OrganizationTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_OrganizationTitle.Name = "txt_data_OrganizationTitle";
             this.txt_data_OrganizationTitle.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_OrganizationTitle.TabIndex = 77;
+            this.txt_data_OrganizationTitle.TabIndex = 3;
             // 
             // btn_Cancel
             // 
@@ -177,7 +179,7 @@
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(120, 35);
-            this.btn_Cancel.TabIndex = 75;
+            this.btn_Cancel.TabIndex = 15;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -194,7 +196,7 @@
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(120, 35);
-            this.btn_Submit.TabIndex = 74;
+            this.btn_Submit.TabIndex = 14;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
@@ -205,7 +207,7 @@
             this.lbl_dis_OrganizationTitle.Location = new System.Drawing.Point(31, 110);
             this.lbl_dis_OrganizationTitle.Name = "lbl_dis_OrganizationTitle";
             this.lbl_dis_OrganizationTitle.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_OrganizationTitle.TabIndex = 76;
+            this.lbl_dis_OrganizationTitle.TabIndex = 2;
             this.lbl_dis_OrganizationTitle.Text = "Title";
             this.lbl_dis_OrganizationTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -215,7 +217,7 @@
             this.lbl_dis_OrganizationName.Location = new System.Drawing.Point(31, 155);
             this.lbl_dis_OrganizationName.Name = "lbl_dis_OrganizationName";
             this.lbl_dis_OrganizationName.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_OrganizationName.TabIndex = 78;
+            this.lbl_dis_OrganizationName.TabIndex = 4;
             this.lbl_dis_OrganizationName.Text = "Name";
             this.lbl_dis_OrganizationName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -225,7 +227,7 @@
             this.lbl_dis_SpecialID.Location = new System.Drawing.Point(31, 289);
             this.lbl_dis_SpecialID.Name = "lbl_dis_SpecialID";
             this.lbl_dis_SpecialID.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_SpecialID.TabIndex = 78;
+            this.lbl_dis_SpecialID.TabIndex = 10;
             this.lbl_dis_SpecialID.Text = "Special ID";
             this.lbl_dis_SpecialID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -235,7 +237,7 @@
             this.lbl_dis_OrganizationDescription.Location = new System.Drawing.Point(31, 244);
             this.lbl_dis_OrganizationDescription.Name = "lbl_dis_OrganizationDescription";
             this.lbl_dis_OrganizationDescription.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_OrganizationDescription.TabIndex = 76;
+            this.lbl_dis_OrganizationDescription.TabIndex = 8;
             this.lbl_dis_OrganizationDescription.Text = "Description";
             this.lbl_dis_OrganizationDescription.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -250,7 +252,7 @@
             this.txt_data_OrganizationDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_OrganizationDescription.Name = "txt_data_OrganizationDescription";
             this.txt_data_OrganizationDescription.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_OrganizationDescription.TabIndex = 77;
+            this.txt_data_OrganizationDescription.TabIndex = 9;
             // 
             // txt_data_SpecialID
             // 
@@ -263,7 +265,7 @@
             this.txt_data_SpecialID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_SpecialID.Name = "txt_data_SpecialID";
             this.txt_data_SpecialID.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_SpecialID.TabIndex = 79;
+            this.txt_data_SpecialID.TabIndex = 11;
             // 
             // lbl_dis_OrganizationLevel
             // 
@@ -271,7 +273,7 @@
             this.lbl_dis_OrganizationLevel.Location = new System.Drawing.Point(33, 334);
             this.lbl_dis_OrganizationLevel.Name = "lbl_dis_OrganizationLevel";
             this.lbl_dis_OrganizationLevel.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_OrganizationLevel.TabIndex = 82;
+            this.lbl_dis_OrganizationLevel.TabIndex = 12;
             this.lbl_dis_OrganizationLevel.Text = "Level";
             this.lbl_dis_OrganizationLevel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -285,7 +287,7 @@
             this.txt_data_OrganizationLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_OrganizationLevel.Name = "txt_data_OrganizationLevel";
             this.txt_data_OrganizationLevel.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_OrganizationLevel.TabIndex = 83;
+            this.txt_data_OrganizationLevel.TabIndex = 13;
             // 
             // frmDmOrganizationPopup
             // 

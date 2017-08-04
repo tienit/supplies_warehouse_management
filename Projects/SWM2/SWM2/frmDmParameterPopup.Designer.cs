@@ -65,6 +65,7 @@
             this.pn_Form.Controls.Add(this.lbl_dis_name);
             this.pn_Form.Controls.Add(this.lbl_dis_Value);
             this.pn_Form.Size = new System.Drawing.Size(518, 395);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_Value, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_name, 0);
             this.pn_Form.Controls.SetChildIndex(this.btn_Submit, 0);
@@ -83,6 +84,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(331, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // txt_data_Unit
@@ -95,7 +97,7 @@
             this.txt_data_Unit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_Unit.Name = "txt_data_Unit";
             this.txt_data_Unit.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_Unit.TabIndex = 83;
+            this.txt_data_Unit.TabIndex = 7;
             // 
             // lbl_dis_Unit
             // 
@@ -103,7 +105,7 @@
             this.lbl_dis_Unit.Location = new System.Drawing.Point(36, 192);
             this.lbl_dis_Unit.Name = "lbl_dis_Unit";
             this.lbl_dis_Unit.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_Unit.TabIndex = 82;
+            this.lbl_dis_Unit.TabIndex = 6;
             this.lbl_dis_Unit.Text = "Unit";
             this.lbl_dis_Unit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -120,7 +122,7 @@
             this.txt_data_id.Name = "txt_data_id";
             this.txt_data_id.ReadOnly = true;
             this.txt_data_id.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_id.TabIndex = 81;
+            this.txt_data_id.TabIndex = 1;
             // 
             // lbl_dis_id
             // 
@@ -128,7 +130,7 @@
             this.lbl_dis_id.Location = new System.Drawing.Point(34, 57);
             this.lbl_dis_id.Name = "lbl_dis_id";
             this.lbl_dis_id.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_id.TabIndex = 80;
+            this.lbl_dis_id.TabIndex = 0;
             this.lbl_dis_id.Text = "ID";
             this.lbl_dis_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -143,7 +145,7 @@
             this.txt_data_Value.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_Value.Name = "txt_data_Value";
             this.txt_data_Value.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_Value.TabIndex = 79;
+            this.txt_data_Value.TabIndex = 5;
             // 
             // txt_data_name
             // 
@@ -156,7 +158,7 @@
             this.txt_data_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_name.Name = "txt_data_name";
             this.txt_data_name.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_name.TabIndex = 77;
+            this.txt_data_name.TabIndex = 3;
             // 
             // btn_Cancel
             // 
@@ -171,7 +173,7 @@
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(120, 35);
-            this.btn_Cancel.TabIndex = 75;
+            this.btn_Cancel.TabIndex = 13;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -188,7 +190,7 @@
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(120, 35);
-            this.btn_Submit.TabIndex = 74;
+            this.btn_Submit.TabIndex = 12;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
@@ -199,7 +201,7 @@
             this.lbl_dis_name.Location = new System.Drawing.Point(34, 102);
             this.lbl_dis_name.Name = "lbl_dis_name";
             this.lbl_dis_name.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_name.TabIndex = 76;
+            this.lbl_dis_name.TabIndex = 2;
             this.lbl_dis_name.Text = "Name";
             this.lbl_dis_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -209,7 +211,7 @@
             this.lbl_dis_Value.Location = new System.Drawing.Point(34, 147);
             this.lbl_dis_Value.Name = "lbl_dis_Value";
             this.lbl_dis_Value.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_Value.TabIndex = 78;
+            this.lbl_dis_Value.TabIndex = 4;
             this.lbl_dis_Value.Text = "Value";
             this.lbl_dis_Value.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -219,7 +221,7 @@
             this.lbl_dis_Code.Location = new System.Drawing.Point(36, 236);
             this.lbl_dis_Code.Name = "lbl_dis_Code";
             this.lbl_dis_Code.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_Code.TabIndex = 82;
+            this.lbl_dis_Code.TabIndex = 8;
             this.lbl_dis_Code.Text = "Code";
             this.lbl_dis_Code.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -233,7 +235,7 @@
             this.txt_data_Code.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_Code.Name = "txt_data_Code";
             this.txt_data_Code.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_Code.TabIndex = 83;
+            this.txt_data_Code.TabIndex = 9;
             // 
             // lbl_dis_Description
             // 
@@ -241,7 +243,7 @@
             this.lbl_dis_Description.Location = new System.Drawing.Point(36, 280);
             this.lbl_dis_Description.Name = "lbl_dis_Description";
             this.lbl_dis_Description.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_Description.TabIndex = 82;
+            this.lbl_dis_Description.TabIndex = 10;
             this.lbl_dis_Description.Text = "Description";
             this.lbl_dis_Description.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -255,7 +257,7 @@
             this.txt_data_Description.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_Description.Name = "txt_data_Description";
             this.txt_data_Description.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_Description.TabIndex = 83;
+            this.txt_data_Description.TabIndex = 11;
             // 
             // frmDmParameterPopup
             // 

@@ -354,7 +354,8 @@ namespace VKTIM.Common
                         dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
                         dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(247, 247, 247);
-                        dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                        //dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                        //dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
                         dgv.AlternatingRowsDefaultCellStyle.WrapMode = DataGridViewTriState.True;
                         dgv.ColumnHeadersHeight = 26;
                         dgv.BackgroundColor = Color.White;
@@ -371,7 +372,11 @@ namespace VKTIM.Common
                             {
                                 ((DataGridViewComboBoxColumn)col).FlatStyle = FlatStyle.Flat;
                             }
+                            col.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                         }
+                        dgv.Columns[dgv.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        dgv.Columns[dgv.Columns.Count - 1].MinimumWidth = 200;
+                        dgv.Columns[dgv.Columns.Count - 1].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                     }
                     SetControlTextIncludeGrid(c, formName);
                 }

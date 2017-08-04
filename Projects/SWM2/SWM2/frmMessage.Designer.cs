@@ -56,12 +56,12 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(329, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "Message";
             // 
             // pic_Header
             // 
             this.pic_Header.Image = global::VKTIM.Properties.Resources.e_msg_logo;
-            this.pic_Header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mainTip.SetToolTip(this.pic_Header, "CommonForm");
             // 
             // lblType
@@ -91,7 +91,7 @@
             this.txtMsg.ReadOnly = true;
             this.txtMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtMsg.Size = new System.Drawing.Size(451, 125);
-            this.txtMsg.TabIndex = 6;
+            this.txtMsg.TabIndex = 1;
             this.txtMsg.TabStop = false;
             // 
             // btnConfirm
@@ -107,7 +107,7 @@
             this.btnConfirm.Location = new System.Drawing.Point(197, 256);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(121, 35);
-            this.btnConfirm.TabIndex = 4;
+            this.btnConfirm.TabIndex = 3;
             this.btnConfirm.Text = "OK";
             this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
@@ -124,7 +124,7 @@
             this.btnCancel.Location = new System.Drawing.Point(277, 256);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 35);
-            this.btnCancel.TabIndex = 2;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Visible = false;
@@ -141,7 +141,7 @@
             this.btnOK.Location = new System.Drawing.Point(122, 256);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(120, 35);
-            this.btnOK.TabIndex = 1;
+            this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Visible = false;
@@ -157,6 +157,7 @@
             this.ClientSize = new System.Drawing.Size(518, 335);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Is_Show_Help = true;
+            this.MaximumSize = new System.Drawing.Size(1920, 1050);
             this.MinimumSize = new System.Drawing.Size(518, 335);
             this.Name = "frmMessage";
             this.ShowIcon = false;

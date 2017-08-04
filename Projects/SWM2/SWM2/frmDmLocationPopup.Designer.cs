@@ -61,6 +61,7 @@
             this.pn_Form.Controls.Add(this.lbl_dis_locationname);
             this.pn_Form.Controls.Add(this.lbl_dis_order);
             this.pn_Form.Size = new System.Drawing.Size(518, 310);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_order, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_locationname, 0);
             this.pn_Form.Controls.SetChildIndex(this.btn_Submit, 0);
@@ -77,6 +78,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(331, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // txt_data_LocationParrentID
@@ -89,7 +91,7 @@
             this.txt_data_LocationParrentID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_LocationParrentID.Name = "txt_data_LocationParrentID";
             this.txt_data_LocationParrentID.Size = new System.Drawing.Size(80, 27);
-            this.txt_data_LocationParrentID.TabIndex = 83;
+            this.txt_data_LocationParrentID.TabIndex = 7;
             // 
             // lbl_dis_LocationParrentID
             // 
@@ -97,7 +99,7 @@
             this.lbl_dis_LocationParrentID.Location = new System.Drawing.Point(43, 201);
             this.lbl_dis_LocationParrentID.Name = "lbl_dis_LocationParrentID";
             this.lbl_dis_LocationParrentID.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_LocationParrentID.TabIndex = 82;
+            this.lbl_dis_LocationParrentID.TabIndex = 6;
             this.lbl_dis_LocationParrentID.Text = "Location Parent";
             this.lbl_dis_LocationParrentID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -114,7 +116,7 @@
             this.txt_data_id.Name = "txt_data_id";
             this.txt_data_id.ReadOnly = true;
             this.txt_data_id.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_id.TabIndex = 81;
+            this.txt_data_id.TabIndex = 1;
             // 
             // lbl_dis_id
             // 
@@ -122,7 +124,7 @@
             this.lbl_dis_id.Location = new System.Drawing.Point(41, 66);
             this.lbl_dis_id.Name = "lbl_dis_id";
             this.lbl_dis_id.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_id.TabIndex = 80;
+            this.lbl_dis_id.TabIndex = 0;
             this.lbl_dis_id.Text = "ID";
             this.lbl_dis_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -137,7 +139,7 @@
             this.txt_data_order.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_order.Name = "txt_data_order";
             this.txt_data_order.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_order.TabIndex = 79;
+            this.txt_data_order.TabIndex = 5;
             // 
             // txt_data_locationname
             // 
@@ -150,7 +152,7 @@
             this.txt_data_locationname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_locationname.Name = "txt_data_locationname";
             this.txt_data_locationname.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_locationname.TabIndex = 77;
+            this.txt_data_locationname.TabIndex = 3;
             // 
             // btn_Cancel
             // 
@@ -165,7 +167,7 @@
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(120, 35);
-            this.btn_Cancel.TabIndex = 75;
+            this.btn_Cancel.TabIndex = 11;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -182,7 +184,7 @@
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(120, 35);
-            this.btn_Submit.TabIndex = 74;
+            this.btn_Submit.TabIndex = 10;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
@@ -193,7 +195,7 @@
             this.lbl_dis_locationname.Location = new System.Drawing.Point(41, 111);
             this.lbl_dis_locationname.Name = "lbl_dis_locationname";
             this.lbl_dis_locationname.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_locationname.TabIndex = 76;
+            this.lbl_dis_locationname.TabIndex = 2;
             this.lbl_dis_locationname.Text = "Name";
             this.lbl_dis_locationname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -203,7 +205,7 @@
             this.lbl_dis_order.Location = new System.Drawing.Point(41, 156);
             this.lbl_dis_order.Name = "lbl_dis_order";
             this.lbl_dis_order.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_order.TabIndex = 78;
+            this.lbl_dis_order.TabIndex = 4;
             this.lbl_dis_order.Text = "Location Order";
             this.lbl_dis_order.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -213,7 +215,7 @@
             this.lbl_dis_LocationLevel.Location = new System.Drawing.Point(302, 203);
             this.lbl_dis_LocationLevel.Name = "lbl_dis_LocationLevel";
             this.lbl_dis_LocationLevel.Size = new System.Drawing.Size(69, 24);
-            this.lbl_dis_LocationLevel.TabIndex = 82;
+            this.lbl_dis_LocationLevel.TabIndex = 8;
             this.lbl_dis_LocationLevel.Text = "Level";
             this.lbl_dis_LocationLevel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -227,7 +229,7 @@
             this.txt_data_LocationLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_LocationLevel.Name = "txt_data_LocationLevel";
             this.txt_data_LocationLevel.Size = new System.Drawing.Size(80, 27);
-            this.txt_data_LocationLevel.TabIndex = 83;
+            this.txt_data_LocationLevel.TabIndex = 9;
             // 
             // frmDmLocationPopup
             // 

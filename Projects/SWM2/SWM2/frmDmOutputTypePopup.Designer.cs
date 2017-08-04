@@ -52,7 +52,8 @@
             this.pn_Form.Controls.Add(this.btn_Submit);
             this.pn_Form.Controls.Add(this.lbl_dis_name);
             this.pn_Form.Controls.Add(this.lbl_dis_isused);
-            this.pn_Form.Size = new System.Drawing.Size(518, 310);
+            this.pn_Form.Size = new System.Drawing.Size(518, 269);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_isused, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_name, 0);
             this.pn_Form.Controls.SetChildIndex(this.btn_Submit, 0);
@@ -65,6 +66,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(331, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // txt_data_id
@@ -80,7 +82,7 @@
             this.txt_data_id.Name = "txt_data_id";
             this.txt_data_id.ReadOnly = true;
             this.txt_data_id.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_id.TabIndex = 81;
+            this.txt_data_id.TabIndex = 1;
             // 
             // lbl_dis_id
             // 
@@ -88,7 +90,7 @@
             this.lbl_dis_id.Location = new System.Drawing.Point(42, 58);
             this.lbl_dis_id.Name = "lbl_dis_id";
             this.lbl_dis_id.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_id.TabIndex = 80;
+            this.lbl_dis_id.TabIndex = 0;
             this.lbl_dis_id.Text = "ID";
             this.lbl_dis_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -103,7 +105,7 @@
             this.txt_data_isused.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_isused.Name = "txt_data_isused";
             this.txt_data_isused.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_isused.TabIndex = 79;
+            this.txt_data_isused.TabIndex = 5;
             // 
             // txt_data_name
             // 
@@ -116,7 +118,7 @@
             this.txt_data_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_name.Name = "txt_data_name";
             this.txt_data_name.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_name.TabIndex = 77;
+            this.txt_data_name.TabIndex = 3;
             // 
             // btn_Cancel
             // 
@@ -127,11 +129,11 @@
             this.btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_Cancel.Location = new System.Drawing.Point(337, 247);
+            this.btn_Cancel.Location = new System.Drawing.Point(337, 206);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(120, 35);
-            this.btn_Cancel.TabIndex = 75;
+            this.btn_Cancel.TabIndex = 7;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -144,11 +146,11 @@
             this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Submit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Submit.ForeColor = System.Drawing.Color.Black;
-            this.btn_Submit.Location = new System.Drawing.Point(203, 247);
+            this.btn_Submit.Location = new System.Drawing.Point(203, 206);
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(120, 35);
-            this.btn_Submit.TabIndex = 74;
+            this.btn_Submit.TabIndex = 6;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
@@ -159,7 +161,7 @@
             this.lbl_dis_name.Location = new System.Drawing.Point(42, 103);
             this.lbl_dis_name.Name = "lbl_dis_name";
             this.lbl_dis_name.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_name.TabIndex = 76;
+            this.lbl_dis_name.TabIndex = 2;
             this.lbl_dis_name.Text = "Name";
             this.lbl_dis_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -169,7 +171,7 @@
             this.lbl_dis_isused.Location = new System.Drawing.Point(42, 148);
             this.lbl_dis_isused.Name = "lbl_dis_isused";
             this.lbl_dis_isused.Size = new System.Drawing.Size(140, 24);
-            this.lbl_dis_isused.TabIndex = 78;
+            this.lbl_dis_isused.TabIndex = 4;
             this.lbl_dis_isused.Text = "Isused";
             this.lbl_dis_isused.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -177,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 326);
+            this.ClientSize = new System.Drawing.Size(520, 285);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1280, 760);
             this.Name = "frmDmOutputTypePopup";

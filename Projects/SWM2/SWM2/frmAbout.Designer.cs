@@ -54,6 +54,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(341, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // pic_Icon
@@ -73,7 +74,7 @@
             this.lbl_dis_name.Location = new System.Drawing.Point(180, 74);
             this.lbl_dis_name.Name = "lbl_dis_name";
             this.lbl_dis_name.Size = new System.Drawing.Size(322, 66);
-            this.lbl_dis_name.TabIndex = 53;
+            this.lbl_dis_name.TabIndex = 0;
             this.lbl_dis_name.Text = "HỆ THỐNG QUẢN LÝ KHO/VẬT TƯ\r\nVIỆN KỸ THUẬT PK-KQ";
             this.lbl_dis_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -85,7 +86,7 @@
             this.lbl_dis_version.Location = new System.Drawing.Point(182, 157);
             this.lbl_dis_version.Name = "lbl_dis_version";
             this.lbl_dis_version.Size = new System.Drawing.Size(150, 19);
-            this.lbl_dis_version.TabIndex = 54;
+            this.lbl_dis_version.TabIndex = 1;
             this.lbl_dis_version.Text = "Phiên bản: 1.0.2017.18";
             // 
             // lbl_dis_copy_right
@@ -96,7 +97,7 @@
             this.lbl_dis_copy_right.Location = new System.Drawing.Point(182, 189);
             this.lbl_dis_copy_right.Name = "lbl_dis_copy_right";
             this.lbl_dis_copy_right.Size = new System.Drawing.Size(327, 19);
-            this.lbl_dis_copy_right.TabIndex = 55;
+            this.lbl_dis_copy_right.TabIndex = 2;
             this.lbl_dis_copy_right.Text = "© 2017 VIỆN KỸ THUẬT PK-KQ. All rights reserved. ";
             // 
             // frmAbout

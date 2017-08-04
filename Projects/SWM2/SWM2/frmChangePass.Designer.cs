@@ -53,6 +53,7 @@
             this.pn_Form.Controls.Add(this.txt_data_username);
             this.pn_Form.Controls.Add(this.lbl_dis_username);
             this.pn_Form.Size = new System.Drawing.Size(498, 281);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_username, 0);
             this.pn_Form.Controls.SetChildIndex(this.txt_data_username, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_password_current, 0);
@@ -65,6 +66,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(311, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // txt_data_password_current
@@ -79,7 +81,7 @@
             this.txt_data_password_current.Name = "txt_data_password_current";
             this.txt_data_password_current.PasswordChar = '*';
             this.txt_data_password_current.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_password_current.TabIndex = 100;
+            this.txt_data_password_current.TabIndex = 3;
             // 
             // lbl_dis_password_current
             // 
@@ -87,7 +89,7 @@
             this.lbl_dis_password_current.Location = new System.Drawing.Point(32, 120);
             this.lbl_dis_password_current.Name = "lbl_dis_password_current";
             this.lbl_dis_password_current.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_password_current.TabIndex = 99;
+            this.lbl_dis_password_current.TabIndex = 2;
             this.lbl_dis_password_current.Text = "Current password";
             this.lbl_dis_password_current.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -103,7 +105,7 @@
             this.txt_data_username.Name = "txt_data_username";
             this.txt_data_username.ReadOnly = true;
             this.txt_data_username.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_username.TabIndex = 98;
+            this.txt_data_username.TabIndex = 1;
             // 
             // lbl_dis_username
             // 
@@ -111,7 +113,7 @@
             this.lbl_dis_username.Location = new System.Drawing.Point(32, 71);
             this.lbl_dis_username.Name = "lbl_dis_username";
             this.lbl_dis_username.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_username.TabIndex = 97;
+            this.lbl_dis_username.TabIndex = 0;
             this.lbl_dis_username.Text = "Username";
             this.lbl_dis_username.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -127,7 +129,7 @@
             this.txt_data_password_new.Name = "txt_data_password_new";
             this.txt_data_password_new.PasswordChar = '*';
             this.txt_data_password_new.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_password_new.TabIndex = 102;
+            this.txt_data_password_new.TabIndex = 5;
             // 
             // lbl_dis_password_new
             // 
@@ -135,7 +137,7 @@
             this.lbl_dis_password_new.Location = new System.Drawing.Point(32, 166);
             this.lbl_dis_password_new.Name = "lbl_dis_password_new";
             this.lbl_dis_password_new.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_password_new.TabIndex = 101;
+            this.lbl_dis_password_new.TabIndex = 4;
             this.lbl_dis_password_new.Text = "New password";
             this.lbl_dis_password_new.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -152,7 +154,7 @@
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(120, 35);
-            this.btn_Cancel.TabIndex = 104;
+            this.btn_Cancel.TabIndex = 7;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -169,7 +171,7 @@
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(120, 35);
-            this.btn_Submit.TabIndex = 103;
+            this.btn_Submit.TabIndex = 6;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);

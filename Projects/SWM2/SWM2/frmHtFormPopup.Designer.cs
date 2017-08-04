@@ -80,6 +80,7 @@
             this.pn_Form.Controls.Add(this.lbl_dis_name);
             this.pn_Form.Controls.Add(this.lbl_dis_title);
             this.pn_Form.Size = new System.Drawing.Size(678, 525);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_title, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_name, 0);
             this.pn_Form.Controls.SetChildIndex(this.btn_Submit, 0);
@@ -105,6 +106,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(594, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // txt_data_title_en
@@ -117,7 +119,7 @@
             this.txt_data_title_en.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_title_en.Name = "txt_data_title_en";
             this.txt_data_title_en.Size = new System.Drawing.Size(289, 27);
-            this.txt_data_title_en.TabIndex = 99;
+            this.txt_data_title_en.TabIndex = 7;
             // 
             // lbl_dis_shortcut_key
             // 
@@ -125,7 +127,7 @@
             this.lbl_dis_shortcut_key.Location = new System.Drawing.Point(50, 283);
             this.lbl_dis_shortcut_key.Name = "lbl_dis_shortcut_key";
             this.lbl_dis_shortcut_key.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_shortcut_key.TabIndex = 97;
+            this.lbl_dis_shortcut_key.TabIndex = 10;
             this.lbl_dis_shortcut_key.Text = "Shortcut Key";
             this.lbl_dis_shortcut_key.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -135,7 +137,7 @@
             this.lbl_dis_title_en.Location = new System.Drawing.Point(50, 193);
             this.lbl_dis_title_en.Name = "lbl_dis_title_en";
             this.lbl_dis_title_en.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_title_en.TabIndex = 96;
+            this.lbl_dis_title_en.TabIndex = 6;
             this.lbl_dis_title_en.Text = "Title (English)";
             this.lbl_dis_title_en.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -152,7 +154,7 @@
             this.txt_data_id.Name = "txt_data_id";
             this.txt_data_id.ReadOnly = true;
             this.txt_data_id.Size = new System.Drawing.Size(289, 27);
-            this.txt_data_id.TabIndex = 95;
+            this.txt_data_id.TabIndex = 1;
             // 
             // lbl_dis_id
             // 
@@ -160,7 +162,7 @@
             this.lbl_dis_id.Location = new System.Drawing.Point(50, 58);
             this.lbl_dis_id.Name = "lbl_dis_id";
             this.lbl_dis_id.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_id.TabIndex = 94;
+            this.lbl_dis_id.TabIndex = 0;
             this.lbl_dis_id.Text = "ID";
             this.lbl_dis_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -175,7 +177,7 @@
             this.txt_data_menu_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_menu_name.Name = "txt_data_menu_name";
             this.txt_data_menu_name.Size = new System.Drawing.Size(289, 27);
-            this.txt_data_menu_name.TabIndex = 89;
+            this.txt_data_menu_name.TabIndex = 9;
             // 
             // txt_data_title
             // 
@@ -188,7 +190,7 @@
             this.txt_data_title.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_title.Name = "txt_data_title";
             this.txt_data_title.Size = new System.Drawing.Size(289, 27);
-            this.txt_data_title.TabIndex = 92;
+            this.txt_data_title.TabIndex = 5;
             // 
             // txt_data_name
             // 
@@ -201,7 +203,7 @@
             this.txt_data_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_name.Name = "txt_data_name";
             this.txt_data_name.Size = new System.Drawing.Size(289, 27);
-            this.txt_data_name.TabIndex = 88;
+            this.txt_data_name.TabIndex = 3;
             // 
             // btn_Cancel
             // 
@@ -216,7 +218,7 @@
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(130, 35);
-            this.btn_Cancel.TabIndex = 85;
+            this.btn_Cancel.TabIndex = 20;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -227,7 +229,7 @@
             this.lbl_dis_menu_name.Location = new System.Drawing.Point(50, 235);
             this.lbl_dis_menu_name.Name = "lbl_dis_menu_name";
             this.lbl_dis_menu_name.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_menu_name.TabIndex = 86;
+            this.lbl_dis_menu_name.TabIndex = 8;
             this.lbl_dis_menu_name.Text = "Menu Name";
             this.lbl_dis_menu_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -243,7 +245,7 @@
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(130, 35);
-            this.btn_Submit.TabIndex = 84;
+            this.btn_Submit.TabIndex = 19;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
@@ -254,7 +256,7 @@
             this.lbl_dis_name.Location = new System.Drawing.Point(50, 103);
             this.lbl_dis_name.Name = "lbl_dis_name";
             this.lbl_dis_name.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_name.TabIndex = 87;
+            this.lbl_dis_name.TabIndex = 2;
             this.lbl_dis_name.Text = "Name";
             this.lbl_dis_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -264,7 +266,7 @@
             this.lbl_dis_title.Location = new System.Drawing.Point(50, 148);
             this.lbl_dis_title.Name = "lbl_dis_title";
             this.lbl_dis_title.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_title.TabIndex = 90;
+            this.lbl_dis_title.TabIndex = 4;
             this.lbl_dis_title.Text = "Title";
             this.lbl_dis_title.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -274,7 +276,7 @@
             this.lbl_dis_order.Location = new System.Drawing.Point(50, 413);
             this.lbl_dis_order.Name = "lbl_dis_order";
             this.lbl_dis_order.Size = new System.Drawing.Size(180, 24);
-            this.lbl_dis_order.TabIndex = 102;
+            this.lbl_dis_order.TabIndex = 17;
             this.lbl_dis_order.Text = "Order";
             this.lbl_dis_order.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -286,7 +288,7 @@
             this.chk_data_ctrl.Location = new System.Drawing.Point(245, 283);
             this.chk_data_ctrl.Name = "chk_data_ctrl";
             this.chk_data_ctrl.Size = new System.Drawing.Size(48, 24);
-            this.chk_data_ctrl.TabIndex = 104;
+            this.chk_data_ctrl.TabIndex = 11;
             this.chk_data_ctrl.Text = "Ctrl";
             this.chk_data_ctrl.UseVisualStyleBackColor = true;
             // 
@@ -300,7 +302,7 @@
             this.cmb_data_shortcut_key.Location = new System.Drawing.Point(245, 318);
             this.cmb_data_shortcut_key.Name = "cmb_data_shortcut_key";
             this.cmb_data_shortcut_key.Size = new System.Drawing.Size(289, 28);
-            this.cmb_data_shortcut_key.TabIndex = 105;
+            this.cmb_data_shortcut_key.TabIndex = 14;
             // 
             // chk_data_shift
             // 
@@ -310,7 +312,7 @@
             this.chk_data_shift.Location = new System.Drawing.Point(317, 283);
             this.chk_data_shift.Name = "chk_data_shift";
             this.chk_data_shift.Size = new System.Drawing.Size(55, 24);
-            this.chk_data_shift.TabIndex = 106;
+            this.chk_data_shift.TabIndex = 12;
             this.chk_data_shift.Text = "Shift";
             this.chk_data_shift.UseVisualStyleBackColor = true;
             // 
@@ -322,7 +324,7 @@
             this.chk_data_alt.Location = new System.Drawing.Point(390, 283);
             this.chk_data_alt.Name = "chk_data_alt";
             this.chk_data_alt.Size = new System.Drawing.Size(44, 24);
-            this.chk_data_alt.TabIndex = 107;
+            this.chk_data_alt.TabIndex = 13;
             this.chk_data_alt.Text = "Alt";
             this.chk_data_alt.UseVisualStyleBackColor = true;
             // 
@@ -334,7 +336,7 @@
             this.chk_data_used.Location = new System.Drawing.Point(245, 367);
             this.chk_data_used.Name = "chk_data_used";
             this.chk_data_used.Size = new System.Drawing.Size(58, 24);
-            this.chk_data_used.TabIndex = 108;
+            this.chk_data_used.TabIndex = 15;
             this.chk_data_used.Text = "Used";
             this.chk_data_used.UseVisualStyleBackColor = true;
             // 
@@ -346,7 +348,7 @@
             this.chk_data_show_dialog.Location = new System.Drawing.Point(331, 367);
             this.chk_data_show_dialog.Name = "chk_data_show_dialog";
             this.chk_data_show_dialog.Size = new System.Drawing.Size(110, 24);
-            this.chk_data_show_dialog.TabIndex = 109;
+            this.chk_data_show_dialog.TabIndex = 16;
             this.chk_data_show_dialog.Text = "Show Dialog";
             this.chk_data_show_dialog.UseVisualStyleBackColor = true;
             // 
@@ -356,7 +358,7 @@
             this.nud_data_order.Location = new System.Drawing.Point(245, 413);
             this.nud_data_order.Name = "nud_data_order";
             this.nud_data_order.Size = new System.Drawing.Size(289, 27);
-            this.nud_data_order.TabIndex = 110;
+            this.nud_data_order.TabIndex = 18;
             // 
             // frmHtFormPopup
             // 

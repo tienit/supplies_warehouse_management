@@ -87,7 +87,7 @@
             this.pn_TOP.Location = new System.Drawing.Point(0, 0);
             this.pn_TOP.Name = "pn_TOP";
             this.pn_TOP.Size = new System.Drawing.Size(878, 45);
-            this.pn_TOP.TabIndex = 51;
+            this.pn_TOP.TabIndex = 0;
             this.pn_TOP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_TOP_MouseDown);
             // 
             // btn_Maximized
@@ -105,7 +105,7 @@
             this.btn_Maximized.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Maximized.Name = "btn_Maximized";
             this.btn_Maximized.Size = new System.Drawing.Size(32, 32);
-            this.btn_Maximized.TabIndex = 29;
+            this.btn_Maximized.TabIndex = 3;
             this.btn_Maximized.TabStop = false;
             this.mainTip.SetToolTip(this.btn_Maximized, "Maximized");
             this.btn_Maximized.UseVisualStyleBackColor = false;
@@ -126,7 +126,7 @@
             this.btn_Minimized.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Minimized.Name = "btn_Minimized";
             this.btn_Minimized.Size = new System.Drawing.Size(32, 32);
-            this.btn_Minimized.TabIndex = 28;
+            this.btn_Minimized.TabIndex = 2;
             this.btn_Minimized.TabStop = false;
             this.mainTip.SetToolTip(this.btn_Minimized, "Minimized");
             this.btn_Minimized.UseVisualStyleBackColor = false;
@@ -147,7 +147,7 @@
             this.btn_Help.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Help.Name = "btn_Help";
             this.btn_Help.Size = new System.Drawing.Size(32, 32);
-            this.btn_Help.TabIndex = 27;
+            this.btn_Help.TabIndex = 1;
             this.btn_Help.TabStop = false;
             this.mainTip.SetToolTip(this.btn_Help, "Help");
             this.btn_Help.UseVisualStyleBackColor = false;
@@ -168,7 +168,7 @@
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(32, 32);
-            this.btn_Close.TabIndex = 26;
+            this.btn_Close.TabIndex = 4;
             this.btn_Close.TabStop = false;
             this.mainTip.SetToolTip(this.btn_Close, "Close");
             this.btn_Close.UseVisualStyleBackColor = false;
@@ -197,7 +197,7 @@
             this.lbl_FormTitle.Location = new System.Drawing.Point(40, 4);
             this.lbl_FormTitle.Name = "lbl_FormTitle";
             this.lbl_FormTitle.Size = new System.Drawing.Size(691, 37);
-            this.lbl_FormTitle.TabIndex = 24;
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "Common Form Admin";
             this.lbl_FormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbl_FormTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lbl_FormTitle_MouseDown);
@@ -298,7 +298,7 @@
             this.dgv_Data.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Data.Size = new System.Drawing.Size(858, 384);
-            this.dgv_Data.TabIndex = 61;
+            this.dgv_Data.TabIndex = 0;
             // 
             // pn_Empty_Right
             // 
@@ -314,7 +314,7 @@
             this.pn_Empty_Left.Location = new System.Drawing.Point(0, 146);
             this.pn_Empty_Left.Name = "pn_Empty_Left";
             this.pn_Empty_Left.Size = new System.Drawing.Size(10, 384);
-            this.pn_Empty_Left.TabIndex = 63;
+            this.pn_Empty_Left.TabIndex = 3;
             // 
             // pn_Qty
             // 
@@ -324,7 +324,7 @@
             this.pn_Qty.Location = new System.Drawing.Point(0, 111);
             this.pn_Qty.Name = "pn_Qty";
             this.pn_Qty.Size = new System.Drawing.Size(878, 35);
-            this.pn_Qty.TabIndex = 62;
+            this.pn_Qty.TabIndex = 2;
             // 
             // lbl_dis_count
             // 
@@ -332,7 +332,7 @@
             this.lbl_dis_count.Location = new System.Drawing.Point(5, 5);
             this.lbl_dis_count.Name = "lbl_dis_count";
             this.lbl_dis_count.Size = new System.Drawing.Size(123, 25);
-            this.lbl_dis_count.TabIndex = 60;
+            this.lbl_dis_count.TabIndex = 0;
             this.lbl_dis_count.Text = "Quantity:";
             this.lbl_dis_count.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -343,7 +343,7 @@
             this.lbl_data_count.Location = new System.Drawing.Point(134, 9);
             this.lbl_data_count.Name = "lbl_data_count";
             this.lbl_data_count.Size = new System.Drawing.Size(17, 19);
-            this.lbl_data_count.TabIndex = 59;
+            this.lbl_data_count.TabIndex = 1;
             this.lbl_data_count.Text = "0";
             // 
             // pn_Control
@@ -361,7 +361,7 @@
             this.pn_Control.Location = new System.Drawing.Point(0, 45);
             this.pn_Control.Name = "pn_Control";
             this.pn_Control.Size = new System.Drawing.Size(878, 66);
-            this.pn_Control.TabIndex = 58;
+            this.pn_Control.TabIndex = 1;
             // 
             // btn_Update
             // 
@@ -377,7 +377,7 @@
             this.btn_Update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(90, 52);
-            this.btn_Update.TabIndex = 1;
+            this.btn_Update.TabIndex = 4;
             this.btn_Update.Text = "Update";
             this.btn_Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Update.UseVisualStyleBackColor = false;
@@ -396,7 +396,7 @@
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(90, 52);
-            this.btn_Delete.TabIndex = 2;
+            this.btn_Delete.TabIndex = 5;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Delete.UseVisualStyleBackColor = false;
@@ -415,7 +415,7 @@
             this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(90, 52);
-            this.btn_Add.TabIndex = 0;
+            this.btn_Add.TabIndex = 3;
             this.btn_Add.Text = "Add new";
             this.btn_Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Add.UseVisualStyleBackColor = false;
@@ -428,7 +428,7 @@
             this.txt_data_keyword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_keyword.Name = "txt_data_keyword";
             this.txt_data_keyword.Size = new System.Drawing.Size(151, 35);
-            this.txt_data_keyword.TabIndex = 3;
+            this.txt_data_keyword.TabIndex = 1;
             // 
             // btn_Export_Excel
             // 
@@ -444,7 +444,7 @@
             this.btn_Export_Excel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Export_Excel.Name = "btn_Export_Excel";
             this.btn_Export_Excel.Size = new System.Drawing.Size(90, 52);
-            this.btn_Export_Excel.TabIndex = 58;
+            this.btn_Export_Excel.TabIndex = 6;
             this.btn_Export_Excel.Text = "Export excel";
             this.btn_Export_Excel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Export_Excel.UseVisualStyleBackColor = false;
@@ -462,7 +462,7 @@
             this.btn_Search.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(90, 52);
-            this.btn_Search.TabIndex = 1;
+            this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Search";
             this.btn_Search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Search.UseVisualStyleBackColor = false;
@@ -481,7 +481,7 @@
             this.btn_Print.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Print.Name = "btn_Print";
             this.btn_Print.Size = new System.Drawing.Size(90, 52);
-            this.btn_Print.TabIndex = 59;
+            this.btn_Print.TabIndex = 7;
             this.btn_Print.Text = "Print";
             this.btn_Print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Print.UseVisualStyleBackColor = false;
@@ -492,7 +492,7 @@
             this.lbl_dis_keyword.Location = new System.Drawing.Point(7, 14);
             this.lbl_dis_keyword.Name = "lbl_dis_keyword";
             this.lbl_dis_keyword.Size = new System.Drawing.Size(100, 34);
-            this.lbl_dis_keyword.TabIndex = 2;
+            this.lbl_dis_keyword.TabIndex = 0;
             this.lbl_dis_keyword.Text = "Keyword";
             this.lbl_dis_keyword.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

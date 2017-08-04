@@ -42,7 +42,7 @@ namespace VKTIM
             _ARR_FILE_NAME.Add(new GridLayoutInfo("EMAIL", GIRD_COLUMN_TYPE.TextBox));
             _ARR_FILE_NAME.Add(new GridLayoutInfo("AVATAR", GIRD_COLUMN_TYPE.TextBox));
             _ARR_FILE_NAME.Add(new GridLayoutInfo("ADDRESS", GIRD_COLUMN_TYPE.TextBox));
-            _ARR_FILE_NAME.Add(new GridLayoutInfo("RETRIED", GIRD_COLUMN_TYPE.TextBox));
+            _ARR_FILE_NAME.Add(new GridLayoutInfo("RETRIED", GIRD_COLUMN_TYPE.CheckBox));
         }
 
         protected override void Do_Add()

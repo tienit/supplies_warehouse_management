@@ -95,6 +95,7 @@ namespace VKTIM
                 lbl_dis_notify.Text = configInfo.CONFIG_VALUE;
             }
 
+            this.WindowState = FormWindowState.Maximized;
         }
 
 

@@ -60,6 +60,7 @@
             this.pn_Form.Controls.Add(this.lbl_dis_server);
             this.pn_Form.Controls.Add(this.lbl_dis_username);
             this.pn_Form.Size = new System.Drawing.Size(548, 357);
+            this.pn_Form.TabIndex = 0;
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_username, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_server, 0);
             this.pn_Form.Controls.SetChildIndex(this.btn_Test, 0);
@@ -75,6 +76,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(361, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // picLoading
@@ -100,7 +102,7 @@
             this.txt_data_username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_username.Name = "txt_data_username";
             this.txt_data_username.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_username.TabIndex = 93;
+            this.txt_data_username.TabIndex = 3;
             // 
             // txt_data_server
             // 
@@ -113,7 +115,7 @@
             this.txt_data_server.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_server.Name = "txt_data_server";
             this.txt_data_server.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_server.TabIndex = 91;
+            this.txt_data_server.TabIndex = 1;
             // 
             // btn_Save
             // 
@@ -129,7 +131,7 @@
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(120, 40);
-            this.btn_Save.TabIndex = 89;
+            this.btn_Save.TabIndex = 9;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -146,7 +148,7 @@
             this.btn_Test.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Test.Name = "btn_Test";
             this.btn_Test.Size = new System.Drawing.Size(120, 40);
-            this.btn_Test.TabIndex = 88;
+            this.btn_Test.TabIndex = 8;
             this.btn_Test.Text = "Test";
             this.btn_Test.UseVisualStyleBackColor = false;
             this.btn_Test.Click += new System.EventHandler(this.btn_Test_Click);
@@ -157,7 +159,7 @@
             this.lbl_dis_server.Location = new System.Drawing.Point(49, 75);
             this.lbl_dis_server.Name = "lbl_dis_server";
             this.lbl_dis_server.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_server.TabIndex = 90;
+            this.lbl_dis_server.TabIndex = 0;
             this.lbl_dis_server.Text = "Server";
             this.lbl_dis_server.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -167,7 +169,7 @@
             this.lbl_dis_username.Location = new System.Drawing.Point(49, 120);
             this.lbl_dis_username.Name = "lbl_dis_username";
             this.lbl_dis_username.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_username.TabIndex = 92;
+            this.lbl_dis_username.TabIndex = 2;
             this.lbl_dis_username.Text = "Username";
             this.lbl_dis_username.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -182,7 +184,7 @@
             this.txt_data_database.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_database.Name = "txt_data_database";
             this.txt_data_database.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_database.TabIndex = 98;
+            this.txt_data_database.TabIndex = 7;
             // 
             // txt_data_password
             // 
@@ -196,7 +198,7 @@
             this.txt_data_password.Name = "txt_data_password";
             this.txt_data_password.PasswordChar = '*';
             this.txt_data_password.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_password.TabIndex = 96;
+            this.txt_data_password.TabIndex = 5;
             // 
             // lbl_dis_password
             // 
@@ -204,7 +206,7 @@
             this.lbl_dis_password.Location = new System.Drawing.Point(49, 169);
             this.lbl_dis_password.Name = "lbl_dis_password";
             this.lbl_dis_password.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_password.TabIndex = 95;
+            this.lbl_dis_password.TabIndex = 4;
             this.lbl_dis_password.Text = "Password";
             this.lbl_dis_password.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -214,7 +216,7 @@
             this.lbl_dis_database.Location = new System.Drawing.Point(49, 214);
             this.lbl_dis_database.Name = "lbl_dis_database";
             this.lbl_dis_database.Size = new System.Drawing.Size(163, 24);
-            this.lbl_dis_database.TabIndex = 97;
+            this.lbl_dis_database.TabIndex = 6;
             this.lbl_dis_database.Text = "Database";
             this.lbl_dis_database.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

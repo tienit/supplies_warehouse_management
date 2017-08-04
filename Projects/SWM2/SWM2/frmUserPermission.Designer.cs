@@ -75,6 +75,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(813, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // split_dis_main
@@ -119,7 +120,7 @@
             this.tv_data_role.Name = "tv_data_role";
             this.tv_data_role.ShowLines = false;
             this.tv_data_role.Size = new System.Drawing.Size(273, 529);
-            this.tv_data_role.TabIndex = 3;
+            this.tv_data_role.TabIndex = 0;
             this.tv_data_role.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tv_data_role_AfterSelect);
             // 
             // gb_dis_forms
@@ -169,7 +170,7 @@
             this.dgv_data_form.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_data_form.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgv_data_form.Size = new System.Drawing.Size(711, 469);
-            this.dgv_data_form.TabIndex = 4;
+            this.dgv_data_form.TabIndex = 1;
             this.dgv_data_form.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_data_form_CellClick);
             // 
             // colImg
@@ -278,7 +279,7 @@
             this.lbl_data_count.Location = new System.Drawing.Point(145, 24);
             this.lbl_data_count.Name = "lbl_data_count";
             this.lbl_data_count.Size = new System.Drawing.Size(17, 20);
-            this.lbl_data_count.TabIndex = 97;
+            this.lbl_data_count.TabIndex = 2;
             this.lbl_data_count.Text = "0";
             this.lbl_data_count.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -287,7 +288,7 @@
             this.lbl_dis_count.Location = new System.Drawing.Point(12, 21);
             this.lbl_dis_count.Name = "lbl_dis_count";
             this.lbl_dis_count.Size = new System.Drawing.Size(127, 27);
-            this.lbl_dis_count.TabIndex = 96;
+            this.lbl_dis_count.TabIndex = 1;
             this.lbl_dis_count.Text = "Quantity:";
             this.lbl_dis_count.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -305,7 +306,7 @@
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(90, 52);
-            this.btn_Save.TabIndex = 95;
+            this.btn_Save.TabIndex = 0;
             this.btn_Save.Text = "Save";
             this.btn_Save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Save.UseVisualStyleBackColor = false;
@@ -325,7 +326,7 @@
             this.btn_UnSelectAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_UnSelectAll.Name = "btn_UnSelectAll";
             this.btn_UnSelectAll.Size = new System.Drawing.Size(90, 52);
-            this.btn_UnSelectAll.TabIndex = 94;
+            this.btn_UnSelectAll.TabIndex = 5;
             this.btn_UnSelectAll.Text = "Unselect";
             this.btn_UnSelectAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_UnSelectAll.UseVisualStyleBackColor = false;
@@ -345,7 +346,7 @@
             this.btn_SelectAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_SelectAll.Name = "btn_SelectAll";
             this.btn_SelectAll.Size = new System.Drawing.Size(90, 52);
-            this.btn_SelectAll.TabIndex = 93;
+            this.btn_SelectAll.TabIndex = 4;
             this.btn_SelectAll.Text = "Select All";
             this.btn_SelectAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_SelectAll.UseVisualStyleBackColor = false;
@@ -365,7 +366,7 @@
             this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(90, 52);
-            this.btn_Refresh.TabIndex = 92;
+            this.btn_Refresh.TabIndex = 3;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Refresh.UseVisualStyleBackColor = false;

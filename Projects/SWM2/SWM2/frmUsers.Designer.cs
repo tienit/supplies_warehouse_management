@@ -94,6 +94,7 @@
             // lbl_FormTitle
             // 
             this.lbl_FormTitle.Size = new System.Drawing.Size(843, 37);
+            this.lbl_FormTitle.TabIndex = 0;
             this.lbl_FormTitle.Text = "";
             // 
             // split_dis_main
@@ -138,7 +139,7 @@
             this.tv_data_role.Name = "tv_data_role";
             this.tv_data_role.ShowLines = false;
             this.tv_data_role.Size = new System.Drawing.Size(337, 269);
-            this.tv_data_role.TabIndex = 4;
+            this.tv_data_role.TabIndex = 0;
             this.tv_data_role.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tv_data_role_AfterSelect);
             // 
             // pn_role_control
@@ -156,7 +157,7 @@
             this.pn_role_control.Location = new System.Drawing.Point(3, 292);
             this.pn_role_control.Name = "pn_role_control";
             this.pn_role_control.Size = new System.Drawing.Size(337, 310);
-            this.pn_role_control.TabIndex = 3;
+            this.pn_role_control.TabIndex = 1;
             // 
             // chk_data_role_is_default
             // 
@@ -166,7 +167,7 @@
             this.chk_data_role_is_default.Location = new System.Drawing.Point(144, 197);
             this.chk_data_role_is_default.Name = "chk_data_role_is_default";
             this.chk_data_role_is_default.Size = new System.Drawing.Size(88, 24);
-            this.chk_data_role_is_default.TabIndex = 112;
+            this.chk_data_role_is_default.TabIndex = 6;
             this.chk_data_role_is_default.Text = "Is Default";
             this.chk_data_role_is_default.UseVisualStyleBackColor = true;
             // 
@@ -184,7 +185,7 @@
             this.btn_Update_Role.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Update_Role.Name = "btn_Update_Role";
             this.btn_Update_Role.Size = new System.Drawing.Size(90, 52);
-            this.btn_Update_Role.TabIndex = 91;
+            this.btn_Update_Role.TabIndex = 8;
             this.btn_Update_Role.Text = "Update";
             this.btn_Update_Role.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Update_Role.UseVisualStyleBackColor = false;
@@ -204,7 +205,7 @@
             this.btn_Add_Role.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add_Role.Name = "btn_Add_Role";
             this.btn_Add_Role.Size = new System.Drawing.Size(90, 52);
-            this.btn_Add_Role.TabIndex = 90;
+            this.btn_Add_Role.TabIndex = 7;
             this.btn_Add_Role.Text = "Add new";
             this.btn_Add_Role.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Add_Role.UseVisualStyleBackColor = false;
@@ -221,7 +222,7 @@
             this.txt_data_role_description.Multiline = true;
             this.txt_data_role_description.Name = "txt_data_role_description";
             this.txt_data_role_description.Size = new System.Drawing.Size(166, 78);
-            this.txt_data_role_description.TabIndex = 89;
+            this.txt_data_role_description.TabIndex = 5;
             // 
             // lbl_dis_role_description
             // 
@@ -229,7 +230,7 @@
             this.lbl_dis_role_description.Location = new System.Drawing.Point(7, 99);
             this.lbl_dis_role_description.Name = "lbl_dis_role_description";
             this.lbl_dis_role_description.Size = new System.Drawing.Size(126, 24);
-            this.lbl_dis_role_description.TabIndex = 88;
+            this.lbl_dis_role_description.TabIndex = 4;
             this.lbl_dis_role_description.Text = "Description";
             this.lbl_dis_role_description.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -246,7 +247,7 @@
             this.txt_data_role_id.Name = "txt_data_role_id";
             this.txt_data_role_id.ReadOnly = true;
             this.txt_data_role_id.Size = new System.Drawing.Size(166, 27);
-            this.txt_data_role_id.TabIndex = 87;
+            this.txt_data_role_id.TabIndex = 1;
             // 
             // lbl_dis_role_id
             // 
@@ -254,7 +255,7 @@
             this.lbl_dis_role_id.Location = new System.Drawing.Point(5, 9);
             this.lbl_dis_role_id.Name = "lbl_dis_role_id";
             this.lbl_dis_role_id.Size = new System.Drawing.Size(128, 24);
-            this.lbl_dis_role_id.TabIndex = 86;
+            this.lbl_dis_role_id.TabIndex = 0;
             this.lbl_dis_role_id.Text = "ID";
             this.lbl_dis_role_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -264,7 +265,7 @@
             this.lbl_dis_role_name.Location = new System.Drawing.Point(5, 54);
             this.lbl_dis_role_name.Name = "lbl_dis_role_name";
             this.lbl_dis_role_name.Size = new System.Drawing.Size(128, 24);
-            this.lbl_dis_role_name.TabIndex = 84;
+            this.lbl_dis_role_name.TabIndex = 2;
             this.lbl_dis_role_name.Text = "Name";
             this.lbl_dis_role_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -279,7 +280,7 @@
             this.txt_data_role_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_role_name.Name = "txt_data_role_name";
             this.txt_data_role_name.Size = new System.Drawing.Size(166, 27);
-            this.txt_data_role_name.TabIndex = 85;
+            this.txt_data_role_name.TabIndex = 3;
             // 
             // gb_dis_users
             // 
@@ -327,7 +328,7 @@
             this.dgv_data_users.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_data_users.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_data_users.Size = new System.Drawing.Size(677, 269);
-            this.dgv_data_users.TabIndex = 3;
+            this.dgv_data_users.TabIndex = 0;
             this.dgv_data_users.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_data_users_CellClick);
             // 
             // col_ID
@@ -443,7 +444,7 @@
             this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Update_User.Name = "btn_Update_User";
             this.btn_Update_User.Size = new System.Drawing.Size(90, 52);
-            this.btn_Update_User.TabIndex = 116;
+            this.btn_Update_User.TabIndex = 12;
             this.btn_Update_User.Text = "Update";
             this.btn_Update_User.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Update_User.UseVisualStyleBackColor = false;
@@ -463,7 +464,7 @@
             this.btn_Delete_User.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Delete_User.Name = "btn_Delete_User";
             this.btn_Delete_User.Size = new System.Drawing.Size(90, 52);
-            this.btn_Delete_User.TabIndex = 118;
+            this.btn_Delete_User.TabIndex = 13;
             this.btn_Delete_User.Text = "Delete";
             this.btn_Delete_User.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Delete_User.UseVisualStyleBackColor = false;
@@ -483,7 +484,7 @@
             this.btn_Add_User.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add_User.Name = "btn_Add_User";
             this.btn_Add_User.Size = new System.Drawing.Size(90, 52);
-            this.btn_Add_User.TabIndex = 115;
+            this.btn_Add_User.TabIndex = 11;
             this.btn_Add_User.Text = "Add new";
             this.btn_Add_User.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Add_User.UseVisualStyleBackColor = false;
@@ -499,7 +500,7 @@
             this.txt_data_user_remark.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_remark.Name = "txt_data_user_remark";
             this.txt_data_user_remark.Size = new System.Drawing.Size(315, 27);
-            this.txt_data_user_remark.TabIndex = 114;
+            this.txt_data_user_remark.TabIndex = 10;
             // 
             // lbl_dis_user_remark
             // 
@@ -507,7 +508,7 @@
             this.lbl_dis_user_remark.Location = new System.Drawing.Point(28, 241);
             this.lbl_dis_user_remark.Name = "lbl_dis_user_remark";
             this.lbl_dis_user_remark.Size = new System.Drawing.Size(126, 24);
-            this.lbl_dis_user_remark.TabIndex = 113;
+            this.lbl_dis_user_remark.TabIndex = 9;
             this.lbl_dis_user_remark.Text = "Remark";
             this.lbl_dis_user_remark.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -517,7 +518,7 @@
             this.lbl_dis_user_role.Location = new System.Drawing.Point(28, 198);
             this.lbl_dis_user_role.Name = "lbl_dis_user_role";
             this.lbl_dis_user_role.Size = new System.Drawing.Size(126, 24);
-            this.lbl_dis_user_role.TabIndex = 112;
+            this.lbl_dis_user_role.TabIndex = 7;
             this.lbl_dis_user_role.Text = "Role";
             this.lbl_dis_user_role.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -529,7 +530,7 @@
             this.chk_data_user_is_blocked.Location = new System.Drawing.Point(165, 155);
             this.chk_data_user_is_blocked.Name = "chk_data_user_is_blocked";
             this.chk_data_user_is_blocked.Size = new System.Drawing.Size(78, 24);
-            this.chk_data_user_is_blocked.TabIndex = 111;
+            this.chk_data_user_is_blocked.TabIndex = 6;
             this.chk_data_user_is_blocked.Text = "Blocked";
             this.chk_data_user_is_blocked.UseVisualStyleBackColor = true;
             // 
@@ -543,7 +544,7 @@
             this.cmb_data_user_roles.Location = new System.Drawing.Point(165, 197);
             this.cmb_data_user_roles.Name = "cmb_data_user_roles";
             this.cmb_data_user_roles.Size = new System.Drawing.Size(313, 28);
-            this.cmb_data_user_roles.TabIndex = 110;
+            this.cmb_data_user_roles.TabIndex = 8;
             // 
             // txt_data_user_pass
             // 
@@ -555,7 +556,7 @@
             this.txt_data_user_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_pass.Name = "txt_data_user_pass";
             this.txt_data_user_pass.Size = new System.Drawing.Size(315, 27);
-            this.txt_data_user_pass.TabIndex = 95;
+            this.txt_data_user_pass.TabIndex = 5;
             // 
             // lbl_dis_user_pass
             // 
@@ -563,7 +564,7 @@
             this.lbl_dis_user_pass.Location = new System.Drawing.Point(28, 102);
             this.lbl_dis_user_pass.Name = "lbl_dis_user_pass";
             this.lbl_dis_user_pass.Size = new System.Drawing.Size(126, 24);
-            this.lbl_dis_user_pass.TabIndex = 94;
+            this.lbl_dis_user_pass.TabIndex = 4;
             this.lbl_dis_user_pass.Text = "Password";
             this.lbl_dis_user_pass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -580,7 +581,7 @@
             this.txt_data_user_id.Name = "txt_data_user_id";
             this.txt_data_user_id.ReadOnly = true;
             this.txt_data_user_id.Size = new System.Drawing.Size(315, 27);
-            this.txt_data_user_id.TabIndex = 93;
+            this.txt_data_user_id.TabIndex = 1;
             // 
             // lbl_dis_user_id
             // 
@@ -588,7 +589,7 @@
             this.lbl_dis_user_id.Location = new System.Drawing.Point(26, 12);
             this.lbl_dis_user_id.Name = "lbl_dis_user_id";
             this.lbl_dis_user_id.Size = new System.Drawing.Size(128, 24);
-            this.lbl_dis_user_id.TabIndex = 92;
+            this.lbl_dis_user_id.TabIndex = 0;
             this.lbl_dis_user_id.Text = "ID";
             this.lbl_dis_user_id.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -598,7 +599,7 @@
             this.lbl_dis_user_name.Location = new System.Drawing.Point(26, 57);
             this.lbl_dis_user_name.Name = "lbl_dis_user_name";
             this.lbl_dis_user_name.Size = new System.Drawing.Size(128, 24);
-            this.lbl_dis_user_name.TabIndex = 90;
+            this.lbl_dis_user_name.TabIndex = 2;
             this.lbl_dis_user_name.Text = "Username";
             this.lbl_dis_user_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -613,7 +614,7 @@
             this.txt_data_user_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_name.Name = "txt_data_user_name";
             this.txt_data_user_name.Size = new System.Drawing.Size(315, 27);
-            this.txt_data_user_name.TabIndex = 91;
+            this.txt_data_user_name.TabIndex = 3;
             // 
             // frmUsers
             // 
