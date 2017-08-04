@@ -30,6 +30,28 @@ namespace VKTIM
             try
             {
                 InitControl();
+
+                //Login
+                if (GBTSCCommon.CheckBeforeLogin() == false)
+                {
+                    return;
+                }
+
+                frmLogin m_Frm = new frmLogin();
+                if (m_Frm.ShowDialog() == DialogResult.Yes)
+                {
+                    GBTSCCommon.SetMenuText(menuStripMain, this.Name);
+                    HTROLEInfo roleInfo = HTROLEController.Instance().GetByUser(m_Frm.CURRENT_USER.ID);
+                    SetPermisson(roleInfo.ID);
+                    GBTSCConstants.CURRENT_USER = m_Frm.CURRENT_USER;
+                    ddb_user.Visible = true;
+                    ddb_user.Text = m_Frm.CURRENT_USER.USER_NAME;
+                    lbl_dis_server.Visible = true;
+                    lbl_dis_server.Text = String.Format(GBTSCConstants.TXT_SERVER, Properties.Settings.Default.CS_ServerName);
+                    PermissionAfterLogged();
+                }
+                // End login
+
             }
             catch (Exception ex)
             {
