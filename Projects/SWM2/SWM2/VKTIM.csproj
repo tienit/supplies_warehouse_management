@@ -483,6 +483,12 @@
     <Compile Include="frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSplashLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashLoadForm.Designer.cs">
+      <DependentUpon>frmSplashLoadForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserGuide.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -500,6 +506,12 @@
     </Compile>
     <Compile Include="frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaitTesting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaitTesting.Designer.cs">
+      <DependentUpon>frmWaitTesting.cs</DependentUpon>
     </Compile>
     <Compile Include="frmWarehouseExport.cs">
       <SubType>Form</SubType>
@@ -670,6 +682,9 @@
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashLoadForm.resx">
+      <DependentUpon>frmSplashLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUserGuide.resx">
       <DependentUpon>frmUserGuide.cs</DependentUpon>
     </EmbeddedResource>
@@ -678,6 +693,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaitTesting.resx">
+      <DependentUpon>frmWaitTesting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmWarehouseExport.resx">
       <DependentUpon>frmWarehouseExport.cs</DependentUpon>
@@ -777,6 +795,8 @@
     <None Include="Resources\e_icon_screen_back.png" />
     <None Include="Resources\e_icon_screen_next.png" />
     <None Include="Resources\e_icon_screen_close_24.png" />
+    <None Include="Resources\e_icon_spinner.gif" />
+    <None Include="Resources\e_icon_house_loading.gif" />
     <Content Include="Updater\DoUpdate.exe" />
   </ItemGroup>
   <ItemGroup />

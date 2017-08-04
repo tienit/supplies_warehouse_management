@@ -44,7 +44,11 @@
             this.pn_Border_Right = new System.Windows.Forms.Panel();
             this.pn_Border_Bottom = new System.Windows.Forms.Panel();
             this.pn_Form = new System.Windows.Forms.Panel();
+            this.pn_Data = new System.Windows.Forms.Panel();
             this.dgv_Data = new System.Windows.Forms.DataGridView();
+            this.pn_Empty_Right = new System.Windows.Forms.Panel();
+            this.pn_Empty_Left = new System.Windows.Forms.Panel();
+            this.pn_Qty = new System.Windows.Forms.Panel();
             this.lbl_dis_count = new System.Windows.Forms.Label();
             this.lbl_data_count = new System.Windows.Forms.Label();
             this.pn_Control = new System.Windows.Forms.Panel();
@@ -59,18 +63,14 @@
             this.mainHelp = new System.Windows.Forms.HelpProvider();
             this.mainError = new System.Windows.Forms.ErrorProvider(this.components);
             this.mainTip = new System.Windows.Forms.ToolTip(this.components);
-            this.pn_Qty = new System.Windows.Forms.Panel();
-            this.pn_Empty_Left = new System.Windows.Forms.Panel();
-            this.pn_Empty_Right = new System.Windows.Forms.Panel();
-            this.pn_Data = new System.Windows.Forms.Panel();
             this.pn_TOP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             this.pn_Form.SuspendLayout();
+            this.pn_Data.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Data)).BeginInit();
+            this.pn_Qty.SuspendLayout();
             this.pn_Control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
-            this.pn_Qty.SuspendLayout();
-            this.pn_Data.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_TOP
@@ -256,6 +256,15 @@
             this.pn_Form.TabIndex = 56;
             this.pn_Form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_Form_MouseDown);
             // 
+            // pn_Data
+            // 
+            this.pn_Data.Controls.Add(this.dgv_Data);
+            this.pn_Data.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_Data.Location = new System.Drawing.Point(10, 146);
+            this.pn_Data.Name = "pn_Data";
+            this.pn_Data.Size = new System.Drawing.Size(858, 384);
+            this.pn_Data.TabIndex = 65;
+            // 
             // dgv_Data
             // 
             this.dgv_Data.AllowUserToAddRows = false;
@@ -264,7 +273,7 @@
             this.dgv_Data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Data.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_Data.BackgroundColor = System.Drawing.Color.Gray;
+            this.dgv_Data.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
@@ -290,6 +299,32 @@
             this.dgv_Data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Data.Size = new System.Drawing.Size(858, 384);
             this.dgv_Data.TabIndex = 61;
+            // 
+            // pn_Empty_Right
+            // 
+            this.pn_Empty_Right.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pn_Empty_Right.Location = new System.Drawing.Point(868, 146);
+            this.pn_Empty_Right.Name = "pn_Empty_Right";
+            this.pn_Empty_Right.Size = new System.Drawing.Size(10, 384);
+            this.pn_Empty_Right.TabIndex = 64;
+            // 
+            // pn_Empty_Left
+            // 
+            this.pn_Empty_Left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pn_Empty_Left.Location = new System.Drawing.Point(0, 146);
+            this.pn_Empty_Left.Name = "pn_Empty_Left";
+            this.pn_Empty_Left.Size = new System.Drawing.Size(10, 384);
+            this.pn_Empty_Left.TabIndex = 63;
+            // 
+            // pn_Qty
+            // 
+            this.pn_Qty.Controls.Add(this.lbl_dis_count);
+            this.pn_Qty.Controls.Add(this.lbl_data_count);
+            this.pn_Qty.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_Qty.Location = new System.Drawing.Point(0, 111);
+            this.pn_Qty.Name = "pn_Qty";
+            this.pn_Qty.Size = new System.Drawing.Size(878, 35);
+            this.pn_Qty.TabIndex = 62;
             // 
             // lbl_dis_count
             // 
@@ -469,41 +504,6 @@
             // 
             this.mainError.ContainerControl = this;
             // 
-            // pn_Qty
-            // 
-            this.pn_Qty.Controls.Add(this.lbl_dis_count);
-            this.pn_Qty.Controls.Add(this.lbl_data_count);
-            this.pn_Qty.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_Qty.Location = new System.Drawing.Point(0, 111);
-            this.pn_Qty.Name = "pn_Qty";
-            this.pn_Qty.Size = new System.Drawing.Size(878, 35);
-            this.pn_Qty.TabIndex = 62;
-            // 
-            // pn_Empty_Left
-            // 
-            this.pn_Empty_Left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_Empty_Left.Location = new System.Drawing.Point(0, 146);
-            this.pn_Empty_Left.Name = "pn_Empty_Left";
-            this.pn_Empty_Left.Size = new System.Drawing.Size(10, 384);
-            this.pn_Empty_Left.TabIndex = 63;
-            // 
-            // pn_Empty_Right
-            // 
-            this.pn_Empty_Right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pn_Empty_Right.Location = new System.Drawing.Point(868, 146);
-            this.pn_Empty_Right.Name = "pn_Empty_Right";
-            this.pn_Empty_Right.Size = new System.Drawing.Size(10, 384);
-            this.pn_Empty_Right.TabIndex = 64;
-            // 
-            // pn_Data
-            // 
-            this.pn_Data.Controls.Add(this.dgv_Data);
-            this.pn_Data.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_Data.Location = new System.Drawing.Point(10, 146);
-            this.pn_Data.Name = "pn_Data";
-            this.pn_Data.Size = new System.Drawing.Size(858, 384);
-            this.pn_Data.TabIndex = 65;
-            // 
             // CommonFormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -527,13 +527,13 @@
             this.pn_TOP.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
             this.pn_Form.ResumeLayout(false);
+            this.pn_Data.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Data)).EndInit();
+            this.pn_Qty.ResumeLayout(false);
+            this.pn_Qty.PerformLayout();
             this.pn_Control.ResumeLayout(false);
             this.pn_Control.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).EndInit();
-            this.pn_Qty.ResumeLayout(false);
-            this.pn_Qty.PerformLayout();
-            this.pn_Data.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

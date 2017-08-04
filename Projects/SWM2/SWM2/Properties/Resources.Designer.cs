@@ -263,6 +263,16 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_icon_house_loading {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_house_loading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_icon_list_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_list_24", resourceCulture);
@@ -486,6 +496,16 @@ namespace VKTIM.Properties {
         internal static System.Drawing.Bitmap e_icon_setting_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_setting_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_spinner {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_spinner", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -193,6 +193,22 @@ namespace VKTIM
             }
         }
 
+        public event EventHandler LoadCompleted;
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            this.OnLoadCompleted(EventArgs.Empty);
+        }
+
+        protected virtual void OnLoadCompleted(EventArgs e)
+        {
+            var hander = LoadCompleted;
+            if (hander != null)
+            {
+                hander(this, e);
+            }
+        }
+
         //Form load
         private void CommonFormAdmin_Load(object sender, EventArgs e)
         {

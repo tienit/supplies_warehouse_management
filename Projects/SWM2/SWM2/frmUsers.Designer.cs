@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsers));
             this.split_dis_main = new System.Windows.Forms.SplitContainer();
             this.gb_dis_role = new System.Windows.Forms.GroupBox();
@@ -129,7 +129,7 @@
             // 
             // tv_data_role
             // 
-            this.tv_data_role.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tv_data_role.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tv_data_role.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tv_data_role.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tv_data_role.Font = new System.Drawing.Font("Segoe UI", 11.25F);
@@ -143,7 +143,6 @@
             // 
             // pn_role_control
             // 
-            this.pn_role_control.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pn_role_control.Controls.Add(this.chk_data_role_is_default);
             this.pn_role_control.Controls.Add(this.btn_Update_Role);
             this.pn_role_control.Controls.Add(this.btn_Add_Role);
@@ -181,7 +180,7 @@
             this.btn_Update_Role.ForeColor = System.Drawing.Color.Black;
             this.btn_Update_Role.Image = global::VKTIM.Properties.Resources.e_icon_edit_24;
             this.btn_Update_Role.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Update_Role.Location = new System.Drawing.Point(218, 241);
+            this.btn_Update_Role.Location = new System.Drawing.Point(220, 241);
             this.btn_Update_Role.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Update_Role.Name = "btn_Update_Role";
             this.btn_Update_Role.Size = new System.Drawing.Size(90, 52);
@@ -201,7 +200,7 @@
             this.btn_Add_Role.ForeColor = System.Drawing.Color.Black;
             this.btn_Add_Role.Image = global::VKTIM.Properties.Resources.e_icon_add_24;
             this.btn_Add_Role.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Add_Role.Location = new System.Drawing.Point(123, 241);
+            this.btn_Add_Role.Location = new System.Drawing.Point(125, 241);
             this.btn_Add_Role.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add_Role.Name = "btn_Add_Role";
             this.btn_Add_Role.Size = new System.Drawing.Size(90, 52);
@@ -221,7 +220,7 @@
             this.txt_data_role_description.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_role_description.Multiline = true;
             this.txt_data_role_description.Name = "txt_data_role_description";
-            this.txt_data_role_description.Size = new System.Drawing.Size(164, 78);
+            this.txt_data_role_description.Size = new System.Drawing.Size(166, 78);
             this.txt_data_role_description.TabIndex = 89;
             // 
             // lbl_dis_role_description
@@ -246,7 +245,7 @@
             this.txt_data_role_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_role_id.Name = "txt_data_role_id";
             this.txt_data_role_id.ReadOnly = true;
-            this.txt_data_role_id.Size = new System.Drawing.Size(164, 27);
+            this.txt_data_role_id.Size = new System.Drawing.Size(166, 27);
             this.txt_data_role_id.TabIndex = 87;
             // 
             // lbl_dis_role_id
@@ -279,7 +278,7 @@
             this.txt_data_role_name.Location = new System.Drawing.Point(144, 56);
             this.txt_data_role_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_role_name.Name = "txt_data_role_name";
-            this.txt_data_role_name.Size = new System.Drawing.Size(164, 27);
+            this.txt_data_role_name.Size = new System.Drawing.Size(166, 27);
             this.txt_data_role_name.TabIndex = 85;
             // 
             // gb_dis_users
@@ -300,8 +299,8 @@
             // 
             this.dgv_data_users.AllowUserToAddRows = false;
             this.dgv_data_users.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgv_data_users.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgv_data_users.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_data_users.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_data_users.BackgroundColor = System.Drawing.Color.White;
             this.dgv_data_users.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -322,8 +321,8 @@
             this.dgv_data_users.Name = "dgv_data_users";
             this.dgv_data_users.ReadOnly = true;
             this.dgv_data_users.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_data_users.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_data_users.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_data_users.RowTemplate.ReadOnly = true;
             this.dgv_data_users.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_data_users.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -367,8 +366,8 @@
             // col_LAST_LOGIN
             // 
             this.col_LAST_LOGIN.DataPropertyName = "LAST_LOGIN";
-            dataGridViewCellStyle5.Format = "dd/MM/yyyy HH:mm";
-            this.col_LAST_LOGIN.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Format = "dd/MM/yyyy HH:mm";
+            this.col_LAST_LOGIN.DefaultCellStyle = dataGridViewCellStyle2;
             this.col_LAST_LOGIN.HeaderText = "Last Login";
             this.col_LAST_LOGIN.Name = "col_LAST_LOGIN";
             this.col_LAST_LOGIN.ReadOnly = true;
@@ -410,7 +409,6 @@
             // pn_user_control
             // 
             this.pn_user_control.BackColor = System.Drawing.Color.White;
-            this.pn_user_control.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pn_user_control.Controls.Add(this.btn_Update_User);
             this.pn_user_control.Controls.Add(this.btn_Delete_User);
             this.pn_user_control.Controls.Add(this.btn_Add_User);
@@ -441,7 +439,7 @@
             this.btn_Update_User.ForeColor = System.Drawing.Color.Black;
             this.btn_Update_User.Image = global::VKTIM.Properties.Resources.e_icon_edit_24;
             this.btn_Update_User.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Update_User.Location = new System.Drawing.Point(510, 92);
+            this.btn_Update_User.Location = new System.Drawing.Point(512, 92);
             this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Update_User.Name = "btn_Update_User";
             this.btn_Update_User.Size = new System.Drawing.Size(90, 52);
@@ -461,7 +459,7 @@
             this.btn_Delete_User.ForeColor = System.Drawing.Color.Black;
             this.btn_Delete_User.Image = global::VKTIM.Properties.Resources.e_icon_del2_24;
             this.btn_Delete_User.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Delete_User.Location = new System.Drawing.Point(510, 170);
+            this.btn_Delete_User.Location = new System.Drawing.Point(512, 170);
             this.btn_Delete_User.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Delete_User.Name = "btn_Delete_User";
             this.btn_Delete_User.Size = new System.Drawing.Size(90, 52);
@@ -481,7 +479,7 @@
             this.btn_Add_User.ForeColor = System.Drawing.Color.Black;
             this.btn_Add_User.Image = global::VKTIM.Properties.Resources.e_icon_add_24;
             this.btn_Add_User.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Add_User.Location = new System.Drawing.Point(510, 14);
+            this.btn_Add_User.Location = new System.Drawing.Point(512, 14);
             this.btn_Add_User.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add_User.Name = "btn_Add_User";
             this.btn_Add_User.Size = new System.Drawing.Size(90, 52);
@@ -500,7 +498,7 @@
             this.txt_data_user_remark.Location = new System.Drawing.Point(165, 243);
             this.txt_data_user_remark.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_remark.Name = "txt_data_user_remark";
-            this.txt_data_user_remark.Size = new System.Drawing.Size(313, 27);
+            this.txt_data_user_remark.Size = new System.Drawing.Size(315, 27);
             this.txt_data_user_remark.TabIndex = 114;
             // 
             // lbl_dis_user_remark
@@ -556,7 +554,7 @@
             this.txt_data_user_pass.Location = new System.Drawing.Point(165, 104);
             this.txt_data_user_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_pass.Name = "txt_data_user_pass";
-            this.txt_data_user_pass.Size = new System.Drawing.Size(313, 27);
+            this.txt_data_user_pass.Size = new System.Drawing.Size(315, 27);
             this.txt_data_user_pass.TabIndex = 95;
             // 
             // lbl_dis_user_pass
@@ -581,7 +579,7 @@
             this.txt_data_user_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_id.Name = "txt_data_user_id";
             this.txt_data_user_id.ReadOnly = true;
-            this.txt_data_user_id.Size = new System.Drawing.Size(313, 27);
+            this.txt_data_user_id.Size = new System.Drawing.Size(315, 27);
             this.txt_data_user_id.TabIndex = 93;
             // 
             // lbl_dis_user_id
@@ -614,7 +612,7 @@
             this.txt_data_user_name.Location = new System.Drawing.Point(165, 59);
             this.txt_data_user_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_data_user_name.Name = "txt_data_user_name";
-            this.txt_data_user_name.Size = new System.Drawing.Size(313, 27);
+            this.txt_data_user_name.Size = new System.Drawing.Size(315, 27);
             this.txt_data_user_name.TabIndex = 91;
             // 
             // frmUsers

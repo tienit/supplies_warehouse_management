@@ -14,8 +14,10 @@ namespace VKTIM
 {
     public partial class frmMain : CommonForm
     {
-        private List<Form> _FORM_STACK;
-        private int _CURRENT_FORM_INDEX;
+        frmSplashLoadForm m_Splash; //Splash form / Wait form
+        CommonFormAdmin frmCommonAdmin = null;
+        CommonForm frmCommon = null;
+        string CM_NONE_OR_ADMIN = "CM_NONE";
 
         public frmMain()
         {
@@ -62,13 +64,6 @@ namespace VKTIM
             mnuSystem.Visible = false;
             mnuManagement.Visible = false;
             mnuReport.Visible = false;
-
-            //
-            _FORM_STACK = new List<Form>();
-            _FORM_STACK.Add(null);
-            _FORM_STACK.Add(null);
-            _FORM_STACK.Add(null);
-            _CURRENT_FORM_INDEX = 0;
 
             //Current User
             //GBTSCConstants.CURRENT_USER = HTUSERController.Instance().GetById(1);
@@ -198,58 +193,71 @@ namespace VKTIM
         {
             Form frm = null;
             ToolStripMenuItem itemSender = (ToolStripMenuItem)sender;
-            if (itemSender.AccessibleDescription.Equals("1"))
+            //if (itemSender.AccessibleDescription.Equals("1"))
+            //{
+            //    //GBTSCCommon.ShowForm_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
+            //    //frm = GBTSCCommon.GetForm_From_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
+            //}
+            //else
+            //{
+            //    //GBTSCCommon.ShowForm_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
+            //    //frm = GBTSCCommon.GetForm_From_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
+            //}
+
+            m_Splash = new frmSplashLoadForm();
+            if (m_Splash != null)
             {
-                //GBTSCCommon.ShowForm_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
-                frm = GBTSCCommon.GetForm_From_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
+                System.Threading.Thread splashThread = new System.Threading.Thread(new System.Threading.ThreadStart(
+                    () => { Application.Run(m_Splash); }));
+                splashThread.SetApartmentState(System.Threading.ApartmentState.STA);
+                splashThread.Start();
             }
-            else
+
+            frm = GBTSCCommon.GetForm_From_ClassName(itemSender.Tag.ToString(), itemSender.Text.Trim());
+            try
             {
-                //GBTSCCommon.ShowForm_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
-                frm = GBTSCCommon.GetForm_From_ClassName_2(itemSender.Tag.ToString(), itemSender.Text.Trim());
+                frmCommonAdmin = (CommonFormAdmin)frm;
+                CM_NONE_OR_ADMIN = "CM_ADMIN";
             }
-            if (frm != null)
+            catch
             {
-                frm.TopLevel = false;
-                frm.AutoScroll = true;
-                //Find controls and hide
-                Panel pn = null;
-                Control[] ctrls = frm.Controls.Find("pn_TOP", true);
-                if (ctrls.Length > 0)
-                {
-                    pn = ctrls[0] as Panel;
-                    pn.Visible = false;
-                }
-                ctrls = frm.Controls.Find("pn_Border_Bottom", true);
-                if (ctrls.Length > 0)
-                {
-                    pn = ctrls[0] as Panel;
-                    pn.Visible = false;
-                }
-                ctrls = frm.Controls.Find("pn_Border_Top", true);
-                if (ctrls.Length > 0)
-                {
-                    pn = ctrls[0] as Panel;
-                    pn.Visible = false;
-                }
-                ctrls = frm.Controls.Find("pn_Border_Left", true);
-                if (ctrls.Length > 0)
-                {
-                    pn = ctrls[0] as Panel;
-                    pn.Visible = false;
-                }
-                ctrls = frm.Controls.Find("pn_Border_Right", true);
-                if (ctrls.Length > 0)
-                {
-                    pn = ctrls[0] as Panel;
-                    pn.Visible = false;
-                }
-                this.lbl_dis_CURRENT_FORM_TITLE.Text = frm.Text;
-                this.pn_Main_Content.Controls.Clear();
-                this.pn_Main_Content.Controls.Add(frm);
-                frm.Dock = DockStyle.Fill;
-                frm.Show();
+                frmCommon = (CommonForm)frm;
+                CM_NONE_OR_ADMIN = "CM_NONE";
             }
+
+            if (CM_NONE_OR_ADMIN.Equals("CM_ADMIN"))
+            {
+                frmCommonAdmin.LoadCompleted += AdminForm_LoadCompleted;
+                frmCommonAdmin.Show();
+                
+            }
+            else if (CM_NONE_OR_ADMIN.Equals("CM_NONE"))
+            {
+                frmCommon.LoadCompleted += AdminForm_LoadCompleted;
+                frmCommon.Show();
+            }
+        }
+
+        private void AdminForm_LoadCompleted(object sender, EventArgs e)
+        {
+            if (m_Splash == null || m_Splash.Disposing || m_Splash.IsDisposed)
+            {
+                return;
+            }
+            m_Splash.Invoke(new Action(() => { m_Splash.Close(); }));
+            m_Splash.Dispose();
+            m_Splash = null;
+
+            if (CM_NONE_OR_ADMIN.Equals("CM_ADMIN"))
+            {
+                frmCommonAdmin.Activate();
+
+            }
+            else if (CM_NONE_OR_ADMIN.Equals("CM_NONE"))
+            {
+                frmCommon.Activate();
+            }
+            
         }
 
         private void PermissionAfterLogged()

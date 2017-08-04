@@ -415,6 +415,7 @@
             this.pn_Pinned_Title.Name = "pn_Pinned_Title";
             this.pn_Pinned_Title.Size = new System.Drawing.Size(975, 40);
             this.pn_Pinned_Title.TabIndex = 64;
+            this.pn_Pinned_Title.Visible = false;
             // 
             // btn_screen_close
             // 
