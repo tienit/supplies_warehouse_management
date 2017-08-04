@@ -8,11 +8,17 @@ using VKTIM.Component;
 using System.Globalization;
 using System.Resources;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Drawing.Imaging;
+using System.Security.Cryptography;
 
 namespace VKTIM.Common
 {
     public class GBTSCCommon
     {
+        [DllImport("msvcrt.dll")]
+        private static extern int memcmp(IntPtr b1, IntPtr b2, long count);
+
         public enum MessageType
         {
             Message_OK,
@@ -908,5 +914,73 @@ namespace VKTIM.Common
             {
             }
         }
+
+        public static bool CompareMemCmp(Bitmap b1, Bitmap b2)
+        {
+            if ((b1 == null) != (b2 == null)) return false;
+            if (b1.Size != b2.Size) return false;
+
+            var bd1 = b1.LockBits(new Rectangle(new Point(0, 0), b1.Size), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
+            var bd2 = b2.LockBits(new Rectangle(new Point(0, 0), b2.Size), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
+
+            try
+            {
+                IntPtr bd1scan0 = bd1.Scan0;
+                IntPtr bd2scan0 = bd2.Scan0;
+
+                int stride = bd1.Stride;
+                int len = stride * b1.Height;
+
+                return memcmp(bd1scan0, bd2scan0, len) == 0;
+            }
+            finally
+            {
+                b1.UnlockBits(bd1);
+                b2.UnlockBits(bd2);
+            }
+        }
+
+        public enum CompareResult
+        {
+            ciCompareOk,
+            ciPixelMismatch,
+            ciSizeMismatch
+        };
+
+        public static CompareResult CompareBitmap(Bitmap bmp1, Bitmap bmp2)
+        {
+            CompareResult cr = CompareResult.ciCompareOk;
+
+            //Test to see if we have the same size of image
+            if (bmp1.Size != bmp2.Size)
+            {
+                cr = CompareResult.ciSizeMismatch;
+            }
+            else
+            {
+                //Convert each image to a byte array
+                System.Drawing.ImageConverter ic =
+                       new System.Drawing.ImageConverter();
+                byte[] btImage1 = new byte[1];
+                btImage1 = (byte[])ic.ConvertTo(bmp1, btImage1.GetType());
+                byte[] btImage2 = new byte[1];
+                btImage2 = (byte[])ic.ConvertTo(bmp2, btImage2.GetType());
+
+                //Compute a hash for each image
+                SHA256Managed shaM = new SHA256Managed();
+                byte[] hash1 = shaM.ComputeHash(btImage1);
+                byte[] hash2 = shaM.ComputeHash(btImage2);
+
+                //Compare the hash values
+                for (int i = 0; i < hash1.Length && i < hash2.Length
+                                  && cr == CompareResult.ciCompareOk; i++)
+                {
+                    if (hash1[i] != hash2[i])
+                        cr = CompareResult.ciPixelMismatch;
+                }
+            }
+            return cr;
+        }
+
     }
 }

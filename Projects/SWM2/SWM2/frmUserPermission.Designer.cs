@@ -36,6 +36,13 @@
             this.tv_data_role = new System.Windows.Forms.TreeView();
             this.gb_dis_forms = new System.Windows.Forms.GroupBox();
             this.dgv_data_form = new System.Windows.Forms.DataGridView();
+            this.pn_dis_control = new System.Windows.Forms.Panel();
+            this.lbl_data_count = new System.Windows.Forms.Label();
+            this.lbl_dis_count = new System.Windows.Forms.Label();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_UnSelectAll = new System.Windows.Forms.Button();
+            this.btn_SelectAll = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.colImg = new System.Windows.Forms.DataGridViewImageColumn();
             this.col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_FORM_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,13 +53,6 @@
             this.col_SHORTCUT_KEY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_IS_USED = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.col_FORM_ORDER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pn_dis_control = new System.Windows.Forms.Panel();
-            this.lbl_data_count = new System.Windows.Forms.Label();
-            this.lbl_dis_count = new System.Windows.Forms.Label();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.btn_UnSelectAll = new System.Windows.Forms.Button();
-            this.btn_SelectAll = new System.Windows.Forms.Button();
-            this.btn_Refresh = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -173,92 +173,6 @@
             this.dgv_data_form.TabIndex = 1;
             this.dgv_data_form.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_data_form_CellClick);
             // 
-            // colImg
-            // 
-            this.colImg.HeaderText = "Img";
-            this.colImg.Image = global::VKTIM.Properties.Resources.e_icon_unselect_24;
-            this.colImg.Name = "colImg";
-            this.colImg.Width = 41;
-            // 
-            // col_ID
-            // 
-            this.col_ID.DataPropertyName = "ID";
-            this.col_ID.HeaderText = "ID";
-            this.col_ID.Name = "col_ID";
-            this.col_ID.ReadOnly = true;
-            this.col_ID.Visible = false;
-            this.col_ID.Width = 49;
-            // 
-            // col_FORM_NAME
-            // 
-            this.col_FORM_NAME.DataPropertyName = "FORM_NAME";
-            this.col_FORM_NAME.HeaderText = "Name";
-            this.col_FORM_NAME.Name = "col_FORM_NAME";
-            this.col_FORM_NAME.ReadOnly = true;
-            this.col_FORM_NAME.Width = 74;
-            // 
-            // col_FORM_TITLE
-            // 
-            this.col_FORM_TITLE.DataPropertyName = "FORM_TITLE";
-            this.col_FORM_TITLE.HeaderText = "Title";
-            this.col_FORM_TITLE.Name = "col_FORM_TITLE";
-            this.col_FORM_TITLE.ReadOnly = true;
-            this.col_FORM_TITLE.Width = 63;
-            // 
-            // col_FORM_TITLE_EN
-            // 
-            this.col_FORM_TITLE_EN.DataPropertyName = "FORM_TITLE_EN";
-            this.col_FORM_TITLE_EN.HeaderText = "Title (EN)";
-            this.col_FORM_TITLE_EN.Name = "col_FORM_TITLE_EN";
-            this.col_FORM_TITLE_EN.Width = 96;
-            // 
-            // col_MENU_NAME
-            // 
-            this.col_MENU_NAME.DataPropertyName = "MENU_NAME";
-            this.col_MENU_NAME.HeaderText = "Menu";
-            this.col_MENU_NAME.Name = "col_MENU_NAME";
-            this.col_MENU_NAME.Width = 71;
-            // 
-            // col_IS_SHOW_DIALOG
-            // 
-            this.col_IS_SHOW_DIALOG.DataPropertyName = "IS_SHOW_DIALOG";
-            this.col_IS_SHOW_DIALOG.FalseValue = "False";
-            this.col_IS_SHOW_DIALOG.HeaderText = "Show Dialog";
-            this.col_IS_SHOW_DIALOG.Name = "col_IS_SHOW_DIALOG";
-            this.col_IS_SHOW_DIALOG.ReadOnly = true;
-            this.col_IS_SHOW_DIALOG.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_IS_SHOW_DIALOG.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_IS_SHOW_DIALOG.TrueValue = "True";
-            this.col_IS_SHOW_DIALOG.Width = 119;
-            // 
-            // col_SHORTCUT_KEY
-            // 
-            this.col_SHORTCUT_KEY.DataPropertyName = "SHORTCUT_KEY";
-            this.col_SHORTCUT_KEY.HeaderText = "Shortcut";
-            this.col_SHORTCUT_KEY.Name = "col_SHORTCUT_KEY";
-            this.col_SHORTCUT_KEY.ReadOnly = true;
-            this.col_SHORTCUT_KEY.Width = 89;
-            // 
-            // col_IS_USED
-            // 
-            this.col_IS_USED.DataPropertyName = "IS_USED";
-            this.col_IS_USED.FalseValue = "False";
-            this.col_IS_USED.HeaderText = "Used";
-            this.col_IS_USED.Name = "col_IS_USED";
-            this.col_IS_USED.ReadOnly = true;
-            this.col_IS_USED.TrueValue = "True";
-            this.col_IS_USED.Width = 48;
-            // 
-            // col_FORM_ORDER
-            // 
-            this.col_FORM_ORDER.DataPropertyName = "FORM_ORDER";
-            this.col_FORM_ORDER.HeaderText = "Order";
-            this.col_FORM_ORDER.Name = "col_FORM_ORDER";
-            this.col_FORM_ORDER.ReadOnly = true;
-            this.col_FORM_ORDER.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_FORM_ORDER.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.col_FORM_ORDER.Width = 53;
-            // 
             // pn_dis_control
             // 
             this.pn_dis_control.Controls.Add(this.lbl_data_count);
@@ -371,6 +285,92 @@
             this.btn_Refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // colImg
+            // 
+            this.colImg.HeaderText = "Img";
+            this.colImg.Image = global::VKTIM.Properties.Resources.e_icon_unselect_24;
+            this.colImg.Name = "colImg";
+            this.colImg.Width = 41;
+            // 
+            // col_ID
+            // 
+            this.col_ID.DataPropertyName = "ID";
+            this.col_ID.HeaderText = "ID";
+            this.col_ID.Name = "col_ID";
+            this.col_ID.ReadOnly = true;
+            this.col_ID.Visible = false;
+            this.col_ID.Width = 49;
+            // 
+            // col_FORM_NAME
+            // 
+            this.col_FORM_NAME.DataPropertyName = "FORM_NAME";
+            this.col_FORM_NAME.HeaderText = "Name";
+            this.col_FORM_NAME.Name = "col_FORM_NAME";
+            this.col_FORM_NAME.ReadOnly = true;
+            this.col_FORM_NAME.Width = 74;
+            // 
+            // col_FORM_TITLE
+            // 
+            this.col_FORM_TITLE.DataPropertyName = "FORM_TITLE";
+            this.col_FORM_TITLE.HeaderText = "Title";
+            this.col_FORM_TITLE.Name = "col_FORM_TITLE";
+            this.col_FORM_TITLE.ReadOnly = true;
+            this.col_FORM_TITLE.Width = 63;
+            // 
+            // col_FORM_TITLE_EN
+            // 
+            this.col_FORM_TITLE_EN.DataPropertyName = "FORM_TITLE_EN";
+            this.col_FORM_TITLE_EN.HeaderText = "Title (EN)";
+            this.col_FORM_TITLE_EN.Name = "col_FORM_TITLE_EN";
+            this.col_FORM_TITLE_EN.Width = 96;
+            // 
+            // col_MENU_NAME
+            // 
+            this.col_MENU_NAME.DataPropertyName = "MENU_NAME";
+            this.col_MENU_NAME.HeaderText = "Menu";
+            this.col_MENU_NAME.Name = "col_MENU_NAME";
+            this.col_MENU_NAME.Width = 71;
+            // 
+            // col_IS_SHOW_DIALOG
+            // 
+            this.col_IS_SHOW_DIALOG.DataPropertyName = "IS_SHOW_DIALOG";
+            this.col_IS_SHOW_DIALOG.FalseValue = "False";
+            this.col_IS_SHOW_DIALOG.HeaderText = "Show Dialog";
+            this.col_IS_SHOW_DIALOG.Name = "col_IS_SHOW_DIALOG";
+            this.col_IS_SHOW_DIALOG.ReadOnly = true;
+            this.col_IS_SHOW_DIALOG.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_IS_SHOW_DIALOG.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_IS_SHOW_DIALOG.TrueValue = "True";
+            this.col_IS_SHOW_DIALOG.Width = 119;
+            // 
+            // col_SHORTCUT_KEY
+            // 
+            this.col_SHORTCUT_KEY.DataPropertyName = "SHORTCUT_KEY";
+            this.col_SHORTCUT_KEY.HeaderText = "Shortcut";
+            this.col_SHORTCUT_KEY.Name = "col_SHORTCUT_KEY";
+            this.col_SHORTCUT_KEY.ReadOnly = true;
+            this.col_SHORTCUT_KEY.Width = 89;
+            // 
+            // col_IS_USED
+            // 
+            this.col_IS_USED.DataPropertyName = "IS_USED";
+            this.col_IS_USED.FalseValue = "False";
+            this.col_IS_USED.HeaderText = "Used";
+            this.col_IS_USED.Name = "col_IS_USED";
+            this.col_IS_USED.ReadOnly = true;
+            this.col_IS_USED.TrueValue = "True";
+            this.col_IS_USED.Width = 48;
+            // 
+            // col_FORM_ORDER
+            // 
+            this.col_FORM_ORDER.DataPropertyName = "FORM_ORDER";
+            this.col_FORM_ORDER.HeaderText = "Order";
+            this.col_FORM_ORDER.Name = "col_FORM_ORDER";
+            this.col_FORM_ORDER.ReadOnly = true;
+            this.col_FORM_ORDER.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_FORM_ORDER.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.col_FORM_ORDER.Width = 53;
             // 
             // frmUserPermission
             // 

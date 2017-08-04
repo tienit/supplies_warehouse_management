@@ -149,7 +149,7 @@ namespace VKTIM
                 foreach (DataGridViewRow dr in dgv_data_form.Rows)
                 {
                     var cellValue = dr.Cells["colImg"].Value as Bitmap;
-                    if (cellValue == bmpSelect)
+                    if (GBTSCCommon.CompareBitmap(cellValue,bmpSelect) == GBTSCCommon.CompareResult.ciCompareOk)
                     {
                         rfInfo = new HTROLEFORMInfo();
                         rfInfo.FORM_ID = Convert.ToInt32(dr.Cells["col_ID"].Value);
@@ -214,11 +214,11 @@ namespace VKTIM
                     var cellValue = imageCell.Value as Bitmap;
                     Bitmap bmpSelect = new Bitmap(Properties.Resources.e_icon_select_24);
                     Bitmap bmpUnselect = new Bitmap(Properties.Resources.e_icon_unselect_24);
-                    if (cellValue == bmpSelect)
+                    if (GBTSCCommon.CompareBitmap(cellValue, bmpSelect) == GBTSCCommon.CompareResult.ciCompareOk)
                     {
                         imageCell.Value = bmpUnselect;
                     }
-                    else
+                    else if (GBTSCCommon.CompareBitmap(cellValue, bmpUnselect) == GBTSCCommon.CompareResult.ciCompareOk)
                     {
                         imageCell.Value = bmpSelect;
                     }
