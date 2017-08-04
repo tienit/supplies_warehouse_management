@@ -34,6 +34,13 @@ namespace VKTIM
             _ARR_FILE_NAME.Add(new GridLayoutInfo("FORM_ORDER", GIRD_COLUMN_TYPE.TextBox));
         }
 
+        protected override void Load_Data()
+        {
+            DataTable dt = COMMONController.Instance().GetDataByTableNameOrderBY(_TABLE_NAME, "FORM_ORDER", "ASC");
+            GRID_DATA.DataSource = dt;
+            DATA_COUNT = dt.Rows.Count.ToString();
+        }
+
         protected override void Do_Add()
         {
             frmHtFormPopup m_Popup = new frmHtFormPopup();

@@ -351,6 +351,7 @@
             this.chk_data_show_dialog.TabIndex = 16;
             this.chk_data_show_dialog.Text = "Show Dialog";
             this.chk_data_show_dialog.UseVisualStyleBackColor = true;
+            this.chk_data_show_dialog.Visible = false;
             // 
             // nud_data_order
             // 

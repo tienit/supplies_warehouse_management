@@ -58,6 +58,11 @@ namespace VKTIM.Component
         {
             return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_COMMON_SelectAll", tableName).Tables[0];
         }
+
+        public DataTable GetDataByTableNameOrderBY(string tableName, string orderByField, string orderByType)
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_COMMON_SelectAll_OrderBy", tableName, orderByField, orderByType).Tables[0];
+        }
     }
 
 

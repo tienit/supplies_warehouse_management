@@ -28,7 +28,7 @@ namespace VKTIM
             _ARR_FILE_NAME.Add(new GridLayoutInfo("PRICE_SYMBOL", GIRD_COLUMN_TYPE.TextBox));
             _ARR_FILE_NAME.Add(new GridLayoutInfo("PRICE_CODE", GIRD_COLUMN_TYPE.TextBox));
             _ARR_FILE_NAME.Add(new GridLayoutInfo("PRICE_MIN_VALUE", GIRD_COLUMN_TYPE.TextBox));
-            _ARR_FILE_NAME.Add(new GridLayoutInfo("IS_DEFAULT", GIRD_COLUMN_TYPE.TextBox));
+            _ARR_FILE_NAME.Add(new GridLayoutInfo("IS_DEFAULT", GIRD_COLUMN_TYPE.CheckBox));
         }
 
         protected override void Do_Add()
@@ -55,7 +55,7 @@ namespace VKTIM
                 m_Popup.txt_data_symbol.Text = (dr.Cells["col_PRICE_SYMBOL"].Value != null) ? dr.Cells["col_PRICE_SYMBOL"].Value.ToString() : "";
                 m_Popup.txt_data_code.Text = (dr.Cells["col_PRICE_CODE"].Value != null) ? dr.Cells["col_PRICE_CODE"].Value.ToString() : "";
                 m_Popup.txt_data_minvalue.Text = (dr.Cells["col_PRICE_MIN_VALUE"].Value != null) ? dr.Cells["col_PRICE_MIN_VALUE"].Value.ToString() : "";
-                m_Popup.txt_data_isdefault.Text = (dr.Cells["col_IS_DEFAULT"].Value != null) ? dr.Cells["col_IS_DEFAULT"].Value.ToString() : "";
+                m_Popup.chk_data_isdefault.Checked = Convert.ToBoolean(dr.Cells["IS_DEFAULT"].Value);
 
                 if (m_Popup.ShowDialog() == DialogResult.OK)
                 {

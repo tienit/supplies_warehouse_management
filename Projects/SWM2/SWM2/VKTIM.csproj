@@ -345,6 +345,12 @@
     <Compile Include="frmDmPrice.Designer.cs">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSettingPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingPopup.Designer.cs">
+      <DependentUpon>frmSettingPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmPricePopup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -612,6 +618,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmPrice.resx">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingPopup.resx">
+      <DependentUpon>frmSettingPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmPricePopup.resx">
       <DependentUpon>frmDmPricePopup.cs</DependentUpon>

@@ -39,7 +39,7 @@ namespace VKTIM
             unitInfo.PRICE_SYMBOL = txt_data_symbol.Text;
             unitInfo.PRICE_CODE = txt_data_code.Text;
             unitInfo.PRICE_MIN_VALUE = double.Parse( txt_data_minvalue.Text);
-            unitInfo.IS_DEFAULT = bool.Parse(txt_data_isdefault.Text);
+            unitInfo.IS_DEFAULT = chk_data_isdefault.Checked;
 
             if (_ACTION_TYPE == ACTION_TYPE.AddNew)
             {

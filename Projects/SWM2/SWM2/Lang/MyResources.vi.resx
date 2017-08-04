@@ -1572,4 +1572,67 @@
   <data name="frmWarehouseImport" xml:space="preserve">
     <value>Nhập kho</value>
   </data>
+  <data name="frmSetting.btn_Add" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="frmSetting.btn_Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="frmSetting.btn_Export_Excel" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="frmSetting.btn_Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="frmSetting.btn_Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="frmSetting.btn_Update" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="frmSetting.col_CONFIG_CODE" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmSetting.col_CONFIG_DESCRIPTION" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmSetting.col_CONFIG_NAME" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmSetting.col_CONFIG_VALUE" xml:space="preserve">
+    <value>Giá trị</value>
+  </data>
+  <data name="frmSetting.col_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmSetting.lbl_dis_count" xml:space="preserve">
+    <value>Số lượng:</value>
+  </data>
+  <data name="frmSetting.lbl_dis_keyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="frmSettingPopup.btn_Cancel" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="frmSettingPopup.btn_Submit" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="frmSettingPopup.lbl_dis_code" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="frmSettingPopup.lbl_dis_description" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="frmSettingPopup.lbl_dis_id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="frmSettingPopup.lbl_dis_name" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="frmSettingPopup.lbl_dis_value" xml:space="preserve">
+    <value>Giá trị</value>
+  </data>
+  <data name="frmSetting" xml:space="preserve">
+    <value>Thiết lập hệ thống</value>
+  </data>
 </root>

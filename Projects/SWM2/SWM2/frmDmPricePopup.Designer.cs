@@ -41,8 +41,7 @@
             this.lbl_dis_symbol = new System.Windows.Forms.Label();
             this.lbl_dis_minvalue = new System.Windows.Forms.Label();
             this.txt_data_minvalue = new System.Windows.Forms.TextBox();
-            this.lbl_dis_isdefault = new System.Windows.Forms.Label();
-            this.txt_data_isdefault = new System.Windows.Forms.TextBox();
+            this.chk_data_isdefault = new System.Windows.Forms.CheckBox();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -50,8 +49,7 @@
             // 
             // pn_Form
             // 
-            this.pn_Form.Controls.Add(this.txt_data_isdefault);
-            this.pn_Form.Controls.Add(this.lbl_dis_isdefault);
+            this.pn_Form.Controls.Add(this.chk_data_isdefault);
             this.pn_Form.Controls.Add(this.txt_data_minvalue);
             this.pn_Form.Controls.Add(this.lbl_dis_minvalue);
             this.pn_Form.Controls.Add(this.txt_data_code);
@@ -78,8 +76,7 @@
             this.pn_Form.Controls.SetChildIndex(this.txt_data_code, 0);
             this.pn_Form.Controls.SetChildIndex(this.lbl_dis_minvalue, 0);
             this.pn_Form.Controls.SetChildIndex(this.txt_data_minvalue, 0);
-            this.pn_Form.Controls.SetChildIndex(this.lbl_dis_isdefault, 0);
-            this.pn_Form.Controls.SetChildIndex(this.txt_data_isdefault, 0);
+            this.pn_Form.Controls.SetChildIndex(this.chk_data_isdefault, 0);
             // 
             // lbl_FormTitle
             // 
@@ -106,7 +103,7 @@
             this.lbl_dis_code.Name = "lbl_dis_code";
             this.lbl_dis_code.Size = new System.Drawing.Size(138, 24);
             this.lbl_dis_code.TabIndex = 6;
-            this.lbl_dis_code.Text = "Description";
+            this.lbl_dis_code.Text = "Code";
             this.lbl_dis_code.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_data_id
@@ -222,7 +219,7 @@
             this.lbl_dis_minvalue.Name = "lbl_dis_minvalue";
             this.lbl_dis_minvalue.Size = new System.Drawing.Size(138, 24);
             this.lbl_dis_minvalue.TabIndex = 8;
-            this.lbl_dis_minvalue.Text = "Description";
+            this.lbl_dis_minvalue.Text = "Min Value";
             this.lbl_dis_minvalue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_data_minvalue
@@ -237,27 +234,17 @@
             this.txt_data_minvalue.Size = new System.Drawing.Size(254, 27);
             this.txt_data_minvalue.TabIndex = 9;
             // 
-            // lbl_dis_isdefault
+            // chk_data_isdefault
             // 
-            this.lbl_dis_isdefault.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dis_isdefault.Location = new System.Drawing.Point(47, 288);
-            this.lbl_dis_isdefault.Name = "lbl_dis_isdefault";
-            this.lbl_dis_isdefault.Size = new System.Drawing.Size(138, 24);
-            this.lbl_dis_isdefault.TabIndex = 10;
-            this.lbl_dis_isdefault.Text = "Description";
-            this.lbl_dis_isdefault.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_data_isdefault
-            // 
-            this.txt_data_isdefault.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_data_isdefault.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_data_isdefault.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_data_isdefault.Location = new System.Drawing.Point(206, 290);
-            this.txt_data_isdefault.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_data_isdefault.Name = "txt_data_isdefault";
-            this.txt_data_isdefault.Size = new System.Drawing.Size(254, 27);
-            this.txt_data_isdefault.TabIndex = 11;
+            this.chk_data_isdefault.AutoSize = true;
+            this.chk_data_isdefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_data_isdefault.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.chk_data_isdefault.Location = new System.Drawing.Point(206, 297);
+            this.chk_data_isdefault.Name = "chk_data_isdefault";
+            this.chk_data_isdefault.Size = new System.Drawing.Size(88, 24);
+            this.chk_data_isdefault.TabIndex = 52;
+            this.chk_data_isdefault.Text = "Is Default";
+            this.chk_data_isdefault.UseVisualStyleBackColor = true;
             // 
             // frmDmPricePopup
             // 
@@ -278,9 +265,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.TextBox txt_data_isdefault;
-        private System.Windows.Forms.Label lbl_dis_isdefault;
         public System.Windows.Forms.TextBox txt_data_minvalue;
         private System.Windows.Forms.Label lbl_dis_minvalue;
         public System.Windows.Forms.TextBox txt_data_code;
@@ -293,5 +277,6 @@
         private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.Label lbl_dis_name;
         private System.Windows.Forms.Label lbl_dis_symbol;
+        public System.Windows.Forms.CheckBox chk_data_isdefault;
     }
 }

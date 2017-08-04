@@ -460,7 +460,7 @@ namespace VKTIM
             }
         }
 
-        protected void Load_Data()
+        protected virtual void Load_Data()
         {
             if (_TABLE_NAME == null || _TABLE_NAME.Equals(""))
             {
