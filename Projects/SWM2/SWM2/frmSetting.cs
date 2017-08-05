@@ -52,8 +52,8 @@ namespace VKTIM
                 m_Popup.txt_data_id.Text = dr.Cells["col_ID"].Value.ToString();
                 m_Popup.txt_data_name.Text = (dr.Cells["col_CONFIG_NAME"].Value != null) ? dr.Cells["col_CONFIG_NAME"].Value.ToString() : "";
                 m_Popup.txt_data_code.Text = (dr.Cells["col_CONFIG_CODE"].Value != null) ? dr.Cells["col_CONFIG_CODE"].Value.ToString() : "";
-                m_Popup.txt_data_description.Text = (dr.Cells["col_CONFIG_VALUE"].Value != null) ? dr.Cells["col_CONFIG_VALUE"].Value.ToString() : "";
-                m_Popup.txt_data_value.Text = (dr.Cells["col_CONFIG_DESCRIPTION"].Value != null) ? dr.Cells["col_CONFIG_DESCRIPTION"].Value.ToString() : "";
+                m_Popup.txt_data_value.Text = (dr.Cells["col_CONFIG_VALUE"].Value != null) ? dr.Cells["col_CONFIG_VALUE"].Value.ToString() : "";
+                m_Popup.txt_data_description.Text = (dr.Cells["col_CONFIG_DESCRIPTION"].Value != null) ? dr.Cells["col_CONFIG_DESCRIPTION"].Value.ToString() : "";
 
                 if (m_Popup.ShowDialog() == DialogResult.OK)
                 {
