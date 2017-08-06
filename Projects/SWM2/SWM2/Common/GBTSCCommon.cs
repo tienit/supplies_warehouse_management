@@ -446,6 +446,7 @@ namespace VKTIM.Common
             {
                 itemConverted = (ToolStripMenuItem)item;
                 itemConverted.Text = GBTSCConstants.CURRENT_RESOURCES.GetString(formName + "." + itemConverted.Name, GBTSCConstants.CURRENT_CULTURE);
+                itemConverted.ToolTipText = itemConverted.Text;
             }
 
             for (int i = 0; i < itemConverted.DropDownItems.Count; i++)
@@ -465,6 +466,7 @@ namespace VKTIM.Common
             {
                 itemConverted = (ToolStripMenuItem)item;
                 itemConverted.Text = GBTSCConstants.CURRENT_RESOURCES.GetString(formName + "." + itemConverted.Name, GBTSCConstants.CURRENT_CULTURE);
+                itemConverted.ToolTipText = itemConverted.Text;
             }
         }
 

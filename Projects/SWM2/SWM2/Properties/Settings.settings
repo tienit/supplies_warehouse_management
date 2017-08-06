@@ -23,5 +23,8 @@
     <Setting Name="APP_REVISION" Type="System.String" Scope="User">
       <Value Profile="(Default)">18</Value>
     </Setting>
+    <Setting Name="MENU_STATUS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EXPANDED</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

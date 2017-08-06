@@ -31,26 +31,7 @@ namespace VKTIM
             {
                 InitControl();
 
-                //Login
-                if (GBTSCCommon.CheckBeforeLogin() == false)
-                {
-                    return;
-                }
-
-                frmLogin m_Frm = new frmLogin();
-                if (m_Frm.ShowDialog() == DialogResult.Yes)
-                {
-                    GBTSCCommon.SetMenuText(menuStripMain, this.Name);
-                    HTROLEInfo roleInfo = HTROLEController.Instance().GetByUser(m_Frm.CURRENT_USER.ID);
-                    SetPermisson(roleInfo.ID);
-                    GBTSCConstants.CURRENT_USER = m_Frm.CURRENT_USER;
-                    ddb_user.Visible = true;
-                    ddb_user.Text = m_Frm.CURRENT_USER.USER_NAME;
-                    lbl_dis_server.Visible = true;
-                    lbl_dis_server.Text = String.Format(GBTSCConstants.TXT_SERVER, Properties.Settings.Default.CS_ServerName);
-                    PermissionAfterLogged();
-                }
-                // End login
+                Do_Login();
 
             }
             catch (Exception ex)
@@ -120,8 +101,24 @@ namespace VKTIM
             this.WindowState = FormWindowState.Maximized;
         }
 
+        private void InitMenuStatus()
+        {
+            if (Properties.Settings.Default.MENU_STATUS.Equals("COLLAPSED"))
+            {
+                Do_Top(170);
+            }
+            else if (Properties.Settings.Default.MENU_STATUS.Equals("EXPANDED"))
+            {
+                Do_Top(50);
+            }
+        }
 
         private void mnuFile_Login_Click(object sender, EventArgs e)
+        {
+            Do_Login();
+        }
+
+        private void Do_Login()
         {
             if (GBTSCCommon.CheckBeforeLogin() == false)
             {
@@ -134,6 +131,7 @@ namespace VKTIM
                 GBTSCCommon.SetMenuText(menuStripMain, this.Name);
                 HTROLEInfo roleInfo = HTROLEController.Instance().GetByUser(m_Frm.CURRENT_USER.ID);
                 SetPermisson(roleInfo.ID);
+                InitMenuStatus();
                 GBTSCConstants.CURRENT_USER = m_Frm.CURRENT_USER;
                 ddb_user.Visible = true;
                 ddb_user.Text = m_Frm.CURRENT_USER.USER_NAME;
@@ -145,6 +143,13 @@ namespace VKTIM
 
         private void SetPermisson(int roleID)
         {
+            mnuFile.AccessibleName = mnuFile.Text;
+            mnuWarehouse.AccessibleName = mnuWarehouse.Text;
+            mnuSystem.AccessibleName = mnuSystem.Text;
+            mnuReport.AccessibleName = mnuReport.Text;
+            mnuManagement.AccessibleName = mnuManagement.Text;
+            mnuHelp.AccessibleName = mnuHelp.Text;
+
             List<HTFORMInfo> lst = null;
             if (roleID == 1)
             {
@@ -171,6 +176,7 @@ namespace VKTIM
                         item = new ToolStripMenuItem(fInfo.FORM_TITLE_EN, Properties.Resources.e_icon_menu_item_24, mnu_Item_Click, fInfo.MENU_NAME);
                     }
                     item.Tag = fInfo.FORM_NAME;
+                    item.AccessibleName = item.Text;
                     item.AccessibleDescription = (fInfo.IS_SHOW_DIALOG == true) ? "1" : "0";
                     GBTSCCommon.SetKeysForItem(item, fInfo.SHORTCUT_KEY);
 
@@ -561,5 +567,70 @@ namespace VKTIM
             item.Image = Properties.Resources.mnuHelpWhite32;
             item.ForeColor = Color.White;
         }
+
+        private void Do_Top(int widthOfStrip)
+        {
+            try
+            {
+                int width_of_item = mnuFile.Width;
+                //int with_of_strip = menuStripMain.Width;
+                if (widthOfStrip == 170)
+                {
+                    mnuTop.Image = Properties.Resources.e_icon_top_expand;
+                    widthOfStrip = 50;
+                    width_of_item = 41;
+                    mnuTop.Size = new Size(width_of_item, 24);
+                    mnuFile.AccessibleName = mnuFile.Text;
+                    mnuFile.Text = String.Empty;
+                    mnuFile.Size = new Size(width_of_item, mnuFile.Height);
+                    mnuWarehouse.AccessibleName = mnuWarehouse.Text;
+                    mnuWarehouse.Text = String.Empty;
+                    mnuWarehouse.Size = new Size(width_of_item, mnuWarehouse.Height);
+                    mnuSystem.AccessibleName = mnuSystem.Text;
+                    mnuSystem.Text = String.Empty;
+                    mnuSystem.Size = new Size(width_of_item, mnuSystem.Height);
+                    mnuManagement.AccessibleName = mnuManagement.Text;
+                    mnuManagement.Text = String.Empty;
+                    mnuManagement.Size = new Size(width_of_item, mnuManagement.Height);
+                    mnuReport.AccessibleName = mnuReport.Text;
+                    mnuReport.Text = String.Empty;
+                    mnuReport.Size = new Size(width_of_item, mnuReport.Height);
+                    mnuHelp.AccessibleName = mnuHelp.Text;
+                    mnuHelp.Text = String.Empty;
+                    mnuHelp.Size = new Size(width_of_item, mnuHelp.Height);
+                    menuStripMain.Size = new Size(widthOfStrip, menuStripMain.Height);
+                }
+                else if (widthOfStrip == 50)
+                {
+                    mnuTop.Image = Properties.Resources.e_icon_top_collapse;
+                    widthOfStrip = 170;
+                    width_of_item = 160;
+                    mnuTop.Size = new Size(width_of_item, 24);
+                    mnuFile.Text = (string)mnuFile.AccessibleName;
+                    mnuFile.Size = new Size(width_of_item, mnuFile.Height);
+                    mnuWarehouse.Text = (string)mnuWarehouse.AccessibleName;
+                    mnuWarehouse.Size = new Size(width_of_item, mnuWarehouse.Height);
+                    mnuSystem.Text = (string)mnuSystem.AccessibleName;
+                    mnuSystem.Size = new Size(width_of_item, mnuSystem.Height);
+                    mnuManagement.Text = (string)mnuManagement.AccessibleName;
+                    mnuManagement.Size = new Size(width_of_item, mnuManagement.Height);
+                    mnuReport.Text = (string)mnuReport.AccessibleName;
+                    mnuReport.Size = new Size(width_of_item, mnuReport.Height);
+                    mnuHelp.Text = (string)mnuHelp.AccessibleName;
+                    mnuHelp.Size = new Size(width_of_item, mnuHelp.Height);
+                    menuStripMain.Size = new Size(widthOfStrip, menuStripMain.Height);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void mnuTop_Click(object sender, EventArgs e)
+        {
+            Do_Top(menuStripMain.Width);
+        }
+
     }
 }

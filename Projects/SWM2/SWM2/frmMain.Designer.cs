@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
+            this.mnuTop = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFile_Login = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFile_ChangePass = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,10 +91,12 @@
             // 
             // menuStripMain
             // 
+            this.menuStripMain.AutoSize = false;
             this.menuStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.menuStripMain.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStripMain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuTop,
             this.mnuFile,
             this.mnuWarehouse,
             this.mnuSystem,
@@ -103,11 +106,22 @@
             this.menuStripMain.Location = new System.Drawing.Point(0, 45);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStripMain.Size = new System.Drawing.Size(123, 595);
+            this.menuStripMain.Size = new System.Drawing.Size(170, 595);
             this.menuStripMain.TabIndex = 63;
+            // 
+            // mnuTop
+            // 
+            this.mnuTop.AutoSize = false;
+            this.mnuTop.Image = global::VKTIM.Properties.Resources.e_icon_top_collapse;
+            this.mnuTop.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.mnuTop.Name = "mnuTop";
+            this.mnuTop.Padding = new System.Windows.Forms.Padding(5);
+            this.mnuTop.Size = new System.Drawing.Size(160, 24);
+            this.mnuTop.Click += new System.EventHandler(this.mnuTop_Click);
             // 
             // mnuFile
             // 
+            this.mnuFile.AutoSize = false;
             this.mnuFile.Checked = true;
             this.mnuFile.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -120,12 +134,11 @@
             this.mnuFile_Exit});
             this.mnuFile.ForeColor = System.Drawing.Color.White;
             this.mnuFile.Image = global::VKTIM.Properties.Resources.mnuFileWhite32;
+            this.mnuFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuFile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Padding = new System.Windows.Forms.Padding(5);
-            this.mnuFile.Size = new System.Drawing.Size(108, 67);
-            this.mnuFile.Text = "&File";
-            this.mnuFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuFile.Size = new System.Drawing.Size(160, 68);
             this.mnuFile.DropDownClosed += new System.EventHandler(this.mnuFile_DropDownClosed);
             this.mnuFile.DropDownOpened += new System.EventHandler(this.mnuFile_DropDownOpened);
             // 
@@ -191,70 +204,70 @@
             // 
             // mnuWarehouse
             // 
+            this.mnuWarehouse.AutoSize = false;
             this.mnuWarehouse.ForeColor = System.Drawing.Color.White;
             this.mnuWarehouse.Image = global::VKTIM.Properties.Resources.mnuWarehouseWhite32;
+            this.mnuWarehouse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuWarehouse.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuWarehouse.Name = "mnuWarehouse";
             this.mnuWarehouse.Padding = new System.Windows.Forms.Padding(5);
-            this.mnuWarehouse.Size = new System.Drawing.Size(108, 67);
-            this.mnuWarehouse.Text = "&Warehouse";
-            this.mnuWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuWarehouse.Size = new System.Drawing.Size(160, 68);
             this.mnuWarehouse.DropDownClosed += new System.EventHandler(this.mnuWarehouse_DropDownClosed);
             this.mnuWarehouse.DropDownOpened += new System.EventHandler(this.mnuWarehouse_DropDownOpened);
             // 
             // mnuSystem
             // 
+            this.mnuSystem.AutoSize = false;
             this.mnuSystem.ForeColor = System.Drawing.Color.White;
             this.mnuSystem.Image = global::VKTIM.Properties.Resources.mnuSystemWhite32;
+            this.mnuSystem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuSystem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuSystem.Name = "mnuSystem";
             this.mnuSystem.Padding = new System.Windows.Forms.Padding(5);
-            this.mnuSystem.Size = new System.Drawing.Size(108, 67);
-            this.mnuSystem.Text = "&System";
-            this.mnuSystem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuSystem.Size = new System.Drawing.Size(160, 68);
             this.mnuSystem.DropDownClosed += new System.EventHandler(this.mnuSystem_DropDownClosed);
             this.mnuSystem.DropDownOpened += new System.EventHandler(this.mnuSystem_DropDownOpened);
             // 
             // mnuReport
             // 
+            this.mnuReport.AutoSize = false;
             this.mnuReport.ForeColor = System.Drawing.Color.White;
             this.mnuReport.Image = global::VKTIM.Properties.Resources.mnuReportWhite32;
+            this.mnuReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuReport.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuReport.Name = "mnuReport";
             this.mnuReport.Padding = new System.Windows.Forms.Padding(5);
-            this.mnuReport.Size = new System.Drawing.Size(108, 67);
-            this.mnuReport.Text = "Report";
-            this.mnuReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuReport.Size = new System.Drawing.Size(160, 68);
             this.mnuReport.DropDownClosed += new System.EventHandler(this.mnuReport_DropDownClosed);
             this.mnuReport.DropDownOpened += new System.EventHandler(this.mnuReport_DropDownOpened);
             // 
             // mnuManagement
             // 
+            this.mnuManagement.AutoSize = false;
             this.mnuManagement.ForeColor = System.Drawing.Color.White;
             this.mnuManagement.Image = global::VKTIM.Properties.Resources.mnuManagementWhite32;
+            this.mnuManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuManagement.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuManagement.Name = "mnuManagement";
             this.mnuManagement.Padding = new System.Windows.Forms.Padding(5);
-            this.mnuManagement.Size = new System.Drawing.Size(108, 67);
-            this.mnuManagement.Text = "&Management";
-            this.mnuManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuManagement.Size = new System.Drawing.Size(160, 68);
             this.mnuManagement.DropDownClosed += new System.EventHandler(this.mnuManagement_DropDownClosed);
             this.mnuManagement.DropDownOpened += new System.EventHandler(this.mnuManagement_DropDownOpened);
             // 
             // mnuHelp
             // 
+            this.mnuHelp.AutoSize = false;
             this.mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuHelp_UserGuide,
             this.mnuHelp_About,
             this.mnuHelp_Update});
             this.mnuHelp.ForeColor = System.Drawing.Color.White;
             this.mnuHelp.Image = global::VKTIM.Properties.Resources.mnuHelpWhite32;
+            this.mnuHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mnuHelp.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Padding = new System.Windows.Forms.Padding(5);
-            this.mnuHelp.Size = new System.Drawing.Size(108, 67);
-            this.mnuHelp.Text = "&Help";
-            this.mnuHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.mnuHelp.Size = new System.Drawing.Size(160, 68);
             this.mnuHelp.DropDownClosed += new System.EventHandler(this.mnuHelp_DropDownClosed);
             this.mnuHelp.DropDownOpened += new System.EventHandler(this.mnuHelp_DropDownOpened);
             // 
@@ -411,9 +424,9 @@
             this.pn_Pinned_Title.Controls.Add(this.lbl_dis_CURRENT_FORM_TITLE);
             this.pn_Pinned_Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_Pinned_Title.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.pn_Pinned_Title.Location = new System.Drawing.Point(123, 45);
+            this.pn_Pinned_Title.Location = new System.Drawing.Point(170, 45);
             this.pn_Pinned_Title.Name = "pn_Pinned_Title";
-            this.pn_Pinned_Title.Size = new System.Drawing.Size(975, 40);
+            this.pn_Pinned_Title.Size = new System.Drawing.Size(928, 40);
             this.pn_Pinned_Title.TabIndex = 64;
             this.pn_Pinned_Title.Visible = false;
             // 
@@ -427,7 +440,7 @@
             this.btn_screen_close.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btn_screen_close.ForeColor = System.Drawing.Color.White;
             this.btn_screen_close.Image = global::VKTIM.Properties.Resources.e_icon_screen_close_24;
-            this.btn_screen_close.Location = new System.Drawing.Point(940, 10);
+            this.btn_screen_close.Location = new System.Drawing.Point(893, 10);
             this.btn_screen_close.Name = "btn_screen_close";
             this.btn_screen_close.Size = new System.Drawing.Size(24, 24);
             this.btn_screen_close.TabIndex = 3;
@@ -480,9 +493,9 @@
             this.pn_Main_Content.BackColor = System.Drawing.Color.Silver;
             this.pn_Main_Content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_Main_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.pn_Main_Content.Location = new System.Drawing.Point(123, 85);
+            this.pn_Main_Content.Location = new System.Drawing.Point(170, 85);
             this.pn_Main_Content.Name = "pn_Main_Content";
-            this.pn_Main_Content.Size = new System.Drawing.Size(975, 555);
+            this.pn_Main_Content.Size = new System.Drawing.Size(928, 555);
             this.pn_Main_Content.TabIndex = 65;
             // 
             // frmMain
@@ -506,7 +519,6 @@
             this.Controls.SetChildIndex(this.pn_Form, 0);
             this.Controls.SetChildIndex(this.lbl_dis_notify, 0);
             this.pn_Form.ResumeLayout(false);
-            this.pn_Form.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).EndInit();
             this.menuStripMain.ResumeLayout(false);
@@ -555,6 +567,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_screen_back;
         private System.Windows.Forms.Button btn_screen_close;
+        private System.Windows.Forms.ToolStripMenuItem mnuTop;
     }
 }
 

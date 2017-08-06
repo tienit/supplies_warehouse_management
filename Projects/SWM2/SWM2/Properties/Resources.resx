@@ -169,6 +169,9 @@
   <data name="e_icon_menu_item_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_menu_item_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="e_icon_house_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_house_loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="e_icon_user2_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_user2_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,8 +247,8 @@
   <data name="e_icon_update_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_update_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mnuHelpWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mnuHelpWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_icon_warning_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_warning_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_screen_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_screen_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +322,8 @@
   <data name="e_icon_edit_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_edit_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_warning_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_warning_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuHelpWhite32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mnuHelpWhite32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e_icon_about_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_about_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -361,7 +364,10 @@
   <data name="e_icon_menu_item_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e_icon_menu_item_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="e_icon_house_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_icon_house_loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e_icon_top_collapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_top_collapse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e_icon_top_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e_icon_top_expand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

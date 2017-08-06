@@ -106,5 +106,17 @@ namespace VKTIM.Properties {
                 this["APP_REVISION"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("EXPANDED")]
+        public string MENU_STATUS {
+            get {
+                return ((string)(this["MENU_STATUS"]));
+            }
+            set {
+                this["MENU_STATUS"] = value;
+            }
+        }
     }
 }

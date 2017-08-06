@@ -806,6 +806,8 @@
     <None Include="Resources\e_icon_screen_close_24.png" />
     <None Include="Resources\e_icon_spinner.gif" />
     <None Include="Resources\e_icon_house_loading.gif" />
+    <None Include="Resources\e_icon_top_collapse.png" />
+    <None Include="Resources\e_icon_top_expand.png" />
     <Content Include="Updater\DoUpdate.exe" />
   </ItemGroup>
   <ItemGroup />

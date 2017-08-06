@@ -523,6 +523,26 @@ namespace VKTIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e_icon_top_collapse {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_top_collapse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_icon_top_expand {
+            get {
+                object obj = ResourceManager.GetObject("e_icon_top_expand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e_icon_undo_24 {
             get {
                 object obj = ResourceManager.GetObject("e_icon_undo_24", resourceCulture);
