@@ -68,7 +68,7 @@ namespace VKTIM
                 m_Popup.txt_data_menu_name.Text = (string)dr.Cells["col_MENU_NAME"].Value;
                 m_Popup.chk_data_show_dialog.Checked = Convert.ToBoolean(dr.Cells["col_IS_SHOW_DIALOG"].Value);
                 m_Popup.cmb_data_shortcut_key.DataSource = Enum.GetNames(typeof(Keys));
-                SetKeysDataForControl(m_Popup.chk_data_ctrl, m_Popup.chk_data_shift, m_Popup.chk_data_alt, m_Popup.cmb_data_shortcut_key, (string)dr.Cells["col_SHORTCUT_KEY"].Value);
+                SetKeysDataForControl(m_Popup.chk_data_ctrl, m_Popup.chk_data_shift, m_Popup.chk_data_alt, m_Popup.cmb_data_shortcut_key, dr.Cells["col_SHORTCUT_KEY"].Value.ToString());
                 m_Popup.chk_data_used.Checked = Convert.ToBoolean(dr.Cells["col_IS_USED"].Value);
                 m_Popup.nud_data_order.Value = Convert.ToDecimal(dr.Cells["col_FORM_ORDER"].Value);
 

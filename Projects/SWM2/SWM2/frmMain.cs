@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eSWS.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -598,7 +599,12 @@ namespace VKTIM
                     mnuHelp.AccessibleName = mnuHelp.Text;
                     mnuHelp.Text = String.Empty;
                     mnuHelp.Size = new Size(width_of_item, mnuHelp.Height);
-                    menuStripMain.Size = new Size(widthOfStrip, menuStripMain.Height);
+                    //menuStripMain.Size = new Size(widthOfStrip, menuStripMain.Height);
+                    while (menuStripMain.Width > 50)
+                    {
+                        menuStripMain.Width--;
+                        Application.DoEvents();
+                    }
                 }
                 else if (widthOfStrip == 50)
                 {
@@ -618,7 +624,12 @@ namespace VKTIM
                     mnuReport.Size = new Size(width_of_item, mnuReport.Height);
                     mnuHelp.Text = (string)mnuHelp.AccessibleName;
                     mnuHelp.Size = new Size(width_of_item, mnuHelp.Height);
-                    menuStripMain.Size = new Size(widthOfStrip, menuStripMain.Height);
+                    //menuStripMain.Size = new Size(widthOfStrip, menuStripMain.Height);
+                    while (menuStripMain.Width < 170)
+                    {
+                        menuStripMain.Width++;
+                        Application.DoEvents();
+                    }
                 }
             }
             catch (Exception ex)
