@@ -267,6 +267,12 @@
     <Compile Include="frmConnectionSetting.Designer.cs">
       <DependentUpon>frmConnectionSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDashBoardTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashBoardTest.Designer.cs">
+      <DependentUpon>frmDashBoardTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmEmployer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -585,6 +591,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConnectionSetting.resx">
       <DependentUpon>frmConnectionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashBoardTest.resx">
+      <DependentUpon>frmDashBoardTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmEmployer.resx">
       <DependentUpon>frmDmEmployer.cs</DependentUpon>
