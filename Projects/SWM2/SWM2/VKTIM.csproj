@@ -351,12 +351,6 @@
     <Compile Include="frmDmPrice.Designer.cs">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInputTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmInputTest.Designer.cs">
-      <DependentUpon>frmInputTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSettingPopup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -543,6 +537,12 @@
     <Compile Include="frmWarehouseImport.Designer.cs">
       <DependentUpon>frmWarehouseImport.cs</DependentUpon>
     </Compile>
+    <Compile Include="InputWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputWarehouse.Designer.cs">
+      <DependentUpon>InputWarehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -633,9 +633,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmPrice.resx">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInputTest.resx">
-      <DependentUpon>frmInputTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettingPopup.resx">
       <DependentUpon>frmSettingPopup.cs</DependentUpon>
@@ -729,6 +726,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmWarehouseImport.resx">
       <DependentUpon>frmWarehouseImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputWarehouse.resx">
+      <DependentUpon>InputWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lang\MyResources.en.resx" />
     <EmbeddedResource Include="Lang\MyResources.ja.resx" />

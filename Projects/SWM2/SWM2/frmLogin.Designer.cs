@@ -84,6 +84,7 @@
             this.txt_data_password.PasswordChar = '*';
             this.txt_data_password.Size = new System.Drawing.Size(254, 27);
             this.txt_data_password.TabIndex = 3;
+            this.txt_data_password.Text = "123456";
             // 
             // txt_data_username
             // 
@@ -97,6 +98,7 @@
             this.txt_data_username.Name = "txt_data_username";
             this.txt_data_username.Size = new System.Drawing.Size(254, 27);
             this.txt_data_username.TabIndex = 1;
+            this.txt_data_username.Text = "tienit";
             // 
             // btn_Cancel
             // 
