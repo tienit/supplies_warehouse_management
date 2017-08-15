@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.mnuTop = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,12 +66,17 @@
             this.btn_screen_back = new System.Windows.Forms.Button();
             this.lbl_dis_CURRENT_FORM_TITLE = new System.Windows.Forms.Label();
             this.pn_Main_Content = new System.Windows.Forms.Panel();
+            this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.context_Show = new System.Windows.Forms.ToolStripMenuItem();
+            this.context_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.pn_Pinned_Title.SuspendLayout();
+            this.contextMenuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_Form
@@ -498,6 +504,35 @@
             this.pn_Main_Content.Size = new System.Drawing.Size(928, 555);
             this.pn_Main_Content.TabIndex = 65;
             // 
+            // notifyIconMain
+            // 
+            this.notifyIconMain.ContextMenuStrip = this.contextMenuStripMain;
+            this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
+            this.notifyIconMain.Text = "Hệ thống quản lý kho/vật tư Viện kỹ thuật PK-KQ";
+            this.notifyIconMain.Visible = true;
+            // 
+            // contextMenuStripMain
+            // 
+            this.contextMenuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.context_Show,
+            this.context_Exit});
+            this.contextMenuStripMain.Name = "contextMenuStripMain";
+            this.contextMenuStripMain.Size = new System.Drawing.Size(104, 48);
+            // 
+            // context_Show
+            // 
+            this.context_Show.Name = "context_Show";
+            this.context_Show.Size = new System.Drawing.Size(152, 22);
+            this.context_Show.Text = "Show";
+            this.context_Show.Click += new System.EventHandler(this.context_Show_Click);
+            // 
+            // context_Exit
+            // 
+            this.context_Exit.Name = "context_Exit";
+            this.context_Exit.Size = new System.Drawing.Size(152, 22);
+            this.context_Exit.Text = "Exit";
+            this.context_Exit.Click += new System.EventHandler(this.context_Exit_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -515,6 +550,7 @@
             this.Name = "frmMain";
             this.Text = "Supplies Warehouse Management";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Move += new System.EventHandler(this.frmMain_Move);
             this.Controls.SetChildIndex(this.statusStripMain, 0);
             this.Controls.SetChildIndex(this.pn_Form, 0);
             this.Controls.SetChildIndex(this.lbl_dis_notify, 0);
@@ -527,6 +563,7 @@
             this.statusStripMain.PerformLayout();
             this.pn_Pinned_Title.ResumeLayout(false);
             this.pn_Pinned_Title.PerformLayout();
+            this.contextMenuStripMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -568,6 +605,10 @@
         private System.Windows.Forms.Button btn_screen_back;
         private System.Windows.Forms.Button btn_screen_close;
         private System.Windows.Forms.ToolStripMenuItem mnuTop;
+        private System.Windows.Forms.NotifyIcon notifyIconMain;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStripMain;
+        private System.Windows.Forms.ToolStripMenuItem context_Show;
+        private System.Windows.Forms.ToolStripMenuItem context_Exit;
     }
 }
 

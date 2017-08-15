@@ -643,5 +643,23 @@ namespace VKTIM
             Do_Top(menuStripMain.Width);
         }
 
+        private void context_Show_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void context_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmMain_Move(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                notifyIconMain.ShowBalloonTip(1500, "VKTIM", "Some important things have come up. Click here to get more detail.", ToolTipIcon.Info);
+            }
+        }
     }
 }

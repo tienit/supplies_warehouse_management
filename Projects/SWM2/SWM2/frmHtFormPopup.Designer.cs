@@ -357,6 +357,11 @@
             // 
             this.nud_data_order.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.nud_data_order.Location = new System.Drawing.Point(245, 413);
+            this.nud_data_order.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.nud_data_order.Name = "nud_data_order";
             this.nud_data_order.Size = new System.Drawing.Size(289, 27);
             this.nud_data_order.TabIndex = 18;
