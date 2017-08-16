@@ -645,6 +645,7 @@ namespace VKTIM
 
         private void context_Show_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             this.Show();
         }
 
@@ -660,6 +661,12 @@ namespace VKTIM
                 this.Hide();
                 notifyIconMain.ShowBalloonTip(1500, "VKTIM", "Some important things have come up. Click here to get more detail.", ToolTipIcon.Info);
             }
+        }
+
+        private void notifyIconMain_DoubleClick(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            this.Show();
         }
     }
 }

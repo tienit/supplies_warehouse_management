@@ -510,6 +510,7 @@
             this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
             this.notifyIconMain.Text = "Hệ thống quản lý kho/vật tư Viện kỹ thuật PK-KQ";
             this.notifyIconMain.Visible = true;
+            this.notifyIconMain.DoubleClick += new System.EventHandler(this.notifyIconMain_DoubleClick);
             // 
             // contextMenuStripMain
             // 
@@ -522,14 +523,14 @@
             // context_Show
             // 
             this.context_Show.Name = "context_Show";
-            this.context_Show.Size = new System.Drawing.Size(152, 22);
+            this.context_Show.Size = new System.Drawing.Size(103, 22);
             this.context_Show.Text = "Show";
             this.context_Show.Click += new System.EventHandler(this.context_Show_Click);
             // 
             // context_Exit
             // 
             this.context_Exit.Name = "context_Exit";
-            this.context_Exit.Size = new System.Drawing.Size(152, 22);
+            this.context_Exit.Size = new System.Drawing.Size(103, 22);
             this.context_Exit.Text = "Exit";
             this.context_Exit.Click += new System.EventHandler(this.context_Exit_Click);
             // 
