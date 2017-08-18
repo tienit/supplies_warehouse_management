@@ -52,6 +52,13 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ADOX">
+      <HintPath>Libs\Interop.ADOX.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -351,6 +358,12 @@
     <Compile Include="frmDmPrice.Designer.cs">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmExcelImportWinz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcelImportWinz.Designer.cs">
+      <DependentUpon>frmExcelImportWinz.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSettingPopup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -633,6 +646,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmPrice.resx">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExcelImportWinz.resx">
+      <DependentUpon>frmExcelImportWinz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettingPopup.resx">
       <DependentUpon>frmSettingPopup.cs</DependentUpon>

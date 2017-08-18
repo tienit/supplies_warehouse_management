@@ -1758,4 +1758,37 @@
   <data name="InputWarehouse.UNIT_NAME" xml:space="preserve">
     <value>Đơn vị tính</value>
   </data>
+  <data name="frmExcelImportWinz.btn_Datatable" xml:space="preserve">
+    <value>4. Xuất ra Datatable</value>
+  </data>
+  <data name="frmExcelImportWinz.btn_File" xml:space="preserve">
+    <value>1. Chọn tập tin excel</value>
+  </data>
+  <data name="frmExcelImportWinz.btn_Refres" xml:space="preserve">
+    <value>3. Làm mới</value>
+  </data>
+  <data name="frmExcelImportWinz.col1" xml:space="preserve">
+    <value>Mã cột</value>
+  </data>
+  <data name="frmExcelImportWinz.col2" xml:space="preserve">
+    <value>Tên cột</value>
+  </data>
+  <data name="frmExcelImportWinz.colName" xml:space="preserve">
+    <value>Tên vật tư hàng hóa</value>
+  </data>
+  <data name="frmExcelImportWinz.colPrice" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="frmExcelImportWinz.colQuantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="frmExcelImportWinz.colTotal" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="frmExcelImportWinz.D" xml:space="preserve">
+    <value>Chọn dữ liệu</value>
+  </data>
+  <data name="frmExcelImportWinz.lbl_dis_Sheet" xml:space="preserve">
+    <value>2. Chọn Sheet dữ liệu</value>
+  </data>
 </root>
