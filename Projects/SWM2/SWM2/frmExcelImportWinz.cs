@@ -211,5 +211,21 @@ namespace VKTIM
             f_.Show();
 
         }
+
+        private void com_Sheet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txt_File.Text != "")
+            {
+                try
+                {
+                    FillComboboxData();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }

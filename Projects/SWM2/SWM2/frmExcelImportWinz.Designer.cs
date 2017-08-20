@@ -39,27 +39,27 @@
             this.com_Sheet = new System.Windows.Forms.ComboBox();
             this.lbl_dis_Sheet = new System.Windows.Forms.Label();
             this.grv_Merge = new System.Windows.Forms.DataGridView();
-            this.btn_Refres = new System.Windows.Forms.Button();
             this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Refres = new System.Windows.Forms.Button();
             this.grv_Main = new System.Windows.Forms.DataGridView();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.delToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grv_Total = new System.Windows.Forms.DataGridView();
             this.vatColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.delToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_Datatable = new System.Windows.Forms.Button();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv_Merge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv_Main)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grv_Total)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grv_Total)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_Form
@@ -113,6 +113,7 @@
             this.com_Sheet.Name = "com_Sheet";
             this.com_Sheet.Size = new System.Drawing.Size(188, 21);
             this.com_Sheet.TabIndex = 54;
+            this.com_Sheet.SelectedIndexChanged += new System.EventHandler(this.com_Sheet_SelectedIndexChanged);
             // 
             // lbl_dis_Sheet
             // 
@@ -135,16 +136,6 @@
             this.grv_Merge.Size = new System.Drawing.Size(853, 113);
             this.grv_Merge.TabIndex = 56;
             // 
-            // btn_Refres
-            // 
-            this.btn_Refres.Location = new System.Drawing.Point(28, 227);
-            this.btn_Refres.Name = "btn_Refres";
-            this.btn_Refres.Size = new System.Drawing.Size(155, 23);
-            this.btn_Refres.TabIndex = 57;
-            this.btn_Refres.Text = "3. Làm mới";
-            this.btn_Refres.UseVisualStyleBackColor = true;
-            this.btn_Refres.Click += new System.EventHandler(this.btn_Refres_Click);
-            // 
             // col1
             // 
             this.col1.HeaderText = "Mã cột";
@@ -154,6 +145,16 @@
             // 
             this.col2.HeaderText = "Tên cột";
             this.col2.Name = "col2";
+            // 
+            // btn_Refres
+            // 
+            this.btn_Refres.Location = new System.Drawing.Point(28, 227);
+            this.btn_Refres.Name = "btn_Refres";
+            this.btn_Refres.Size = new System.Drawing.Size(155, 23);
+            this.btn_Refres.TabIndex = 57;
+            this.btn_Refres.Text = "3. Làm mới";
+            this.btn_Refres.UseVisualStyleBackColor = true;
+            this.btn_Refres.Click += new System.EventHandler(this.btn_Refres_Click);
             // 
             // grv_Main
             // 
@@ -203,6 +204,20 @@
             this.colTotal.HeaderText = "Thành tiền";
             this.colTotal.Name = "colTotal";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.delToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
+            // 
+            // delToolStripMenuItem
+            // 
+            this.delToolStripMenuItem.Name = "delToolStripMenuItem";
+            this.delToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.delToolStripMenuItem.Text = "Xóa";
+            this.delToolStripMenuItem.Click += new System.EventHandler(this.delToolStripMenuItem_Click);
+            // 
             // grv_Total
             // 
             this.grv_Total.AllowUserToAddRows = false;
@@ -232,20 +247,6 @@
             this.totalColumn.HeaderText = "Total";
             this.totalColumn.Name = "totalColumn";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.delToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
-            // 
-            // delToolStripMenuItem
-            // 
-            this.delToolStripMenuItem.Name = "delToolStripMenuItem";
-            this.delToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
-            this.delToolStripMenuItem.Text = "Xóa";
-            this.delToolStripMenuItem.Click += new System.EventHandler(this.delToolStripMenuItem_Click);
-            // 
             // btn_Datatable
             // 
             this.btn_Datatable.Location = new System.Drawing.Point(639, 227);
@@ -272,8 +273,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv_Merge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv_Main)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grv_Total)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grv_Total)).EndInit();
             this.ResumeLayout(false);
 
         }
