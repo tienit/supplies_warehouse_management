@@ -146,6 +146,7 @@
             this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.context_Insert_Row = new System.Windows.Forms.ToolStripMenuItem();
             this.context_Delete_Rows = new System.Windows.Forms.ToolStripMenuItem();
+            this.context_Delete_Content = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -1166,25 +1167,34 @@
             // 
             this.contextMenuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.context_Insert_Row,
-            this.context_Delete_Rows});
+            this.context_Delete_Rows,
+            this.context_Delete_Content});
             this.contextMenuStripMain.Name = "contextMenuStripMain";
-            this.contextMenuStripMain.Size = new System.Drawing.Size(147, 48);
+            this.contextMenuStripMain.Size = new System.Drawing.Size(154, 92);
             this.contextMenuStripMain.Closing += new System.Windows.Forms.ToolStripDropDownClosingEventHandler(this.contextMenuStripMain_Closing);
             // 
             // context_Insert_Row
             // 
             this.context_Insert_Row.Name = "context_Insert_Row";
-            this.context_Insert_Row.Size = new System.Drawing.Size(146, 22);
+            this.context_Insert_Row.Size = new System.Drawing.Size(153, 22);
             this.context_Insert_Row.Text = "Insert Row";
             this.context_Insert_Row.Click += new System.EventHandler(this.context_Insert_Row_Click);
             // 
             // context_Delete_Rows
             // 
             this.context_Delete_Rows.Name = "context_Delete_Rows";
-            this.context_Delete_Rows.Size = new System.Drawing.Size(146, 22);
+            this.context_Delete_Rows.Size = new System.Drawing.Size(153, 22);
             this.context_Delete_Rows.Text = "Delete Row(s)";
             this.context_Delete_Rows.Visible = false;
             this.context_Delete_Rows.Click += new System.EventHandler(this.context_Delete_Rows_Click);
+            // 
+            // context_Delete_Content
+            // 
+            this.context_Delete_Content.Name = "context_Delete_Content";
+            this.context_Delete_Content.Size = new System.Drawing.Size(153, 22);
+            this.context_Delete_Content.Text = "Delete Content";
+            this.context_Delete_Content.Visible = false;
+            this.context_Delete_Content.Click += new System.EventHandler(this.context_Delete_Content_Click);
             // 
             // InputWarehouse
             // 
@@ -1346,5 +1356,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStripMain;
         private System.Windows.Forms.ToolStripMenuItem context_Insert_Row;
         private System.Windows.Forms.ToolStripMenuItem context_Delete_Rows;
+        private System.Windows.Forms.ToolStripMenuItem context_Delete_Content;
     }
 }

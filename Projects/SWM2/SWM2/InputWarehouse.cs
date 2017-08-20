@@ -299,6 +299,10 @@ namespace VKTIM
             {
                 PasteClipboardEx(dgv_Data);
             }
+            else if (e.KeyCode == Keys.Delete)
+            {
+                Delete_Content_Cells();
+            }
         }
 
         private void btn_AddNewRows_Click(object sender, EventArgs e)
@@ -333,10 +337,12 @@ namespace VKTIM
                 if (dgv_Data.SelectedCells.Count > 0)
                 {
                     context_Delete_Rows.Visible = true;
+                    context_Delete_Content.Visible = true;
                 }
                 else
                 {
                     context_Delete_Rows.Visible = false;
+                    context_Delete_Content.Visible = true;
                 }
             }
         }
@@ -374,6 +380,19 @@ namespace VKTIM
         private void contextMenuStripMain_Closing(object sender, ToolStripDropDownClosingEventArgs e)
         {
             dgv_Data.ContextMenuStrip = null;
+        }
+
+        private void context_Delete_Content_Click(object sender, EventArgs e)
+        {
+            Delete_Content_Cells();
+        }
+
+        private void Delete_Content_Cells()
+        {
+            foreach (DataGridViewCell cel in dgv_Data.SelectedCells)
+            {
+                cel.Value = null;
+            }
         }
     }
 }                                                                                                                                                                                   
