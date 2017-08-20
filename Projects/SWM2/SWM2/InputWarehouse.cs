@@ -26,6 +26,7 @@ namespace VKTIM
                 {
                     dgv_Data.Rows.Add();
                 }
+                dgv_Data.Rows[0].Cells[0].Selected = false;
                 this.WindowState = FormWindowState.Maximized;
             }
             catch (Exception ex)
@@ -92,9 +93,6 @@ namespace VKTIM
                 //  CHỈ SỐ CỘT CỦA CELL ĐẦU TIÊN ĐƯỢC CHỌN TRÊN GRID    = _FIRST_COLG_SELECTED
                 //  TÊN CỘT CỦA CELL ĐẦU TIÊN ĐƯỢC CHỌN TRÊN GRID       = _FIRST_COLNAME_G_SELECTED
 
-                //  CẦN CÓ DANH SÁCH COLUMN Ở TRÊN GRID - KÈM THEO ĐÓ LÀ INDEX
-                //  ĐỂ CÓ THỂ TÌM ĐƯỢC CÁC COLUMN TIÊP THEO HOẶC LIỀN TRƯỚC NÊU MỘT COLUMN NÀO ĐÓ ĐƯỢC CHỌN LÀM MỐC
-
 
                 //  Total col selected ini Grid and Excel
                 int COLG = 0;
@@ -156,24 +154,21 @@ namespace VKTIM
                 COLG = _LST_COLG.Count;
                 ROWG = _LST_ROWG.Count;
 
-                //string abc = string.Format("Excel: Row={0}, Col={1}  --- Grid: Row={2}, Col={3}", ROWE.ToString(), COLE.ToString(), ROWG.ToString(), COLG.ToString());
-                //MessageBox.Show(abc);
-
-                //Show temp
-                //string result = "First Row: " + FirstRow.ToString() + Environment.NewLine;
-                //foreach (string item in ColumnNames)
-                //{
-                //    result += item + Environment.NewLine;
-                //}
-                //MessageBox.Show(result);
-                //return;
-
                 //  Paste data from EXCEL to GRID
                 if (COLG >= COLE)
                 {
                     //  TRƯỜNG HỢP 1: COLG >= COLE
                     //  Số lượng Column được lựa chọn trên GRID >= Số lượng Column được lựa chọn trên EXCEL
                     //  Do vậy chỉ paste đến Số lượng Column được lựa chọn trên EXCEL
+                    int current_row_2_last = TOTAL_ROWG - _FIRST_ROWG_SELECTED;
+                    if (current_row_2_last < _PASTED_ROWS.Length)
+                    {
+                        for (int i = 0; i < _PASTED_ROWS.Length - current_row_2_last; i++)
+                        {
+                            dgv.Rows.Add();
+                        }
+                    }
+
                     int rowIndexAdded = 0;
                     foreach (string pastedRow in _PASTED_ROWS)
                     {
@@ -232,6 +227,15 @@ namespace VKTIM
                     // So sánh current_2_last với COLE
                     if (current_2_last >= COLE)
                     {
+                        int current_row_2_last = TOTAL_ROWG - _FIRST_ROWG_SELECTED;
+                        if (current_row_2_last < _PASTED_ROWS.Length)
+                        {
+                            for (int i = 0; i < _PASTED_ROWS.Length - current_row_2_last; i++)
+                            {
+                                dgv.Rows.Add();
+                            }
+                        }
+
                         int rowIndexAdded = 0;
                         int cellCount = 0;
                         foreach (string pastedRow in _PASTED_ROWS)
@@ -259,6 +263,15 @@ namespace VKTIM
                         warning += "Hoặc kiểm tra lại số lượng cột dữ liệu được chọn trong Excel." + Environment.NewLine;
                         if (GBTSCCommon.Message_Confirm(string.Format(warning, sub.ToString()), "PASTE") == DialogResult.Yes)
                         {
+                            int current_row_2_last = TOTAL_ROWG - _FIRST_ROWG_SELECTED;
+                            if (current_row_2_last < _PASTED_ROWS.Length)
+                            {
+                                for (int i = 0; i < _PASTED_ROWS.Length - current_row_2_last; i++)
+                                {
+                                    dgv.Rows.Add();
+                                }
+                            }
+
                             int rowIndexAdded = 0;
                             int cellCount = 0;
                             foreach (string pastedRow in _PASTED_ROWS)
@@ -308,6 +321,59 @@ namespace VKTIM
             {
                 e.Value = e.RowIndex + 1;
             }
+        }
+
+        private void dgv_Data_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                dgv_Data.ContextMenuStrip = contextMenuStripMain;
+                contextMenuStripMain.Show(MousePosition);
+
+                if (dgv_Data.SelectedCells.Count > 0)
+                {
+                    context_Delete_Rows.Visible = true;
+                }
+                else
+                {
+                    context_Delete_Rows.Visible = false;
+                }
+            }
+        }
+
+        private void dgv_Data_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow r in dgv_Data.Rows)
+            {
+                r.Cells["colIndex"].Selected = false;
+            }
+        }
+
+        private void context_Insert_Row_Click(object sender, EventArgs e)
+        {
+            dgv_Data.Rows.Add();
+        }
+
+        private void context_Delete_Rows_Click(object sender, EventArgs e)
+        {
+            // Detect number of selected rows
+            List<int> _lst_index = new List<int>();
+            foreach (DataGridViewCell cel in dgv_Data.SelectedCells)
+            {
+                if (!_lst_index.Contains(cel.RowIndex) && cel.RowIndex != dgv_Data.NewRowIndex)
+                {
+                    _lst_index.Add(cel.RowIndex);
+                }
+            }
+            foreach (int rIndex in _lst_index)
+            {
+                dgv_Data.Rows.RemoveAt(rIndex);
+            } 
+        }
+
+        private void contextMenuStripMain_Closing(object sender, ToolStripDropDownClosingEventArgs e)
+        {
+            dgv_Data.ContextMenuStrip = null;
         }
     }
 }                                                                                                                                                                                   

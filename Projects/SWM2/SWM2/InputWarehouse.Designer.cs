@@ -28,10 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputWarehouse));
             this.tab_Main = new System.Windows.Forms.TabControl();
             this.tab_dm_vat_tu = new System.Windows.Forms.TabPage();
             this.dgv_Data = new System.Windows.Forms.DataGridView();
+            this.colIndex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.INPUT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCT_OTHER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCT_CODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCTS_DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCTS_SHORT_DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ORIGIN_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ORIGIN_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UNIT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UNIT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SUPPLIER_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SUPPLIER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRICE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRICE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCTCATEGORY_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCTCATEGORY_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRICE_DEFAULT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.INPUT_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUANTITY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WAREHOUSE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRODUCT_STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IS_BUY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab_kem_theo = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.dgv_Fee = new System.Windows.Forms.DataGridView();
@@ -117,31 +143,9 @@
             this.lbl_dis_NguoiLap = new System.Windows.Forms.Label();
             this.lbl_dis_Nhan = new System.Windows.Forms.Label();
             this.lbl_dis_Giao = new System.Windows.Forms.Label();
-            this.colIndex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.INPUT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCT_OTHER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCT_CODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCTS_DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCTS_SHORT_DESCRIPTION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ORIGIN_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ORIGIN_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UNIT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UNIT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SUPPLIER_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SUPPLIER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRICE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRICE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCTCATEGORY_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCTCATEGORY_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRICE_DEFAULT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.INPUT_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QUANTITY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.WAREHOUSE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCT_STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IS_BUY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.context_Insert_Row = new System.Windows.Forms.ToolStripMenuItem();
+            this.context_Delete_Rows = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -159,6 +163,7 @@
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_InsertRows)).BeginInit();
+            this.contextMenuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_Form
@@ -238,10 +243,172 @@
             this.dgv_Data.Name = "dgv_Data";
             this.dgv_Data.RowHeadersVisible = false;
             this.dgv_Data.RowTemplate.Height = 24;
+            this.dgv_Data.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Data.Size = new System.Drawing.Size(1173, 372);
             this.dgv_Data.TabIndex = 0;
             this.dgv_Data.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_Data_CellFormatting);
+            this.dgv_Data.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_Data_CellMouseClick);
+            this.dgv_Data.SelectionChanged += new System.EventHandler(this.dgv_Data_SelectionChanged);
             this.dgv_Data.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgv_Data_KeyUp);
+            // 
+            // colIndex
+            // 
+            this.colIndex.HeaderText = "No.";
+            this.colIndex.Name = "colIndex";
+            this.colIndex.ReadOnly = true;
+            this.colIndex.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colIndex.Width = 42;
+            // 
+            // INPUT_ID
+            // 
+            this.INPUT_ID.HeaderText = "INPUT_ID";
+            this.INPUT_ID.Name = "INPUT_ID";
+            this.INPUT_ID.Visible = false;
+            // 
+            // PRODUCT_ID
+            // 
+            this.PRODUCT_ID.HeaderText = "PRODUCT_ID";
+            this.PRODUCT_ID.Name = "PRODUCT_ID";
+            this.PRODUCT_ID.Visible = false;
+            // 
+            // PRODUCT_NAME
+            // 
+            this.PRODUCT_NAME.HeaderText = "PRODUCT_NAME";
+            this.PRODUCT_NAME.Name = "PRODUCT_NAME";
+            this.PRODUCT_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PRODUCT_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRODUCT_OTHER_NAME
+            // 
+            this.PRODUCT_OTHER_NAME.HeaderText = "PRODUCT_OTHER_NAME";
+            this.PRODUCT_OTHER_NAME.Name = "PRODUCT_OTHER_NAME";
+            this.PRODUCT_OTHER_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRODUCT_CODE
+            // 
+            this.PRODUCT_CODE.HeaderText = "PRODUCT_CODE";
+            this.PRODUCT_CODE.Name = "PRODUCT_CODE";
+            this.PRODUCT_CODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRODUCTS_DESCRIPTION
+            // 
+            this.PRODUCTS_DESCRIPTION.HeaderText = "PRODUCTS_DESCRIPTION";
+            this.PRODUCTS_DESCRIPTION.Name = "PRODUCTS_DESCRIPTION";
+            this.PRODUCTS_DESCRIPTION.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRODUCTS_SHORT_DESCRIPTION
+            // 
+            this.PRODUCTS_SHORT_DESCRIPTION.HeaderText = "PRODUCTS_SHORT_DESCRIPTION";
+            this.PRODUCTS_SHORT_DESCRIPTION.Name = "PRODUCTS_SHORT_DESCRIPTION";
+            this.PRODUCTS_SHORT_DESCRIPTION.Visible = false;
+            // 
+            // ORIGIN_ID
+            // 
+            this.ORIGIN_ID.HeaderText = "ORIGIN_ID";
+            this.ORIGIN_ID.Name = "ORIGIN_ID";
+            this.ORIGIN_ID.Visible = false;
+            // 
+            // ORIGIN_NAME
+            // 
+            this.ORIGIN_NAME.HeaderText = "ORIGIN_NAME";
+            this.ORIGIN_NAME.Name = "ORIGIN_NAME";
+            this.ORIGIN_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ORIGIN_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // UNIT_ID
+            // 
+            this.UNIT_ID.HeaderText = "UNIT_ID";
+            this.UNIT_ID.Name = "UNIT_ID";
+            this.UNIT_ID.Visible = false;
+            // 
+            // UNIT_NAME
+            // 
+            this.UNIT_NAME.HeaderText = "UNIT_NAME";
+            this.UNIT_NAME.Name = "UNIT_NAME";
+            this.UNIT_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.UNIT_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SUPPLIER_ID
+            // 
+            this.SUPPLIER_ID.HeaderText = "SUPPLIER_ID";
+            this.SUPPLIER_ID.Name = "SUPPLIER_ID";
+            this.SUPPLIER_ID.Visible = false;
+            // 
+            // SUPPLIER_NAME
+            // 
+            this.SUPPLIER_NAME.HeaderText = "SUPPLIER_NAME";
+            this.SUPPLIER_NAME.Name = "SUPPLIER_NAME";
+            this.SUPPLIER_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SUPPLIER_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRICE_ID
+            // 
+            this.PRICE_ID.HeaderText = "PRICE_ID";
+            this.PRICE_ID.Name = "PRICE_ID";
+            this.PRICE_ID.Visible = false;
+            // 
+            // PRICE_NAME
+            // 
+            this.PRICE_NAME.HeaderText = "PRICE_NAME";
+            this.PRICE_NAME.Name = "PRICE_NAME";
+            this.PRICE_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PRICE_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRODUCTCATEGORY_ID
+            // 
+            this.PRODUCTCATEGORY_ID.HeaderText = "PRODUCTCATEGORY_ID";
+            this.PRODUCTCATEGORY_ID.Name = "PRODUCTCATEGORY_ID";
+            this.PRODUCTCATEGORY_ID.Visible = false;
+            // 
+            // PRODUCTCATEGORY_NAME
+            // 
+            this.PRODUCTCATEGORY_NAME.HeaderText = "PRODUCTCATEGORY_NAME";
+            this.PRODUCTCATEGORY_NAME.Name = "PRODUCTCATEGORY_NAME";
+            this.PRODUCTCATEGORY_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PRODUCTCATEGORY_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PRICE_DEFAULT
+            // 
+            this.PRICE_DEFAULT.HeaderText = "PRICE_DEFAULT";
+            this.PRICE_DEFAULT.Name = "PRICE_DEFAULT";
+            this.PRICE_DEFAULT.Visible = false;
+            // 
+            // INPUT_PRICE
+            // 
+            this.INPUT_PRICE.HeaderText = "INPUT_PRICE";
+            this.INPUT_PRICE.Name = "INPUT_PRICE";
+            this.INPUT_PRICE.Visible = false;
+            // 
+            // QUANTITY
+            // 
+            this.QUANTITY.HeaderText = "QUANTITY";
+            this.QUANTITY.Name = "QUANTITY";
+            this.QUANTITY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // WAREHOUSE_ID
+            // 
+            this.WAREHOUSE_ID.HeaderText = "WAREHOUSE_ID";
+            this.WAREHOUSE_ID.Name = "WAREHOUSE_ID";
+            this.WAREHOUSE_ID.Visible = false;
+            // 
+            // PRODUCT_STATUS
+            // 
+            this.PRODUCT_STATUS.HeaderText = "PRODUCT_STATUS";
+            this.PRODUCT_STATUS.Name = "PRODUCT_STATUS";
+            this.PRODUCT_STATUS.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PRODUCT_STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // IS_BUY
+            // 
+            this.IS_BUY.HeaderText = "IS_BUY";
+            this.IS_BUY.Name = "IS_BUY";
+            this.IS_BUY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // TOTAL
+            // 
+            this.TOTAL.HeaderText = "TOTAL";
+            this.TOTAL.Name = "TOTAL";
+            this.TOTAL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // tab_kem_theo
             // 
@@ -995,164 +1162,29 @@
             this.lbl_dis_Giao.TabIndex = 0;
             this.lbl_dis_Giao.Text = "Bên giao:";
             // 
-            // colIndex
+            // contextMenuStripMain
             // 
-            this.colIndex.HeaderText = "No.";
-            this.colIndex.Name = "colIndex";
-            this.colIndex.ReadOnly = true;
-            this.colIndex.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.colIndex.Width = 42;
+            this.contextMenuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.context_Insert_Row,
+            this.context_Delete_Rows});
+            this.contextMenuStripMain.Name = "contextMenuStripMain";
+            this.contextMenuStripMain.Size = new System.Drawing.Size(147, 48);
+            this.contextMenuStripMain.Closing += new System.Windows.Forms.ToolStripDropDownClosingEventHandler(this.contextMenuStripMain_Closing);
             // 
-            // INPUT_ID
+            // context_Insert_Row
             // 
-            this.INPUT_ID.HeaderText = "INPUT_ID";
-            this.INPUT_ID.Name = "INPUT_ID";
-            this.INPUT_ID.Visible = false;
+            this.context_Insert_Row.Name = "context_Insert_Row";
+            this.context_Insert_Row.Size = new System.Drawing.Size(146, 22);
+            this.context_Insert_Row.Text = "Insert Row";
+            this.context_Insert_Row.Click += new System.EventHandler(this.context_Insert_Row_Click);
             // 
-            // PRODUCT_ID
+            // context_Delete_Rows
             // 
-            this.PRODUCT_ID.HeaderText = "PRODUCT_ID";
-            this.PRODUCT_ID.Name = "PRODUCT_ID";
-            this.PRODUCT_ID.Visible = false;
-            // 
-            // PRODUCT_NAME
-            // 
-            this.PRODUCT_NAME.HeaderText = "PRODUCT_NAME";
-            this.PRODUCT_NAME.Name = "PRODUCT_NAME";
-            this.PRODUCT_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PRODUCT_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRODUCT_OTHER_NAME
-            // 
-            this.PRODUCT_OTHER_NAME.HeaderText = "PRODUCT_OTHER_NAME";
-            this.PRODUCT_OTHER_NAME.Name = "PRODUCT_OTHER_NAME";
-            this.PRODUCT_OTHER_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRODUCT_CODE
-            // 
-            this.PRODUCT_CODE.HeaderText = "PRODUCT_CODE";
-            this.PRODUCT_CODE.Name = "PRODUCT_CODE";
-            this.PRODUCT_CODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRODUCTS_DESCRIPTION
-            // 
-            this.PRODUCTS_DESCRIPTION.HeaderText = "PRODUCTS_DESCRIPTION";
-            this.PRODUCTS_DESCRIPTION.Name = "PRODUCTS_DESCRIPTION";
-            this.PRODUCTS_DESCRIPTION.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRODUCTS_SHORT_DESCRIPTION
-            // 
-            this.PRODUCTS_SHORT_DESCRIPTION.HeaderText = "PRODUCTS_SHORT_DESCRIPTION";
-            this.PRODUCTS_SHORT_DESCRIPTION.Name = "PRODUCTS_SHORT_DESCRIPTION";
-            this.PRODUCTS_SHORT_DESCRIPTION.Visible = false;
-            // 
-            // ORIGIN_ID
-            // 
-            this.ORIGIN_ID.HeaderText = "ORIGIN_ID";
-            this.ORIGIN_ID.Name = "ORIGIN_ID";
-            this.ORIGIN_ID.Visible = false;
-            // 
-            // ORIGIN_NAME
-            // 
-            this.ORIGIN_NAME.HeaderText = "ORIGIN_NAME";
-            this.ORIGIN_NAME.Name = "ORIGIN_NAME";
-            this.ORIGIN_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ORIGIN_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // UNIT_ID
-            // 
-            this.UNIT_ID.HeaderText = "UNIT_ID";
-            this.UNIT_ID.Name = "UNIT_ID";
-            this.UNIT_ID.Visible = false;
-            // 
-            // UNIT_NAME
-            // 
-            this.UNIT_NAME.HeaderText = "UNIT_NAME";
-            this.UNIT_NAME.Name = "UNIT_NAME";
-            this.UNIT_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.UNIT_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // SUPPLIER_ID
-            // 
-            this.SUPPLIER_ID.HeaderText = "SUPPLIER_ID";
-            this.SUPPLIER_ID.Name = "SUPPLIER_ID";
-            this.SUPPLIER_ID.Visible = false;
-            // 
-            // SUPPLIER_NAME
-            // 
-            this.SUPPLIER_NAME.HeaderText = "SUPPLIER_NAME";
-            this.SUPPLIER_NAME.Name = "SUPPLIER_NAME";
-            this.SUPPLIER_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.SUPPLIER_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRICE_ID
-            // 
-            this.PRICE_ID.HeaderText = "PRICE_ID";
-            this.PRICE_ID.Name = "PRICE_ID";
-            this.PRICE_ID.Visible = false;
-            // 
-            // PRICE_NAME
-            // 
-            this.PRICE_NAME.HeaderText = "PRICE_NAME";
-            this.PRICE_NAME.Name = "PRICE_NAME";
-            this.PRICE_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PRICE_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRODUCTCATEGORY_ID
-            // 
-            this.PRODUCTCATEGORY_ID.HeaderText = "PRODUCTCATEGORY_ID";
-            this.PRODUCTCATEGORY_ID.Name = "PRODUCTCATEGORY_ID";
-            this.PRODUCTCATEGORY_ID.Visible = false;
-            // 
-            // PRODUCTCATEGORY_NAME
-            // 
-            this.PRODUCTCATEGORY_NAME.HeaderText = "PRODUCTCATEGORY_NAME";
-            this.PRODUCTCATEGORY_NAME.Name = "PRODUCTCATEGORY_NAME";
-            this.PRODUCTCATEGORY_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PRODUCTCATEGORY_NAME.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PRICE_DEFAULT
-            // 
-            this.PRICE_DEFAULT.HeaderText = "PRICE_DEFAULT";
-            this.PRICE_DEFAULT.Name = "PRICE_DEFAULT";
-            this.PRICE_DEFAULT.Visible = false;
-            // 
-            // INPUT_PRICE
-            // 
-            this.INPUT_PRICE.HeaderText = "INPUT_PRICE";
-            this.INPUT_PRICE.Name = "INPUT_PRICE";
-            this.INPUT_PRICE.Visible = false;
-            // 
-            // QUANTITY
-            // 
-            this.QUANTITY.HeaderText = "QUANTITY";
-            this.QUANTITY.Name = "QUANTITY";
-            this.QUANTITY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // WAREHOUSE_ID
-            // 
-            this.WAREHOUSE_ID.HeaderText = "WAREHOUSE_ID";
-            this.WAREHOUSE_ID.Name = "WAREHOUSE_ID";
-            this.WAREHOUSE_ID.Visible = false;
-            // 
-            // PRODUCT_STATUS
-            // 
-            this.PRODUCT_STATUS.HeaderText = "PRODUCT_STATUS";
-            this.PRODUCT_STATUS.Name = "PRODUCT_STATUS";
-            this.PRODUCT_STATUS.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PRODUCT_STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // IS_BUY
-            // 
-            this.IS_BUY.HeaderText = "IS_BUY";
-            this.IS_BUY.Name = "IS_BUY";
-            this.IS_BUY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // TOTAL
-            // 
-            this.TOTAL.HeaderText = "TOTAL";
-            this.TOTAL.Name = "TOTAL";
-            this.TOTAL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.context_Delete_Rows.Name = "context_Delete_Rows";
+            this.context_Delete_Rows.Size = new System.Drawing.Size(146, 22);
+            this.context_Delete_Rows.Text = "Delete Row(s)";
+            this.context_Delete_Rows.Visible = false;
+            this.context_Delete_Rows.Click += new System.EventHandler(this.context_Delete_Rows_Click);
             // 
             // InputWarehouse
             // 
@@ -1166,6 +1198,7 @@
             this.Name = "InputWarehouse";
             this.Text = "InputWarehouse";
             this.Load += new System.EventHandler(this.InputWarehouse_Load);
+            this.Controls.SetChildIndex(this.pn_Form, 0);
             this.pn_Form.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).EndInit();
@@ -1190,6 +1223,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_InsertRows)).EndInit();
+            this.contextMenuStripMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1309,5 +1343,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCT_STATUS;
         private System.Windows.Forms.DataGridViewTextBoxColumn IS_BUY;
         private System.Windows.Forms.DataGridViewTextBoxColumn TOTAL;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStripMain;
+        private System.Windows.Forms.ToolStripMenuItem context_Insert_Row;
+        private System.Windows.Forms.ToolStripMenuItem context_Delete_Rows;
     }
 }
