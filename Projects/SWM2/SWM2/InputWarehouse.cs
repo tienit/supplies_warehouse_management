@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using VKTIM.Common;
+using VKTIM.Component;
 
 namespace VKTIM
 {
@@ -27,12 +28,26 @@ namespace VKTIM
                     dgv_Data.Rows.Add();
                 }
                 dgv_Data.Rows[0].Cells[0].Selected = false;
+
+                //Bind data for ComboBox in DataGridView
+                Bind_Grid_ComboBox();
+
                 this.WindowState = FormWindowState.Maximized;
             }
             catch (Exception ex)
             {
                 GBTSCCommon.Message_Info(ex.Message, GBTSCConstants.MSG_CAPTION_ERROR, GBTSCCommon.MessageType.Message_NG);
             }
+        }
+
+        private void Bind_Grid_ComboBox()
+        {
+            Bind_Grid_Combo_Unit();
+        }
+
+        private void Bind_Grid_Combo_Unit()
+        {
+            // Bind data for ComboBox in Column UNIT_NAME
         }
 
         private void PasteClipboard(DataGridView dgv)
@@ -170,23 +185,38 @@ namespace VKTIM
                     }
 
                     int rowIndexAdded = 0;
-                    foreach (string pastedRow in _PASTED_ROWS)
+                    if (COLG == 1 && COLE == 1 && ROWE == 1)
                     {
-                        _PASTED_ROW_CELLS = pastedRow.Split(new char[] { '\t' });
-                        for (int i = COLG - 1; i >= 0; i--)
+                        foreach (string pastedRow in _PASTED_ROWS)
                         {
-                            if (COLG - 1 - i == COLE)
+                            _PASTED_ROW_CELLS = pastedRow.Split(new char[] { '\t' });
+                            for (int i = _FIRST_ROWG_SELECTED; i < _FIRST_ROWG_SELECTED + ROWG; i++)
                             {
-                                break;
-                            }
-                            else
-                            {
-                                dgv.Rows[_FIRST_ROWG_SELECTED + rowIndexAdded].Cells[_LST_COLG[i]].Value = _PASTED_ROW_CELLS[COLG - 1 - i];
+                                dgv.Rows[i].Cells[_LST_COLG[0]].Value = _PASTED_ROW_CELLS[0];
                             }
                         }
-
-                        rowIndexAdded++;
                     }
+                    else
+                    {
+                        foreach (string pastedRow in _PASTED_ROWS)
+                        {
+                            _PASTED_ROW_CELLS = pastedRow.Split(new char[] { '\t' });
+                            for (int i = COLG - 1; i >= 0; i--)
+                            {
+                                if (COLG - 1 - i == COLE)
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    dgv.Rows[_FIRST_ROWG_SELECTED + rowIndexAdded].Cells[_LST_COLG[i]].Value = _PASTED_ROW_CELLS[COLG - 1 - i];
+                                }
+                            }
+
+                            rowIndexAdded++;
+                        }
+                    }
+                    
                 }
                 else if (COLG < COLE)
                 {
@@ -393,6 +423,228 @@ namespace VKTIM
             {
                 cel.Value = null;
             }
+        }
+
+        private void dgv_Data_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            ComboBox cmb = e.Control as ComboBox;
+            if (cmb != null)
+            {
+                if (dgv_Data.Columns[dgv_Data.CurrentCell.ColumnIndex].Name.Equals("UNIT_NAME"))
+                {
+                    cmb.DataSource = null;
+                    cmb.ValueMember = null;
+                    cmb.DisplayMember = null;
+                    cmb.SelectedIndexChanged -= new EventHandler(Cmb_SelectedIndexChanged);
+
+                    cmb.DataSource = DMUNITController.Instance().GetAll();
+                    cmb.ValueMember = "ID";
+                    cmb.DisplayMember = "UNIT_NAME";
+                    cmb.SelectedIndexChanged += new EventHandler(Cmb_SelectedIndexChanged);
+                }
+                else if (dgv_Data.Columns[dgv_Data.CurrentCell.ColumnIndex].Name.Equals("ORIGIN_NAME"))
+                {
+                    cmb.DataSource = null;
+                    cmb.ValueMember = null;
+                    cmb.DisplayMember = null;
+                    cmb.SelectedIndexChanged -= new EventHandler(CmbOrigin_SelectedIndexChanged);
+
+                    cmb.DataSource = DMORIGINController.Instance().GetAll();
+                    cmb.ValueMember = "ID";
+                    cmb.DisplayMember = "ORIGIN_NAME";
+                    cmb.SelectedIndexChanged += new EventHandler(CmbOrigin_SelectedIndexChanged);
+                }
+                else if (dgv_Data.Columns[dgv_Data.CurrentCell.ColumnIndex].Name.Equals("PRODUCT_NAME"))
+                {
+                    cmb.DataSource = null;
+                    cmb.ValueMember = null;
+                    cmb.DisplayMember = null;
+                    cmb.SelectedIndexChanged -= new EventHandler(CmbProduct_SelectedIndexChanged);
+
+                    cmb.DataSource = DMPRODUCTSController.Instance().GetAll();
+                    cmb.ValueMember = "ID";
+                    cmb.DisplayMember = "PRODUCTS_NAME";
+                    cmb.SelectedIndexChanged += new EventHandler(CmbProduct_SelectedIndexChanged);
+                }
+                else if (dgv_Data.Columns[dgv_Data.CurrentCell.ColumnIndex].Name.Equals("SUPPLIER_NAME"))
+                {
+                    cmb.DataSource = null;
+                    cmb.ValueMember = null;
+                    cmb.DisplayMember = null;
+                    cmb.SelectedIndexChanged -= new EventHandler(CmbSupplier_SelectedIndexChanged);
+
+                    cmb.DataSource = DMSUPPLIERController.Instance().GetAll();
+                    cmb.ValueMember = "ID";
+                    cmb.DisplayMember = "SUPPLIER_NAME";
+                    cmb.SelectedIndexChanged += new EventHandler(CmbSupplier_SelectedIndexChanged);
+                }
+                else if (dgv_Data.Columns[dgv_Data.CurrentCell.ColumnIndex].Name.Equals("PRICE_NAME"))
+                {
+                    cmb.DataSource = null;
+                    cmb.ValueMember = null;
+                    cmb.DisplayMember = null;
+                    cmb.SelectedIndexChanged -= new EventHandler(CmbPrice_SelectedIndexChanged);
+
+                    cmb.DataSource = DMPRICEController.Instance().GetAll();
+                    cmb.ValueMember = "ID";
+                    cmb.DisplayMember = "PRICE_NAME";
+                    cmb.SelectedIndexChanged += new EventHandler(CmbPrice_SelectedIndexChanged);
+                }
+                else if (dgv_Data.Columns[dgv_Data.CurrentCell.ColumnIndex].Name.Equals("PRODUCTCATEGORY_NAME"))
+                {
+                    cmb.DataSource = null;
+                    cmb.ValueMember = null;
+                    cmb.DisplayMember = null;
+                    cmb.SelectedIndexChanged -= new EventHandler(CmbProductCategory_SelectedIndexChanged);
+
+                    cmb.DataSource = DMPRODUCTCATEGORYController.Instance().GetAll();
+                    cmb.ValueMember = "ID";
+                    cmb.DisplayMember = "PRODUCTCATEGORY_NAME";
+                    cmb.SelectedIndexChanged += new EventHandler(CmbProductCategory_SelectedIndexChanged);
+                }
+            }
+        }
+
+        private void Cmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var comboBox = sender as DataGridViewComboBoxEditingControl;
+                if (comboBox.SelectedValue.GetType() != typeof(DMUNITInfo))
+                {
+                    dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["UNIT_ID"].Value = comboBox.SelectedValue;
+                }
+                dgv_Data.AutoResizeRows();
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show(ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+            
+        }
+
+        private void CmbProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var comboBox = sender as DataGridViewComboBoxEditingControl;
+                if (comboBox.SelectedValue.GetType() != typeof(DMPRODUCTSInfo))
+                {
+                    DMPRODUCTSInfo productInfo = DMPRODUCTSController.Instance().GetById(Convert.ToInt32(comboBox.SelectedValue));
+                    if (productInfo != null)
+                    {
+                        dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["PRODUCT_OTHER_NAME"].Value = productInfo.PRODUCTS_NAME_OTHER;
+                        dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["PRODUCT_CODE"].Value = productInfo.PRODUCTS_CODE;
+                        dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["PRODUCTS_DESCRIPTION"].Value = productInfo.PRODUCTS_DESCRIPTION;
+                    }
+                }
+                dgv_Data.AutoResizeRows();
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show(ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+
+        }
+
+        private void CmbSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var comboBox = sender as DataGridViewComboBoxEditingControl;
+                if (comboBox.SelectedValue.GetType() != typeof(DMSUPPLIERInfo))
+                {
+                    dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["SUPPLIER_ID"].Value = comboBox.SelectedValue;
+                }
+                dgv_Data.AutoResizeRows();
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show(ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+
+        }
+
+        private void CmbPrice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var comboBox = sender as DataGridViewComboBoxEditingControl;
+                if (comboBox.SelectedValue.GetType() != typeof(DMPRICEInfo))
+                {
+                    dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["PRICE_ID"].Value = comboBox.SelectedValue;
+                }
+                dgv_Data.AutoResizeRows();
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show(ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+
+        }
+
+        private void CmbProductCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var comboBox = sender as DataGridViewComboBoxEditingControl;
+                if (comboBox.SelectedValue.GetType() != typeof(DMPRODUCTCATEGORYInfo))
+                {
+                    dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["PRODUCTCATEGORY_ID"].Value = comboBox.SelectedValue;
+                }
+                dgv_Data.AutoResizeRows();
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show(ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+
+        }
+
+        private void CmbOrigin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var comboBox = sender as DataGridViewComboBoxEditingControl;
+                if (comboBox.SelectedValue.GetType() != typeof(DMORIGINInfo))
+                {
+                    dgv_Data.Rows[dgv_Data.CurrentCell.RowIndex].Cells["ORIGIN_ID"].Value = comboBox.SelectedValue;
+                }
+                dgv_Data.AutoResizeRows();
+            }
+            catch //(Exception ex)
+            {
+                //MessageBox.Show(ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+
+        }
+
+
+        private void dgv_Data_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            if (e.Exception.Message == "DataGridViewComboBoxCell value is not valid.")
+            {
+                object value = dgv_Data.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                if (!((DataGridViewComboBoxColumn)dgv_Data.Columns[e.ColumnIndex]).Items.Contains(value))
+                {
+                    ((DataGridViewComboBoxColumn)dgv_Data.Columns[e.ColumnIndex]).Items.Add(value);
+                    e.ThrowException = false;
+                }
+            }
+        }
+
+        private void btn_AutosizeColumnMode_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewColumn col in dgv_Data.Columns)
+            {
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            }
+        }
+
+        private void dgv_Data_ColumnWidthChanged(object sender, DataGridViewColumnEventArgs e)
+        {
+            dgv_Data.AutoResizeRows();
         }
     }
 }                                                                                                                                                                                   
