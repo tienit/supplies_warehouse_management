@@ -181,6 +181,8 @@
     <Compile Include="Component\Controller\HTUSEREMPLOYERController.cs" />
     <Compile Include="Component\Controller\HTUSEREMPLOYERPartialClasses.cs" />
     <Compile Include="Component\Controller\HTUSERPartialClasses.cs" />
+    <Compile Include="Component\Controller\TASKWORKLISTController.cs" />
+    <Compile Include="Component\Controller\TASKWORKLISTPartialClasses.cs" />
     <Compile Include="Component\DataProvider\CommonDataProvider.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMEMPLOYER.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMLOCATION.cs" />
@@ -218,6 +220,7 @@
     <Compile Include="Component\DataProvider\DataProviderForHTTITLEEMPLOYER.cs" />
     <Compile Include="Component\DataProvider\DataProviderForHTUSER.cs" />
     <Compile Include="Component\DataProvider\DataProviderForHTUSEREMPLOYER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForTASKWORKLIST.cs" />
     <Compile Include="Component\DataProvider\SqlConnect.cs" />
     <Compile Include="Component\Infos\DMEMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\DMLOCATIONInfo.cs" />
@@ -256,6 +259,7 @@
     <Compile Include="Component\Infos\HTTITLEEMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\HTUSEREMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\HTUSERInfo.cs" />
+    <Compile Include="Component\Infos\TASKWORKLISTInfo.cs" />
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
