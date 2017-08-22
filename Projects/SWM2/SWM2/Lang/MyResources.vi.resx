@@ -1791,4 +1791,16 @@
   <data name="frmExcelImportWinz.lbl_dis_Sheet" xml:space="preserve">
     <value>2. Chọn Sheet dữ liệu</value>
   </data>
+  <data name="frmTaskList" xml:space="preserve">
+    <value>NGÀY MỚI TỐT LÀNH</value>
+  </data>
+  <data name="frmTaskList.colTaskchk" xml:space="preserve">
+    <value>Hoàn thành</value>
+  </data>
+  <data name="frmTaskList.colTaskContents" xml:space="preserve">
+    <value>Nhiệm vụ hôm nay</value>
+  </data>
+  <data name="frmTaskList.colTaskEndDate" xml:space="preserve">
+    <value>Hạn</value>
+  </data>
 </root>

@@ -668,5 +668,11 @@ namespace VKTIM
             this.WindowState = FormWindowState.Maximized;
             this.Show();
         }
+
+        private void taskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTaskList task_f = new frmTaskList();
+            task_f.Show();
+        }
     }
 }
