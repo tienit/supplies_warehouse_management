@@ -33,6 +33,9 @@ namespace VKTIM
                 Bind_Grid_ComboBox();
 
                 this.WindowState = FormWindowState.Maximized;
+
+                Bind_Combobox_Top();
+
             }
             catch (Exception ex)
             {
@@ -50,6 +53,45 @@ namespace VKTIM
             // Bind data for ComboBox in Column UNIT_NAME
         }
 
+        private void Bind_Combobox_Top()
+        {
+            //Bind data for ComboBox Top
+            cmb_data_BenGiao.ValueMember = "ID";
+            cmb_data_BenGiao.DisplayMember = "WAREHOUSE_NAME";
+            cmb_data_BenGiao.DataSource = DMWAREHOUSEController.Instance().GetAll();
+
+            cmb_data_DonViGiao.ValueMember = "ID";
+            cmb_data_DonViGiao.DisplayMember = "ORGANIZATION_NAME";
+            cmb_data_DonViGiao.DataSource = DMORGANIZATIONController.Instance().GetAll();
+
+            cmb_data_BenNhan.ValueMember = "ID";
+            cmb_data_BenNhan.DisplayMember = "WAREHOUSE_NAME";
+            cmb_data_BenNhan.DataSource = DMWAREHOUSEController.Instance().GetAll();
+
+            cmb_data_NguoiNhan.ValueMember = "ID";
+            cmb_data_NguoiNhan.DisplayMember = "EMPLOYER_NAME";
+            cmb_data_NguoiNhan.DataSource = DMEMPLOYERController.Instance().GetAll();
+
+            cmb_data_NguoiLapLenh.ValueMember = "ID";
+            cmb_data_NguoiLapLenh.DisplayMember = "EMPLOYER_NAME";
+            cmb_data_NguoiLapLenh.DataSource = DMEMPLOYERController.Instance().GetAll();
+
+            cmb_data_NguoiGiao.ValueMember = "ID";
+            cmb_data_NguoiGiao.DisplayMember = "EMPLOYER_NAME";
+            cmb_data_NguoiGiao.DataSource = DMEMPLOYERController.Instance().GetAll();
+
+            cmb_data_DonViNhan.ValueMember = "ID";
+            cmb_data_DonViNhan.DisplayMember = "ORGANIZATION_NAME";
+            cmb_data_DonViNhan.DataSource = DMORGANIZATIONController.Instance().GetAll();
+
+            cmb_data_PheDuyet.ValueMember = "ID";
+            cmb_data_PheDuyet.DisplayMember = "EMPLOYER_NAME";
+            cmb_data_PheDuyet.DataSource = DMEMPLOYERController.Instance().GetAll();
+
+            lbl_dis_date.Text = GBTSCCommon.SERVER_NOW().ToShortDateString();
+
+
+        }
         private void PasteClipboard(DataGridView dgv)
         {
             DataObject o = (DataObject)Clipboard.GetDataObject();
