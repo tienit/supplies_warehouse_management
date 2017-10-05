@@ -36,10 +36,12 @@ private string _PRODUCTCATEGORY_NAME;
 private double _PRICE_DEFAULT;
 private double _INPUT_PRICE;
 private double _QUANTITY;
-private int _WAREHOUSE_ID;
+        private double _INPUT_VALUE;
+        private int _WAREHOUSE_ID;
 private string _PRODUCT_STATUS;
 private bool _IS_BUY;
 private double _TOTAL;
+        private int _Sort;
 #endregion
 
 #region "Public Properties"
@@ -148,7 +150,13 @@ private double _TOTAL;
 			set { _QUANTITY = value; }
 		}
 
-		public int WAREHOUSE_ID {
+        public double INPUT_VALUE
+        {
+            get { return _INPUT_VALUE; }
+            set { _INPUT_VALUE = value; }
+        }
+
+        public int WAREHOUSE_ID {
 			get { return _WAREHOUSE_ID; }
 			set { _WAREHOUSE_ID = value; }
 		}
@@ -167,14 +175,20 @@ private double _TOTAL;
 			get { return _TOTAL; }
 			set { _TOTAL = value; }
 		}
-#endregion
 
-#region "Constructors"
-public DTINPUTDETAILInfo()
+        public int Sort
+        {
+            get { return _Sort; }
+            set { _Sort = value; }
+        }
+        #endregion
+
+        #region "Constructors"
+        public DTINPUTDETAILInfo()
 {
 }
 
-public DTINPUTDETAILInfo(int ID, int INPUT_ID, int PRODUCT_ID, string PRODUCT_NAME, string PRODUCT_OTHER_NAME, string PRODUCT_CODE, string PRODUCTS_DESCRIPTION, string PRODUCTS_SHORT_DESCRIPTION, int ORIGIN_ID, string ORIGIN_NAME, int UNIT_ID, string UNIT_NAME, int SUPPLIER_ID, string SUPPLIER_NAME, int PRICE_ID, string PRICE_NAME, int PRODUCTCATEGORY_ID, string PRODUCTCATEGORY_NAME, double PRICE_DEFAULT, double INPUT_PRICE, double QUANTITY, int WAREHOUSE_ID, string PRODUCT_STATUS, bool IS_BUY, double TOTAL)
+public DTINPUTDETAILInfo(int ID, int INPUT_ID, int PRODUCT_ID, string PRODUCT_NAME, string PRODUCT_OTHER_NAME, string PRODUCT_CODE, string PRODUCTS_DESCRIPTION, string PRODUCTS_SHORT_DESCRIPTION, int ORIGIN_ID, string ORIGIN_NAME, int UNIT_ID, string UNIT_NAME, int SUPPLIER_ID, string SUPPLIER_NAME, int PRICE_ID, string PRICE_NAME, int PRODUCTCATEGORY_ID, string PRODUCTCATEGORY_NAME, double PRICE_DEFAULT, double INPUT_PRICE, double QUANTITY, double INPUT_VALUE, int WAREHOUSE_ID, string PRODUCT_STATUS, bool IS_BUY, double TOTAL, int Sort)
 {
 	this.ID = ID;
 	this.INPUT_ID = INPUT_ID;
@@ -197,10 +211,12 @@ public DTINPUTDETAILInfo(int ID, int INPUT_ID, int PRODUCT_ID, string PRODUCT_NA
 	this.PRICE_DEFAULT = PRICE_DEFAULT;
 	this.INPUT_PRICE = INPUT_PRICE;
 	this.QUANTITY = QUANTITY;
+            this.INPUT_VALUE = _INPUT_VALUE;
 	this.WAREHOUSE_ID = WAREHOUSE_ID;
 	this.PRODUCT_STATUS = PRODUCT_STATUS;
 	this.IS_BUY = IS_BUY;
 	this.TOTAL = TOTAL;
+            this.Sort = Sort;
 }
 #endregion
 

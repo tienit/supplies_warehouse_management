@@ -55,6 +55,30 @@
     <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Interop.ADOX">
       <HintPath>Libs\Interop.ADOX.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -69,10 +93,12 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -298,6 +324,12 @@
     <Compile Include="frmDmEmployerPopup.Designer.cs">
       <DependentUpon>frmDmEmployerPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDmInputBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmInputBill.Designer.cs">
+      <DependentUpon>frmDmInputBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmLocation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -369,6 +401,12 @@
     </Compile>
     <Compile Include="frmExcelImportWinz.Designer.cs">
       <DependentUpon>frmExcelImportWinz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridControlCopyPaste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridControlCopyPaste.Designer.cs">
+      <DependentUpon>frmGridControlCopyPaste.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSettingPopup.cs">
       <SubType>Form</SubType>
@@ -571,6 +609,12 @@
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ColorSelector.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -599,6 +643,12 @@
     <Compile Include="UserControl\OrientedTextLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CommonForm.resx">
       <DependentUpon>CommonForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -625,6 +675,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmEmployerPopup.resx">
       <DependentUpon>frmDmEmployerPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmInputBill.resx">
+      <DependentUpon>frmDmInputBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmLocation.resx">
       <DependentUpon>frmDmLocation.cs</DependentUpon>
@@ -661,6 +714,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmExcelImportWinz.resx">
       <DependentUpon>frmExcelImportWinz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridControlCopyPaste.resx">
+      <DependentUpon>frmGridControlCopyPaste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettingPopup.resx">
       <DependentUpon>frmSettingPopup.cs</DependentUpon>
@@ -765,6 +821,7 @@
     <EmbeddedResource Include="Lang\MyResources.ja.resx" />
     <EmbeddedResource Include="Lang\MyResources.resx" />
     <EmbeddedResource Include="Lang\MyResources.vi.resx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -775,8 +832,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\OrientedTextLabel.resx">
       <DependentUpon>OrientedTextLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Fonts\CODE39.ttf" />

@@ -15,6 +15,8 @@ namespace VKTIM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new frmGridControlCopyPaste());
+            //Application.Run(new frmDmInputBill());
             Application.Run(new frmMain());
         }
     }

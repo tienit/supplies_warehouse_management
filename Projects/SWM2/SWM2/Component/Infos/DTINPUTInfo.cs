@@ -32,6 +32,7 @@ private string _CAUSE_DESCRIPTION;
 private int _FUNDS_ID;
 private string _FUNDS_NAME;
 private double _TOTAL_VALUE;
+        private DateTime _DATE_CREATED;
 #endregion
 
 #region "Public Properties"
@@ -119,14 +120,20 @@ private double _TOTAL_VALUE;
 			get { return _TOTAL_VALUE; }
 			set { _TOTAL_VALUE = value; }
 		}
-#endregion
 
-#region "Constructors"
-public DTINPUTInfo()
+        public DateTime DATE_CREATED
+        {
+            get { return _DATE_CREATED; }
+            set { _DATE_CREATED = value; }
+        }
+        #endregion
+
+        #region "Constructors"
+        public DTINPUTInfo()
 {
 }
 
-public DTINPUTInfo(int ID, string INPUT_NAME, string INPUT_CODE, int WAREHOUSE_ID, string WAREHOUSE_NAME, int ORGANIZATION_ID, string ORGANIZATION_NAME, DateTime EXPIRED_DATE, bool IS_ASSET, int USER_ID, string USER_NAME, int IDNUMBER, int IDBOOK, string CAUSE_DESCRIPTION, int FUNDS_ID, string FUNDS_NAME, double TOTAL_VALUE)
+public DTINPUTInfo(int ID, string INPUT_NAME, string INPUT_CODE, int WAREHOUSE_ID, string WAREHOUSE_NAME, int ORGANIZATION_ID, string ORGANIZATION_NAME, DateTime EXPIRED_DATE, bool IS_ASSET, int USER_ID, string USER_NAME, int IDNUMBER, int IDBOOK, string CAUSE_DESCRIPTION, int FUNDS_ID, string FUNDS_NAME, double TOTAL_VALUE, DateTime DATE_CREATED)
 {
 	this.ID = ID;
 	this.INPUT_NAME = INPUT_NAME;
@@ -145,6 +152,7 @@ public DTINPUTInfo(int ID, string INPUT_NAME, string INPUT_CODE, int WAREHOUSE_I
 	this.FUNDS_ID = FUNDS_ID;
 	this.FUNDS_NAME = FUNDS_NAME;
 	this.TOTAL_VALUE = TOTAL_VALUE;
+            this.DATE_CREATED = DATE_CREATED;
 }
 #endregion
 

@@ -79,13 +79,18 @@ public List<DMPRODUCTSInfo> GetAll()
 	return list;
 }
 
-public DataSet GetAll_DS()
+        public DataSet GetAll_DS()
 {
 	return DataProvider.Instance().DM_PRODUCTS_GetAll_DS();
 }
 
-#endregion
+        public DataSet GetAll_DS_Popup()
+        {
+            return DataProvider.Instance().DM_PRODUCTS_GetAll_DS_POPUP();
+        }
 
-}
+        #endregion
+
+    }
 
 }

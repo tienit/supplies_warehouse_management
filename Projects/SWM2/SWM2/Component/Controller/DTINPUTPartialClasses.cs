@@ -25,8 +25,17 @@ public object DB_GetNull(object Field)
 {
 return tienit.core.Null.GetNull(Field, DBNull.Value);
 }
-	// Add custom code here
-}
+        // Add custom code here
+        public DataSet GetInputInfo(int ID)
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DT_INPUT_GetByID", ID);
+        }
+
+        public DataTable GetTop0Row()
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DT_INPUT_Get0Row").Tables[0];
+    }
+    }
 
 public partial class DataProvider
 {

@@ -84,6 +84,10 @@ public DataSet GetAll_DS()
 	return DataProvider.Instance().DT_INPUTDETAIL_GetAll_DS();
 }
 
+        public DataSet GetTop0Row()
+        {
+            return DataProvider.Instance().DT_INPUTDETAIL_GetTop0Row();
+        }
 #endregion
 
 }

@@ -25,12 +25,17 @@ public object DB_GetNull(object Field)
 {
 return tienit.core.Null.GetNull(Field, DBNull.Value);
 }
-	// Add custom code here
-}
+        // Add custom code here
+        public virtual DataTable GetAllByInputID(int InputID)
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DT_INPUTDETAIL_GetAllByInputID", InputID).Tables[0];
+        }
+    }
 
 public partial class DataProvider
 {
-	// Add custom code here
-}
+        // Add custom code here
+
+    }
 
 }

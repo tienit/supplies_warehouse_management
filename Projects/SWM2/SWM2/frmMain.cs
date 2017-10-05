@@ -18,6 +18,7 @@ namespace VKTIM
         frmSplashLoadForm m_Splash; //Splash form / Wait form
         CommonFormAdmin frmCommonAdmin = null;
         CommonForm frmCommon = null;
+        Form form_none = null;
         string CM_NONE_OR_ADMIN = "CM_NONE";
 
         public frmMain()
@@ -251,8 +252,29 @@ namespace VKTIM
             }
             catch
             {
+
+            }
+
+            try
+            {
                 frmCommon = (CommonForm)frm;
                 CM_NONE_OR_ADMIN = "CM_NONE";
+            }
+            catch //(Exception)
+            {
+
+               // throw;
+            }
+
+            try
+            {
+                form_none = (Form)frm;
+                CM_NONE_OR_ADMIN = "CM_NONE2";
+            }
+            catch// (Exception)
+            {
+
+              //  throw;
             }
 
             if (CM_NONE_OR_ADMIN.Equals("CM_ADMIN"))
@@ -265,6 +287,17 @@ namespace VKTIM
             {
                 frmCommon.LoadCompleted += AdminForm_LoadCompleted;
                 frmCommon.Show();
+            }
+            else if (CM_NONE_OR_ADMIN.Equals("CM_NONE2"))
+            {
+                if (m_Splash == null || m_Splash.Disposing || m_Splash.IsDisposed)
+                {
+                    return;
+                }
+                m_Splash.Invoke(new Action(() => { m_Splash.Close(); }));
+                m_Splash.Dispose();
+                m_Splash = null;
+                form_none.Show();
             }
         }
 
@@ -287,6 +320,7 @@ namespace VKTIM
             {
                 frmCommon.Activate();
             }
+            
             
         }
 

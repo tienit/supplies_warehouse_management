@@ -41,6 +41,11 @@ return tienit.core.Null.GetNull(Field, DBNull.Value);
         {
             return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_PRODUCTS_Search", DB_GetNull(keyword)).Tables[0];
         }
+
+        public DataTable GetAll_ForSearchItem()
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_PRODUCTS_GetAll_SearchItem").Tables[0];
+        }
     }
 
 public partial class DataProvider
