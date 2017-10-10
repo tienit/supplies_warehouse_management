@@ -19,6 +19,8 @@ using tienit.core;
 using DevExpress.XtraVerticalGrid.Rows;
 using DevExpress.XtraGrid.Views.Grid;
 using VKTIM.Common;
+using VKTIM.Reports;
+using DevExpress.XtraReports.UI;
 
 namespace VKTIM
 {
@@ -366,10 +368,7 @@ namespace VKTIM
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void selectColumnToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -475,27 +474,9 @@ namespace VKTIM
 
         }
 
-        private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
-        {
 
 
 
-        }
-
-
-        private void lookUpEdit1_KeyDown(object sender, KeyEventArgs e)
-        {
-           
-
-
-
-
-        }
-
-        private void comboBoxEdit1_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-        }
 
         private void searchLookUpEdit1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -535,20 +516,9 @@ namespace VKTIM
             return 0;
         }
 
-        private void grv_Main_GotFocus(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void grv_Main_FocusedColumnChanged(object sender, FocusedColumnChangedEventArgs e)
-        {
-            //grv_Main.ShowEditor();
-        }
 
-        private void grv_Main_KeyDown(object sender, KeyEventArgs e)
-        {
 
-        }
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -602,10 +572,6 @@ namespace VKTIM
             f.Show();
         }
 
-        private void propertyGridControl1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void insertClipboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -693,28 +659,7 @@ namespace VKTIM
             
         }
 
-        private void grv_Main_CustomUnboundColumnData(object sender, CustomColumnDataEventArgs e)
-        {
-            //if (e.IsGetData)
-            //{
-            //    e.Value = Convert.ToInt32((e.Row as DataRowView).Row["QUANTITY"]) * Convert.ToDecimal((e.Row as DataRowView).Row["PRICE_NAME"]);
-            //}
-         
-        }
-
-        private void grv_Main_MasterRowExpanded(object sender, DevExpress.XtraGrid.Views.Grid.CustomMasterRowEventArgs e)
-        {
-
-            //GridView view = grv_Main.GetDetailView(e.RowHandle, e.RelationIndex) as GridView;
-            //view.CustomUnboundColumnData += new DevExpress.XtraGrid.Views.Base.CustomColumnDataEventHandler(grv_Main_CustomUnboundColumnData);
-            //view.RefreshData();
-
-        }
-
-        private void grv_Main_ColumnChanged(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -728,8 +673,14 @@ namespace VKTIM
         {
             if (e.Page.Name == "xPageInvoce")
             {
-                ribbonControl1.SelectedPage = ribInvoice;
+                ribMenuTop.SelectedPage = ribInvoice;
             }
+        }
+
+        private void bar_btnPrintShow_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmReport f = new frmReport();
+            f.Show();
         }
     }
 }
