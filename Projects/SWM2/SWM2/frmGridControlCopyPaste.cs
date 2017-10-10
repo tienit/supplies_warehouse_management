@@ -18,6 +18,7 @@ using VKTIM.Component;
 using tienit.core;
 using DevExpress.XtraVerticalGrid.Rows;
 using DevExpress.XtraGrid.Views.Grid;
+using VKTIM.Common;
 
 namespace VKTIM
 {
@@ -54,33 +55,47 @@ namespace VKTIM
                 r["Sort"] = i.ToString();
                 MainDatasrouce.Rows.Add(r);
 
-            }                
+            }
+
             
-           
 
 
-            //left info
-            //vGridControl1.DataSource = DTINPUTController.Instance().GetInputInfo(1).Tables[0];
+             //left info
+             //vGridControl1.DataSource = DTINPUTController.Instance().GetInputInfo(1).Tables[0];
             DataTable vgridData = DTINPUTController.Instance().GetTop0Row();
             DataRow vr = vgridData.NewRow();
-            vr["DATE_CREATED"] = DateTime.Now.ToLongDateString();
-            vr["ID"] = this.inputMain.ID;
-            vr["INPUT_NAME"] = this.inputMain.INPUT_NAME;
-            vr["INPUT_CODE"] = this.inputMain.INPUT_CODE;
-            vr["WAREHOUSE_ID"] = this.inputMain.WAREHOUSE_ID;
-            vr["WAREHOUSE_NAME"] = this.inputMain.WAREHOUSE_NAME;
-            vr["EXPIRED_DATE"] = this.inputMain.EXPIRED_DATE;
-            vr["IS_ASSET"] = this.inputMain.IS_ASSET;
-            vr["USER_ID"] = this.inputMain.USER_ID;
-            vr["USER_NAME"] = this.inputMain.USER_NAME;
-            vr["IDNUMBER"] = this.inputMain.IDNUMBER;
-            vr["IDBOOK"] = this.inputMain.IDBOOK;
-            vr["CAUSE_DESCRIPTION"] = this.inputMain.CAUSE_DESCRIPTION;
-            vr["FUNDS_ID"] = this.inputMain.FUNDS_ID;
-            vr["FUNDS_NAME"] = this.inputMain.FUNDS_NAME;
-            vr["TOTAL_VALUE"] = this.inputMain.TOTAL_VALUE;
-            vr["ORGANIZATION_NAME"] = this.inputMain.ORGANIZATION_NAME;
-            vr["ORGANIZATION_ID"] = this.inputMain.ORGANIZATION_ID;
+            this.inputMain = DTINPUTController.Instance().GetById(this.inputMain.ID);//gọi lại lần nữa để lấy data mới nhất từ csdl
+
+            if (this.inputMain != null)
+            {
+                vr["ID"] = this.inputMain.ID;
+                vr["DATE_CREATED"] = String.Format("{0}", this.inputMain.DATE_CREATED);
+                vr["INPUT_NAME"] = this.inputMain.INPUT_NAME;
+                vr["INPUT_CODE"] = this.inputMain.INPUT_CODE;
+                vr["WAREHOUSE_ID"] = this.inputMain.WAREHOUSE_ID;
+                vr["WAREHOUSE_NAME"] = this.inputMain.WAREHOUSE_NAME;
+                vr["EXPIRED_DATE"] = String.Format("{0}", this.inputMain.EXPIRED_DATE); 
+                vr["IS_ASSET"] = this.inputMain.IS_ASSET;
+                vr["USER_ID"] = this.inputMain.USER_ID;
+                vr["USER_NAME"] = this.inputMain.USER_NAME;
+                vr["IDNUMBER"] = this.inputMain.IDNUMBER;
+                vr["IDBOOK"] = this.inputMain.IDBOOK;
+                vr["CAUSE_DESCRIPTION"] = this.inputMain.CAUSE_DESCRIPTION;
+                vr["FUNDS_ID"] = this.inputMain.FUNDS_ID;
+                vr["FUNDS_NAME"] = this.inputMain.FUNDS_NAME;
+                vr["TOTAL_VALUE"] = this.inputMain.TOTAL_VALUE;
+                vr["ORGANIZATION_NAME"] = this.inputMain.ORGANIZATION_NAME;
+                vr["ORGANIZATION_ID"] = this.inputMain.ORGANIZATION_ID;
+            }
+            else
+            {
+                vr["DATE_CREATED"] = DateTime.Now;
+                vr["USER_NAME"] = GBTSCConstants.CURRENT_USER.USER_NAME;
+                vr["ID"] = GBTSCConstants.CURRENT_USER.ID;
+                vr["EXPIRED_DATE"] = DateTime.Now.AddDays(10);
+
+            }
+
             vgridData.Rows.Add(vr);
             vGridControl1.DataSource = vgridData;
 
@@ -102,7 +117,7 @@ namespace VKTIM
                 repositoryItemComboBox3.Items.Add(organi.Rows[o]["ORGANIZATION_NAME"]);
             }
 
-            if (this.inputMain.ID != 0)
+            if (this.inputMain != null)
             {
                 this.MainDatasrouce = DTINPUTDETAILController.Instance().GetAllByInputID(inputMain.ID);                
             }
@@ -257,7 +272,7 @@ namespace VKTIM
                 }
 
 
-                //splashScreenManager1.ShowWaitForm();
+                splashScreenManager1.ShowWaitForm();
                 //Duyệt danh sách các row trong clipboard đưa vào grid
                 for (int line = 0; line < MAX_ROW_PASTE; line++)
                 {
@@ -276,7 +291,7 @@ namespace VKTIM
                     }
                 }
 
-                //splashScreenManager1.CloseWaitForm();
+                splashScreenManager1.CloseWaitForm();
             }
             catch //(Exception ex)
             {
@@ -353,23 +368,7 @@ namespace VKTIM
 
         private void button2_Click(object sender, EventArgs e)
         {
-            for (int rowHandle = 0; rowHandle < MainDatasrouce.Rows.Count - 1; rowHandle++)
-            {
-                try
-                {
-                    decimal quantity = Convert.ToDecimal(grv_Main.GetRowCellValue(rowHandle, "QUANTITY").ToString().Replace(".", "").Replace(",", ""));
-                    decimal price = Convert.ToDecimal(grv_Main.GetRowCellValue(rowHandle, "PRICE_NAME").ToString().Replace(".", "").Replace(",", ""));
-                    decimal total = quantity * price;
 
-                    grv_Main.SetRowCellValue(rowHandle, "TOTAL", total.ToString());
-                }
-                catch //(Exception)
-                {
-
-                    //throw;
-                }
-
-            }
         }
 
         private void selectColumnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -415,9 +414,10 @@ namespace VKTIM
         bool multiCellChangeClick = false;
         private void grv_Main_CellValueChanged(object sender, CellValueChangedEventArgs e)
         {
-            //if (multiCellChangeClick)
-            //OnCellValueChanged(e);
+            if (multiCellChangeClick)
+                OnCellValueChanged(e);
 
+            
             if (e.Column.FieldName == "PRICE_NAME" || e.Column.FieldName == "INPUT_VALUE")
             {
                 try
@@ -629,11 +629,12 @@ namespace VKTIM
             Info.ORGANIZATION_NAME = dt.Rows[0]["ORGANIZATION_NAME"].ToString();
             Info.USER_NAME = dt.Rows[0]["USER_NAME"].ToString();
             Info.INPUT_CODE = dt.Rows[0]["INPUT_CODE"].ToString();
-            
+      
 
             DTINPUTInfo inputNew = new    DTINPUTInfo();
-            if (this.inputMain.ID > 0)
+            if (this.inputMain != null)
             {
+                Info.ID = this.inputMain.ID;
                 int update =  DTINPUTController.Instance().Update(Info);
             }
             else
@@ -664,7 +665,10 @@ namespace VKTIM
                         }
                         else
                         {
-                            product.INPUT_ID = this.inputMain.ID;
+                            if (this.inputMain != null)
+                            {
+                                product.INPUT_ID = this.inputMain.ID;
+                            }
                             DTINPUTDETAILController.Instance().Insert(product);
                         }
                         
@@ -718,11 +722,6 @@ namespace VKTIM
             rr["Sort"] = grv_Main.RowCount + 1;
             MainDatasrouce.Rows.Add(rr);
             grv_Main.FocusedRowHandle = grv_Main.RowCount - 1;
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
