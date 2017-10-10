@@ -86,7 +86,7 @@
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribInvoice = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -95,7 +95,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.xPageItems = new DevExpress.XtraTab.XtraTabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -143,7 +143,7 @@
             this.repositoryItemLookUpEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemMarqueeProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemMarqueeProgressBar();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.xPageInvoce = new DevExpress.XtraTab.XtraTabPage();
             this.grcInvoice = new DevExpress.XtraGrid.GridControl();
             this.grvInvoice = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -152,36 +152,51 @@
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.xPageOption = new DevExpress.XtraTab.XtraTabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmb_data_BenGiao = new System.Windows.Forms.ComboBox();
+            this.lbl_dis_Giao = new System.Windows.Forms.Label();
+            this.cmb_data_DonViGiao = new System.Windows.Forms.ComboBox();
+            this.lbl_dis_DVGiao = new System.Windows.Forms.Label();
             this.cmb_data_DonViNhan = new System.Windows.Forms.ComboBox();
             this.cmb_data_BenNhan = new System.Windows.Forms.ComboBox();
-            this.cmb_data_DonViGiao = new System.Windows.Forms.ComboBox();
-            this.cmb_data_PheDuyet = new System.Windows.Forms.ComboBox();
-            this.cmb_data_NguoiNhan = new System.Windows.Forms.ComboBox();
-            this.cmb_data_NguoiGiao = new System.Windows.Forms.ComboBox();
-            this.cmb_data_NguoiLapLenh = new System.Windows.Forms.ComboBox();
-            this.cmb_data_BenGiao = new System.Windows.Forms.ComboBox();
-            this.lbl_dis_DVNhan = new System.Windows.Forms.Label();
-            this.lbl_dis_Status = new System.Windows.Forms.Label();
-            this.lbl_dis_DVGiao = new System.Windows.Forms.Label();
-            this.lbl_dis_NguoiPheDuyet = new System.Windows.Forms.Label();
-            this.lbl_dis_Quyen = new System.Windows.Forms.Label();
-            this.lbl_dis_NguoiNhan = new System.Windows.Forms.Label();
-            this.lbl_dis_date = new System.Windows.Forms.Label();
-            this.lbl_dis_NguoiGiao = new System.Windows.Forms.Label();
-            this.lbl_dis_So = new System.Windows.Forms.Label();
-            this.lbl_dis_NguoiLap = new System.Windows.Forms.Label();
             this.lbl_dis_Nhan = new System.Windows.Forms.Label();
-            this.lbl_dis_Giao = new System.Windows.Forms.Label();
+            this.cmb_data_NguoiLapLenh = new System.Windows.Forms.ComboBox();
+            this.lbl_dis_DVNhan = new System.Windows.Forms.Label();
+            this.lbl_dis_NguoiLap = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.xPageOverview = new DevExpress.XtraTab.XtraTabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetDockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
-            this.xtraTabPage1.SuspendLayout();
+            this.xPageItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).BeginInit();
@@ -198,10 +213,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMarqueeProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
-            this.xtraTabPage2.SuspendLayout();
+            this.xPageInvoce.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvInvoice)).BeginInit();
-            this.xtraTabPage3.SuspendLayout();
+            this.xPageOption.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.xPageOverview.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager2
@@ -343,7 +367,7 @@
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage4,
-            this.ribbonPage3,
+            this.ribInvoice,
             this.ribbonPage6});
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
             this.ribbonControl1.Size = new System.Drawing.Size(1020, 116);
@@ -555,24 +579,28 @@
             // 
             this.barButtonItem29.Caption = "Thêm chứng từ";
             this.barButtonItem29.Id = 30;
+            this.barButtonItem29.ImageOptions.Image = global::VKTIM.Properties.Resources.e_icon_add_24;
             this.barButtonItem29.Name = "barButtonItem29";
             // 
             // barButtonItem30
             // 
             this.barButtonItem30.Caption = "Sửa chứng từ";
             this.barButtonItem30.Id = 31;
+            this.barButtonItem30.ImageOptions.Image = global::VKTIM.Properties.Resources.e_icon_edit_24;
             this.barButtonItem30.Name = "barButtonItem30";
             // 
             // barButtonItem31
             // 
             this.barButtonItem31.Caption = "Xóa chứng từ";
             this.barButtonItem31.Id = 32;
+            this.barButtonItem31.ImageOptions.Image = global::VKTIM.Properties.Resources.e_icon_del_24;
             this.barButtonItem31.Name = "barButtonItem31";
             // 
             // barButtonItem32
             // 
             this.barButtonItem32.Caption = "Xuất danh mục chứng từ";
             this.barButtonItem32.Id = 33;
+            this.barButtonItem32.ImageOptions.Image = global::VKTIM.Properties.Resources.e_icon_list2_24;
             this.barButtonItem32.Name = "barButtonItem32";
             // 
             // barButtonItem33
@@ -662,13 +690,13 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "In trình phê duyệt";
             // 
-            // ribbonPage3
+            // ribInvoice
             // 
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribInvoice.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup10,
             this.ribbonPageGroup11});
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "Chứng từ";
+            this.ribInvoice.Name = "ribInvoice";
+            this.ribInvoice.Text = "Chứng từ";
             // 
             // ribbonPageGroup10
             // 
@@ -724,25 +752,27 @@
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 116);
             this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.SelectedTabPage = this.xPageItems;
             this.xtraTabControl1.Size = new System.Drawing.Size(1020, 512);
             this.xtraTabControl1.TabIndex = 17;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2,
-            this.xtraTabPage3});
+            this.xPageOverview,
+            this.xPageItems,
+            this.xPageInvoce,
+            this.xPageOption});
+            this.xtraTabControl1.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl1_SelectedPageChanged);
             // 
-            // xtraTabPage1
+            // xPageItems
             // 
-            this.xtraTabPage1.Controls.Add(this.button2);
-            this.xtraTabPage1.Controls.Add(this.button4);
-            this.xtraTabPage1.Controls.Add(this.button1);
-            this.xtraTabPage1.Controls.Add(this.vGridControl1);
-            this.xtraTabPage1.Controls.Add(this.searchLookUpEdit1);
-            this.xtraTabPage1.Controls.Add(this.grc_Main);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1014, 484);
-            this.xtraTabPage1.Text = "Thông tin phiếu nhập";
+            this.xPageItems.Controls.Add(this.button2);
+            this.xPageItems.Controls.Add(this.button4);
+            this.xPageItems.Controls.Add(this.button1);
+            this.xPageItems.Controls.Add(this.vGridControl1);
+            this.xPageItems.Controls.Add(this.searchLookUpEdit1);
+            this.xPageItems.Controls.Add(this.grc_Main);
+            this.xPageItems.Name = "xPageItems";
+            this.xPageItems.Size = new System.Drawing.Size(1014, 484);
+            this.xPageItems.Text = "Danh mục vật tư";
             // 
             // button2
             // 
@@ -1328,12 +1358,12 @@
             "ỔN ÁP LIOA DR3-20K"});
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
-            // xtraTabPage2
+            // xPageInvoce
             // 
-            this.xtraTabPage2.Controls.Add(this.grcInvoice);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1014, 484);
-            this.xtraTabPage2.Text = "Chứng từ kèm theo";
+            this.xPageInvoce.Controls.Add(this.grcInvoice);
+            this.xPageInvoce.Name = "xPageInvoce";
+            this.xPageInvoce.Size = new System.Drawing.Size(1014, 484);
+            this.xPageInvoce.Text = "Chứng từ kèm theo";
             // 
             // grcInvoice
             // 
@@ -1406,64 +1436,71 @@
             this.gridColumn14.VisibleIndex = 5;
             this.gridColumn14.Width = 57;
             // 
-            // xtraTabPage3
+            // xPageOption
             // 
-            this.xtraTabPage3.Controls.Add(this.textBox3);
-            this.xtraTabPage3.Controls.Add(this.textBox2);
-            this.xtraTabPage3.Controls.Add(this.textBox1);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_DonViNhan);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_BenNhan);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_DonViGiao);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_PheDuyet);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_NguoiNhan);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_NguoiGiao);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_NguoiLapLenh);
-            this.xtraTabPage3.Controls.Add(this.cmb_data_BenGiao);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_DVNhan);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_Status);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_DVGiao);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_NguoiPheDuyet);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_Quyen);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_NguoiNhan);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_date);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_NguoiGiao);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_So);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_NguoiLap);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_Nhan);
-            this.xtraTabPage3.Controls.Add(this.lbl_dis_Giao);
-            this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1014, 484);
-            this.xtraTabPage3.Text = "Lựa chọn";
+            this.xPageOption.Controls.Add(this.groupBox2);
+            this.xPageOption.Controls.Add(this.groupBox1);
+            this.xPageOption.Name = "xPageOption";
+            this.xPageOption.Size = new System.Drawing.Size(1014, 484);
+            this.xPageOption.Text = "Lựa chọn";
             // 
-            // textBox3
+            // groupBox1
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(577, 120);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 21);
-            this.textBox3.TabIndex = 25;
-            this.textBox3.Text = "[Chưa phê duyệt], [Chưa đóng dấu]";
+            this.groupBox1.Controls.Add(this.cmb_data_BenGiao);
+            this.groupBox1.Controls.Add(this.lbl_dis_Giao);
+            this.groupBox1.Controls.Add(this.cmb_data_DonViGiao);
+            this.groupBox1.Controls.Add(this.lbl_dis_DVGiao);
+            this.groupBox1.Controls.Add(this.cmb_data_DonViNhan);
+            this.groupBox1.Controls.Add(this.cmb_data_BenNhan);
+            this.groupBox1.Controls.Add(this.lbl_dis_Nhan);
+            this.groupBox1.Controls.Add(this.cmb_data_NguoiLapLenh);
+            this.groupBox1.Controls.Add(this.lbl_dis_DVNhan);
+            this.groupBox1.Controls.Add(this.lbl_dis_NguoiLap);
+            this.groupBox1.Location = new System.Drawing.Point(68, 14);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(439, 241);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tổng kho";
             // 
-            // textBox2
+            // cmb_data_BenGiao
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(577, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 21);
-            this.textBox2.TabIndex = 24;
+            this.cmb_data_BenGiao.FormattingEnabled = true;
+            this.cmb_data_BenGiao.Location = new System.Drawing.Point(143, 44);
+            this.cmb_data_BenGiao.Name = "cmb_data_BenGiao";
+            this.cmb_data_BenGiao.Size = new System.Drawing.Size(187, 21);
+            this.cmb_data_BenGiao.TabIndex = 22;
             // 
-            // textBox1
+            // lbl_dis_Giao
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(577, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 21);
-            this.textBox1.TabIndex = 23;
+            this.lbl_dis_Giao.AutoSize = true;
+            this.lbl_dis_Giao.Location = new System.Drawing.Point(58, 47);
+            this.lbl_dis_Giao.Name = "lbl_dis_Giao";
+            this.lbl_dis_Giao.Size = new System.Drawing.Size(71, 13);
+            this.lbl_dis_Giao.TabIndex = 14;
+            this.lbl_dis_Giao.Text = "Trợ lý vật tư:";
+            // 
+            // cmb_data_DonViGiao
+            // 
+            this.cmb_data_DonViGiao.FormattingEnabled = true;
+            this.cmb_data_DonViGiao.Location = new System.Drawing.Point(143, 73);
+            this.cmb_data_DonViGiao.Name = "cmb_data_DonViGiao";
+            this.cmb_data_DonViGiao.Size = new System.Drawing.Size(187, 21);
+            this.cmb_data_DonViGiao.TabIndex = 19;
+            // 
+            // lbl_dis_DVGiao
+            // 
+            this.lbl_dis_DVGiao.AutoSize = true;
+            this.lbl_dis_DVGiao.Location = new System.Drawing.Point(61, 76);
+            this.lbl_dis_DVGiao.Name = "lbl_dis_DVGiao";
+            this.lbl_dis_DVGiao.Size = new System.Drawing.Size(68, 13);
+            this.lbl_dis_DVGiao.TabIndex = 11;
+            this.lbl_dis_DVGiao.Text = "Kế toán kho:";
             // 
             // cmb_data_DonViNhan
             // 
             this.cmb_data_DonViNhan.FormattingEnabled = true;
-            this.cmb_data_DonViNhan.Location = new System.Drawing.Point(117, 120);
+            this.cmb_data_DonViNhan.Location = new System.Drawing.Point(143, 100);
             this.cmb_data_DonViNhan.Name = "cmb_data_DonViNhan";
             this.cmb_data_DonViNhan.Size = new System.Drawing.Size(187, 21);
             this.cmb_data_DonViNhan.TabIndex = 21;
@@ -1471,166 +1508,302 @@
             // cmb_data_BenNhan
             // 
             this.cmb_data_BenNhan.FormattingEnabled = true;
-            this.cmb_data_BenNhan.Location = new System.Drawing.Point(117, 93);
+            this.cmb_data_BenNhan.Location = new System.Drawing.Point(143, 174);
             this.cmb_data_BenNhan.Name = "cmb_data_BenNhan";
             this.cmb_data_BenNhan.Size = new System.Drawing.Size(187, 21);
             this.cmb_data_BenNhan.TabIndex = 20;
             // 
-            // cmb_data_DonViGiao
+            // lbl_dis_Nhan
             // 
-            this.cmb_data_DonViGiao.FormattingEnabled = true;
-            this.cmb_data_DonViGiao.Location = new System.Drawing.Point(117, 66);
-            this.cmb_data_DonViGiao.Name = "cmb_data_DonViGiao";
-            this.cmb_data_DonViGiao.Size = new System.Drawing.Size(187, 21);
-            this.cmb_data_DonViGiao.TabIndex = 19;
-            // 
-            // cmb_data_PheDuyet
-            // 
-            this.cmb_data_PheDuyet.FormattingEnabled = true;
-            this.cmb_data_PheDuyet.Location = new System.Drawing.Point(117, 242);
-            this.cmb_data_PheDuyet.Name = "cmb_data_PheDuyet";
-            this.cmb_data_PheDuyet.Size = new System.Drawing.Size(187, 21);
-            this.cmb_data_PheDuyet.TabIndex = 18;
-            // 
-            // cmb_data_NguoiNhan
-            // 
-            this.cmb_data_NguoiNhan.FormattingEnabled = true;
-            this.cmb_data_NguoiNhan.Location = new System.Drawing.Point(117, 215);
-            this.cmb_data_NguoiNhan.Name = "cmb_data_NguoiNhan";
-            this.cmb_data_NguoiNhan.Size = new System.Drawing.Size(187, 21);
-            this.cmb_data_NguoiNhan.TabIndex = 17;
-            // 
-            // cmb_data_NguoiGiao
-            // 
-            this.cmb_data_NguoiGiao.FormattingEnabled = true;
-            this.cmb_data_NguoiGiao.Location = new System.Drawing.Point(117, 188);
-            this.cmb_data_NguoiGiao.Name = "cmb_data_NguoiGiao";
-            this.cmb_data_NguoiGiao.Size = new System.Drawing.Size(187, 21);
-            this.cmb_data_NguoiGiao.TabIndex = 16;
+            this.lbl_dis_Nhan.AutoSize = true;
+            this.lbl_dis_Nhan.Location = new System.Drawing.Point(38, 177);
+            this.lbl_dis_Nhan.Name = "lbl_dis_Nhan";
+            this.lbl_dis_Nhan.Size = new System.Drawing.Size(91, 13);
+            this.lbl_dis_Nhan.TabIndex = 13;
+            this.lbl_dis_Nhan.Text = "Kế toán tài chính:";
             // 
             // cmb_data_NguoiLapLenh
             // 
             this.cmb_data_NguoiLapLenh.FormattingEnabled = true;
-            this.cmb_data_NguoiLapLenh.Location = new System.Drawing.Point(117, 161);
+            this.cmb_data_NguoiLapLenh.Location = new System.Drawing.Point(143, 127);
             this.cmb_data_NguoiLapLenh.Name = "cmb_data_NguoiLapLenh";
             this.cmb_data_NguoiLapLenh.Size = new System.Drawing.Size(187, 21);
             this.cmb_data_NguoiLapLenh.TabIndex = 15;
             // 
-            // cmb_data_BenGiao
-            // 
-            this.cmb_data_BenGiao.FormattingEnabled = true;
-            this.cmb_data_BenGiao.Location = new System.Drawing.Point(117, 39);
-            this.cmb_data_BenGiao.Name = "cmb_data_BenGiao";
-            this.cmb_data_BenGiao.Size = new System.Drawing.Size(187, 21);
-            this.cmb_data_BenGiao.TabIndex = 22;
-            // 
             // lbl_dis_DVNhan
             // 
             this.lbl_dis_DVNhan.AutoSize = true;
-            this.lbl_dis_DVNhan.Location = new System.Drawing.Point(70, 123);
+            this.lbl_dis_DVNhan.Location = new System.Drawing.Point(80, 103);
             this.lbl_dis_DVNhan.Name = "lbl_dis_DVNhan";
-            this.lbl_dis_DVNhan.Size = new System.Drawing.Size(42, 13);
+            this.lbl_dis_DVNhan.Size = new System.Drawing.Size(49, 13);
             this.lbl_dis_DVNhan.TabIndex = 3;
-            this.lbl_dis_DVNhan.Text = "Đơn vị:";
-            // 
-            // lbl_dis_Status
-            // 
-            this.lbl_dis_Status.AutoSize = true;
-            this.lbl_dis_Status.Location = new System.Drawing.Point(513, 123);
-            this.lbl_dis_Status.Name = "lbl_dis_Status";
-            this.lbl_dis_Status.Size = new System.Drawing.Size(60, 13);
-            this.lbl_dis_Status.TabIndex = 12;
-            this.lbl_dis_Status.Text = "Trạng thái:";
-            // 
-            // lbl_dis_DVGiao
-            // 
-            this.lbl_dis_DVGiao.AutoSize = true;
-            this.lbl_dis_DVGiao.Location = new System.Drawing.Point(70, 69);
-            this.lbl_dis_DVGiao.Name = "lbl_dis_DVGiao";
-            this.lbl_dis_DVGiao.Size = new System.Drawing.Size(42, 13);
-            this.lbl_dis_DVGiao.TabIndex = 11;
-            this.lbl_dis_DVGiao.Text = "Đơn vị:";
-            // 
-            // lbl_dis_NguoiPheDuyet
-            // 
-            this.lbl_dis_NguoiPheDuyet.AutoSize = true;
-            this.lbl_dis_NguoiPheDuyet.Location = new System.Drawing.Point(53, 245);
-            this.lbl_dis_NguoiPheDuyet.Name = "lbl_dis_NguoiPheDuyet";
-            this.lbl_dis_NguoiPheDuyet.Size = new System.Drawing.Size(60, 13);
-            this.lbl_dis_NguoiPheDuyet.TabIndex = 10;
-            this.lbl_dis_NguoiPheDuyet.Text = "Phê duyệt:";
-            // 
-            // lbl_dis_Quyen
-            // 
-            this.lbl_dis_Quyen.AutoSize = true;
-            this.lbl_dis_Quyen.Location = new System.Drawing.Point(530, 98);
-            this.lbl_dis_Quyen.Name = "lbl_dis_Quyen";
-            this.lbl_dis_Quyen.Size = new System.Drawing.Size(43, 13);
-            this.lbl_dis_Quyen.TabIndex = 9;
-            this.lbl_dis_Quyen.Text = "Quyển:";
-            // 
-            // lbl_dis_NguoiNhan
-            // 
-            this.lbl_dis_NguoiNhan.AutoSize = true;
-            this.lbl_dis_NguoiNhan.Location = new System.Drawing.Point(19, 218);
-            this.lbl_dis_NguoiNhan.Name = "lbl_dis_NguoiNhan";
-            this.lbl_dis_NguoiNhan.Size = new System.Drawing.Size(93, 13);
-            this.lbl_dis_NguoiNhan.TabIndex = 8;
-            this.lbl_dis_NguoiNhan.Text = "Người nhận hàng:";
-            // 
-            // lbl_dis_date
-            // 
-            this.lbl_dis_date.AutoSize = true;
-            this.lbl_dis_date.Location = new System.Drawing.Point(593, 48);
-            this.lbl_dis_date.Name = "lbl_dis_date";
-            this.lbl_dis_date.Size = new System.Drawing.Size(125, 13);
-            this.lbl_dis_date.TabIndex = 7;
-            this.lbl_dis_date.Text = "Ngày         tháng      năm";
-            // 
-            // lbl_dis_NguoiGiao
-            // 
-            this.lbl_dis_NguoiGiao.AutoSize = true;
-            this.lbl_dis_NguoiGiao.Location = new System.Drawing.Point(23, 191);
-            this.lbl_dis_NguoiGiao.Name = "lbl_dis_NguoiGiao";
-            this.lbl_dis_NguoiGiao.Size = new System.Drawing.Size(89, 13);
-            this.lbl_dis_NguoiGiao.TabIndex = 6;
-            this.lbl_dis_NguoiGiao.Text = "Người giao hàng:";
-            // 
-            // lbl_dis_So
-            // 
-            this.lbl_dis_So.AutoSize = true;
-            this.lbl_dis_So.Location = new System.Drawing.Point(548, 72);
-            this.lbl_dis_So.Name = "lbl_dis_So";
-            this.lbl_dis_So.Size = new System.Drawing.Size(23, 13);
-            this.lbl_dis_So.TabIndex = 5;
-            this.lbl_dis_So.Text = "Số:";
+            this.lbl_dis_DVNhan.Text = "Thủ kho:";
             // 
             // lbl_dis_NguoiLap
             // 
             this.lbl_dis_NguoiLap.AutoSize = true;
-            this.lbl_dis_NguoiLap.Location = new System.Drawing.Point(33, 164);
+            this.lbl_dis_NguoiLap.Location = new System.Drawing.Point(32, 130);
             this.lbl_dis_NguoiLap.Name = "lbl_dis_NguoiLap";
-            this.lbl_dis_NguoiLap.Size = new System.Drawing.Size(79, 13);
+            this.lbl_dis_NguoiLap.Size = new System.Drawing.Size(97, 13);
             this.lbl_dis_NguoiLap.TabIndex = 4;
-            this.lbl_dis_NguoiLap.Text = "Người lập lệnh:";
+            this.lbl_dis_NguoiLap.Text = "Thủ trưởng đơn vị:";
             // 
-            // lbl_dis_Nhan
+            // groupBox2
             // 
-            this.lbl_dis_Nhan.AutoSize = true;
-            this.lbl_dis_Nhan.Location = new System.Drawing.Point(55, 96);
-            this.lbl_dis_Nhan.Name = "lbl_dis_Nhan";
-            this.lbl_dis_Nhan.Size = new System.Drawing.Size(56, 13);
-            this.lbl_dis_Nhan.TabIndex = 13;
-            this.lbl_dis_Nhan.Text = "Bên nhận:";
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.comboBox4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Location = new System.Drawing.Point(527, 14);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(420, 241);
+            this.groupBox2.TabIndex = 26;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Kho đơn vị";
             // 
-            // lbl_dis_Giao
+            // comboBox1
             // 
-            this.lbl_dis_Giao.AutoSize = true;
-            this.lbl_dis_Giao.Location = new System.Drawing.Point(59, 42);
-            this.lbl_dis_Giao.Name = "lbl_dis_Giao";
-            this.lbl_dis_Giao.Size = new System.Drawing.Size(52, 13);
-            this.lbl_dis_Giao.TabIndex = 14;
-            this.lbl_dis_Giao.Text = "Bên giao:";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(143, 44);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(187, 21);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(58, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Trợ lý vật tư:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(143, 73);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(187, 21);
+            this.comboBox2.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Kế toán kho:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(143, 100);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(187, 21);
+            this.comboBox3.TabIndex = 21;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(143, 174);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(187, 21);
+            this.comboBox4.TabIndex = 20;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 177);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Kế toán tài chính:";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(143, 127);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(187, 21);
+            this.comboBox5.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(80, 103);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Thủ kho:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 130);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Thủ trưởng đơn vị:";
+            // 
+            // xPageOverview
+            // 
+            this.xPageOverview.Controls.Add(this.groupBox3);
+            this.xPageOverview.Name = "xPageOverview";
+            this.xPageOverview.Size = new System.Drawing.Size(1014, 484);
+            this.xPageOverview.Text = "Tổng quan";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dropDownButton1);
+            this.groupBox3.Controls.Add(this.simpleButton9);
+            this.groupBox3.Controls.Add(this.simpleButton8);
+            this.groupBox3.Controls.Add(this.simpleButton7);
+            this.groupBox3.Controls.Add(this.simpleButton6);
+            this.groupBox3.Controls.Add(this.pictureBox5);
+            this.groupBox3.Controls.Add(this.pictureBox4);
+            this.groupBox3.Controls.Add(this.pictureBox3);
+            this.groupBox3.Controls.Add(this.pictureBox2);
+            this.groupBox3.Controls.Add(this.pictureBox1);
+            this.groupBox3.Controls.Add(this.simpleButton2);
+            this.groupBox3.Controls.Add(this.simpleButton5);
+            this.groupBox3.Controls.Add(this.simpleButton3);
+            this.groupBox3.Controls.Add(this.simpleButton1);
+            this.groupBox3.Location = new System.Drawing.Point(11, 20);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(984, 446);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Thông tin phiếu";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(57, 57);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(93, 72);
+            this.simpleButton1.TabIndex = 0;
+            this.simpleButton1.Text = "Lập lệnh";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(339, 57);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(152, 72);
+            this.simpleButton2.TabIndex = 0;
+            this.simpleButton2.Text = "Trợ lý vật tư kiểm tra hồ sơ\r\n(còn lại 9 ngày)";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(694, 57);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(193, 72);
+            this.simpleButton3.TabIndex = 0;
+            this.simpleButton3.Text = "Kế toán kho xác nhận lệnh";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Location = new System.Drawing.Point(676, 218);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(235, 72);
+            this.simpleButton5.TabIndex = 0;
+            this.simpleButton5.Text = "Thủ trưởng TMKH phê duyệt kế hoạch";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::VKTIM.Properties.Resources.arrow_right;
+            this.pictureBox1.Location = new System.Drawing.Point(210, 77);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::VKTIM.Properties.Resources.arrow_right;
+            this.pictureBox2.Location = new System.Drawing.Point(564, 77);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(66, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::VKTIM.Properties.Resources.arrow_down;
+            this.pictureBox3.Location = new System.Drawing.Point(758, 155);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(66, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::VKTIM.Properties.Resources.arrow_left;
+            this.pictureBox4.Location = new System.Drawing.Point(564, 242);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(66, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Location = new System.Drawing.Point(47, 193);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(144, 23);
+            this.simpleButton6.TabIndex = 2;
+            this.simpleButton6.Text = "Cơ quan TMKH đã nhận";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Location = new System.Drawing.Point(47, 222);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(144, 23);
+            this.simpleButton7.TabIndex = 2;
+            this.simpleButton7.Text = "Cơ quan Tài chính đã nhận";
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Location = new System.Drawing.Point(47, 251);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(144, 23);
+            this.simpleButton8.TabIndex = 2;
+            this.simpleButton8.Text = "Thủ trưởng Viện đã nhận";
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Location = new System.Drawing.Point(47, 280);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(144, 23);
+            this.simpleButton9.TabIndex = 2;
+            this.simpleButton9.Text = "Kế toán kho đã lưu";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::VKTIM.Properties.Resources.arrow_left;
+            this.pictureBox5.Location = new System.Drawing.Point(224, 242);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(66, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // dropDownButton1
+            // 
+            this.dropDownButton1.Location = new System.Drawing.Point(317, 218);
+            this.dropDownButton1.MenuManager = this.ribbonControl1;
+            this.dropDownButton1.Name = "dropDownButton1";
+            this.dropDownButton1.Size = new System.Drawing.Size(203, 72);
+            this.dropDownButton1.TabIndex = 3;
+            this.dropDownButton1.Text = "Hoàn tất\r\nGửi báo cáo";
             // 
             // frmGridControlCopyPaste
             // 
@@ -1648,7 +1821,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
-            this.xtraTabPage1.ResumeLayout(false);
+            this.xPageItems.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).EndInit();
@@ -1665,11 +1838,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMarqueeProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
-            this.xtraTabPage2.ResumeLayout(false);
+            this.xPageInvoce.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grcInvoice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvInvoice)).EndInit();
-            this.xtraTabPage3.ResumeLayout(false);
-            this.xtraTabPage3.PerformLayout();
+            this.xPageOption.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.xPageOverview.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1733,7 +1916,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage xPageItems;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
@@ -1781,7 +1964,7 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit2;
         private DevExpress.XtraEditors.Repository.RepositoryItemMarqueeProgressBar repositoryItemMarqueeProgressBar1;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private DevExpress.XtraTab.XtraTabPage xPageInvoce;
         private DevExpress.XtraGrid.GridControl grcInvoice;
         private DevExpress.XtraGrid.Views.Grid.GridView grvInvoice;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
@@ -1793,34 +1976,49 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem29;
         private DevExpress.XtraBars.BarButtonItem barButtonItem30;
         private DevExpress.XtraBars.BarButtonItem barButtonItem31;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribInvoice;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem32;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraTab.XtraTabPage xPageOption;
         private System.Windows.Forms.ComboBox cmb_data_DonViNhan;
         private System.Windows.Forms.ComboBox cmb_data_BenNhan;
         private System.Windows.Forms.ComboBox cmb_data_DonViGiao;
-        private System.Windows.Forms.ComboBox cmb_data_PheDuyet;
-        private System.Windows.Forms.ComboBox cmb_data_NguoiNhan;
-        private System.Windows.Forms.ComboBox cmb_data_NguoiGiao;
         private System.Windows.Forms.ComboBox cmb_data_NguoiLapLenh;
         private System.Windows.Forms.ComboBox cmb_data_BenGiao;
         private System.Windows.Forms.Label lbl_dis_DVNhan;
-        private System.Windows.Forms.Label lbl_dis_Status;
         private System.Windows.Forms.Label lbl_dis_DVGiao;
-        private System.Windows.Forms.Label lbl_dis_NguoiPheDuyet;
-        private System.Windows.Forms.Label lbl_dis_Quyen;
-        private System.Windows.Forms.Label lbl_dis_NguoiNhan;
-        private System.Windows.Forms.Label lbl_dis_date;
-        private System.Windows.Forms.Label lbl_dis_NguoiGiao;
-        private System.Windows.Forms.Label lbl_dis_So;
         private System.Windows.Forms.Label lbl_dis_NguoiLap;
         private System.Windows.Forms.Label lbl_dis_Nhan;
         private System.Windows.Forms.Label lbl_dis_Giao;
         private DevExpress.XtraBars.BarButtonItem barButtonItem33;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private DevExpress.XtraTab.XtraTabPage xPageOverview;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private DevExpress.XtraEditors.DropDownButton dropDownButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

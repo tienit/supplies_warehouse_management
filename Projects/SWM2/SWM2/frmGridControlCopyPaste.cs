@@ -723,5 +723,13 @@ namespace VKTIM
             MainDatasrouce.Rows.Add(rr);
             grv_Main.FocusedRowHandle = grv_Main.RowCount - 1;
         }
+
+        private void xtraTabControl1_SelectedPageChanged(object sender, DevExpress.XtraTab.TabPageChangedEventArgs e)
+        {
+            if (e.Page.Name == "xPageInvoce")
+            {
+                ribbonControl1.SelectedPage = ribInvoice;
+            }
+        }
     }
 }
