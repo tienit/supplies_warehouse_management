@@ -621,10 +621,10 @@ namespace VKTIM
                         product.TOTAL = double.Parse(MainDatasrouce.Rows[i]["TOTAL"].ToString().Trim());
                         product.QUANTITY = double.Parse(MainDatasrouce.Rows[i]["QUANTITY"].ToString().Trim());
                         product.PRODUCT_NAME = MainDatasrouce.Rows[i]["PRODUCT_NAME"].ToString().Trim();
-                        product.PRICE_NAME = MainDatasrouce.Rows[i]["PRICE_NAME"].ToString().Trim();
+                        product.PRICE_NAME = double.Parse(MainDatasrouce.Rows[i]["PRICE_NAME"].ToString().Trim());
                         product.INPUT_VALUE = double.Parse(MainDatasrouce.Rows[i]["INPUT_VALUE"].ToString().Trim());
                         product.UNIT_NAME = MainDatasrouce.Rows[i]["UNIT_NAME"].ToString().Trim();
-                        product.Sort = i; 
+                        product.SORT = i; 
                         if (MainDatasrouce.Rows[i]["ID"].ToString() != "")
                         {
                             DTINPUTDETAILController.Instance().Update(product);

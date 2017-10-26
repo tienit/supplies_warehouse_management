@@ -565,6 +565,12 @@
     <Compile Include="frmSplashLoadForm.Designer.cs">
       <DependentUpon>frmSplashLoadForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStoreProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreProperty.Designer.cs">
+      <DependentUpon>frmStoreProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTaskList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -835,6 +841,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplashLoadForm.resx">
       <DependentUpon>frmSplashLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStoreProperty.resx">
+      <DependentUpon>frmStoreProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaskList.resx">
       <DependentUpon>frmTaskList.cs</DependentUpon>
