@@ -142,6 +142,10 @@
     <Compile Include="Common\GBTSCConstants.cs" />
     <Compile Include="Common\Util.cs" />
     <Compile Include="Component\Controller\COMMONController.cs" />
+    <Compile Include="Component\Controller\DMASSETLEVELController.cs" />
+    <Compile Include="Component\Controller\DMASSETLEVELPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMASSETPRODUCTSController.cs" />
+    <Compile Include="Component\Controller\DMASSETPRODUCTSPartialClasses.cs" />
     <Compile Include="Component\Controller\DMEMPLOYERController.cs" />
     <Compile Include="Component\Controller\DMEMPLOYERPartialClasses.cs" />
     <Compile Include="Component\Controller\DMLOCATIONController.cs" />
@@ -172,12 +176,16 @@
     <Compile Include="Component\Controller\DMUNITPartialClasses.cs" />
     <Compile Include="Component\Controller\DMWAREHOUSEController.cs" />
     <Compile Include="Component\Controller\DMWAREHOUSEPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTFAQController.cs" />
+    <Compile Include="Component\Controller\DTFAQPartialClasses.cs" />
     <Compile Include="Component\Controller\DTFUNDSController.cs" />
     <Compile Include="Component\Controller\DTFUNDSPartialClasses.cs" />
     <Compile Include="Component\Controller\DTINPUTController.cs" />
     <Compile Include="Component\Controller\DTINPUTDETAILController.cs" />
     <Compile Include="Component\Controller\DTINPUTDETAILPartialClasses.cs" />
     <Compile Include="Component\Controller\DTINPUTPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTINVOICEController.cs" />
+    <Compile Include="Component\Controller\DTINVOICEPartialClasses.cs" />
     <Compile Include="Component\Controller\DTOUTPUTController.cs" />
     <Compile Include="Component\Controller\DTOUTPUTDETAILController.cs" />
     <Compile Include="Component\Controller\DTOUTPUTDETAILPartialClasses.cs" />
@@ -186,6 +194,8 @@
     <Compile Include="Component\Controller\DTPRICEHISTORYPartialClasses.cs" />
     <Compile Include="Component\Controller\DTPRODUCTPARAMETERController.cs" />
     <Compile Include="Component\Controller\DTPRODUCTPARAMETERPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTSTORESController.cs" />
+    <Compile Include="Component\Controller\DTSTORESPartialClasses.cs" />
     <Compile Include="Component\Controller\DTUSERCONFIGController.cs" />
     <Compile Include="Component\Controller\DTUSERCONFIGPartialClasses.cs" />
     <Compile Include="Component\Controller\HTCONFIGPartialClasses.cs" />
@@ -218,6 +228,8 @@
     <Compile Include="Component\Controller\TASKWORKLISTController.cs" />
     <Compile Include="Component\Controller\TASKWORKLISTPartialClasses.cs" />
     <Compile Include="Component\DataProvider\CommonDataProvider.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMASSETLEVEL.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMASSETPRODUCTS.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMEMPLOYER.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMLOCATION.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMORGANIZATION.cs" />
@@ -233,13 +245,16 @@
     <Compile Include="Component\DataProvider\DataProviderForDMTITLE.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMUNIT.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMWAREHOUSE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTFAQ.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTFUNDS.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTINPUT.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTINPUTDETAIL.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTINVOICE.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTOUTPUT.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTOUTPUTDETAIL.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTPRICEHISTORY.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTPRODUCTPARAMETER.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTSTORES.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTUSERCONFIG.cs" />
     <Compile Include="Component\DataProvider\DataProviderForHTCONFIG.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTDEVICES.cs" />
@@ -257,6 +272,8 @@
     <Compile Include="Component\DataProvider\DataProviderForServerFunction.cs" />
     <Compile Include="Component\DataProvider\DataProviderForTASKWORKLIST.cs" />
     <Compile Include="Component\DataProvider\SqlConnect.cs" />
+    <Compile Include="Component\Infos\DMASSETLEVELInfo.cs" />
+    <Compile Include="Component\Infos\DMASSETPRODUCTSInfo.cs" />
     <Compile Include="Component\Infos\DMEMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\DMLOCATIONInfo.cs" />
     <Compile Include="Component\Infos\DMORGANIZATIONInfo.cs" />
@@ -272,13 +289,16 @@
     <Compile Include="Component\Infos\DMTITLEInfo.cs" />
     <Compile Include="Component\Infos\DMUNITInfo.cs" />
     <Compile Include="Component\Infos\DMWAREHOUSEInfo.cs" />
+    <Compile Include="Component\Infos\DTFAQInfo.cs" />
     <Compile Include="Component\Infos\DTFUNDSInfo.cs" />
     <Compile Include="Component\Infos\DTINPUTDETAILInfo.cs" />
     <Compile Include="Component\Infos\DTINPUTInfo.cs" />
+    <Compile Include="Component\Infos\DTINVOICEInfo.cs" />
     <Compile Include="Component\Infos\DTOUTPUTDETAILInfo.cs" />
     <Compile Include="Component\Infos\DTOUTPUTInfo.cs" />
     <Compile Include="Component\Infos\DTPRICEHISTORYInfo.cs" />
     <Compile Include="Component\Infos\DTPRODUCTPARAMETERInfo.cs" />
+    <Compile Include="Component\Infos\DTSTORESInfo.cs" />
     <Compile Include="Component\Infos\DTUSERCONFIGInfo.cs" />
     <Compile Include="Component\Infos\GridLayoutInfo.cs" />
     <Compile Include="Component\Infos\HTCONFIGInfo.cs" />
@@ -318,6 +338,18 @@
     </Compile>
     <Compile Include="frmDashBoardTest.Designer.cs">
       <DependentUpon>frmDashBoardTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmAssetPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmAssetPopup.Designer.cs">
+      <DependentUpon>frmDmAssetPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmAssetProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmAssetProducts.Designer.cs">
+      <DependentUpon>frmDmAssetProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDmEmployer.cs">
       <SubType>Form</SubType>
@@ -718,6 +750,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDashBoardTest.resx">
       <DependentUpon>frmDashBoardTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmAssetPopup.resx">
+      <DependentUpon>frmDmAssetPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmAssetProducts.resx">
+      <DependentUpon>frmDmAssetProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmEmployer.resx">
       <DependentUpon>frmDmEmployer.cs</DependentUpon>
