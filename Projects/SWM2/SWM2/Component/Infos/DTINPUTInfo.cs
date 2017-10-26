@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 7/7/2017
+//Created Date     : 10/26/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -32,7 +32,7 @@ private string _CAUSE_DESCRIPTION;
 private int _FUNDS_ID;
 private string _FUNDS_NAME;
 private double _TOTAL_VALUE;
-        private DateTime _DATE_CREATED;
+private DateTime _DATE_CREATED;
 #endregion
 
 #region "Public Properties"
@@ -121,15 +121,14 @@ private double _TOTAL_VALUE;
 			set { _TOTAL_VALUE = value; }
 		}
 
-        public DateTime DATE_CREATED
-        {
-            get { return _DATE_CREATED; }
-            set { _DATE_CREATED = value; }
-        }
-        #endregion
+		public DateTime DATE_CREATED {
+			get { return _DATE_CREATED; }
+			set { _DATE_CREATED = value; }
+		}
+#endregion
 
-        #region "Constructors"
-        public DTINPUTInfo()
+#region "Constructors"
+public DTINPUTInfo()
 {
 }
 
@@ -152,7 +151,7 @@ public DTINPUTInfo(int ID, string INPUT_NAME, string INPUT_CODE, int WAREHOUSE_I
 	this.FUNDS_ID = FUNDS_ID;
 	this.FUNDS_NAME = FUNDS_NAME;
 	this.TOTAL_VALUE = TOTAL_VALUE;
-            this.DATE_CREATED = DATE_CREATED;
+	this.DATE_CREATED = DATE_CREATED;
 }
 #endregion
 

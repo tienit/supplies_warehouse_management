@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 7/7/2017
+//Created Date     : 10/26/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -30,18 +30,18 @@ private string _UNIT_NAME;
 private int _SUPPLIER_ID;
 private string _SUPPLIER_NAME;
 private int _PRICE_ID;
-private string _PRICE_NAME;
+private double _PRICE_NAME;
 private int _PRODUCTCATEGORY_ID;
 private string _PRODUCTCATEGORY_NAME;
-private double _PRICE_DEFAULT;
-private double _INPUT_PRICE;
+private string _PRICE_DEFAULT;
+private string _INPUT_PRICE;
 private double _QUANTITY;
-        private double _INPUT_VALUE;
-        private int _WAREHOUSE_ID;
+private double _INPUT_VALUE;
+private int _WAREHOUSE_ID;
 private string _PRODUCT_STATUS;
 private bool _IS_BUY;
 private double _TOTAL;
-        private int _Sort;
+private int _SORT;
 #endregion
 
 #region "Public Properties"
@@ -120,7 +120,7 @@ private double _TOTAL;
 			set { _PRICE_ID = value; }
 		}
 
-		public string PRICE_NAME {
+		public double PRICE_NAME {
 			get { return _PRICE_NAME; }
 			set { _PRICE_NAME = value; }
 		}
@@ -135,12 +135,12 @@ private double _TOTAL;
 			set { _PRODUCTCATEGORY_NAME = value; }
 		}
 
-		public double PRICE_DEFAULT {
+		public string PRICE_DEFAULT {
 			get { return _PRICE_DEFAULT; }
 			set { _PRICE_DEFAULT = value; }
 		}
 
-		public double INPUT_PRICE {
+		public string INPUT_PRICE {
 			get { return _INPUT_PRICE; }
 			set { _INPUT_PRICE = value; }
 		}
@@ -150,13 +150,12 @@ private double _TOTAL;
 			set { _QUANTITY = value; }
 		}
 
-        public double INPUT_VALUE
-        {
-            get { return _INPUT_VALUE; }
-            set { _INPUT_VALUE = value; }
-        }
+		public double INPUT_VALUE {
+			get { return _INPUT_VALUE; }
+			set { _INPUT_VALUE = value; }
+		}
 
-        public int WAREHOUSE_ID {
+		public int WAREHOUSE_ID {
 			get { return _WAREHOUSE_ID; }
 			set { _WAREHOUSE_ID = value; }
 		}
@@ -176,19 +175,18 @@ private double _TOTAL;
 			set { _TOTAL = value; }
 		}
 
-        public int Sort
-        {
-            get { return _Sort; }
-            set { _Sort = value; }
-        }
-        #endregion
+		public int SORT {
+			get { return _SORT; }
+			set { _SORT = value; }
+		}
+#endregion
 
-        #region "Constructors"
-        public DTINPUTDETAILInfo()
+#region "Constructors"
+public DTINPUTDETAILInfo()
 {
 }
 
-public DTINPUTDETAILInfo(int ID, int INPUT_ID, int PRODUCT_ID, string PRODUCT_NAME, string PRODUCT_OTHER_NAME, string PRODUCT_CODE, string PRODUCTS_DESCRIPTION, string PRODUCTS_SHORT_DESCRIPTION, int ORIGIN_ID, string ORIGIN_NAME, int UNIT_ID, string UNIT_NAME, int SUPPLIER_ID, string SUPPLIER_NAME, int PRICE_ID, string PRICE_NAME, int PRODUCTCATEGORY_ID, string PRODUCTCATEGORY_NAME, double PRICE_DEFAULT, double INPUT_PRICE, double QUANTITY, double INPUT_VALUE, int WAREHOUSE_ID, string PRODUCT_STATUS, bool IS_BUY, double TOTAL, int Sort)
+public DTINPUTDETAILInfo(int ID, int INPUT_ID, int PRODUCT_ID, string PRODUCT_NAME, string PRODUCT_OTHER_NAME, string PRODUCT_CODE, string PRODUCTS_DESCRIPTION, string PRODUCTS_SHORT_DESCRIPTION, int ORIGIN_ID, string ORIGIN_NAME, int UNIT_ID, string UNIT_NAME, int SUPPLIER_ID, string SUPPLIER_NAME, int PRICE_ID, double PRICE_NAME, int PRODUCTCATEGORY_ID, string PRODUCTCATEGORY_NAME, string PRICE_DEFAULT, string INPUT_PRICE, double QUANTITY, double INPUT_VALUE, int WAREHOUSE_ID, string PRODUCT_STATUS, bool IS_BUY, double TOTAL, int SORT)
 {
 	this.ID = ID;
 	this.INPUT_ID = INPUT_ID;
@@ -211,12 +209,12 @@ public DTINPUTDETAILInfo(int ID, int INPUT_ID, int PRODUCT_ID, string PRODUCT_NA
 	this.PRICE_DEFAULT = PRICE_DEFAULT;
 	this.INPUT_PRICE = INPUT_PRICE;
 	this.QUANTITY = QUANTITY;
-            this.INPUT_VALUE = _INPUT_VALUE;
+	this.INPUT_VALUE = INPUT_VALUE;
 	this.WAREHOUSE_ID = WAREHOUSE_ID;
 	this.PRODUCT_STATUS = PRODUCT_STATUS;
 	this.IS_BUY = IS_BUY;
 	this.TOTAL = TOTAL;
-            this.Sort = Sort;
+	this.SORT = SORT;
 }
 #endregion
 

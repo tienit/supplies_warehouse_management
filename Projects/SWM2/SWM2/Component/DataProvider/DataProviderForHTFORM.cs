@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 7/7/2017
+//Created Date     : 10/26/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -41,12 +41,12 @@ public virtual DataSet HT_FORM_GetAll_DS()
 
 public virtual object HT_FORM_Insert(HTFORMInfo objInfo)
 {
-	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_FORM_INSERT, DB_GetNull(objInfo.FORM_NAME), DB_GetNull(objInfo.FORM_TITLE), DB_GetNull(objInfo.FORM_TITLE_EN), DB_GetNull(objInfo.MENU_NAME), objInfo.IS_SHOW_DIALOG, DB_GetNull(objInfo.SHORTCUT_KEY), objInfo.IS_USED, DB_GetNull(objInfo.FORM_ORDER));
+	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_FORM_INSERT, DB_GetNull(objInfo.FORM_NAME), DB_GetNull(objInfo.FORM_TITLE), DB_GetNull(objInfo.FORM_TITLE_EN), DB_GetNull(objInfo.MENU_NAME), DB_GetNull(objInfo.IS_SHOW_DIALOG), DB_GetNull(objInfo.SHORTCUT_KEY), DB_GetNull(objInfo.IS_USED), DB_GetNull(objInfo.FORM_ORDER));
 }
 
 public virtual int HT_FORM_Update(HTFORMInfo objInfo)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_FORM_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.FORM_NAME), DB_GetNull(objInfo.FORM_TITLE), DB_GetNull(objInfo.FORM_TITLE_EN), DB_GetNull(objInfo.MENU_NAME), objInfo.IS_SHOW_DIALOG, DB_GetNull(objInfo.SHORTCUT_KEY), objInfo.IS_USED, DB_GetNull(objInfo.FORM_ORDER));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_HT_FORM_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.FORM_NAME), DB_GetNull(objInfo.FORM_TITLE), DB_GetNull(objInfo.FORM_TITLE_EN), DB_GetNull(objInfo.MENU_NAME), DB_GetNull(objInfo.IS_SHOW_DIALOG), DB_GetNull(objInfo.SHORTCUT_KEY), DB_GetNull(objInfo.IS_USED), DB_GetNull(objInfo.FORM_ORDER));
 }
 
 public virtual int HT_FORM_Delete(int ID)

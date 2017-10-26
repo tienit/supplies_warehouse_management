@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 7/7/2017
+//Created Date     : 10/26/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -84,10 +84,6 @@ public DataSet GetAll_DS()
 	return DataProvider.Instance().DT_INPUTDETAIL_GetAll_DS();
 }
 
-        public DataSet GetTop0Row()
-        {
-            return DataProvider.Instance().DT_INPUTDETAIL_GetTop0Row();
-        }
 #endregion
 
 }

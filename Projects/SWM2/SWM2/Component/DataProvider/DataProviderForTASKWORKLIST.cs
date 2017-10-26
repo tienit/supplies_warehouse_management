@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 8/22/2017
+//Created Date     : 10/26/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************

@@ -1,6 +1,6 @@
 //*************************************************************
 //Author           : Tien NQ
-//Created Date     : 7/7/2017
+//Created Date     : 10/26/2017
 //Comment          : Base class for access to database.
 //History          : 
 //*************************************************************
@@ -21,11 +21,10 @@ private string VKTIM_COMPONENT_DM_PRODUCTS_GETBYID = "DM_PRODUCTS_SelectById";
 private string VKTIM_COMPONENT_DM_PRODUCTS_INSERT = "DM_PRODUCTS_Insert";
 private string VKTIM_COMPONENT_DM_PRODUCTS_UPDATE = "DM_PRODUCTS_Update";
 private string VKTIM_COMPONENT_DM_PRODUCTS_DELETE = "DM_PRODUCTS_Delete";
-        private string VKTIM_COMPONENT_DM_PRODUCTS_GETALL_POPUP = "DM_PRODUCTS_GetAll_Popup";
-        #endregion
+#endregion
 
-        #region "Public Methods"
-        public virtual IDataReader DM_PRODUCTS_GetById(int ID)
+#region "Public Methods"
+public virtual IDataReader DM_PRODUCTS_GetById(int ID)
 {
 	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_DM_PRODUCTS_GETBYID, ID);
 }
@@ -35,17 +34,12 @@ public virtual IDataReader DM_PRODUCTS_GetAll()
 	return SqlHelper.ExecuteReader(SqlConnect.ConnectionString, VKTIM_COMPONENT_DM_PRODUCTS_GETALL);
 }
 
-        public virtual DataSet DM_PRODUCTS_GetAll_DS()
+public virtual DataSet DM_PRODUCTS_GetAll_DS()
 {
 	return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, VKTIM_COMPONENT_DM_PRODUCTS_GETALL);
 }
 
-        public virtual DataSet DM_PRODUCTS_GetAll_DS_POPUP()
-        {
-            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, VKTIM_COMPONENT_DM_PRODUCTS_GETALL_POPUP);
-        }
-
-        public virtual object DM_PRODUCTS_Insert(DMPRODUCTSInfo objInfo)
+public virtual object DM_PRODUCTS_Insert(DMPRODUCTSInfo objInfo)
 {
 	return SqlHelper.ExecuteScalar(SqlConnect.ConnectionString, VKTIM_COMPONENT_DM_PRODUCTS_INSERT, DB_GetNull(objInfo.PRODUCTS_NAME), DB_GetNull(objInfo.PRODUCTS_NAME_OTHER), DB_GetNull(objInfo.PRODUCTS_CODE), DB_GetNull(objInfo.PRODUCTS_DESCRIPTION), DB_GetNull(objInfo.PRODUCTS_SHORT_DESCRIPTION), DB_GetNull(objInfo.ORIGIN_ID), DB_GetNull(objInfo.ORIGIN_NAME), DB_GetNull(objInfo.UNIT_ID), DB_GetNull(objInfo.UNIT_NAME), DB_GetNull(objInfo.SUPPLIER_ID), DB_GetNull(objInfo.SUPPLIER_NAME), DB_GetNull(objInfo.PRICE_ID), DB_GetNull(objInfo.PRICE_NAME), DB_GetNull(objInfo.PRODUCTCATEGORY_ID), DB_GetNull(objInfo.PRODUCTCATEGORY_NAME), DB_GetNull(objInfo.PRICE_DEFAULT));
 }
