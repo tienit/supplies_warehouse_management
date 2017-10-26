@@ -616,6 +616,12 @@
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm\frmRPInputDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\frmRPInputDetail.Designer.cs">
+      <DependentUpon>frmRPInputDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\frmRPWarehouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -869,6 +875,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportForm\frmRPInputDetail.resx">
+      <DependentUpon>frmRPInputDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\frmRPWarehouse.resx">
       <DependentUpon>frmRPWarehouse.cs</DependentUpon>
     </EmbeddedResource>
