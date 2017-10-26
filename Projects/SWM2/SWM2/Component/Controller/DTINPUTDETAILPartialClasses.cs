@@ -30,6 +30,11 @@ return tienit.core.Null.GetNull(Field, DBNull.Value);
         {
             return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DT_INPUTDETAIL_GetAllByInputID", InputID).Tables[0];
         }
+
+        public virtual DataTable SearchInventory(string DateStart, string DateEnd)
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DT_INPUTDETAIL_SearchInventory", DB_GetNull(DateStart), DB_GetNull(DateEnd)).Tables[0];
+        }
     }
 
 public partial class DataProvider

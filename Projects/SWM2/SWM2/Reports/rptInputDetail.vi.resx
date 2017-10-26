@@ -117,33 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="xrTableCell9.Text" xml:space="preserve">
-    <value>TT</value>
-  </data>
-  <data name="xrTableCell10.Text" xml:space="preserve">
-    <value>Nội dung</value>
-  </data>
-  <data name="xrTableCell11.Text" xml:space="preserve">
-    <value>Đơn vị tính</value>
-  </data>
-  <data name="xrTableCell12.Text" xml:space="preserve">
-    <value>Giá lẻ</value>
-  </data>
-  <data name="xrTableCell13.Text" xml:space="preserve">
-    <value>Phải nhập</value>
-  </data>
-  <data name="xrTableCell14.Text" xml:space="preserve">
-    <value>Thực nhập</value>
-  </data>
-  <data name="xrTableCell15.Text" xml:space="preserve">
-    <value>Thành tiền</value>
-  </data>
   <assembly alias="DevExpress.Data.v16.2" name="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="xrTableCell15.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>MiddleRight</value>
-  </data>
-  <data name="xrTableCell16.Text" xml:space="preserve">
-    <value>Ghi chú</value>
   </data>
   <data name="xrTable2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>MiddleCenter</value>
@@ -153,7 +129,7 @@
     <value>254</value>
   </data>
   <data name="Detail.HeightF" type="System.Single, mscorlib">
-    <value>74.0833359</value>
+    <value>65</value>
   </data>
   <data name="TopMargin.Dpi" type="System.Single, mscorlib">
     <value>254</value>
@@ -165,12 +141,21 @@
     <value>254</value>
   </data>
   <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
-    <value>200</value>
-  </data>
-  <data name="xrLine2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>958.5213, 113.688354</value>
+    <value>206</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrLabel17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 18pt, style=Bold</value>
+  </data>
+  <data name="xrLabel17.Text" xml:space="preserve">
+    <value>PHIẾU NHẬP KHO</value>
+  </data>
+  <data name="xrLabel17.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrLine2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
+    <value>958.5213, 101.688354</value>
+  </data>
   <data name="xrLabel5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Italic</value>
   </data>
@@ -199,7 +184,7 @@
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>889, 73.23665</value>
+    <value>889, 61.23665</value>
   </data>
   <data name="xrLabel4.Text" xml:space="preserve">
     <value>Độc lập-Tự do-Hạnh phúc</value>
@@ -208,13 +193,13 @@
     <value>TopCenter</value>
   </data>
   <data name="xrLine1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>178.458267, 101.094162</value>
+    <value>178.458267, 85.09416</value>
   </data>
   <data name="xrLabel2.Dpi" type="System.Single, mscorlib">
     <value>254</value>
   </data>
   <data name="xrLabel2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>68.7916641, 73.23665</value>
+    <value>68.7916641, 57.23665</value>
   </data>
   <data name="xrLabel2.SizeF" type="System.Drawing.SizeF, System.Drawing">
     <value>537.1041, 58.4200058</value>
@@ -232,7 +217,7 @@
     <value>254</value>
   </data>
   <data name="ReportHeader.HeightF" type="System.Single, mscorlib">
-    <value>262.36084</value>
+    <value>373.48584</value>
   </data>
   <data name="xrTable1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
     <value>0.000161488846, 13.229167</value>
@@ -267,17 +252,11 @@
   <data name="PageHeader.HeightF" type="System.Single, mscorlib">
     <value>113.229164</value>
   </data>
-  <data name="xrLabel15.Dpi" type="System.Single, mscorlib">
-    <value>254</value>
-  </data>
   <data name="xrLabel15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel15.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>757.7744, 282.069336</value>
-  </data>
-  <data name="xrLabel15.SizeF" type="System.Drawing.SizeF, System.Drawing">
-    <value>350.985016, 58.4199829</value>
+    <value>757.7745, 287.361023</value>
   </data>
   <data name="xrLabel15.Text" xml:space="preserve">
     <value>NGƯỜI NHẬN HÀNG</value>
@@ -285,17 +264,11 @@
   <data name="xrLabel15.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
-  <data name="xrLabel16.Dpi" type="System.Single, mscorlib">
-    <value>254</value>
-  </data>
   <data name="xrLabel16.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel16.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>746.254, 583.33</value>
-  </data>
-  <data name="xrLabel16.SizeF" type="System.Drawing.SizeF, System.Drawing">
-    <value>362.505341, 58.4199829</value>
+    <value>746.254, 588.6217</value>
   </data>
   <data name="xrLabel16.Text" xml:space="preserve">
     <value>1//CN Hán Minh Sơn</value>
@@ -303,17 +276,11 @@
   <data name="xrLabel16.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
-  <data name="xrLabel13.Dpi" type="System.Single, mscorlib">
-    <value>254</value>
-  </data>
   <data name="xrLabel13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel13.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>24.9999275, 282.069336</value>
-  </data>
-  <data name="xrLabel13.SizeF" type="System.Drawing.SizeF, System.Drawing">
-    <value>332.516663, 58.4199829</value>
+    <value>24.9999275, 287.361023</value>
   </data>
   <data name="xrLabel13.Text" xml:space="preserve">
     <value>NGƯỜI LẬP LỆNH</value>
@@ -321,17 +288,11 @@
   <data name="xrLabel13.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
-  <data name="xrLabel14.Dpi" type="System.Single, mscorlib">
-    <value>254</value>
-  </data>
   <data name="xrLabel14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel14.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>0, 583.33</value>
-  </data>
-  <data name="xrLabel14.SizeF" type="System.Drawing.SizeF, System.Drawing">
-    <value>412.776154, 58.4199829</value>
+    <value>2.645995, 588.6217</value>
   </data>
   <data name="xrLabel14.Text" xml:space="preserve">
     <value>1//CN Trần T.Giang Quyên</value>
@@ -339,17 +300,11 @@
   <data name="xrLabel14.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
-  <data name="xrLabel11.Dpi" type="System.Single, mscorlib">
-    <value>254</value>
-  </data>
   <data name="xrLabel11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel11.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>406.7894, 282.069336</value>
-  </data>
-  <data name="xrLabel11.SizeF" type="System.Drawing.SizeF, System.Drawing">
-    <value>350.985016, 58.4199829</value>
+    <value>406.789459, 287.361023</value>
   </data>
   <data name="xrLabel11.Text" xml:space="preserve">
     <value>NGƯỜI GIAO HÀNG</value>
@@ -357,26 +312,56 @@
   <data name="xrLabel11.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
-  <data name="xrLabel12.Dpi" type="System.Single, mscorlib">
-    <value>254</value>
-  </data>
   <data name="xrLabel12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel12.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>440.943359, 583.33</value>
-  </data>
-  <data name="xrLabel12.SizeF" type="System.Drawing.SizeF, System.Drawing">
-    <value>304.296967, 58.4199829</value>
+    <value>440.943359, 588.6217</value>
   </data>
   <data name="xrLabel12.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrLabel9.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
+    <value>1111.379, 287.361023</value>
+  </data>
+  <data name="xrLabel9.Text" xml:space="preserve">
+    <value>TRƯỞNG BAN TMKH</value>
+  </data>
+  <data name="xrLabel9.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrLabel7.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
+    <value>1001.13818, 170.52092</value>
+  </data>
+  <data name="xrLabel7.Text" xml:space="preserve">
+    <value>Hà Nội, ngày.......tháng......năm 201...</value>
+  </data>
+  <data name="xrLabel7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrLabel8.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
+    <value>1116.67065, 228.940964</value>
+  </data>
+  <data name="xrLabel8.Text" xml:space="preserve">
+    <value>TL. VIỆN TRƯỞNG</value>
+  </data>
+  <data name="xrLabel8.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
   <data name="xrLabel10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
   </data>
   <data name="xrLabel10.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v16.2">
-    <value>1152.98315, 583.33</value>
+    <value>1152.98328, 588.6217</value>
   </data>
   <data name="xrLabel10.SizeF" type="System.Drawing.SizeF, System.Drawing">
     <value>349.1211, 58.4199829</value>
@@ -385,33 +370,6 @@
     <value>4// Phạm Ngọc Huy</value>
   </data>
   <data name="xrLabel10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
-    <value>TopCenter</value>
-  </data>
-  <data name="xrLabel9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 9.75pt, style=Bold</value>
-  </data>
-  <data name="xrLabel9.Text" xml:space="preserve">
-    <value>TRƯỞNG BAN TMKH</value>
-  </data>
-  <data name="xrLabel9.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
-    <value>TopCenter</value>
-  </data>
-  <data name="xrLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 9.75pt, style=Bold</value>
-  </data>
-  <data name="xrLabel8.Text" xml:space="preserve">
-    <value>TL. VIỆN TRƯỞNG</value>
-  </data>
-  <data name="xrLabel8.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
-    <value>TopCenter</value>
-  </data>
-  <data name="xrLabel7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 9.75pt, style=Italic</value>
-  </data>
-  <data name="xrLabel7.Text" xml:space="preserve">
-    <value>Hà Nội, ngày.......tháng......năm 201...</value>
-  </data>
-  <data name="xrLabel7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>TopCenter</value>
   </data>
   <data name="xrTableCell17.Font" type="System.Drawing.Font, System.Drawing">
@@ -425,9 +383,6 @@
   </data>
   <data name="xrTableCell18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9.75pt, style=Bold</value>
-  </data>
-  <data name="xrTableCell18.Text" xml:space="preserve">
-    <value>xrTableCell18</value>
   </data>
   <data name="xrTableCell18.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v16.2">
     <value>MiddleRight</value>
@@ -445,7 +400,7 @@
     <value>Số tiền bằng chữ:</value>
   </data>
   <data name="PageFooter.HeightF" type="System.Single, mscorlib">
-    <value>666.75</value>
+    <value>685.2708</value>
   </data>
   <data name="$this.DisplayName" xml:space="preserve">
     <value>Phiếu nhập kho chi tiết</value>
@@ -454,7 +409,7 @@
     <value>254</value>
   </data>
   <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
-    <value>350, 150, 250, 200</value>
+    <value>350, 150, 250, 206</value>
   </data>
   <data name="$this.PageHeight" type="System.Int32, mscorlib">
     <value>2970</value>

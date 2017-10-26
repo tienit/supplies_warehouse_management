@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using VKTIM.ReportForm;
 
 namespace VKTIM
 {
@@ -17,7 +18,7 @@ namespace VKTIM
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmGridControlCopyPaste());
             //Application.Run(new frmDmInputBill());
-            Application.Run(new frmMain());
+            Application.Run(new frmRPInputDetail());
         }
     }
 }

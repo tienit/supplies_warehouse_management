@@ -46,6 +46,24 @@ return tienit.core.Null.GetNull(Field, DBNull.Value);
         {
             return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_PRODUCTS_GetAll_SearchItem").Tables[0];
         }
+
+
+        public List<string> GetProductsColumn()
+        {
+            DataTable dt = SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_PRODUCTS_GetTop0Row").Tables[0];
+            List<string> lsCol = new List<string>();
+            foreach (DataColumn item in dt.Columns)
+            {
+                lsCol.Add(item.ColumnName);
+            }
+
+            return lsCol;
+        }
+
+        public DataTable SearchWithParameter(string paraname1, string value1, string paraname2, string value2, string paraname3, string value3)
+        {
+            return SqlHelper.ExecuteDataset(SqlConnect.ConnectionString, "DM_PRODUCTS_SearchWithParameter", DB_GetNull(paraname1), DB_GetNull(value1), DB_GetNull(paraname2), DB_GetNull(value2), DB_GetNull(paraname3), DB_GetNull(value3)).Tables[0];
+        }
     }
 
 public partial class DataProvider

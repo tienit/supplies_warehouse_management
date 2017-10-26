@@ -616,6 +616,24 @@
     <Compile Include="Lang\MyResources.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm\frmRPInputDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\frmRPInputDetail.Designer.cs">
+      <DependentUpon>frmRPInputDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\frmRPWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\frmRPWarehouse.Designer.cs">
+      <DependentUpon>frmRPWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\frmRPWarehouseEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\frmRPWarehouseEx.Designer.cs">
+      <DependentUpon>frmRPWarehouseEx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\frmReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -627,6 +645,12 @@
     </Compile>
     <Compile Include="Reports\rptInputDetail.Designer.cs">
       <DependentUpon>rptInputDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInputDetail2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInputDetail2.Designer.cs">
+      <DependentUpon>rptInputDetail2.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen1.cs">
       <SubType>Form</SubType>
@@ -851,6 +875,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportForm\frmRPInputDetail.resx">
+      <DependentUpon>frmRPInputDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\frmRPWarehouse.resx">
+      <DependentUpon>frmRPWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\frmRPWarehouseEx.resx">
+      <DependentUpon>frmRPWarehouseEx.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmReport.resx">
       <DependentUpon>frmReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -859,6 +892,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptInputDetail.vi.resx">
       <DependentUpon>rptInputDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInputDetail2.resx">
+      <DependentUpon>rptInputDetail2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
