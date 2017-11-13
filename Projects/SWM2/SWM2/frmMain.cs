@@ -196,6 +196,9 @@ namespace VKTIM
                         case "mnuMNG":
                             mnuManagement.DropDownItems.Add(item);
                             break;
+                        case "mnuFUN":
+                            mnuFunction.DropDownItems.Add(item);
+                            break;
                         default:
                             break;
                     }

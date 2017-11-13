@@ -130,8 +130,9 @@ namespace VKTIM.Common
                 frm.Text = title;
                 return frm;
             }
-            catch
+            catch// (Exception ex)
             {
+                //MessageBox.Show(ex.Message);
                 return null;
             }
         }
@@ -982,6 +983,85 @@ namespace VKTIM.Common
                 }
             }
             return cr;
-        }        
+        }
+        
+        public static int StringToBoolearn(object value)
+        {
+            if (value.ToString().Trim() == "True")
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public static int OjectToInteger32(object value)
+        {
+            if (value != null)
+            {
+                try
+                {
+                    return Convert.ToInt32(value);
+                }
+                catch //(Exception)
+                {
+
+                   // throw;
+                }
+            }
+
+            return 0;
+        }
+
+        public static TimeSpan ObjectToTime(object value)
+        {
+            if (value != null)
+            {
+                try
+                {
+                    return TimeSpan.Parse(value.ToString().Trim());
+                }
+                catch// (Exception)
+                {
+
+                   // throw;
+                }
+            }
+
+            return TimeSpan.Zero;
+        }
+
+        public static DateTime ObjectToDate(object value)
+        {
+            if (value != null)
+            {
+                try
+                {
+                    return Convert.ToDateTime(value).Date;
+                }
+                catch// (Exception)
+                {
+
+                   // throw;
+                }
+            }
+
+            return new DateTime(1970,1,1).Date;
+        }
+
+        public static DateTime DateAndTimeToTimeSpan(DateTime date, TimeSpan time)
+        {
+            try
+            {
+                return date + time;
+            }
+            catch //(Exception)
+            {
+                return new DateTime(1970,1,1);
+                //throw;
+            }
+        }
     }
 }

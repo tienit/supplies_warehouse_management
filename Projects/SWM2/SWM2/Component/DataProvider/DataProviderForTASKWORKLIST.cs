@@ -41,12 +41,12 @@ public virtual DataSet TASK_WORKLIST_GetAll_DS()
 
 public virtual int TASK_WORKLIST_Insert(TASKWORKLISTInfo objInfo)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_TASK_WORKLIST_INSERT, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CODE), DB_GetNull(objInfo.CONTENTS), DB_GetNull(objInfo.CONTROL), DB_GetNull(objInfo.STARTDATE), DB_GetNull(objInfo.ENDDATE), DB_GetNull(objInfo.STATUS), DB_GetNull(objInfo.FINISHED), DB_GetNull(objInfo.REMARKS));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_TASK_WORKLIST_INSERT, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CODE), DB_GetNull(objInfo.CONTENTS), DB_GetNull(objInfo.CONTROL), DB_GetNull(objInfo.STARTDATE), DB_GetNull(objInfo.ENDDATE), DB_GetNull(objInfo.STATUS), DB_GetNull(objInfo.FINISHED), DB_GetNull(objInfo.REMARKS), DB_GetNull(objInfo.REPEAT), DB_GetNull(objInfo.REPEAT_DAY), DB_GetNull(objInfo.REPEAT_HOUR), DB_GetNull(objInfo.REPEAT_MONTH), DB_GetNull(objInfo.REPEAT_WEEK), DB_GetNull(objInfo.REPEAT_YEAR), DB_GetNull(objInfo.TIME_REMIND), DB_GetNull(objInfo.REMIND), DB_GetNull(objInfo.TIME_SPAN_REMIND));
 }
 
 public virtual int TASK_WORKLIST_Update(TASKWORKLISTInfo objInfo)
 {
-	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_TASK_WORKLIST_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CODE), DB_GetNull(objInfo.CONTENTS), DB_GetNull(objInfo.CONTROL), DB_GetNull(objInfo.STARTDATE), DB_GetNull(objInfo.ENDDATE), DB_GetNull(objInfo.STATUS), DB_GetNull(objInfo.FINISHED), DB_GetNull(objInfo.REMARKS));
+	return SqlHelper.ExecuteNonQuery(SqlConnect.ConnectionString, VKTIM_COMPONENT_TASK_WORKLIST_UPDATE, DB_GetNull(objInfo.ID), DB_GetNull(objInfo.CODE), DB_GetNull(objInfo.CONTENTS), DB_GetNull(objInfo.CONTROL), DB_GetNull(objInfo.STARTDATE), DB_GetNull(objInfo.ENDDATE), DB_GetNull(objInfo.STATUS), DB_GetNull(objInfo.FINISHED), DB_GetNull(objInfo.REMARKS), DB_GetNull(objInfo.REPEAT), DB_GetNull(objInfo.REPEAT_DAY), DB_GetNull(objInfo.REPEAT_HOUR), DB_GetNull(objInfo.REPEAT_MONTH), DB_GetNull(objInfo.REPEAT_WEEK), DB_GetNull(objInfo.REPEAT_YEAR), DB_GetNull(objInfo.TIME_REMIND), DB_GetNull(objInfo.REMIND), DB_GetNull(objInfo.TIME_SPAN_REMIND));
 }
 
 public virtual int TASK_WORKLIST_Delete(int ID)

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKTIM", "SWM2\VKTIM.csproj", "{9F851829-C057-4142-873A-5BBC22DB48F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TASKWORKING", "TASKWORKING\TASKWORKING.csproj", "{050FB49B-DCA4-4EA7-8D91-33C6926DE545}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,19 @@ Global
 		{9F851829-C057-4142-873A-5BBC22DB48F7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F851829-C057-4142-873A-5BBC22DB48F7}.Release|x86.ActiveCfg = Release|x86
 		{9F851829-C057-4142-873A-5BBC22DB48F7}.Release|x86.Build.0 = Release|x86
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Debug|x86.Build.0 = Debug|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Release|x86.ActiveCfg = Release|Any CPU
+		{050FB49B-DCA4-4EA7-8D91-33C6926DE545}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11920B61-4893-49DC-A0ED-50C63EB57723}
 	EndGlobalSection
 EndGlobal

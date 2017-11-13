@@ -12,7 +12,7 @@ using VKTIM.Component;
 using VKTIM.Reports;
 
 
-namespace VKTIM.ReportForm
+namespace VKTIM
 {
     public partial class frmRPWarehouse : Form
     {

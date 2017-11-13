@@ -25,8 +25,19 @@ public object DB_GetNull(object Field)
 {
 return tienit.core.Null.GetNull(Field, DBNull.Value);
 }
-	// Add custom code here
-}
+        // Add custom code here
+
+        public List<TASKWORKLISTInfo> getListRemind()
+        {
+            List<TASKWORKLISTInfo> list = new List<TASKWORKLISTInfo>();
+            ArrayList arr = CBO.FillCollection(SqlHelper.ExecuteReader(SqlConnect.ConnectionString, "TASK_WORKLIST_GET_REMIND_LIST"), typeof(TASKWORKLISTInfo));
+            foreach (object objItem in arr)
+            {
+                list.Add((TASKWORKLISTInfo)objItem);
+            }
+            return list;
+        }
+    }
 
 public partial class DataProvider
 {

@@ -59,11 +59,27 @@ namespace VKTIM
 
             }
 
-            
+            DataTable funds = DTFUNDSController.Instance().GetAll_DS().Tables[0];
+            for (int f = 0; f < funds.Rows.Count; f++)
+            {
+                repositoryItemComboBox2.Items.Add(funds.Rows[f]["FUNDS_NAME"]);
+            }
+
+            DataTable warehouse = DMWAREHOUSEController.Instance().GetAll_DS().Tables[0];
+            for (int w = 0; w < warehouse.Rows.Count; w++)
+            {
+                repositoryItemComboBox4.Items.Add(warehouse.Rows[w]["WAREHOUSE_NAME"]);
+            }
+
+            DataTable organi = DMORGANIZATIONController.Instance().GetAll_DS().Tables[0];
+            for (int o = 0; o < organi.Rows.Count; o++)
+            {
+                repositoryItemComboBox3.Items.Add(organi.Rows[o]["ORGANIZATION_NAME"]);
+            }
 
 
-             //left info
-             //vGridControl1.DataSource = DTINPUTController.Instance().GetInputInfo(1).Tables[0];
+            //left info
+            //vGridControl1.DataSource = DTINPUTController.Instance().GetInputInfo(1).Tables[0];
             DataTable vgridData = DTINPUTController.Instance().GetTop0Row();
             DataRow vr = vgridData.NewRow();
             this.inputMain = DTINPUTController.Instance().GetById(this.inputMain.ID);//gọi lại lần nữa để lấy data mới nhất từ csdl
@@ -95,29 +111,19 @@ namespace VKTIM
                 vr["USER_NAME"] = GBTSCConstants.CURRENT_USER.USER_NAME;
                 vr["ID"] = GBTSCConstants.CURRENT_USER.ID;
                 vr["EXPIRED_DATE"] = DateTime.Now.AddDays(10);
-
+                if (repositoryItemComboBox2.Items.Count  > 0)
+                    vr["FUNDS_NAME"] = repositoryItemComboBox2.Items[0].ToString();
+                if (repositoryItemComboBox4.Items.Count > 0)
+                    vr["WAREHOUSE_NAME"] = repositoryItemComboBox4.Items[1].ToString();
+                if (repositoryItemComboBox3.Items.Count > 0)
+                    vr["ORGANIZATION_NAME"] = repositoryItemComboBox3.Items[1].ToString();
+                vr["INPUT_CODE"] = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
             }
 
             vgridData.Rows.Add(vr);
             vGridControl1.DataSource = vgridData;
 
-            DataTable funds = DTFUNDSController.Instance().GetAll_DS().Tables[0];
-            for (int f = 0; f < funds.Rows.Count; f++)
-            {
-                repositoryItemComboBox2.Items.Add(funds.Rows[f]["FUNDS_NAME"]);
-            }
-
-            DataTable warehouse = DMWAREHOUSEController.Instance().GetAll_DS().Tables[0];
-            for (int w = 0; w < warehouse.Rows.Count; w++)
-            {
-                repositoryItemComboBox4.Items.Add(warehouse.Rows[w]["WAREHOUSE_NAME"]);
-            }
-
-            DataTable organi = DMORGANIZATIONController.Instance().GetAll_DS().Tables[0];
-            for (int o = 0; o < organi.Rows.Count; o++)
-            {
-                repositoryItemComboBox3.Items.Add(organi.Rows[o]["ORGANIZATION_NAME"]);
-            }
+            
 
             if (this.inputMain != null)
             {
@@ -651,7 +657,7 @@ namespace VKTIM
             }
 
             splashScreenManager1.CloseWaitForm();
-
+            this.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -681,6 +687,104 @@ namespace VKTIM
         {
             frmReport f = new frmReport();
             f.Show();
+        }
+
+        private void btnBeginStep_Click(object sender, EventArgs e)
+        {
+            xTabMain.SelectedTabPage = xPageOverview;
+        }
+
+        private void btnBackStep_Click(object sender, EventArgs e)
+        {
+            if (xTabMain.SelectedTabPageIndex > 0)
+            {
+                xTabMain.SelectedTabPageIndex = xTabMain.SelectedTabPageIndex - 1;
+            }
+            
+        }
+
+        private void btnNextStep_Click(object sender, EventArgs e)
+        {
+            if (xTabMain.SelectedTabPageIndex < xTabMain.TabPages.Count)
+            {
+                xTabMain.SelectedTabPageIndex = xTabMain.SelectedTabPageIndex + 1;
+            }
+        }
+
+        private void btnFinishStep_Click(object sender, EventArgs e)
+        {
+            splashScreenManager1.ShowWaitForm();
+            //Luu thông tin phiếu
+            DTINPUTInfo Info = new DTINPUTInfo();
+            Info.DATE_CREATED = DateTime.Now;
+            Info.TOTAL_VALUE = (double)gridColumn5.SummaryItem.SummaryValue;
+
+            DataTable dt = (DataTable)vGridControl1.DataSource;
+
+            Info.WAREHOUSE_NAME = dt.Rows[0]["WAREHOUSE_NAME"].ToString();
+            Info.FUNDS_NAME = dt.Rows[0]["FUNDS_NAME"].ToString();
+            Info.EXPIRED_DATE = DateTime.Parse(dt.Rows[0]["EXPIRED_DATE"].ToString());
+            Info.ORGANIZATION_NAME = dt.Rows[0]["ORGANIZATION_NAME"].ToString();
+            Info.USER_NAME = dt.Rows[0]["USER_NAME"].ToString();
+            Info.INPUT_CODE = dt.Rows[0]["INPUT_CODE"].ToString();
+
+
+            DTINPUTInfo inputNew = new DTINPUTInfo();
+            if (this.inputMain != null)
+            {
+                Info.ID = this.inputMain.ID;
+                int update = DTINPUTController.Instance().Update(Info);
+            }
+            else
+            {
+                inputNew = DTINPUTController.Instance().Insert(Info);
+            }
+
+            //Lưu danh mục 
+
+            for (int i = 0; i < MainDatasrouce.Rows.Count; i++)
+            {
+                try
+                {
+                    if (!EmptyFeild(i, 1))
+                    {
+                        DTINPUTDETAILInfo product = new DTINPUTDETAILInfo();
+                        product.INPUT_ID = inputNew.ID;
+                        product.TOTAL = double.Parse(MainDatasrouce.Rows[i]["TOTAL"].ToString().Trim());
+                        product.QUANTITY = double.Parse(MainDatasrouce.Rows[i]["QUANTITY"].ToString().Trim());
+                        product.PRODUCT_NAME = MainDatasrouce.Rows[i]["PRODUCT_NAME"].ToString().Trim();
+                        product.PRICE_NAME = double.Parse(MainDatasrouce.Rows[i]["PRICE_NAME"].ToString().Trim());
+                        product.INPUT_VALUE = double.Parse(MainDatasrouce.Rows[i]["INPUT_VALUE"].ToString().Trim());
+                        product.UNIT_NAME = MainDatasrouce.Rows[i]["UNIT_NAME"].ToString().Trim();
+                        product.SORT = i;
+                        if (MainDatasrouce.Rows[i]["ID"].ToString() != "")
+                        {
+                            DTINPUTDETAILController.Instance().Update(product);
+                        }
+                        else
+                        {
+                            if (this.inputMain != null)
+                            {
+                                product.INPUT_ID = this.inputMain.ID;
+                            }
+                            DTINPUTDETAILController.Instance().Insert(product);
+                        }
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                    // throw;
+                }
+
+            }
+
+            splashScreenManager1.CloseWaitForm();
+
+            this.Close();
         }
     }
 }

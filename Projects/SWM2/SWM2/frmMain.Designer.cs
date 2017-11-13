@@ -71,6 +71,7 @@
             this.context_Show = new System.Windows.Forms.ToolStripMenuItem();
             this.context_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.taskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuFunction = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainError)).BeginInit();
@@ -109,6 +110,7 @@
             this.mnuSystem,
             this.mnuReport,
             this.mnuManagement,
+            this.mnuFunction,
             this.mnuHelp});
             this.menuStripMain.Location = new System.Drawing.Point(0, 45);
             this.menuStripMain.Name = "menuStripMain";
@@ -520,28 +522,36 @@
             this.context_Exit,
             this.taskToolStripMenuItem});
             this.contextMenuStripMain.Name = "contextMenuStripMain";
-            this.contextMenuStripMain.Size = new System.Drawing.Size(153, 92);
+            this.contextMenuStripMain.Size = new System.Drawing.Size(104, 70);
             // 
             // context_Show
             // 
             this.context_Show.Name = "context_Show";
-            this.context_Show.Size = new System.Drawing.Size(152, 22);
+            this.context_Show.Size = new System.Drawing.Size(103, 22);
             this.context_Show.Text = "Show";
             this.context_Show.Click += new System.EventHandler(this.context_Show_Click);
             // 
             // context_Exit
             // 
             this.context_Exit.Name = "context_Exit";
-            this.context_Exit.Size = new System.Drawing.Size(152, 22);
+            this.context_Exit.Size = new System.Drawing.Size(103, 22);
             this.context_Exit.Text = "Exit";
             this.context_Exit.Click += new System.EventHandler(this.context_Exit_Click);
             // 
             // taskToolStripMenuItem
             // 
             this.taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            this.taskToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.taskToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.taskToolStripMenuItem.Text = "Task";
             this.taskToolStripMenuItem.Click += new System.EventHandler(this.taskToolStripMenuItem_Click);
+            // 
+            // mnuFunction
+            // 
+            this.mnuFunction.Image = global::VKTIM.Properties.Resources.wizard;
+            this.mnuFunction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mnuFunction.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnuFunction.Name = "mnuFunction";
+            this.mnuFunction.Size = new System.Drawing.Size(162, 36);
             // 
             // frmMain
             // 
@@ -620,6 +630,7 @@
         private System.Windows.Forms.ToolStripMenuItem context_Show;
         private System.Windows.Forms.ToolStripMenuItem context_Exit;
         private System.Windows.Forms.ToolStripMenuItem taskToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuFunction;
     }
 }
 

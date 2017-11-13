@@ -1,4 +1,4 @@
-﻿namespace VKTIM.ReportForm
+﻿namespace VKTIM
 {
     partial class frmRPWarehouseEx
     {

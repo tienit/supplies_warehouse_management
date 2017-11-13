@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace VKTIM.ReportForm
+namespace VKTIM
 {
     public partial class frmRPWarehouseEx : Form
     {

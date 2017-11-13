@@ -191,6 +191,10 @@
             this.cmb_data_NguoiLapLenh = new System.Windows.Forms.ComboBox();
             this.lbl_dis_DVNhan = new System.Windows.Forms.Label();
             this.lbl_dis_NguoiLap = new System.Windows.Forms.Label();
+            this.btnFinishStep = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNextStep = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBackStep = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBeginStep = new DevExpress.XtraEditors.SimpleButton();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetDockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribMenuTop)).BeginInit();
@@ -751,11 +755,13 @@
             // 
             // xTabMain
             // 
-            this.xTabMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xTabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.xTabMain.Location = new System.Drawing.Point(0, 116);
             this.xTabMain.Name = "xTabMain";
             this.xTabMain.SelectedTabPage = this.xPageItems;
-            this.xTabMain.Size = new System.Drawing.Size(1020, 512);
+            this.xTabMain.Size = new System.Drawing.Size(1020, 475);
             this.xTabMain.TabIndex = 17;
             this.xTabMain.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xPageOverview,
@@ -773,7 +779,7 @@
             this.xPageItems.Controls.Add(this.searchLookUpEdit1);
             this.xPageItems.Controls.Add(this.grc_Main);
             this.xPageItems.Name = "xPageItems";
-            this.xPageItems.Size = new System.Drawing.Size(1014, 484);
+            this.xPageItems.Size = new System.Drawing.Size(1014, 447);
             this.xPageItems.Text = "Danh mục vật tư";
             // 
             // btnAddProduct
@@ -806,7 +812,7 @@
             // 
             // vGridControl1
             // 
-            this.vGridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.vGridControl1.Cursor = System.Windows.Forms.Cursors.SizeNS;
             this.vGridControl1.Location = new System.Drawing.Point(11, 12);
             this.vGridControl1.Name = "vGridControl1";
             this.vGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -1027,7 +1033,7 @@
             this.repositoryItemMarqueeProgressBar1,
             this.repositoryItemComboBox1,
             this.repositoryItemMemoEdit1});
-            this.grc_Main.Size = new System.Drawing.Size(750, 440);
+            this.grc_Main.Size = new System.Drawing.Size(750, 403);
             this.grc_Main.TabIndex = 14;
             this.grc_Main.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grv_Main});
@@ -1364,7 +1370,7 @@
             // 
             this.xPageOverview.Controls.Add(this.groupBox3);
             this.xPageOverview.Name = "xPageOverview";
-            this.xPageOverview.Size = new System.Drawing.Size(1014, 484);
+            this.xPageOverview.Size = new System.Drawing.Size(1014, 447);
             this.xPageOverview.Text = "Tổng quan";
             // 
             // groupBox3
@@ -1517,7 +1523,7 @@
             // 
             this.xPageInvoce.Controls.Add(this.grcInvoice);
             this.xPageInvoce.Name = "xPageInvoce";
-            this.xPageInvoce.Size = new System.Drawing.Size(1014, 484);
+            this.xPageInvoce.Size = new System.Drawing.Size(1014, 447);
             this.xPageInvoce.Text = "Chứng từ kèm theo";
             // 
             // grcInvoice
@@ -1527,7 +1533,7 @@
             this.grcInvoice.MainView = this.grvInvoice;
             this.grcInvoice.MenuManager = this.ribMenuTop;
             this.grcInvoice.Name = "grcInvoice";
-            this.grcInvoice.Size = new System.Drawing.Size(1014, 484);
+            this.grcInvoice.Size = new System.Drawing.Size(1014, 447);
             this.grcInvoice.TabIndex = 0;
             this.grcInvoice.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grvInvoice});
@@ -1596,7 +1602,7 @@
             this.xPageOption.Controls.Add(this.groupBox2);
             this.xPageOption.Controls.Add(this.groupBox1);
             this.xPageOption.Name = "xPageOption";
-            this.xPageOption.Size = new System.Drawing.Size(1014, 484);
+            this.xPageOption.Size = new System.Drawing.Size(1014, 447);
             this.xPageOption.Text = "Lựa chọn";
             // 
             // groupBox2
@@ -1807,11 +1813,51 @@
             this.lbl_dis_NguoiLap.TabIndex = 4;
             this.lbl_dis_NguoiLap.Text = "Thủ trưởng đơn vị:";
             // 
+            // btnFinishStep
+            // 
+            this.btnFinishStep.Location = new System.Drawing.Point(933, 597);
+            this.btnFinishStep.Name = "btnFinishStep";
+            this.btnFinishStep.Size = new System.Drawing.Size(75, 23);
+            this.btnFinishStep.TabIndex = 19;
+            this.btnFinishStep.Text = "Lưu >|";
+            this.btnFinishStep.Click += new System.EventHandler(this.btnFinishStep_Click);
+            // 
+            // btnNextStep
+            // 
+            this.btnNextStep.Location = new System.Drawing.Point(852, 597);
+            this.btnNextStep.Name = "btnNextStep";
+            this.btnNextStep.Size = new System.Drawing.Size(75, 23);
+            this.btnNextStep.TabIndex = 19;
+            this.btnNextStep.Text = "Tiếp theo >>";
+            this.btnNextStep.Click += new System.EventHandler(this.btnNextStep_Click);
+            // 
+            // btnBackStep
+            // 
+            this.btnBackStep.Location = new System.Drawing.Point(771, 597);
+            this.btnBackStep.Name = "btnBackStep";
+            this.btnBackStep.Size = new System.Drawing.Size(75, 23);
+            this.btnBackStep.TabIndex = 19;
+            this.btnBackStep.Text = "Quay lại <<";
+            this.btnBackStep.Click += new System.EventHandler(this.btnBackStep_Click);
+            // 
+            // btnBeginStep
+            // 
+            this.btnBeginStep.Location = new System.Drawing.Point(690, 597);
+            this.btnBeginStep.Name = "btnBeginStep";
+            this.btnBeginStep.Size = new System.Drawing.Size(75, 23);
+            this.btnBeginStep.TabIndex = 19;
+            this.btnBeginStep.Text = "|< Đầu tiên";
+            this.btnBeginStep.Click += new System.EventHandler(this.btnBeginStep_Click);
+            // 
             // frmGridControlCopyPaste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 650);
+            this.Controls.Add(this.btnBeginStep);
+            this.Controls.Add(this.btnBackStep);
+            this.Controls.Add(this.btnNextStep);
+            this.Controls.Add(this.btnFinishStep);
             this.Controls.Add(this.xTabMain);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribMenuTop);
@@ -2022,5 +2068,9 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnBeginStep;
+        private DevExpress.XtraEditors.SimpleButton btnBackStep;
+        private DevExpress.XtraEditors.SimpleButton btnNextStep;
+        private DevExpress.XtraEditors.SimpleButton btnFinishStep;
     }
 }

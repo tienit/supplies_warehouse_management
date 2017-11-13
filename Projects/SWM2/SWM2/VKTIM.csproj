@@ -345,11 +345,23 @@
     <Compile Include="frmDmAssetPopup.Designer.cs">
       <DependentUpon>frmDmAssetPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDmAssetProductPopupDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmAssetProductPopupDetail.Designer.cs">
+      <DependentUpon>frmDmAssetProductPopupDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDmAssetProducts.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDmAssetProducts.Designer.cs">
       <DependentUpon>frmDmAssetProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmAssetProductsPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmAssetProductsPopup.Designer.cs">
+      <DependentUpon>frmDmAssetProductsPopup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDmEmployer.cs">
       <SubType>Form</SubType>
@@ -609,6 +621,12 @@
     <Compile Include="frmTaskList.Designer.cs">
       <DependentUpon>frmTaskList.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTaskWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskWork.Designer.cs">
+      <DependentUpon>frmTaskWork.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserGuide.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -754,8 +772,14 @@
     <EmbeddedResource Include="frmDmAssetPopup.resx">
       <DependentUpon>frmDmAssetPopup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDmAssetProductPopupDetail.resx">
+      <DependentUpon>frmDmAssetProductPopupDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDmAssetProducts.resx">
       <DependentUpon>frmDmAssetProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmAssetProductsPopup.resx">
+      <DependentUpon>frmDmAssetProductsPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmEmployer.resx">
       <DependentUpon>frmDmEmployer.cs</DependentUpon>
@@ -886,6 +910,9 @@
     <EmbeddedResource Include="frmTaskList.resx">
       <DependentUpon>frmTaskList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskWork.resx">
+      <DependentUpon>frmTaskWork.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUserGuide.resx">
       <DependentUpon>frmUserGuide.cs</DependentUpon>
     </EmbeddedResource>
@@ -910,7 +937,9 @@
     <EmbeddedResource Include="Lang\MyResources.en.resx" />
     <EmbeddedResource Include="Lang\MyResources.ja.resx" />
     <EmbeddedResource Include="Lang\MyResources.resx" />
-    <EmbeddedResource Include="Lang\MyResources.vi.resx" />
+    <EmbeddedResource Include="Lang\MyResources.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

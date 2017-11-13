@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VKTIM
+namespace TASKWORKING
 {
     static class Program
     {
@@ -15,9 +16,7 @@ namespace VKTIM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmGridControlCopyPaste());
-            //Application.Run(new frmDmInputBill());
-            Application.Run(new frmMain());
+            Application.Run(new frmTask());
         }
     }
 }

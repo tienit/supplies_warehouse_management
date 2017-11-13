@@ -19,15 +19,24 @@ private int _ID;
 private string _CODE;
 private string _CONTENTS;
 private string _CONTROL;
-private string _STARTDATE;
-private string _ENDDATE;
-private string _STATUS;
-private bool _FINISHED;
+private DateTime _STARTDATE;
+private DateTime _ENDDATE;
+private int _STATUS;
+private int _FINISHED;
 private string _REMARKS;
+        private int _REPEAT;
+        private int _REPEAT_DAY;
+        private int _REPEAT_WEEK;
+        private int _REPEAT_MONTH;
+        private int _REPEAT_YEAR;
+        private int _REPEAT_HOUR;
+        private TimeSpan _TIME_REMIND;
+        private int _REMIND;
+        private DateTime _TIME_SPAN_REMIND;
 #endregion
 
-#region "Public Properties"
-		public int ID {
+        #region "Public Properties"
+        public int ID {
 			get { return _ID; }
 			set { _ID = value; }
 		}
@@ -47,22 +56,22 @@ private string _REMARKS;
 			set { _CONTROL = value; }
 		}
 
-		public string STARTDATE {
+		public DateTime STARTDATE {
 			get { return _STARTDATE; }
 			set { _STARTDATE = value; }
 		}
 
-		public string ENDDATE {
+		public DateTime ENDDATE {
 			get { return _ENDDATE; }
 			set { _ENDDATE = value; }
 		}
 
-		public string STATUS {
+		public int STATUS {
 			get { return _STATUS; }
 			set { _STATUS = value; }
 		}
 
-		public bool FINISHED {
+		public int FINISHED {
 			get { return _FINISHED; }
 			set { _FINISHED = value; }
 		}
@@ -71,14 +80,68 @@ private string _REMARKS;
 			get { return _REMARKS; }
 			set { _REMARKS = value; }
 		}
-#endregion
 
-#region "Constructors"
-public TASKWORKLISTInfo()
+        public int REPEAT
+        {
+            get { return _REPEAT; }
+            set { _REPEAT = value; }
+        }
+
+        public int REPEAT_DAY
+        {
+            get { return _REPEAT_DAY; }
+            set { _REPEAT_DAY = value; }
+        }
+
+        public int REPEAT_WEEK
+        {
+            get { return _REPEAT_WEEK; }
+            set { _REPEAT_WEEK = value; }
+        }
+
+        public int REPEAT_MONTH
+        {
+            get { return _REPEAT_MONTH; }
+            set { _REPEAT_MONTH = value; }
+        }
+
+        public int REPEAT_YEAR
+        {
+            get { return _REPEAT_YEAR; }
+            set { _REPEAT_YEAR = value; }
+        }
+
+        public int REPEAT_HOUR
+        {
+            get { return _REPEAT_HOUR; }
+            set { _REPEAT_HOUR = value; }
+        }
+
+        public TimeSpan TIME_REMIND
+        {
+            get { return _TIME_REMIND; }
+            set { _TIME_REMIND = value; }
+        }
+
+        public int REMIND
+        {
+            get { return _REMIND; }
+            set { _REMIND = value; }
+        }
+
+        public DateTime TIME_SPAN_REMIND
+        {
+            get { return _TIME_SPAN_REMIND; }
+            set { _TIME_SPAN_REMIND = value; }
+        }
+        #endregion
+
+        #region "Constructors"
+        public TASKWORKLISTInfo()
 {
 }
 
-public TASKWORKLISTInfo(int ID, string CODE, string CONTENTS, string CONTROL, string STARTDATE, string ENDDATE, string STATUS, bool FINISHED, string REMARKS)
+public TASKWORKLISTInfo(int ID, string CODE, string CONTENTS, string CONTROL, DateTime STARTDATE, DateTime ENDDATE, int STATUS, int FINISHED, string REMARKS, int REPEAT, int REPEAT_DAY, int REPEAT_MONTH, int REPEAT_YEAR, int REPEAT_WEEK, int REPEAT_HOUR, TimeSpan TIME_REMIND, int REMIND, DateTime TIME_SPAN_REMIND)
 {
 	this.ID = ID;
 	this.CODE = CODE;
@@ -89,6 +152,15 @@ public TASKWORKLISTInfo(int ID, string CODE, string CONTENTS, string CONTROL, st
 	this.STATUS = STATUS;
 	this.FINISHED = FINISHED;
 	this.REMARKS = REMARKS;
+            this.REPEAT = REPEAT;
+            this.REPEAT_DAY = REPEAT_DAY;
+            this.REPEAT_HOUR = REPEAT_HOUR;
+            this.REPEAT_MONTH = REPEAT_MONTH;
+            this.REPEAT_WEEK = REPEAT_WEEK;
+            this.REPEAT_YEAR = REPEAT_YEAR;
+            this.TIME_REMIND = TIME_REMIND;
+            this.REMIND = REMIND;
+            this.TIME_SPAN_REMIND = TIME_SPAN_REMIND;
 }
 #endregion
 
