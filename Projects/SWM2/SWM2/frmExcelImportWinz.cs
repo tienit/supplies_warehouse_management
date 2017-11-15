@@ -54,7 +54,7 @@ namespace VKTIM
             Catalog oCatlog = new Catalog();
             ADOX.Table oTable = new ADOX.Table();
             ADODB.Connection oConn = new ADODB.Connection();
-            oConn.Open("Provider=Microsoft.Jet.OleDb.4.0; Data Source = " + strFileName + "; Extended Properties = \"Excel 8.0;HDR=Yes;IMEX=1\";", "", "", 0);
+            oConn.Open("Provider=Microsoft.ACE.OLEDB.12.0; Data Source = " + strFileName + "; Extended Properties = \"Excel 12.0 Xml;HDR=Yes;IMEX=1\";", "", "", 0);
             oCatlog.ActiveConnection = oConn;
             if (oCatlog.Tables.Count > 0)
             {
