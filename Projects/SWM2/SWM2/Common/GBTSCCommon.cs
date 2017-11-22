@@ -1063,5 +1063,23 @@ namespace VKTIM.Common
                 //throw;
             }
         }
+
+        public static double OjectToDouble(object value)
+        {
+            if (value != null)
+            {
+                try
+                {
+                    return Convert.ToDouble(value);
+                }
+                catch //(Exception)
+                {
+
+                    // throw;
+                }
+            }
+
+            return 0;
+        }
     }
 }

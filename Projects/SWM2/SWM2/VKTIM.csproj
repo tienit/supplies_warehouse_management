@@ -146,6 +146,12 @@
     <Compile Include="Component\Controller\DMASSETLEVELPartialClasses.cs" />
     <Compile Include="Component\Controller\DMASSETPRODUCTSController.cs" />
     <Compile Include="Component\Controller\DMASSETPRODUCTSPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMDRUGController.cs" />
+    <Compile Include="Component\Controller\DTDRUGINPUTController.cs" />
+    <Compile Include="Component\Controller\DTDRUGINPUTLISTController.cs" />
+    <Compile Include="Component\Controller\DTDRUGINPUTLISTPartialClasses.cs" />
+    <Compile Include="Component\Controller\DTDRUGINPUTPartialClasses.cs" />
+    <Compile Include="Component\Controller\DMDRUGPartialClasses.cs" />
     <Compile Include="Component\Controller\DMEMPLOYERController.cs" />
     <Compile Include="Component\Controller\DMEMPLOYERPartialClasses.cs" />
     <Compile Include="Component\Controller\DMLOCATIONController.cs" />
@@ -230,6 +236,8 @@
     <Compile Include="Component\DataProvider\CommonDataProvider.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMASSETLEVEL.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMASSETPRODUCTS.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDMDRUG.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTDRUGINPUT.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMEMPLOYER.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMLOCATION.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMORGANIZATION.cs" />
@@ -245,6 +253,7 @@
     <Compile Include="Component\DataProvider\DataProviderForDMTITLE.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMUNIT.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDMWAREHOUSE.cs" />
+    <Compile Include="Component\DataProvider\DataProviderForDTDRUGINPUTLIST.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTFAQ.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTFUNDS.cs" />
     <Compile Include="Component\DataProvider\DataProviderForDTINPUT.cs" />
@@ -274,6 +283,8 @@
     <Compile Include="Component\DataProvider\SqlConnect.cs" />
     <Compile Include="Component\Infos\DMASSETLEVELInfo.cs" />
     <Compile Include="Component\Infos\DMASSETPRODUCTSInfo.cs" />
+    <Compile Include="Component\Infos\DMDRUGInfo.cs" />
+    <Compile Include="Component\Infos\DTDRUGINPUTInfo.cs" />
     <Compile Include="Component\Infos\DMEMPLOYERInfo.cs" />
     <Compile Include="Component\Infos\DMLOCATIONInfo.cs" />
     <Compile Include="Component\Infos\DMORGANIZATIONInfo.cs" />
@@ -289,6 +300,7 @@
     <Compile Include="Component\Infos\DMTITLEInfo.cs" />
     <Compile Include="Component\Infos\DMUNITInfo.cs" />
     <Compile Include="Component\Infos\DMWAREHOUSEInfo.cs" />
+    <Compile Include="Component\Infos\DTDRUGINPUTLISTInfo.cs" />
     <Compile Include="Component\Infos\DTFAQInfo.cs" />
     <Compile Include="Component\Infos\DTFUNDSInfo.cs" />
     <Compile Include="Component\Infos\DTINPUTDETAILInfo.cs" />
@@ -362,6 +374,18 @@
     </Compile>
     <Compile Include="frmDmAssetProductsPopup.Designer.cs">
       <DependentUpon>frmDmAssetProductsPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmDrug.Designer.cs">
+      <DependentUpon>frmDmDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDmDrugPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDmDrugPopup.Designer.cs">
+      <DependentUpon>frmDmDrugPopup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDmEmployer.cs">
       <SubType>Form</SubType>
@@ -446,6 +470,18 @@
     </Compile>
     <Compile Include="frmDmPrice.Designer.cs">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDtInputDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDtInputDrug.Designer.cs">
+      <DependentUpon>frmDtInputDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDtInputDrugList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDtInputDrugList.Designer.cs">
+      <DependentUpon>frmDtInputDrugList.cs</DependentUpon>
     </Compile>
     <Compile Include="frmExcelImportWinz.cs">
       <SubType>Form</SubType>
@@ -781,6 +817,12 @@
     <EmbeddedResource Include="frmDmAssetProductsPopup.resx">
       <DependentUpon>frmDmAssetProductsPopup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDmDrug.resx">
+      <DependentUpon>frmDmDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDmDrugPopup.resx">
+      <DependentUpon>frmDmDrugPopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDmEmployer.resx">
       <DependentUpon>frmDmEmployer.cs</DependentUpon>
     </EmbeddedResource>
@@ -822,6 +864,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDmPrice.resx">
       <DependentUpon>frmDmPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDtInputDrug.resx">
+      <DependentUpon>frmDtInputDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDtInputDrugList.resx">
+      <DependentUpon>frmDtInputDrugList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmExcelImportWinz.resx">
       <DependentUpon>frmExcelImportWinz.cs</DependentUpon>
